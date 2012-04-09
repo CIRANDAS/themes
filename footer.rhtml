@@ -37,13 +37,17 @@
     // Split categories top menu in two
     jQuery('#cat_menu ul').makeacolumnlists({ cols : 2, colWidth : 127, equalHeight : true, startN : 1 });
     // Adjust navigation submenu trigger width
+    var contents = parseInt(jQuery('#submenu-contents').first().width());
+    jQuery('#submenu-contents-trigger').first().width(contents - 2);
+    jQuery('head').first().append('<style type="text/css">#navigation li.navigation-contents .menu-submenu, #navigation li.navigation-contents .menu-submenu li {width: ' + contents + 'px;}</style>');
     var comm = parseInt(jQuery('#submenu-communities').first().width());
     jQuery('#submenu-communities-trigger').first().width(comm - 2);
     jQuery('head').first().append('<style type="text/css">#navigation li.navigation-communities .menu-submenu, #navigation li.navigation-communities .menu-submenu li {width: ' + comm + 'px;}</style>');
     var people = parseInt(jQuery('#submenu-people').first().width());
     jQuery('#submenu-people-trigger').first().width(people - 2);
     jQuery('head').first().append('<style type="text/css">#navigation li.navigation-people .menu-submenu, #navigation li.navigation-people .menu-submenu li {width: ' + people + 'px;}</style>');
-    jQuery('#submenu-communities-trigger, #submenu-people-trigger').show();
+
+    jQuery('#submenu-contents-trigger, #submenu-communities-trigger, #submenu-people-trigger').show();
 
     // Add space between login button and signup link (RT#20190)
     $('.login-block .login-box .button-bar input').after("<br/>");
