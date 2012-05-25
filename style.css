@@ -1565,3 +1565,60 @@ li.token-input-selected-dropdown-item-facet .facet-result-extra-label {
   padding: 20px 10px;
   text-align: center;
 }
+
+.search-field .formfield input {
+  border: 1px solid #231F20;
+}
+
+#facets-menu .facet-menu-label {
+  background:#E8F5FB;
+}
+
+#facets-menu .facet-menu-options a {
+  color: #007788;
+}
+
+.facet-menu-less-options .facet-result-link-selected {
+  background-color: #B1DFEF;
+}
+
+.facet-selected {
+  background: #B1DFEF;
+}
+
+.facet-menu-less-options .facet-result-link-selected a {
+  border-left: 4px solid #00A5D3;
+}
+
+div.token-input-dropdown-facet ul li.token-input-selected-dropdown-item-facet {
+    background-color: #d0efa0;
+}
+
+div.token-input-dropdown-facet ul li.token-input-dropdown-item-facet {
+    background-color: #E5F4FB;
+}
+
+div.token-input-dropdown-facet ul li.token-input-dropdown-item2-facet {
+    background-color: #E5F4FB;
+}
+
+div.token-input-dropdown-facet {
+    background-color: #E5F4FB;
+}
+
+li.article-item .search-result-title {
+  color: #007788;
+}
+
+.search-product-price {
+  color: #249DCB;
+}
+
+.search-product-unit {
+  color: #249DCB;
+}
+
+.controller-search #content .search-results-box a.see-more {
+  background: #B8CFE7;
+  border: 1px solid #B8CFE7;
+}
