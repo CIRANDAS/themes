@@ -1622,3 +1622,23 @@ li.article-item .search-result-title {
   background: #B8CFE7;
   border: 1px solid #B8CFE7;
 }
+
+#content form .search-field input.button.submit {
+  width: 150px;
+  background: #000;
+  overflow: visible;
+  color:#fff;
+  text-align: left;
+  font-weight: bold;
+  padding: 3px 1px 1px 10px;
+  border: none;
+  height: 34px;
+  display:inline-block;
+  max-height:none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
