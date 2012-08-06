@@ -174,21 +174,3 @@ a {
 }
 
 /* Search */
-
-/* Shopping cart plugin */
-
-.cart .item-name {
-  margin-right: 0;
-  padding-right: 20px;
-  font-size:0.8em;
-}
-.cart .picture {
-  display:none
-}
-.cart input {
-  border: 1px solid #ccc;
-}
-.cart input:hover,
-.cart input:focus {
-  border: 1px solid #777;
-}
