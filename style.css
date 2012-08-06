@@ -24,10 +24,6 @@ body p {
   line-height: 20px;
 }
 
-textarea {
-  font-family: inherit;
-}
-
 /* Structure */
 
 #wrap-1 {
@@ -35,6 +31,7 @@ textarea {
 }
 
 #wrap-1, #footer-content, #theme-footer {
+  width: 1040px;
   border-left: 24px solid transparent;
   border-right: 24px solid transparent;
 }
@@ -44,6 +41,7 @@ textarea {
 }
 
 #wrap-2 {
+  padding: 40px;
   padding-top: 0;
   border-color: transparent;
   background: transparent;
@@ -56,6 +54,7 @@ textarea {
   height: 130px;
   width: 214px;
   top: 0;
+  margin-left: 30px;
   left: 10px;
 }
 
@@ -90,6 +89,7 @@ textarea {
   text-align: left;
   padding: 2px 0 2px 5px;
   background: #fff;
+  margin-right: 30px;
 }
 
 #user:hover {
@@ -190,7 +190,6 @@ textarea {
 
 #manage-enterprises {
   margin: 0;
-  width: 100%;
 }
 #manage-enterprises ul {
   position: relative;
@@ -205,16 +204,6 @@ textarea {
   display: inline;
 }
 
-/* Comment */
-
-.comment_form .formfield input {
-  padding: 2px 5px 0px 0px;
-}
-
-.msie7 .comment_form .formfield input {
-  padding: 2px 0px;
-}
-
 /* Help */
 
 #navigation #header-help a { 
@@ -224,6 +213,7 @@ textarea {
   right: -5px;
   top: -47px;
   padding-top: 30px;
+  margin-right: 30px;
   text-align: center;
   background: transparent url(images/help.png) top center no-repeat;
   font-size: 11px;
@@ -567,8 +557,6 @@ textarea {
 
 #content h1.page-title.no-boxes {
   left: 20px;
-  right: 20px;
-  text-align: left;
 }
 
 #content span.page-title {
@@ -983,7 +971,6 @@ textarea {
 }
 
 #footer-content {
-  width: 960px;
   height: 30px;
   margin: 0 auto;
   margin-left: -24px;
@@ -996,8 +983,8 @@ textarea {
   border-top: 2px solid #000;
   margin-top: 0;
   padding-top: 10px;
-  width: 981px;
-  margin-left: -10px;
+  width: 1040px;
+  margin-left: 1px;
 }
 
 #theme-footer #language-chooser {
@@ -1054,7 +1041,7 @@ textarea {
   overflow: hidden;
   background: transparent url(images/footer-bg.png) center center no-repeat;
   margin-left: -20px;
-  width: 1000px;
+  width: 1079px;
 }
 
 /* Blog */
@@ -1268,22 +1255,11 @@ textarea {
 
 #product-category, .product-category-hierarchy {
   margin-top: 0;
-  height: 35px;
 }
 
 #product-info {
   min-height: 35px;
-  
 }
-
-.add-input-details{
-  margin: 15px;
-}
-
-.input-details .button-bar{
-  margin-top: 15px;
-}
-
 
 /* Chat {{{ */
 
@@ -1396,28 +1372,3 @@ textarea {
 .msie7 #content #product_list h3 {
   margin-top: 12px;
 }
-
-.msie7 textarea {
-  overflow: auto;
-}
-
-/* Agenda {{{ */
-
-#content #agenda-toolbar {
-  top: 1px;
-}
-
-/* }}} */
-
-/* Signup form {{{ */
-
-#signup-form {
-  padding-top: 30px;
-}
-
-body #email-check p,
-body #url-check p {
-  text-align: right;
-}
-
-/* }}} */
