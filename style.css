@@ -1642,3 +1642,14 @@ li.article-item .search-result-title {
   border-radius: 5px;
 }
 
+#signup-form {
+  padding: 1px;
+}
+
+#signup-form #profile_data_name,
+#signup-form select,
+#signup-form textarea,
+#signup-form input[type=text] {
+  margin: 0;
+  margin-left: 14px;
+}
