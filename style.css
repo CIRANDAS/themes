@@ -1642,14 +1642,16 @@ li.article-item .search-result-title {
   border-radius: 5px;
 }
 
-#signup-form {
-  padding: 1px;
+/* signup */
+#terms-of-use-box input[type="checkbox"] {
+  width: auto;
 }
 
-#signup-form #profile_data_name,
-#signup-form select,
-#signup-form textarea,
-#signup-form input[type=text] {
-  margin: 0;
-  margin-left: 14px;
+#signup-form select, #signup-form textarea, #signup-form #profile_data_name, #signup-form input {
+  height: auto;
 }
+
+#signup-form {
+  padding: 2px;
+}
+
