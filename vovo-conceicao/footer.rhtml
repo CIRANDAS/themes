@@ -1,0 +1,18 @@
+<div id="footer-logo">
+</div><!-- end id="footer-logo" -->
+<div id="footer-info">
+  <div id="footer-links">
+    <%= link_to('História', profile.articles.find_by_slug('historia').url) %>
+    <%= link_to('Notícias', profile.articles.find_by_slug('noticias').url) %>
+    <%= link_to(_('Vitrine'), profile.public_profile_url.merge(:controller => 'catalog', :action => 'index')) %>
+    <%= link_to(_('Eventos'), profile.public_profile_url.merge(:controller => 'events', :action => 'events')) %>
+  </div><!-- end id="footer-links" -->
+  <div id="copyright">
+    <p><%= "Este site utiliza o software livre %s, desenvolvido pela %s e licenciado sob a %s, versão 3 ou superior." % [ link_to('Noosfero', 'http://noosfero.org'),  link_to('Colivre', 'http://colivre.coop.br/'), link_to('GNU Affero General Public License', 'http://www.gnu.org/licenses/agpl.html')] %></p>
+  </div><!-- end id="copyright" -->
+  <div id="footer-parceiros">
+    <h2>Parceiros</h2>
+    <a class='partner' href="#"><span>Parceiro 1</span></a>
+    <a class='partner' href="#"><span>Parceiro 2</span></a>
+  </div><!-- end id="footer-parceiros" -->
+</div><!-- end id="footer-info" -->

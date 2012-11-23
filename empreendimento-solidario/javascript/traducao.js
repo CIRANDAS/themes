@@ -1,0 +1,1 @@
+../../ecosol/javascript/traducao.js

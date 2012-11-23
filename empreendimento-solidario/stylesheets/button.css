@@ -1,0 +1,16 @@
+body.noosfero #content a.button,
+body.noosfero #content a.button:visited,
+body.noosfero #content input.button {
+  border: 1px solid #AB8;
+  background-color: #DCE2C9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  color: black;
+}
+
+body.noosfero #content a.button:hover,
+body.noosfero #content input.button:hover {
+  border: 1px solid #684;
+  background-color: #AFC186;
+  color: #240;
+}

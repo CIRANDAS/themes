@@ -1,0 +1,9 @@
+.products-block li a {
+  background-color: #CDA;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.products-block li a:hover {
+  background-color: #795;
+}

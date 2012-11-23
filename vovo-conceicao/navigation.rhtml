@@ -1,0 +1,4 @@
+<li class="menu first-item"><%= link_to('História', profile.articles.find_by_slug('historia').url) %></li>
+<li class="menu"><%= link_to('Notícias', profile.articles.find_by_slug('noticias').url) %></li>
+<li class="menu"><%= link_to(_('Vitrine'), profile.public_profile_url.merge(:controller => 'catalog', :action => 'index')) %></li>
+<li class="menu last-item"><%= link_to(_('Eventos'), profile.public_profile_url.merge(:controller => 'events', :action => 'events')) %></li>

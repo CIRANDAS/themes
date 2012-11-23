@@ -1,0 +1,4 @@
+.controller-memberships #memberships-index li {
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+}

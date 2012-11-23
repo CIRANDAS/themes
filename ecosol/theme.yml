@@ -1,0 +1,5 @@
+name: "EcoSol"
+description: "O tema para o ambiente da Economia Solidária"
+js: [ traducao, menu ]
+jquery_theme: "sunny-mod"
+icon_theme: [default]

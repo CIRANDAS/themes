@@ -1,0 +1,317 @@
+@import url(../base/style.css);
+
+/* Base */
+
+body {
+   background: url(images/background.png);
+}
+
+#content {
+  margin-top: 295px;
+}
+
+#user {
+  top: -43px;
+}
+
+#wrap-1 {
+  position: relative;
+  width: 100%;
+}
+
+#wrap-2 {
+  border-top-left-radius:20px;
+  border-top-right-radius:20px;
+  -moz-border-top-left-radius:20px;
+  -moz-border-top-right-radius:20px;
+  -webkit-border-top-left-radius:20px;
+  -webkit-border-top-right-radius:20px;
+  border-color: transparent;
+  border-bottom: 0;
+  width: 938px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding-top: 0;
+}
+
+/* Header */
+
+#theme-header {
+  height: 27px;
+  background: #cceaf4;
+  box-shadow: 0px 2px 6px black;
+  -moz-box-shadow: 0px 2px 6px black;
+  -webkit-box-shadow: 0px 2px 6px black;
+}
+
+#cirandas-logo {
+	margin: 0px;
+	padding: 0px;
+}
+
+#cirandas-logo a {
+  float: left;
+	display: block;
+	height: 22px;
+	width: 116px;
+	background: url(images/cirandas-logo.png) 50% 50% no-repeat;
+  margin-left: 160px;
+  margin-top: 3px;
+}
+
+#cirandas-logo span {
+	display: none;
+}
+
+/* Site Title */
+
+#site-title {
+  background: url(images/site-title.png);
+  height: 241px;
+  width: 163px;
+  margin-left: 23px;
+  margin-top: 15px;
+}
+
+/* Navigation */
+
+#navigation {
+  background: none;
+  font-family: 'JustAnotherHand';
+}
+
+#navigation ul {
+  margin: -25px -14px 0 0;
+}
+
+#navigation li {
+  width: auto;
+  margin: 0 35px;
+}
+
+#navigation li a {
+  float: left;
+  font-size: 42px;
+  border-left: none;
+  color: #d53223;
+}
+
+#navigation li a:hover {
+  background: none;
+  text-decoration: underline;
+  margin: auto;
+  color: #d53223;
+}
+
+#navigation li + li a {
+  color: #0093dd;
+}
+
+#navigation li + li + li a {
+  color: #009548;
+}
+
+#navigation li + li + li + li a {
+  color: #d92960;
+}
+
+#navigation li + li + li + li + li a {
+  color: #e89022;
+}
+
+#navigation li + li a:hover {
+  color: #0093dd;
+}
+
+#navigation li + li + li a:hover {
+  color: #009548;
+}
+
+#navigation li + li + li + li a:hover {
+  color: #d92960;
+}
+
+#navigation li + li + li + li + li a:hover {
+  color: #e89022;
+}
+
+/* Link List Block */
+
+#content .box .link-list-block {
+  border: none;
+  padding: 0px;
+}
+
+#content .link-list-block li a {
+  margin: 15px 0;
+}
+
+#content .link-list-block li a {
+  background: #e78f21;
+  color: white;
+  font-family: 'JustAnotherHand';
+  font-size: 35px;
+  height: 45px;
+  line-height: 54px;
+  overflow: hidden;
+  padding-left: 15px;
+}
+
+#content .link-list-block li a.link-this-page {
+  background: #931822;
+  width: auto;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-right: none;
+}
+
+#content .link-list-block li a.link-this-page:hover {
+  border-right: none;
+}
+
+/* Highlights Block*/
+#content .highlights-block {
+  height: auto;
+  margin-bottom: 0;
+  position: absolute;
+}
+
+#content .highlights-container {
+  position: absolute;
+  margin-top: -236px;
+  height: 200px !important;
+  width: 730px !important;
+  background: none;
+  border: none;
+}
+
+#content #box-organizer .highlights-block {
+  outline: none;
+  margin-bottom: 80px;
+  margin-top: -100px;
+}
+
+#content #box-organizer .highlights-container {
+  margin-top: -203px;
+}
+/* Content */
+
+#content .main-block h1, #not-found h1, #access-denied h1 {
+  border-bottom: none;
+  color:  #e78f21;
+  font-family: 'JustAnotherHand';
+  font-size: 25px;
+  font-variant: normal;
+}
+
+#content .blog-post .title a {
+  color: #931822;
+}
+
+.blog-post.first {
+  background: none;
+}
+
+#content .block-title {
+  color:  #e78f21;
+  border-bottom: none;
+  font-family: 'JustAnotherHand';
+  font-size: 20px;
+  font-variant: normal;
+}
+
+#content .comments h3,
+.post_comment_box.opened h4 {
+  border: none;
+  color:  #e78f21;
+  font-family: 'JustAnotherHand';
+  font-size: 18px;
+  font-variant: normal;
+}
+
+/* Footer */
+
+#theme-footer {
+  background: #931822 url(images/footer-top.png) repeat-x;
+  height: 175px;
+  margin-bottom: 0;
+}
+
+#footer-logo {
+  width: 85px;
+  height: 125px;
+  background: url(images/footer-logo.png);
+  float: left;
+  margin: 35px 30px 0 25px;
+}
+
+#footer-info {
+  float: left;
+}
+
+#footer-links {
+  margin: 35px 0 0;
+  float: none;
+}
+
+#footer-links a {
+  color: #d27577;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#footer-links a:hover {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.footer-links-separator {
+  margin: 0 40px;
+}
+
+#copyright {
+  width: 640px;
+  text-align: left;
+  color: #d27577;
+  margin-top:89px;
+}
+
+#copyright a {
+  color: #d27577;
+  text-decoration: underline;
+}
+
+#copyright a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Main Wrappers */
+
+#main-content-wrapper-1,
+#main-content-wrapper-2, 
+#main-content-wrapper-3, 
+#main-content-wrapper-4, 
+#main-content-wrapper-5, 
+#main-content-wrapper-6, 
+#main-content-wrapper-7, 
+#main-content-wrapper-8 { 
+  background: none;
+}
+
+/* Fonts */
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on August 5, 2011 */
+@font-face {
+    font-family: 'JustAnotherHand';
+    src: url('fonts/justanotherhand-webfont.eot');
+    src: url('fonts/justanotherhand-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/justanotherhand-webfont.woff') format('woff'),
+         url('fonts/justanotherhand-webfont.ttf') format('truetype'),
+         url('fonts/justanotherhand-webfont.svg#JustAnotherHandRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

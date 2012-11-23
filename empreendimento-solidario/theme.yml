@@ -1,0 +1,9 @@
+--- 
+name: "Empreendimento Solid\xC3\xA1rio"
+public: false
+id: empreendimento-solidario
+owner_id: 14
+owner_type: Profile
+js: [ traducao, menu ]
+jquery_theme: "sunny-mod"
+icon_theme: [default]

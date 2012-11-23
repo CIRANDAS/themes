@@ -1,0 +1,460 @@
+@import url(../base/style.css);
+
+/* Default */
+
+#site-title img {
+  left:-22px;
+  position:absolute;
+  top:-30px;
+}
+
+#title-bar {
+  background-color: gray;
+}
+#buddy-list .toolbar {
+  background-color: gray;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+#title-bar h1 {
+  color: white;
+}
+#chat-window {
+  background: white;
+}
+#buddy-list #environment-logo {
+  background-color: #BBB;
+}
+
+/* Globals */
+
+html {
+  background: #204f22 url(images/footer.png) center top repeat-y;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background: transparent url(images/bg.png) left top repeat;
+}
+
+/* Containers */
+
+#wrap-1 {
+  width: 100%;
+	margin: 0;
+  background: transparent url(images/header_bg.png) top left repeat-x;
+}
+
+#wrap-2 {
+  width: 960px;
+	margin: 0 auto;
+	background: transparent;
+  border-color: transparent;
+}
+
+/* Header */
+
+#theme-header {
+  display: none;
+}
+
+#site-title span {
+  display: none;
+}
+
+#site-title,
+#site-title a {
+  width: 212px;
+	height: 94px;
+}
+
+#site-title {
+  left: 40px;
+	top: 30px;
+}
+
+#site-title a {
+  left: 0;
+  top: 0;
+	background: transparent url(images/logo.png) center center no-repeat;
+}
+
+#navigation {
+  position: absolute;
+	background: transparent url(images/top_photo.png) center center no-repeat;
+	width: 418px;
+	height: 147px;
+	top: -2px;
+	right: 40px;
+}
+
+#navigation-end {
+  display: none;
+}
+
+/* User bar */
+
+#user {
+  right: 465px;
+	top: 12px;
+}
+
+#user form {
+  display: block;
+}
+
+#user .admin-link,
+#user #manage-enterprises,
+#user #controlpanel,
+#user #logout {
+  display: block;
+	padding: 2px 0;
+}
+
+#user a i {
+  display: none;
+}
+
+#user a strong {
+  font-weight: normal;
+}
+
+/* Content */
+
+#content {
+  margin-top: 133px;
+  width: 960px;
+  background: transparent url(images/content_bg.png) center top repeat-y;
+  padding-top: 15px;
+}
+
+#main-content-wrapper-1,
+#main-content-wrapper-2,
+#main-content-wrapper-3,
+#main-content-wrapper-4,
+#main-content-wrapper-5,
+#main-content-wrapper-6,
+#main-content-wrapper-7,
+#main-content-wrapper-8 {
+  background: transparent;
+}
+
+.main-block {
+  background: transparent url(images/main_block_middle.png) center center repeat-y;
+}
+
+.main-block .block-inner-1 {
+  background: transparent url(images/main_block_bottom.png) center bottom no-repeat;
+}
+
+.main-block .block-inner-2 {
+  background: transparent url(images/main_block_top.png) center top no-repeat;
+}
+
+#content .main-block h1, #not-found h1, #access-denied h1 {
+  border-bottom: 0;
+	font-variant: normal;
+  color: #FF8D00;
+	font-size: 22px;
+}
+
+/* Blocks */
+
+#content .block-title {
+  color: #857F7A;
+  border-bottom-color: transparent;
+  font-variant: normal;
+	font-size: 12px;
+}
+
+.box-2 {
+  margin-left: 5px;
+}
+
+.box-3 {
+  margin-right: 5px;
+}
+
+.box-2 .common-profile-list-block .vcard a.profile_link, .box-3 .common-profile-list-block .vcard a.profile_link {
+  height: 80px;
+  max-height: 80px;
+}
+
+#content .members-block .block-title {
+  background: transparent url(images/block_top.png) left top no-repeat;
+  height: 24px;
+  margin: 0;
+  border-bottom: 0;
+	padding-top: 20px;
+	padding-left: 6px;
+  color: #45409E;
+	font-size: 18px;
+}
+
+.members-block .common-profile-list-block {
+  background: transparent url(images/block_middle.png) left top repeat-y;
+  min-height: 10px;
+  margin: 0;
+}
+
+.members-block .block-footer-content {
+  background: transparent url(images/block_bottom.png) left top no-repeat;
+  height: 22px;
+  margin: 0;
+}
+
+#content .members-block .block-footer-content a {
+	color: #392797;
+  position: static;
+	text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+	text-decoration: underline;
+  padding: 0;
+	background: transparent;
+}
+
+#content .members-block .block-footer-content a:hover {
+	text-decoration: none;
+}
+
+#content .members-block ul {
+  margin-left: 5px;
+}
+
+.members-block .common-profile-list-block .vcard a {
+  margin: 0;
+}
+
+.members-block .common-profile-list-block .vcard .menu-submenu-trigger {
+  left: -1px;
+}
+
+#content .link-list-block li a {
+  background-color: transparent;
+	font-weight: bold;
+	font-size: 15px;
+	padding-left: 30px;
+	background-image: url(images/marker-yellow.png);
+}
+
+#content .link-list-block li + li a {
+	background-image: url(images/marker-orange.png);
+}
+
+#content .link-list-block li + li + li a {
+	background-image: url(images/marker-red.png);
+}
+
+#content .link-list-block li + li + li +li a {
+	background-image: url(images/marker-purple.png);
+}
+
+#content .link-list-block li + li + li +li + li a {
+	background-image: url(images/marker-green.png);
+}
+
+#content .link-list-block li + li + li +li + li + li a {
+	background-image: url(images/marker-greener.png);
+}
+
+#content .link-list-block li {
+  background-color: transparent;
+}
+
+/* Blog */
+
+.blog-post {
+  background: transparent url(images/scissors-line.png) center bottom no-repeat;
+  padding-bottom: 15px;
+}
+
+.blog-post.last {
+  background: transparent;
+}
+
+hr.sep-posts {
+  display: none;
+}
+
+.block .pagination a,
+.block .pagination a:hover,
+.block .pagination a:visited {
+  color: #AA6918;
+}
+
+/* Highlights block */
+
+.highlights-container {
+  border-color: transparent;
+	background-color: transparent;
+}
+
+.highlights-container,
+.highlights-image-link {
+  height: 230px !important;
+}
+
+.highlights-block {
+  background: transparent url(images/highlights-bg.png) top left no-repeat;
+	top: -16px;
+}
+
+.highlights-block .block-inner-1 {
+  background: transparent url(images/right-arrow.png) right center no-repeat;
+}
+
+.highlights-block .block-inner-2 {
+  background: transparent url(images/left-arrow.png) left center no-repeat;
+}
+
+.highlights-image-link img {
+  border: 3px solid #fff;
+	width: 280px;
+	height: 200px;
+	position: absolute;
+	right: 20px;
+	top: 0;
+}
+
+.highlights-label {
+  width: 200px;
+	height: 200px;
+	color: #000;
+	line-height: 2em;
+	position: absolute;
+	left: 30px;
+	top: 0;
+	background: transparent;
+}
+
+.highlights-block a:hover,
+.highlights-label {
+  text-decoration: none !important;
+}
+
+.highlights-block-pager {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.highlights-block-pager a {
+  display: inline-block;
+  text-indent: -5000em;
+  width: 13px;
+  height: 13px;
+	margin: 0 8px;
+	background: transparent url(images/pager-inactive.png) center center no-repeat;
+}
+
+#content .highlights-block .block-title {
+  font-size: 26px;
+  color: #B10079;
+	font-weight: bold;
+	margin: 0 20px 20px 20px;
+  padding: 16px 0 16px 0;
+  background: transparent url(images/scissors-line.png) center bottom no-repeat;
+}
+
+.highlights-block-pager a.activeSlide:visited,
+.highlights-block-pager a.activeSlide,
+.highlights-block-pager a:hover {
+  background-image: url(images/pager-current.png);
+}
+
+/* Footer */
+
+#theme-footer, #footer {
+  width: 100%;
+}
+
+#footer-inner {
+  background: transparent url(images/top_colorful_bar.png) left top repeat-x;
+	border-top: 1px solid #000;
+  width: 100%;
+}
+
+#footer-content {
+  background: transparent url(images/logo_footer.png) right top no-repeat;
+	text-align: right;
+  width: 900px;
+	margin: 0 auto;
+	padding: 0;
+	margin-top: 30px;
+}
+
+#footer-content p {
+  margin-right: 110px;
+	line-height: 1.7em;
+}
+
+#footer {
+  background: #204f22 url(images/footer.png) center top repeat-y;
+  font-size: 11px;
+  color: #fff;
+}
+
+#footer a, #footer a:hover, #footer a:visited {
+  padding-right: 30px;
+  margin-right: 30px;
+	border-right: 1px solid #fff;
+	font-weight: bold;
+  font-size: 12px;
+  color: #fff;
+}
+
+#footer a#last-footer-link {
+  border: 0;
+  padding-right: 0;
+	margin-right: 0;
+}
+
+/* IE */
+
+.msie .highlights-block * {
+  background-color: transparent !important;
+}
+
+.msie7 #content {
+  top: 133px !important;
+	position: relative;
+  padding-top: 0;
+}
+
+.msie7 #footer {
+  position: relative;
+  margin-top: 133px;
+}
+
+.msie7 .highlights-block,
+.msie7 .highlights-block .block-inner-2,
+.msie7 .highlights-block .block-inner-1,
+.msie7 .highlights-border,
+.msie7 #content #box-1 .highlights-block {
+  overflow: visible !important;
+}
+
+.msie7 .highlights-block-pager a {
+  display: block;
+	float: left;
+}
+
+.msie7 .highlights-block-pager {
+  width: 116px;
+	margin: 0 auto;
+  height: auto !important;
+	overflow: visible !important;
+  float: none;
+	clear: left;
+  margin-bottom: 30px;
+}
+
+.msie7 .main-block {
+  clear: both;
+}
+
+.msie7 #user #logout {
+  margin-bottom: -20px;
+}

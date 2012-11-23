@@ -1,0 +1,36 @@
+
+.controller-tasks #content .task-list li {
+  margin: 10px 20px 10px 10px;
+  padding: 0px 10px;
+  list-style: none;
+  border: 1px solid #3465A4;
+  background: #B8CFE7;
+}
+
+.controller-tasks .task-AddFriend h2 {
+  text-align: center;
+}
+
+.controller-tasks .task-AddFriend img {
+  position: relative; /* msie sux */
+  float: left;
+  margin-right: 10px;
+}
+
+.controller-tasks .task-AddFriend form {
+  margin: 5px 0px;
+}
+
+.controller-tasks .friend-classify-suggestions {
+  font-size: 10px;
+}
+
+.controller-tasks .task-AddFriend .submit {
+  position: relative;
+  top: -5px;
+  float: right;
+}
+.controller-tasks .msie .task-AddFriend .submit {
+  top: -10px;
+}
+

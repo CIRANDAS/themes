@@ -1,0 +1,35 @@
+<div id="onde">
+Hotel Fiesta - Salvador/BA || 18 e 19 de Outubro de 2012
+</div>
+
+<div id="logos">
+  <span>Realização:</span>
+  <a href="/bahiacooperativo2012/oceb-sescoopba" id="oceb" class="footer-logo"><span>OCEB</span></a>
+  <!-- span>Apoio:</span -->
+  <a href="/bahiacooperativo2012/oceb-sescoopba" id="sescoop" class="footer-logo"><span>SESCOOP-BA</span></a>
+  <a href=/bahiacooperativo2012/ano-2012"" id="ano2012" class="footer-logo"><span>2012 - Ano Internacional das Cooperativas</span></a>
+</div>
+
+<div id="hospedagem">
+Site hospedado na rede <a href="http://cirandas.net">cirandas.net</a> de economia solidária.
+</div>
+
+<script>
+
+  jQuery('#user').appendTo(document.body);
+
+  function atualizaTituloEntrada() {
+    if ( jQuery('#article-header h1').length != 0 ) {
+      jQuery('#article-header h1').html(
+        'II Encontro <br> Estadual de <br> Cooperativas Baianas '+
+        '<small>O Cooperativismo no desenvolvimento do Estado</small>'
+      );
+    } else {
+      setTimeout( atualizaTituloEntrada, 200 );
+    }
+  }
+  if ( /profile-homepage/.test(document.body.className) ) {
+    atualizaTituloEntrada();
+  }
+
+</script>
