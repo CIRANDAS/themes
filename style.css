@@ -143,8 +143,9 @@ body.template-leftbar .box-1 {
 
 #user form {
   position: absolute;
-  right: 349px;
+  right: 352px;
   top: 30px;
+  margin: 0;
 }
 
 #user form input {
@@ -238,16 +239,13 @@ body.template-leftbar .box-1 {
 
 /* Help */
 
-#navigation #header-help a { 
+#navigation .header-icon a { 
   display: block;
   position: absolute;
-  width: 40px;
-  right: -5px;
   top: -47px;
   padding-top: 30px;
   margin-right: 30px;
   text-align: center;
-  background: transparent url(images/help.png) top center no-repeat;
   font-size: 11px;
   color: #1FA1D0;
   text-decoration: none;
@@ -257,10 +255,23 @@ body.template-leftbar .box-1 {
   border: 0;
 }
 
-#navigation #header-help a:hover {
+#navigation .header-icon a:hover {
   text-decoration: underline;
   background-color: transparent;
+  color: #1FA1D0;
 }
+
+#navigation #header-feedback a {
+  background: transparent url(images/audio-input-microphone.png) top center no-repeat;
+  width: 80px;
+  right: 39px;
+}
+#navigation #header-help a {
+  background: transparent url(images/help.png) top center no-repeat;
+  width: 40px;
+  right: -5px;
+}
+
 
 /* Categories Menu */
 
@@ -399,8 +410,9 @@ body.template-leftbar .box-1 {
 #navigation {
   height: 60px;
   top: 70px;
-  right: 10px;
+  left: 225px;
   background: transparent;
+  width:722px
 }
 
 #navigation ul {
@@ -408,6 +420,7 @@ body.template-leftbar .box-1 {
   padding-top: 10px;
   height: auto;
   border-top: 1px dotted #71b5d8;
+  float: left;
 }
 
 #navigation span {
@@ -433,7 +446,7 @@ body.template-leftbar .box-1 {
 
 #navigation li {
   width: auto;
-  padding: 0 16px;
+  padding: 0 12px;
 }
 
 #navigation-end {
@@ -442,13 +455,16 @@ body.template-leftbar .box-1 {
 
 #navigation li .menu-submenu-trigger {
   top: 19px;
-  left: 16px;
+  left: 12px;
   height: 9px;
   background-color: #b1dfef;
   border-color: #b1dfef;
   background-image: url(images/submenu.png);
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
+}
+#navigation li.navigation-contents .menu-submenu-trigger {
+  left:0;
 }
 
 #navigation li .menu-submenu-trigger:hover,
@@ -557,6 +573,7 @@ body.template-leftbar .box-1 {
   margin-top: 130px;
   border-top: 40px solid #1FA1D0;
   padding-top: 30px;
+  min-height: 500px;
 }
 
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
@@ -585,6 +602,10 @@ body.template-leftbar .box-1 {
   overflow: hidden;
   top: 128px;
   left: 230px;
+}
+#content h1.page-title small {
+  margin-left: 15px;
+  font-size: 17px;
 }
 
 #content h1.page-title.no-boxes {
@@ -618,7 +639,11 @@ body.template-leftbar .box-1 {
 #main-content-wrapper-7,
 #main-content-wrapper-8 {
   background: transparent;
-  padding-top: 0;
+  padding: 0;
+}
+
+#search-input {
+  width: 561px;
 }
 
 #content .product-cat-icon {
@@ -764,18 +789,18 @@ body.template-leftbar .box-1 {
 }
 
 #content .profile-list li a,
-#content .common-profile-list-block li a {
+#content .common-profile-list-block .vcard li a {
   color: #036276;
   font-size: 10px;
 }
 
 #content .profile-list li a .fn,
-#content .common-profile-list-block li a .fn {
+#content .common-profile-list-block .vcard li a .fn {
   text-decoration: underline;
 }
 
 #content .profile-list li a:hover,
-#content .common-profile-list-block li a:hover {
+#content .common-profile-list-block .vcard li a:hover {
   text-decoration: none;
 }
 
@@ -875,6 +900,25 @@ body.template-leftbar .box-1 {
   border: 1px solid #000;
   background: #fff;
   padding: 3px 0;
+}
+
+.formfield input, .formfield textarea {
+  background: white;
+  border: 1px solid #999;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+.formfield textarea {
+  padding: 3px 6px;
+  margin: 0;
+}
+.formfield input {
+  padding: 2px 1px;
+}
+.with_media_panel textarea {
+  width: 100%;
 }
 
 .profile_link span {
@@ -1172,50 +1216,22 @@ body.template-leftbar .box-1 {
   text-decoration: none;
 }
 
-.search-results-type-article.search-results-innerbox {
-  overflow: auto;
-}
-
 .controller-search #content .map-toggle-button {
   margin-top: 0;
 }
 
-#content .only-one-result-box .search-results-enterprises li.vcard {
-  margin: 4.5px;
-}
-
 .search-results-type-article a {
-  height: 16px;
+  min-height: 16px;
+  height: auto;
   overflow: hidden;
 }
 
-.controller-search .search-results-innerbox.common-profile-list-block {
-  padding: 5px;
-}
-
-#content .common-profile-list-block .search-results-innerbox2 li.vcard {
-  height: 105px;
-  margin-left: 4.5px;
-  margin-right: 4.5px;
-}
-
-#content .browse-results-innerbox {
-  padding: 2px;
-  padding-left: 3px;
-}
-
-.browse-results-innerbox ul {
-  margin: 0;
-}
-
-.action-profile-members .menu-submenu,
-.browse-results-innerbox .menu-submenu {
+.action-profile-members .menu-submenu {
   bottom: 117px;
   right: -27px;
 }
 
-.action-profile-members .menu-submenu-footer,
-.browse-results-innerbox .menu-submenu-footer {
+.action-profile-members .menu-submenu-footer {
   background-position: 109px center;
 }
 
@@ -1232,13 +1248,15 @@ body.template-leftbar .box-1 {
   background-color: transparent;
 }
 
+.controller-search a {
+  color: #5694A0;
+}
+
 .controller-search #search-results h3 {
   margin: 0;
 }
 
 .action-profile-members .main-block .common-profile-list-block .vcard .menu-submenu-trigger,
-.browse-results-innerbox .vcard .menu-submenu-trigger,
-.browse-results-innerbox .menu-submenu-trigger,
 .search-results-innerbox.common-profile-list-block .vcard .menu-submenu-trigger,
 .search-results-innerbox .menu-submenu-trigger {
   left: 77px;
@@ -1267,7 +1285,7 @@ body.template-leftbar .box-1 {
   overflow: hidden;
 }
 
-#content #search-results .common-profile-list-block li a.profile_link {
+#content #search-results .common-profile-list-block .vcard a.profile_link {
   height: 103px;
   overflow: hidden;
 }
@@ -1296,32 +1314,32 @@ body.template-leftbar .box-1 {
 /* Chat {{{ */
 
 #title-bar {
-   background-color: #1FA1D0;
+  background-color: #1FA1D0;
 }
 
 #buddy-list .toolbar {
-   background-color: #036276;
+  background-color: #036276;
 }
 
 #user-status .simplemenu-trigger {
-   color: white;
+  color: white;
 }
 
 #buddy-list #environment-logo {
-   background-color: white;
+  background-color: white;
 }
 
 #chat .small-loading-dark {
   /* thanks http://www.loadinfo.net for loading gif generator */
-   background-image: url(images/loading-small.gif);
+  background-image: url(images/loading-small.gif);
 }
 
 #buddy-list {
-   background-image: url(images/bg-bw.png);
+  background-image: url(images/bg-bw.png);
 }
 
 #buddy-list .buddy-list li a {
-   color: black;
+  color: black;
 }
 
 /* }}} */
@@ -1370,8 +1388,6 @@ body.template-leftbar .box-1 {
 }
 
 .msie7 .action-profile-members .common-profile-list-block .vcard .menu-submenu-trigger,
-.msie7 .browse-results-innerbox .vcard .menu-submenu-trigger,
-.msie7 .browse-results-innerbox .menu-submenu-trigger,
 .msie7 .search-results-innerbox.common-profile-list-block .vcard .menu-submenu-trigger,
 .msie7 .search-results-innerbox .menu-submenu-trigger {
   left: 73px;
