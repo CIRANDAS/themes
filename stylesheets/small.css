@@ -48,9 +48,18 @@
 }
 
 #tb-middle {
-  width: 560px;
+  width: 520px;
   margin: 0 auto;
 }
+#tb-search {
+  position: absolute;
+  top: 4px;
+  width: 150px;
+}
+#tb-search form input {
+  width: 150px;
+}
+
 #navigation {
   width: 100%;
   position: inherit;
@@ -71,13 +80,13 @@
   height: 30px;
 }
 #navigation .header-icon {
-  width: 21px;
-  height: 21px;
+  width: 18px;
+  height: 19px;
 }
 #navigation .header-icon a {
   border: none;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 19px;
 }
 #navigation li .menu-submenu-trigger {
   height: 4px;
