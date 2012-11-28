@@ -2,10 +2,9 @@
   <%= link_to '', environment.top_url, :id => 'tb-logo' %>
 
   <div id='tb-middle'>
-    <li id="header-help" class="header-icon"><a href="/ajuda"></a></li>
-    <li id="header-search" class="header-icon"><a href="#"></a></li>
-    <div id='tb-search'>
-    </div>
+    <form id='tb-search' action="/search" method="get" style="display: none">
+      <input name="query" size="15" />
+    </form>
   </div>
 </div>
 
@@ -13,8 +12,5 @@
   jQuery(function($) {
     $('#user').appendTo('#cirandas-top-bar');
     $('#navigation').prependTo('#tb-middle');
-
-    $('.header-icon').appendTo('#navigation ul');
-    alignMenuItems($('#navigation ul'));
   });
 </script>

@@ -63,7 +63,7 @@ a {
 }
 
 .menu-submenu-footer {
-	background-image: url('images/balloon-green.png');
+	background-image: url('../images/balloon-green.png');
 }
 
 #content .menu-submenu h4 {
@@ -82,7 +82,7 @@ a {
 /* Block */
 
 .highlights-label {
-	background-image: url(images/green-alpha-pixel.png);
+	background-image: url(../images/green-alpha-pixel.png);
 }
 
 .highlights-block-pager a.activeSlide:visited, .highlights-block-pager a.activeSlide {
