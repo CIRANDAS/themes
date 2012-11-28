@@ -43,8 +43,10 @@ body p {
 #wrap-2 {
   padding: 40px;
   padding-top: 0;
-  border-color: transparent;
   background: transparent;
+  border-color: transparent;
+  border: none;
+  border-top: 1px solid #D3D7CF;
 }
 
 .box-2,
@@ -82,7 +84,7 @@ body.template-leftbar .box-1 {
 /* Header */
 
 #site-title {
-  background: transparent url(images/logo-small.png) center left no-repeat;
+  background: transparent url(images/logo.png) center left no-repeat;
   height: 130px;
   width: 214px;
   top: 0;
@@ -105,6 +107,72 @@ body.template-leftbar .box-1 {
   display: none;
 }
 
+/* Page title */
+
+#content {
+  padding-top: 21px;
+  min-height: 500px;
+}
+
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+  font-weight: lighter;
+}
+
+#content h1 { font-size: 24px; }
+#content h2 { font-size: 18px; margin-top: 0; }
+#content h3 { font-size: 15px; }
+#content h4 { font-size: 12px; }
+#content h5 { font-size: 11px; }
+#content h6 { font-size: 10px; }
+
+#content h1.page-title {
+  color: white;
+  background: #1FA1D0;
+  display: block;
+  font-variant: normal;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: lighter;
+  height: 30px;
+  padding: 5px 0 5px 244px;
+  overflow: hidden;
+  text-align: left;
+}
+#content h1.page-title small {
+  margin-left: 15px;
+  font-size: 17px;
+}
+
+#content span.page-title {
+  font-size: 12px;
+  font-style: italic;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 127px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+#content .main-block h1, #not-found h1, #access-denied h1 {
+  font-variant: normal;
+  font-weight: lighter;
+  color: #036276;
+  border: 0;
+}
+
+#main-content-wrapper-1,
+#main-content-wrapper-2,
+#main-content-wrapper-3,
+#main-content-wrapper-4,
+#main-content-wrapper-5,
+#main-content-wrapper-6,
+#main-content-wrapper-7,
+#main-content-wrapper-8 {
+  background: transparent;
+  padding: 0;
+}
+
 /* User menu */
 
 .msie8 #user .not-logged-in a i {
@@ -122,10 +190,6 @@ body.template-leftbar .box-1 {
   padding: 2px 0 2px 5px;
   background: #fff;
   margin-right: 30px;
-}
-
-#user:hover {
-  background: #fff url(images/yellow.png) left top repeat-x;
 }
 
 #user a {
@@ -222,6 +286,7 @@ body.template-leftbar .box-1 {
 }
 
 #manage-enterprises {
+  width: 100%;
   margin: 0;
 }
 #manage-enterprises ul {
@@ -239,7 +304,7 @@ body.template-leftbar .box-1 {
 
 /* Help */
 
-#navigation .header-icon a { 
+.header-icon a { 
   display: block;
   position: absolute;
   top: -47px;
@@ -254,19 +319,19 @@ body.template-leftbar .box-1 {
   text-transform: none;
   border: 0;
 }
-
-#navigation .header-icon a:hover {
-  text-decoration: underline;
-  background-color: transparent;
-  color: #1FA1D0;
+#navigation .header-icon a:hover,
+.header-icon a:hover {
+  color: inherit;
 }
 
-#navigation #header-feedback a {
+#header-feedback a,
+#header-feedback a:hover {
   background: transparent url(images/audio-input-microphone.png) top center no-repeat;
   width: 80px;
   right: 39px;
 }
-#navigation #header-help a {
+#header-help a,
+#header-help a:hover {
   background: transparent url(images/help.png) top center no-repeat;
   width: 40px;
   right: -5px;
@@ -421,6 +486,8 @@ body.template-leftbar .box-1 {
   height: auto;
   border-top: 1px dotted #71b5d8;
   float: left;
+  display: block;
+  width: 100%;
 }
 
 #navigation span {
@@ -446,7 +513,6 @@ body.template-leftbar .box-1 {
 
 #navigation li {
   width: auto;
-  padding: 0 12px;
 }
 
 #navigation-end {
@@ -455,7 +521,6 @@ body.template-leftbar .box-1 {
 
 #navigation li .menu-submenu-trigger {
   top: 19px;
-  left: 12px;
   height: 9px;
   background-color: #b1dfef;
   border-color: #b1dfef;
@@ -569,83 +634,6 @@ body.template-leftbar .box-1 {
   padding: 0;
 }
 
-#content {
-  margin-top: 130px;
-  border-top: 40px solid #1FA1D0;
-  padding-top: 30px;
-  min-height: 500px;
-}
-
-#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
-  font-weight: lighter;
-}
-
-#content h1 { font-size: 24px; }
-#content h2 { font-size: 18px; margin-top: 0; }
-#content h3 { font-size: 15px; }
-#content h4 { font-size: 12px; }
-#content h5 { font-size: 11px; }
-#content h6 { font-size: 10px; }
-
-#content h1.page-title {
-  position: absolute;
-  color: #fff;
-  border-bottom: 0;
-  background: transparent;
-  display: block;
-  font-variant: normal;
-  font-size: 24px;
-  margin: 0;
-  padding: 6px 0;
-  font-weight: lighter;
-  height: 30px;
-  overflow: hidden;
-  top: 128px;
-  left: 230px;
-}
-#content h1.page-title small {
-  margin-left: 15px;
-  font-size: 17px;
-}
-
-#content h1.page-title.no-boxes {
-  left: 20px;
-}
-
-#content span.page-title {
-  font-size: 12px;
-  font-style: italic;
-  display: block;
-  position: absolute;
-  right: 10px;
-  top: 127px;
-  color: #fff;
-  opacity: 0.7;
-}
-
-#content .main-block h1, #not-found h1, #access-denied h1 {
-  font-variant: normal;
-  font-weight: lighter;
-  color: #036276;
-  border: 0;
-}
-
-#main-content-wrapper-1,
-#main-content-wrapper-2,
-#main-content-wrapper-3,
-#main-content-wrapper-4,
-#main-content-wrapper-5,
-#main-content-wrapper-6,
-#main-content-wrapper-7,
-#main-content-wrapper-8 {
-  background: transparent;
-  padding: 0;
-}
-
-#search-input {
-  width: 561px;
-}
-
 #content .product-cat-icon {
   display: none;
 }
@@ -693,11 +681,11 @@ body.template-leftbar .box-1 {
 }
 
 .menu-submenu-header {
-  background: transparent
+  background: transparent;
 }
 
 .menu-submenu-footer {
-  background: transparent url(images/balloon.png) 92px top no-repeat;
+  background: transparent url(images/balloon-blue.png) 92px top no-repeat;
   height: 6px;
 }
 
@@ -1244,6 +1232,10 @@ body.template-leftbar .box-1 {
   display: none;
 }
 
+#search-input {
+  width: 561px;
+}
+
 #search-results li:hover {
   background-color: transparent;
 }
@@ -1346,7 +1338,7 @@ body.template-leftbar .box-1 {
 
 /* IE Fixes */
 
-.msie7 #navigation #header-help a {
+.msie7 #header-help a {
   top: -55px;
 }
 

@@ -1,0 +1,20 @@
+<div id='cirandas-top-bar'>
+  <%= link_to '', environment.top_url, :id => 'tb-logo' %>
+
+  <div id='tb-middle'>
+    <li id="header-help" class="header-icon"><a href="/ajuda"></a></li>
+    <li id="header-search" class="header-icon"><a href="#"></a></li>
+    <div id='tb-search'>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  jQuery(function($) {
+    $('#user').appendTo('#cirandas-top-bar');
+    $('#navigation').prependTo('#tb-middle');
+
+    $('.header-icon').appendTo('#navigation ul');
+    alignMenuItems($('#navigation ul'));
+  });
+</script>
