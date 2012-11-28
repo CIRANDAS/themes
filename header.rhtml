@@ -8,9 +8,15 @@
   <% end %>
 </div>
 
+<div id="header-help" class="header-icon"><a href="/ajuda">Ajuda</a></div>
+
 <script type="text/javascript">
   jQuery(function() {
     var menus = '#category1, #category2, #category3';
+
+    // Split categories top menu in two
+    jQuery('#cat_menu ul').makeacolumnlists({ cols : 2, colWidth : 127, equalHeight : true, startN : 1 });
+
     jQuery(menus).click(function() {
       jQuery(this).siblings(menus).removeClass('category-menu-clicked');
       jQuery('.li_container:visible').hide('slide', { 'direction' : 'up' }, 'slow');
@@ -20,6 +26,7 @@
       if (jQuery(this).hasClass('category-menu-clicked') && jQuery(this).attr('id') == 'category1')
         jQuery('#cat_menu').css('-moz-border-radius-bottomleft', '0');
     });
+
     jQuery('body').click(function() {
       jQuery('.li_container:visible').hide('slide', { 'direction' : 'up' }, 'slow');
       jQuery('#cat_menu').css('-moz-border-radius-bottomleft', '3px');
