@@ -125,6 +125,11 @@ body.template-leftbar .box-1 {
 #content h5 { font-size: 11px; }
 #content h6 { font-size: 10px; }
 
+/* Page title */
+
+#content.distribution-enabled h1.page-title {
+  display: none;
+}
 #content h1.page-title {
   color: white;
   background: #1FA1D0;

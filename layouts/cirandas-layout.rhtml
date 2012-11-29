@@ -90,7 +90,13 @@
           <div id="navigation-end"></div>
         </div><!-- end id="navigation" -->
 
-        <div id="content" class="<%= controller.send(:content_classes) rescue '' %>">
+        <% extend DistributionPlugin::DistributionLayoutHelper %>
+        <% load_node %>
+        <% content_classes = controller.send(:content_classes) rescue '' %>
+        <% content_classes += ' distribution-enabled' if @node.enabled? %>
+
+        <div id="content" class="<%= content_classes %>">
+          <%= render_header %>
           <%= controller.send(:before_contents) rescue '' %>
 
           <div id="content-inner">
