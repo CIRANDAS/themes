@@ -42,7 +42,10 @@
 }
 #user .logged-in a,
 #user .logged-in > span {
-  padding: 2px 0 2px 5px;
+  padding: 2px 0 2px 8px;
+}
+#user .not-logged-in {
+  padding-left: 8px;
 }
 #user form {
   display: none;

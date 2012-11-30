@@ -93,7 +93,7 @@
         <% extend DistributionPlugin::DistributionLayoutHelper %>
         <% load_node %>
         <% content_classes = controller.send(:content_classes) rescue '' %>
-        <% content_classes += ' distribution-enabled' if @node.enabled? %>
+        <% content_classes += ' distribution-enabled' if @node and @node.collective? %>
 
         <div id="content" class="<%= content_classes %>">
           <%= render_header %>
