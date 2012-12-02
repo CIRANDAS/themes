@@ -1,4 +1,4 @@
 name: "Cirandas"
-layout: "cirandas-layout"
+layout: "cirandas"
 jquery_theme: "smoothness_mod"
 icon_theme: [default, pidgin]

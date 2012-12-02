@@ -5,6 +5,8 @@
 <li id="navigation-communities"><%= search_communities_menu %></li>
 <li id="navigation-events"><a href="/search/events"><span>Eventos</span></a></li>
 
+<% calculate_spacing = true if !defined?(calculate_spacing) or calculate_spacing.nil? %>
+
 <script type="text/javascript">
   function alignMenuItems(ul) {
     var totEltWidth = 0;
@@ -30,7 +32,9 @@
   }
 
   jQuery(function($) {
-    alignMenuItems($('#navigation ul'));
+    <% if calculate_spacing == true %>
+      alignMenuItems($('#navigation ul'));
+    <% end %>
 
     // Adjust navigation submenu trigger width
     var contents = parseInt(jQuery('#submenu-contents').first().width());

@@ -79,9 +79,8 @@
   border: none;
   padding-top: 8px;
 }
-#navigation > li {
+#navigation li {
   padding-right: 8px;
-  height: 30px;
 }
 #navigation .header-icon {
   width: 18px;
