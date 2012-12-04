@@ -6,10 +6,6 @@ body {
   font-family: Verdana, sans-serif;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   background: url(images/bg.png);
 }
