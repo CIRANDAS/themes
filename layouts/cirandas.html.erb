@@ -34,7 +34,13 @@
       end.join("\n")
     %>
   </head>
-  <body class="<%=
+
+  <% extend DistributionPlugin::DistributionLayoutHelper %>
+  <% load_node %>
+  <% content_classes = controller.send(:content_classes) rescue '' %>
+  <% content_classes += ' distribution-enabled' if @node and @node.collective? %>
+
+  <body class="<%= content_classes +
     # Identify the current controller and action for the CSS:
     " controller-"+ @controller.controller_name() +
     " action-"+ @controller.controller_name() +"-"+ @controller.action_name() +
@@ -90,14 +96,8 @@
           <div id="navigation-end"></div>
         </div><!-- end id="navigation" -->
 
-        <% extend DistributionPlugin::DistributionLayoutHelper %>
-        <% load_node %>
-        <% content_classes = controller.send(:content_classes) rescue '' %>
-        <% content_classes += ' distribution-enabled' if @node and @node.collective? %>
-
-        <div id="content" class="<%= content_classes %>">
+        <div id="content">
           <%= render_header %>
-          <%= controller.send(:before_contents) rescue '' %>
 
           <div id="content-inner">
             <%= insert_boxes(yield) %>
