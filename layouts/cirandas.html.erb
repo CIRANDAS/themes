@@ -2,14 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<%= html_language %>" lang="<%= html_language %>">
   <head>
     <title><%= h page_title %></title>
-
     <%= yield(:feeds) %>
-
     <!--<meta http-equiv="refresh" content="1"/>-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="description" content="<%= @environment.name %>" />
     <link rel="shortcut icon" href="<%= image_path(theme_favicon) %>" type="image/x-icon" />
-
     <%= noosfero_javascript %>
     <%= stylesheet_link_tag noosfero_stylesheets, :cache => 'cache' %>
     <%= stylesheet_link_tag template_stylesheet_path %>
@@ -34,13 +31,7 @@
       end.join("\n")
     %>
   </head>
-
-  <% extend DistributionPlugin::DistributionLayoutHelper %>
-  <% load_node %>
-  <% content_classes = controller.send(:content_classes) rescue '' %>
-  <% content_classes += ' distribution-enabled' if @node and @node.collective? %>
-
-  <body class="<%= content_classes +
+  <body class="<%=
     # Identify the current controller and action for the CSS:
     " controller-"+ @controller.controller_name() +
     " action-"+ @controller.controller_name() +"-"+ @controller.action_name() +
@@ -65,18 +56,10 @@
             <%= usermenu_logged_in %>
           </span>
           <span class='not-logged-in' style='display: none'>
-
-              <%= _("<span class='login'>%s</span>") % thickbox_inline_popup_link('<i class="icon-menu-login"></i><strong>' + _('Login') + '</strong>', login_url, 'inlineLoginBox', :id => 'link_login') %>
-              <%= @plugins.dispatch(:alternative_authentication_link).collect { |content| instance_eval(&content) }.join("") %>
-
+              <%= _("<span class='login'>%s</span> <span class='or'>or</span> <span class='signup'>%s</span>") % [thickbox_inline_popup_link('<i class="icon-menu-login"></i><strong>' + _('Login') + '</strong>', login_url, 'inlineLoginBox', :id => 'link_login'), link_to('<strong>' + _('Sign up') + '</strong>', :controller => 'account', :action => 'signup') ] %>
               <div id='inlineLoginBox' style='display: none;'>
                 <%= render :file => 'account/login', :locals => { :is_thickbox => true } %>
               </div>
-
-              <% unless @plugins.dispatch(:allow_user_registration).include?(false) %>
-              <%= _("<span class='or'>or</span> <span class='signup'>%s</span>") % link_to('<strong>' + _('Sign up') + '</strong>', :controller => 'account', :action => 'signup')%>
-              <% end %>
-
           </span>
           <form action="/search" class="search_form" method="get" class="clean">
             <input name="query" size="15" title="<%=_('Search...')%>" onfocus="this.form.className='focused';" onblur="this.form.className=''" />
@@ -88,17 +71,13 @@
         <h1 id="site-title">
           <%= theme_site_title %>
         </h1>
-
         <div id="navigation">
           <ul>
             <%= theme_extra_navigation %>
           </ul>
           <div id="navigation-end"></div>
         </div><!-- end id="navigation" -->
-
         <div id="content">
-          <%= render_header %>
-
           <div id="content-inner">
             <%= insert_boxes(yield) %>
             <br style='clear: both'/>
