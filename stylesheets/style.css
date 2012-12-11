@@ -691,6 +691,17 @@ body.template-leftbar .box-1 {
   height: 6px;
 }
 
+#content .people-block ul,
+#content .profile-list-block ul,
+#content .enterprises-block ul,
+#content .members-block ul,
+#content .communities-block ul,
+#content .friends-block ul,
+#content .fans-block ul {
+  width: auto;
+  min-width: auto;
+}
+
 .common-profile-list-block .vcard .menu-submenu-trigger, .menu-submenu-trigger {
   display: block;
   left: 43px;
