@@ -35,10 +35,12 @@
     %>
   </head>
 
-  <% extend DistributionPlugin::DistributionLayoutHelper %>
-  <% load_node %>
   <% content_classes = controller.send(:content_classes) rescue '' %>
-  <% content_classes += ' distribution-enabled' if @node and @node.collective? %>
+  <% if defined?(DistributionPlugin) %>
+    <% extend DistributionPlugin::DistributionLayoutHelper %>
+    <% load_node %>
+    <% content_classes += ' distribution-enabled' if @node and @node.collective? %>
+  <% end %>
 
   <body class="<%= content_classes +
     # Identify the current controller and action for the CSS:
@@ -97,7 +99,7 @@
         </div><!-- end id="navigation" -->
 
         <div id="content">
-          <%= render_header %>
+          <%= render_header if defined?(DistributionPlugin) %>
 
           <div id="content-inner">
             <%= insert_boxes(yield) %>
