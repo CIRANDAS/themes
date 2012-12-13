@@ -67,6 +67,7 @@
 #navigation {
   width: 100%;
   position: inherit;
+  border-top: none;
 }
 #navigation a {
   line-height: 16px;
