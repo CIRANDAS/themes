@@ -103,6 +103,17 @@ body.template-leftbar .box-1 {
   display: none;
 }
 
+/* Signup */
+
+#signup-form select, #signup-form textarea, #signup-form input {
+  height: 37px;
+}
+#signup-form input[type="checkbox"] {
+  height: 20px;
+  margin: 0;
+  width: 28px;
+}
+
 /* Page title */
 
 #content {
