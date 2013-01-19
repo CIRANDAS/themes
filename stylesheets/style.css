@@ -335,17 +335,16 @@ body.template-leftbar .box-1 {
   color: inherit;
 }
 
-#header-feedback a,
-#header-feedback a:hover {
-  background: transparent url(images/audio-input-microphone.png) top center no-repeat;
-  width: 80px;
-  right: 39px;
+#header-help {
+  position: absolute;
+  top: 72px;
+  left: 683px;
+  width: 40px;
 }
 #header-help a,
 #header-help a:hover {
   background: transparent url(images/help.png) top center no-repeat;
   width: 40px;
-  right: -5px;
 }
 
 
