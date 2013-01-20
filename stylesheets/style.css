@@ -311,6 +311,7 @@ body.template-leftbar .box-1 {
   padding: 2px 0 2px 5px;
   background: #fff;
   margin-right: 30px;
+  z-index: 30;
 }
 
 #user a {
