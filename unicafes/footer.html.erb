@@ -1,0 +1,48 @@
+<div id="footer-content">
+  <p id="footer-first"></p>
+
+  <div id="footer-left">
+    <%= language_chooser %>
+    <p><a href="http://noosfero.org">Noosfero</a>, versão <%= Noosfero::VERSION %></p>
+  </div>
+
+  <div id="footer-middle">
+    <p>Veja quem são nossos <a href="http://noosfero.org/Site/SponsorsPtbr">Parceiros e apoiadores</a></p>
+  </div>
+
+  <div id="footer-right">
+    <p id="footer-fbes">Um projeto do <a href="http://www.fbes.org.br">FBES</a>, Fórum Brasileiro de Economia Solidária</p>
+  </div>
+
+</div>
+
+<div id="footer-bottom"></div>
+
+<script type="text/javascript" src="/designs/themes/cirandas/columnizer.js"></script>
+<script type="text/javascript">
+  jQuery(function($) {
+    // Hide profile footer if empty
+    jQuery('#profile-footer:empty').hide();
+
+    // Change title position
+    <% if @page && @page.profile && !@page.profile.is_a?(Enterprise) %>
+      title = jQuery('<h1><%= escape_javascript(@page.profile.short_name(53)) %></h1>');
+    <% elsif @profile.is_a?(Enterprise) %>
+      title = jQuery('<span>Empreendimento de Economia Solidária</span><h1><%= escape_javascript(@profile.short_name(53)) %></h1>');
+      jQuery('.article-body-enterprise-homepage').siblings('div').find('h1.title').remove();
+    <% else %>
+      title = jQuery('#content h1').first();
+    <% end %>
+
+    title.addClass('page-title').prependTo('#content');
+    if (jQuery('.no-boxes').length > 0) title.addClass('no-boxes');
+
+    // Add space between login button and signup link (RT#20190)
+    $('.login-block .login-box .button-bar input').after("<br/>");
+
+    // Hide trigger link 'My enterprises'
+    $('#manage-enterprises .simplemenu-trigger').remove();
+    $('#manage-enterprises ul').removeClass('simplemenu-submenu');
+    $('#manage-enterprises ul li').removeClass('simplemenu-item');
+  });
+</script>

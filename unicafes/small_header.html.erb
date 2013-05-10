@@ -1,0 +1,27 @@
+<div id='cirandas-top-bar'>
+  <%= link_to '', environment.top_url, :id => 'tb-logo' %>
+
+  <div id='tb-middle'>
+    <div id='tb-search' style="display: none">
+      <form action="/search" method="get">
+        <input name="query" size="15" placeholder="<%=_('Search...')%>" />
+      </form>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  jQuery(function($) {
+    $('#user').appendTo('#cirandas-top-bar');
+    $('#navigation').prependTo('#tb-middle');
+
+    $('#tb-search input').focusout(function () {
+      if (this.value == '')
+        $('#tb-search').toggle();
+    });
+    $('#header-search').click(function () {
+      $('#tb-search').css('left', $(this).position().left).toggle();
+      $('#tb-search input').focus();
+    });
+  });
+</script>
