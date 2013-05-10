@@ -1,0 +1,166 @@
+--- style.css	2013-04-30 17:33:48.523543736 -0300
++++ style-mod.css	2013-04-23 17:53:03.235814308 -0300
+@@ -73,16 +73,6 @@
+ #profile-wall ul {
+   width: 100%;
+ }
+-
+-#profile-header {
+-  margin-bottom: 30px;
+-}
+-
+-#profile-header p {
+-  text-align: left !important;
+-  margin-left: 20px;
+-}
+-
+ .ui-tabs .ui-tabs-panel {
+   padding: 0;
+ }
+@@ -119,7 +109,6 @@
+ /* Footer */
+ 
+ #theme-footer {
+-  font-size: 11px;
+   margin-top: 0;
+   margin-bottom: 0;
+ }
+@@ -307,7 +296,6 @@
+   background: #fff;
+   margin-right: 30px;
+   z-index: 30;
+-  display:none;
+ }
+ 
+ #user a {
+@@ -339,7 +327,6 @@
+   -webkit-border-radius: 0;
+   border-radius: 0;
+   font-style: italic;
+-  display: none;
+ }
+ 
+ #user .logged-in {
+@@ -489,7 +476,6 @@
+   width: 474px;
+   border-left: 2px solid #000;
+   -moz-border-radius-bottomleft: 3px;
+-  display: none;
+ }
+ 
+ #cat_menu li {
+@@ -957,7 +943,7 @@
+ 
+ #content .block h2,
+ #content .block-title {
+-  background-color: #e8f5fb;
++  background-color: #;
+   color: #000;
+   padding: 12px 0 4px 8px;
+   text-transform: uppercase;
+@@ -965,7 +951,6 @@
+   font-variant: normal;
+   font-size: 12px;
+   text-align: left;
+-  display: none;
+ }
+ 
+ #content .login-block .not-logged-user h2 {
+@@ -1123,22 +1108,12 @@
+   padding: 5px 0;
+ }
+ 
+-#content .link-list-block li {
+-  background: none repeat scroll 0 0 #a6de8d;
+-  border-radius: 4px 4px 4px 4px;
+-}
+-
+ #content .link-list-block li a {
+-  background: transparent;
++  background-color: #a6de8d;
+   font-size: 12px;
+-  color: #fff;
+-}
+-
+-#content .link-list-block li:hover {
+-  background-color: #217335;
+ }
+ 
+-#content .link-list-block li a:hover  {
++#content .link-list-block li a:hover {
+   background-color: #217335;
+ }
+ 
+@@ -1272,8 +1247,8 @@
+   width: 717px;
+ }
+ .controller-search #content .search-results-box a.see-more {
+-  background: #217335;
+-  border: 1px solid #217335;
++  background: #B8CFE7;
++  border: 1px solid #B8CFE7;
+ }
+ .controller-search #content .map-toggle-button {
+   margin-top: 0;
+@@ -1780,10 +1755,6 @@
+ div#article.forum #addThis {
+   display:none;
+ }
+-#addThis {
+-  position: relative;
+-  margin-left: 375px; 
+-}
+ div#article.forum {
+   background:url('images/forum-bg5.jpg') no-repeat;
+ }
+@@ -1865,49 +1836,3 @@
+   background:#EFF5FF;
+ }
+ 
+-#slideshow .rotativo img {
+-  position: absolute;
+-}
+-
+-#slideshow #titulo_materia {
+-  margin-top: -35px;
+-  width: 500px;
+-  height: 40px;
+-  opacity: 70px;
+-}
+-
+-#slideshow #titulo_materia a {
+-  background-color: #9aad14;
+-  color: #fff;
+-  text-align: right;
+-  padding: 4px;
+-  width: 492px;
+-  height: 40px;
+-}
+-
+-#slideshow #link_materia {
+-  position: relative;
+-  margin-left: 5px;
+-}
+-
+-#slideshow #link_materia a {
+-  color: #fff;
+-}
+-
+-#slideshow a {
+-  text-decoration: none;
+-}
+-
+-.atual {
+-  background-color: #ffcc00;
+-  font-weight: bold;
+-}
+-
+-
+-#link-go-content span {
+-  display: none;
+-}
+-
+-#block-379327, #block-379328, #block-379330 {
+-  display: none;
+-}
+\ No newline at end of file

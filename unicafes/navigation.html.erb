@@ -1,0 +1,54 @@
+<li id="navigation-contents"><%= search_contents_menu %></li>
+<li id="navigation-people"><%= search_people_menu %></li>
+<li id="navigation-products"><a href="/search/products"><span>Produtos</span></a></li>
+<li id="navigation-enterprises"><a href="/search/enterprises"><span>Empreendimentos</span></a></li>
+<li id="navigation-communities"><%= search_communities_menu %></li>
+<li id="navigation-events"><a href="/search/events"><span>Eventos</span></a></li>
+
+<% calculate_spacing = true if !defined?(calculate_spacing) or calculate_spacing.nil? %>
+
+<script type="text/javascript">
+  function alignMenuItems(ul) {
+    var totEltWidth = 0;
+    var menuWidth = ul[0].offsetWidth;
+    var availableWidth = 0;
+    var space = 0;
+
+    var elts = ul.find(jQuery('li'));
+    elts.each(function(inx, elt) {
+      // reset paddding to 0 to get correct offsetwidth
+      jQuery(elt).css('padding-left', '0px');
+      jQuery(elt).css('padding-right', '0px');
+
+      totEltWidth += elt.offsetWidth;
+    });
+    availableWidth = menuWidth - totEltWidth;
+    space = availableWidth/(elts.length-1);
+
+    elts.each(function(inx, elt) {
+      if (inx != elts.size()-1)
+        jQuery(elt).css('padding-right', space + 'px');
+    });
+  }
+
+  jQuery(function($) {
+    <% if calculate_spacing == true %>
+      alignMenuItems($('#navigation ul'));
+    <% end %>
+
+    // Adjust navigation submenu trigger width
+    var contents = parseInt(jQuery('#submenu-contents').first().width());
+    jQuery('#submenu-contents-trigger').first().width(contents - 2);
+    jQuery('head').append('<style type="text/css">#navigation-contents .menu-submenu, #navigation-contents .menu-submenu li {width: ' + contents + 'px;}</style>');
+
+    var comm = parseInt(jQuery('#submenu-communities').first().width());
+    jQuery('#submenu-communities-trigger').first().width(comm - 2);
+    jQuery('head').append('<style type="text/css">#navigation-communities .menu-submenu, #navigation-communities .menu-submenu li {width: ' + comm + 'px;}</style>');
+
+    var people = parseInt(jQuery('#submenu-people').first().width());
+    jQuery('#submenu-people-trigger').first().width(people - 2);
+    jQuery('head').append('<style type="text/css">#navigation-people .menu-submenu, #navigation-people .menu-submenu li {width: ' + people + 'px;}</style>');
+
+    jQuery('#submenu-contents-trigger, #submenu-communities-trigger, #submenu-people-trigger').show();
+  });
+</script>
