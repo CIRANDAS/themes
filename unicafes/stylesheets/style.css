@@ -6,7 +6,7 @@ body {
 }
  
 #content {
-  background: transparent url(images/content-bg.png) center top repeat-y;
+  background: transparent url(images/content-bg-flat.png) center top repeat-y;
   padding-top: 21px;
   min-height: 500px;
 }
@@ -39,10 +39,18 @@ body {
 #content .link-list-block li a:hover  {
   background-color: #217335;
 }
+
+#content .link-list-block li a.link-this-page {
+  
+}
  
 .controller-search #content .search-results-box a.see-more {
   background: #217335;
   border: 1px solid #217335;
+}
+
+.profile-info-block a {
+  font-size: small;
 }
 
 
