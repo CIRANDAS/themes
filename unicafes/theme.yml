@@ -2,3 +2,5 @@ name: "Unicafes"
 layout: "cirandas"
 jquery_theme: "smoothness_mod"
 icon_theme: [default, pidgin]
+owner_type: 'Profile'
+owner_id: 27450
