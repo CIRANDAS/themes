@@ -6,7 +6,6 @@ body {
 }
  
 #content {
-  background: transparent url(images/content-bg-flat.png) center top repeat-y;
   padding-top: 21px;
   min-height: 500px;
 }
@@ -50,9 +49,35 @@ body {
 }
 
 .profile-info-block a {
-  font-size: small;
+  font-size: normal;
 }
 
+.wrap-1 {
+  background: url(/designs/themes/unicafes/images/content-bg.png) repeat-y scroll center top transparent;
+}
+
+.wrap-2 {
+  margin-top: 40px;
+}
+
+#cirandas-top-bar {
+  background: url(/designs/themes/unicafes/images/bg-unicafes.png repeat scroll 0 0;
+  box-shadow: none;
+}
+
+#navigation li .menu-submenu-trigger {
+  background: #FFDF7A;
+  border-color: #ffce3b;
+}
+
+#navigation li .menu-submenu, #navigation li .menu-submenu ul {
+  background: #FFDF7A;
+}
+
+#user {
+  background: #FFDF7A;
+  opacity: 0.6;  
+}
 
 /* slideshow */
 #slideshow {
