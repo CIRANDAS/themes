@@ -1,0 +1,101 @@
+@import url(../cirandas/style.css);
+@import url(../cirandas/stylesheets/small.css);
+
+body {
+  background: url(images/bg-unicafes.png);
+}
+ 
+#content {
+  background: transparent url(images/content-bg-flat.png) center top repeat-y;
+  padding-top: 21px;
+  min-height: 500px;
+}
+
+#content h1.page-title {
+  display:none;
+}
+ 
+#content .block h2,
+#content .block-title {
+  background-color: #e7fad5;
+  color: #217335;
+}
+ 
+#content .link-list-block li {
+  background: none repeat scroll 0 0 #a6de8d;
+  border-radius: 4px 4px 4px 4px;
+}
+
+#content .link-list-block li a {
+  background: transparent;
+  font-size: 12px;
+  color: #fff;
+}
+
+#content .link-list-block li:hover {
+  background-color: #217335;
+}
+
+#content .link-list-block li a:hover  {
+  background-color: #217335;
+}
+
+#content .link-list-block li a.link-this-page {
+  
+}
+ 
+.controller-search #content .search-results-box a.see-more {
+  background: #217335;
+  border: 1px solid #217335;
+}
+
+.profile-info-block a {
+  font-size: small;
+}
+
+
+/* slideshow */
+#slideshow {
+  height: 375px;
+}
+
+#slideshow .rotativo img {
+  position: absolute;
+}
+
+#slideshow #titulo_materia {
+  height: 45px;
+  opacity: 0.8;
+  width: 100%;
+  background-color: #9aad14;
+  position: relative;
+  top: 310px;
+}
+
+#slideshow #titulo_materia a {
+  color: #fff;
+  text-align: right;
+  padding: auto;
+  padding-left: 30px;
+  width: 430px;
+  font-weight: bold;
+}
+
+#slideshow #link_materia {
+  position: relative;
+  top: 270px;
+  margin-left: 5px;
+}
+
+#slideshow #link_materia a {
+  color: #fff;
+}
+
+#slideshow a {
+  text-decoration: none;
+}
+
+.atual {
+  background-color: #ffcc00;
+  font-weight: bold;
+}
