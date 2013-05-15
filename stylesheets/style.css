@@ -1754,22 +1754,7 @@ div.token-input-dropdown-facet {
   margin-top: 12px;
 }
 
-#article .forum-post {
-  color: #333333;
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 24px;
-  margin-bottom: 20px;
-  text-shadow: 0 1px 0 #FFFFFF;
-}
-#article .forum-post a {
-  text-decoration:none;
-  font-size: 20px;
-  color: #333333;
-}
-#article .forum-post a:hover {
-  text-decoration:underline;
-}
+
 div#article.forum #addThis {
   display:none;
 }
@@ -1829,10 +1814,6 @@ div#article.forum {
 #article .forum-description {
   height:100px;
   vertical-align:middle;
-  color: #FFFFFF;
-  font-size: 16px;
-  font-weight: bold;
-  vertical-align: middle;
 }
 #forum-search {
   font-weight:bold;
