@@ -52,7 +52,7 @@ body {
 }
 
 .wrap-1 {
-  background: url(/designs/themes/unicafes/images/content-bg.png) repeat-y scroll center top transparent;
+  background: url(/designs/themes/unicafes/images/content-bg.png) repeat-y scroll center top transparent !important;
 }
 
 .wrap-2 {
@@ -62,7 +62,7 @@ body {
 
 #cirandas-top-bar {
   background: url(/designs/themes/unicafes/images/bg-unicafes.png) repeat scroll 0 0;
-  box-shadow: none;
+  box-shadow: none; 
 }
 
 #navigation li .menu-submenu-trigger {
