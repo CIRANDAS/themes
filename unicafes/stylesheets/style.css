@@ -1,9 +1,6 @@
-@import url(http://cirandas.net/designs/themes/cirandas/style.css);
-@import url(http://cirandas.net/designs/themes/cirandas/stylesheets/small.css);
-/*
 @import url(../cirandas/style.css);
 @import url(../cirandas/stylesheets/small.css);
-*/
+
 body {
   background: url(images/bg-unicafes.png);
 }
