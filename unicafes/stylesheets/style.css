@@ -119,12 +119,13 @@ body {
 }
 
 #slideshow #titulo_materia {
-  height: 45px;
+  height: 50px;
   opacity: 0.8;
   width: 713px;
   background-color: #9aad14;
-  position: relative;
-  top: 355px;
+  position: absolute;
+  top: 385px;
+  margin-top: -10px;
 }
 
 #slideshow #titulo_materia a {
@@ -134,17 +135,19 @@ body {
   padding-left: 30px;
   width: 490px;
   font-weight: bold;
+  margin-top: -10px;
 }
 
-#slideshow #imagem {
+#slideshow #imagens {
+  position: absolute;
   height: 425px;
-  width: 700px;
+  width: 710px;
   overflow: hidden;
 }
 
 #slideshow #link_materia {
-  position: relative;
-  top: 326px;
+  position: absolute;
+  top: 380px;
   margin-left: 5px;
 }
 
