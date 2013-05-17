@@ -26,7 +26,7 @@
     <% content_classes += ' distribution-enabled' if @node and @node.collective? %>
   <% end %>
 
-  <body class="<%= body_classes %>">
+  <body class="<%= body_classes + content_classes %>">
     <a href="#content" id="link-go-content"><span><%= _("Go to the content") %></span></a>
 
     <%=
@@ -52,6 +52,8 @@
           <div id="navigation-end"></div>
         </div><!-- end id="navigation" -->
         <div id="content">
+          <%= render_header if defined?(DistributionPlugin) %>
+
           <div id="content-inner">
             <%= insert_boxes(yield) %>
             <br style='clear: both'/>
