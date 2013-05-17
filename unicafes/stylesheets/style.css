@@ -1,6 +1,9 @@
+@import url(http://cirandas.net/designs/themes/cirandas/style.css);
+@import url(http://cirandas.net/designs/themes/cirandas/stylesheets/small.css);
+/*
 @import url(../cirandas/style.css);
 @import url(../cirandas/stylesheets/small.css);
-
+*/
 body {
   background: url(images/bg-unicafes.png);
 }
@@ -11,6 +14,10 @@ body {
 
 #content h1.page-title {
   display:none;
+}
+
+.profile-info-block a {
+  font-size: small !important;
 }
  
 #content .block h2,
@@ -37,10 +44,6 @@ body {
 #content .link-list-block li a:hover  {
   background-color: #217335;
 }
-
-#content .link-list-block li a.link-this-page {
-  
-}
  
 .controller-search #content .search-results-box a.see-more {
   background: #217335;
@@ -51,17 +54,17 @@ body {
   font-size: normal;
 }
 
-.wrap-1 {
-  background: url(/designs/themes/unicafes/images/content-bg.png) repeat-y scroll center top transparent !important;
+#wrap-1 {
+  background: url(/designs/themes/unicafes/images/content-bg.png) repeat-y scroll center top transparent;
 }
 
-.wrap-2 {
+#wrap-2 {
   margin-top: 40px;
   border-top: 0;
 }
 
 #cirandas-top-bar {
-  background: url(/designs/themes/unicafes/images/bg-unicafes.png) repeat scroll 0 0;
+  background: url(/designs/themes/unicafes/images/bg-unicafes.png) repeat-x scroll 0 0 transparent;
   box-shadow: none; 
 }
 
@@ -80,26 +83,48 @@ body {
 }
 
 #profile-header {
+  margin-top: 40px;
   padding-bottom: 20px;
+}
+
+#tb-logo {
+  left: 107px !important;
+}
+
+.block-inner-2 h3.block-title {
+  display: none;
+}
+
+.link-list-block ul {
+  background-color: #E7FAD5;
+}
+
+#content .box-1 .link-list-block li {
+  margin: 5px 10px 5px 0;
+  padding-left: 10px;
+}
+
+#footer-content {
+  background: url("/designs/themes/unicafes/images/content-footer-bg.png") no-repeat scroll center center transparent;
+}
+
+#footer-bottom {
+  background: url("/designs/themes/unicafes/images/footer-bg.png") no-repeat scroll center center transparent;
 }
 
 /* slideshow */
 #slideshow {
-  height: 375px;
-  margin-top: -12px;
-}
-
-#slideshow .rotativo img {
-  position: absolute;
+  height: 425px;
+  margin-top: 20px;
 }
 
 #slideshow #titulo_materia {
   height: 45px;
   opacity: 0.8;
-  width: 100%;
+  width: 713px;
   background-color: #9aad14;
   position: relative;
-  top: 368px;
+  top: 355px;
 }
 
 #slideshow #titulo_materia a {
@@ -109,6 +134,12 @@ body {
   padding-left: 30px;
   width: 490px;
   font-weight: bold;
+}
+
+#slideshow #imagem {
+  height: 425px;
+  width: 700px;
+  overflow: hidden;
 }
 
 #slideshow #link_materia {
