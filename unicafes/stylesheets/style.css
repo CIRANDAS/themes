@@ -12,6 +12,10 @@ body {
 #content h1.page-title {
   display:none;
 }
+
+.profile-info-block a {
+  font-size: small !important;
+}
  
 #content .block h2,
 #content .block-title {
@@ -37,10 +41,6 @@ body {
 #content .link-list-block li a:hover  {
   background-color: #217335;
 }
-
-#content .link-list-block li a.link-this-page {
-  
-}
  
 .controller-search #content .search-results-box a.see-more {
   background: #217335;
@@ -51,17 +51,17 @@ body {
   font-size: normal;
 }
 
-.wrap-1 {
-  background: url(/designs/themes/unicafes/images/content-bg.png) repeat-y scroll center top transparent !important;
+#wrap-1 {
+  background: url(/designs/themes/unicafes/images/content-bg.png) repeat-y scroll center top transparent;
 }
 
-.wrap-2 {
+#wrap-2 {
   margin-top: 40px;
   border-top: 0;
 }
 
 #cirandas-top-bar {
-  background: url(/designs/themes/unicafes/images/bg-unicafes.png) repeat scroll 0 0;
+  background: url(/designs/themes/unicafes/images/bg-unicafes.png) repeat-x scroll 0 0 transparent;
   box-shadow: none; 
 }
 
@@ -80,26 +80,63 @@ body {
 }
 
 #profile-header {
+  margin-top: 40px;
   padding-bottom: 20px;
+}
+
+#tb-logo {
+  left: 107px !important;
+}
+
+.block-inner-2 h3.block-title {
+  display: none;
+}
+
+.link-list-block ul {
+  background-color: #E7FAD5;
+}
+
+#content .box-1 .link-list-block li {
+  margin: 5px 10px 5px;
+  padding: 0;
+}
+
+#content .link-list-block li a.link-this-page {
+  padding: 0 20px 0 20px;
+  margin-right: 0;
+}
+
+#content .link-list-block li a.link-this-page:hover {
+  border-radius: 0;
+  border: 0;
+}
+
+#footer-content {
+  background: url("/designs/themes/unicafes/images/content-footer-bg.png") no-repeat scroll center center transparent;
+}
+
+#footer-bottom {
+  background: url("/designs/themes/unicafes/images/footer-bg.png") no-repeat scroll center center transparent;
+}
+
+.controller-profile_design #titulo_materia {
+  top: 10px; /* somente na admin */
 }
 
 /* slideshow */
 #slideshow {
-  height: 375px;
-  margin-top: -12px;
-}
-
-#slideshow .rotativo img {
-  position: absolute;
+  height: 425px;
+  margin-top: 20px;
+  font-size: 18px;
 }
 
 #slideshow #titulo_materia {
-  height: 45px;
+  height: 50px;
   opacity: 0.8;
-  width: 100%;
+  width: 711px;
   background-color: #9aad14;
-  position: relative;
-  top: 368px;
+  position: absolute;
+  top: 375px;
 }
 
 #slideshow #titulo_materia a {
@@ -107,13 +144,21 @@ body {
   text-align: right;
   padding: auto;
   padding-left: 30px;
-  width: 490px;
+  width: 590px;
   font-weight: bold;
+  margin-top: -15px;
+}
+
+#slideshow #imagens {
+  position: absolute;
+  height: 425px;
+  width: 710px;
+  overflow: hidden;
 }
 
 #slideshow #link_materia {
-  position: relative;
-  top: 326px;
+  position: absolute;
+  top: 380px;
   margin-left: 5px;
 }
 
