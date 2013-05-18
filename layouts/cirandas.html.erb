@@ -19,7 +19,7 @@
     %>
   </head>
 
-  <% content_classes = controller.send(:content_classes) rescue '' %>
+  <% content_classes = " #{controller.send(:content_classes) rescue ''}" %>
   <% if defined?(DistributionPlugin) %>
     <% extend DistributionPlugin::DistributionLayoutHelper %>
     <% load_node %>
