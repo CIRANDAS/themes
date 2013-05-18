@@ -97,8 +97,18 @@ body {
 }
 
 #content .box-1 .link-list-block li {
-  margin: 5px 10px 5px 0;
-  padding-left: 10px;
+  margin: 5px 10px 5px;
+  padding: 0;
+}
+
+#content .link-list-block li a.link-this-page {
+  padding: 0 20px 0 20px;
+  margin-right: 0;
+}
+
+#content .link-list-block li a.link-this-page:hover {
+  border-radius: 0;
+  border: 0;
 }
 
 #footer-content {
@@ -109,20 +119,24 @@ body {
   background: url("/designs/themes/unicafes/images/footer-bg.png") no-repeat scroll center center transparent;
 }
 
+.controller-profile_design #titulo_materia {
+  top: 10px; /* somente na admin */
+}
+
 /* slideshow */
 #slideshow {
   height: 425px;
   margin-top: 20px;
+  font-size: 18px;
 }
 
 #slideshow #titulo_materia {
   height: 50px;
   opacity: 0.8;
-  width: 713px;
+  width: 711px;
   background-color: #9aad14;
   position: absolute;
-  top: 385px;
-  margin-top: -10px;
+  top: 375px;
 }
 
 #slideshow #titulo_materia a {
@@ -130,9 +144,9 @@ body {
   text-align: right;
   padding: auto;
   padding-left: 30px;
-  width: 490px;
+  width: 590px;
   font-weight: bold;
-  margin-top: -10px;
+  margin-top: -15px;
 }
 
 #slideshow #imagens {
