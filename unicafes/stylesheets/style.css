@@ -129,9 +129,13 @@ p.MsoTitle {
     color: #a6de8d;
 }
 
-h1.title {
-  color: #80900d !important;
+h1.title, #content .blog-post .title a  {
+  font-weight: bold;
 }
+
+h1.title, h1.title a, div.read-more a, div.pagination a, div.pagination span, div#theme-footer a {
+  color: #80900d !important;
+} 
 
 .controller-profile_design #titulo_materia {
   top: 10px; /* somente na admin */
@@ -150,14 +154,14 @@ h1.title {
   width: 711px;
   background-color: #9aad14;
   position: absolute;
-  top: 375px;
+  top: 373px;
 }
 
 #slideshow #titulo_materia a {
   color: #fff;
   text-align: right;
   padding: auto;
-  padding-left: 30px;
+  margin-left: 100px;
   width: 590px;
   font-weight: bold;
   margin-top: -15px;
