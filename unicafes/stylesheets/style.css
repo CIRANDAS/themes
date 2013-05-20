@@ -19,7 +19,6 @@ body {
  
 #content .block h2,
 #content .block-title {
-  background-color: #e7fad5;
   color: #217335;
 }
  
@@ -80,7 +79,6 @@ body {
 }
 
 #profile-header {
-  margin-top: 40px;
   padding-bottom: 20px;
 }
 
@@ -93,7 +91,6 @@ body {
 }
 
 .link-list-block ul {
-  background-color: #E7FAD5;
 }
 
 #content .box-1 .link-list-block li {
@@ -104,11 +101,20 @@ body {
 #content .link-list-block li a.link-this-page {
   padding: 0 20px 0 20px;
   margin-right: 0;
+  background-color: #217335;
 }
 
 #content .link-list-block li a.link-this-page:hover {
   border-radius: 0;
   border: 0;
+}
+
+div#block-372189 div.vcard h2.org {
+  display: none;
+}
+
+div#block-372189 div.block-inner-2 {
+  margin-top: -30px;
 }
 
 #footer-content {
@@ -117,6 +123,14 @@ body {
 
 #footer-bottom {
   background: url("/designs/themes/unicafes/images/footer-bg.png") no-repeat scroll center center transparent;
+}
+
+p.MsoTitle {
+    color: #a6de8d;
+}
+
+h1.title {
+  color: #80900d !important;
 }
 
 .controller-profile_design #titulo_materia {
