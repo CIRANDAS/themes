@@ -1757,7 +1757,7 @@ div.token-input-dropdown-facet {
 div#article.forum #addThis {
   display:none;
 }
-#article-toolbar {
+#article.forum #article-toolbar {
   height:80px;
 }
 #article .forum-posts table {
@@ -1769,7 +1769,7 @@ div#article.forum #addThis {
 #article .forum-posts th {
   border: 0;
 }
-#article td {
+#article.forum td {
   border-bottom: 1px solid #E0E0E0;
 }
 #article td.forum-post-answers {
