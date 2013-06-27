@@ -1753,3 +1753,58 @@ div.token-input-dropdown-facet {
 .msie7 #content #product_list h3 {
   margin-top: 12px;
 }
+
+div#article.forum #addThis {
+  display:none;
+}
+#article.forum #article-toolbar {
+  height:80px;
+}
+#article .forum-posts table {
+  border-collapse:separate;
+  background:transparent;
+  width:700px;
+  margin:0 8px;
+}
+#article .forum-posts th {
+  border: 0;
+}
+#article.forum td {
+  border-bottom: 1px solid #E0E0E0;
+}
+#article td.forum-post-answers {
+  height: 56px;
+  width: 48px;
+  background-image: url(images/forum-answers-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+}
+#article td.forum-post-answers a {
+  text-decoration:none;
+  color:#000;
+}
+#article .forum-post td.forum-post-answers a:hover {
+  text-decoration:underline;
+}
+#article td.forum-post-title {
+  font-size:20px;
+  color:#4d5ba3;
+}
+#article td.forum-post-title a {
+  text-decoration:none;
+  color:#4d5ba3;
+  font-weight:normal;
+  display:block;
+}
+#article .forum-post td.forum-post-answers a:hover, #article .forum-post td.forum-post-title a:hover {
+  text-decoration:underline;
+}
+#article td.forum-post-last-answer {
+  width:100px;
+  text-align:right;
+  font-size:10px;
+}
