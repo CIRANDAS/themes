@@ -83,30 +83,24 @@
 #navigation li {
   padding-right: 8px;
 }
-#navigation .header-icon {
+#navigation .header-icon,
+#navigation #header-help {
   width: 18px;
   height: 19px;
+  top: 0;
+  left: 0;
 }
 #navigation .header-icon a {
-  border: none;
   width: 18px;
   height: 19px;
-}
-#navigation li .menu-submenu-trigger {
-  height: 4px;
-}
-
-#header-help {
-  width: 45px;
-  padding: 0;
-}
-.header-icon a {
-  width: 20px;
-  height: 20px;
   right: 0;
   top: 0;
   padding: 0;
   margin: 0;
+  border: none;
+}
+#navigation li .menu-submenu-trigger {
+  height: 4px;
 }
 
 #header-help a,
