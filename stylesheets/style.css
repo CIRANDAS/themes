@@ -1763,8 +1763,8 @@ div#article.forum #addThis {
 #article .forum-posts table {
   border-collapse:separate;
   background:transparent;
-  width:700px;
   margin:0 8px;
+  width: 100%;
 }
 #article .forum-posts th {
   border: 0;
@@ -1774,7 +1774,7 @@ div#article.forum #addThis {
 }
 #article td.forum-post-answers {
   height: 56px;
-  width: 48px;
+  width: 12%;
   background-image: url(images/forum-answers-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -1793,6 +1793,7 @@ div#article.forum #addThis {
 #article td.forum-post-title {
   font-size:20px;
   color:#4d5ba3;
+  width: 72%;
 }
 #article td.forum-post-title a {
   text-decoration:none;
@@ -1804,7 +1805,8 @@ div#article.forum #addThis {
   text-decoration:underline;
 }
 #article td.forum-post-last-answer {
-  width:100px;
+  width:15%;
+  padding-right: 20px;
   text-align:right;
   font-size:10px;
 }
