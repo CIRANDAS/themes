@@ -219,8 +219,9 @@ body.template-leftbar .box-1 {
 /* Page title */
 
 #content {
-  padding-top: 21px;
   min-height: 500px;
+  margin-bottom: 60px;
+  padding-top: 5px;
 }
 
 #content h1,
