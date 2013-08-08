@@ -1,0 +1,6 @@
+name: "EITA"
+layout: "cirandas" # don't change
+jquery_theme: "smoothness_mod"
+icon_theme: [default, pidgin]
+owner_type: 'Profile'
+owner_id: 31150
