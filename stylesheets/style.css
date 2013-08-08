@@ -77,6 +77,17 @@ body.template-leftbar .box-1 {
   padding: 0;
 }
 
+#grade {
+  display: none;
+  width: 1040px;
+  height: 1552px;
+  position: absolute;
+  top: 0px;
+  margin-left: -520px;
+  left: 50%;
+  background: url('/designs/themes/cirandas/images/grade-transparente.png') repeat-y;
+}
+
 /* Header */
 
 #theme-header {
@@ -738,7 +749,6 @@ body.template-leftbar .box-1 {
 }
 
 .menu-submenu {
-  bottom: 78px;
   right: -44px;
 }
 
@@ -782,10 +792,6 @@ body.template-leftbar .box-1 {
 
 .controller-memberships .button-bar {
   clear: both;
-}
-
-.controller-memberships #memberships-index li .vcard .menu-submenu-trigger {
-  left: 87px;
 }
 
 .controller-memberships #memberships-index li .vcard a.profile_link.url,
@@ -857,15 +863,12 @@ body.template-leftbar .box-1 {
   min-width: auto;
 }
 
-.common-profile-list-block .vcard .menu-submenu-trigger, .menu-submenu-trigger {
+.menu-submenu-trigger,
+.common-profile-list-block .vcard .menu-submenu-trigger {
   display: block;
-  left: 43px;
+  left: auto;
+  right: -3px;
   background-image: url(images/submenu-up.png);
-}
-
-.action-profile-friends .main-block .common-profile-list-block .vcard .menu-submenu-trigger,
-.action-profile-communities .main-block .common-profile-list-block .vcard .menu-submenu-trigger {
-  left: 77px;
 }
 
 .action-profile-friends .main-block .common-profile-list-block .vcard .menu-submenu,
@@ -1380,12 +1383,6 @@ li.article-item .search-result-title {
   background-color: transparent;
 }
 
-.action-profile-members .main-block .common-profile-list-block .vcard .menu-submenu-trigger,
-.search-results-innerbox.common-profile-list-block .vcard .menu-submenu-trigger,
-.search-results-innerbox .menu-submenu-trigger {
-  left: 77px;
-}
-
 #search-results .common-profile-list-block .vcard:hover {
   background-color: #FEFBAE;
 }
@@ -1712,18 +1709,8 @@ div.token-input-dropdown-facet {
   left: 16px;
 }
 
-.msie7 .common-profile-list-block .vcard .menu-submenu-trigger, .menu-submenu-trigger {
-  left: 39px;
-}
-
 .msie7 #content .communities-block .vcard {
   width: 62px;
-}
-
-.msie7 .action-profile-members .common-profile-list-block .vcard .menu-submenu-trigger,
-.msie7 .search-results-innerbox.common-profile-list-block .vcard .menu-submenu-trigger,
-.msie7 .search-results-innerbox .menu-submenu-trigger {
-  left: 73px;
 }
 
 .msie7 #wrap-1, .msie7 #footer-content, .msie7 #theme-footer {
