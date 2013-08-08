@@ -11,17 +11,5 @@
 </div>
 
 <script type="text/javascript">
-  jQuery(function($) {
-    $('#user').appendTo('#cirandas-top-bar');
-    $('#navigation').prependTo('#tb-middle');
-
-    $('#tb-search input').focusout(function () {
-      if (this.value == '')
-        $('#tb-search').toggle();
-    });
-    $('#header-search').click(function () {
-      $('#tb-search').css('left', $(this).position().left).toggle();
-      $('#tb-search input').focus();
-    });
-  });
+  cirandas_theme.load_small_header();
 </script>

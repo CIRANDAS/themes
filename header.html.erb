@@ -1,6 +1,7 @@
-<!--
-<div style="width: 1040px; height: 1552px; position: absolute; top: 0px; margin-left: -520px; left: 50%; background: url('/designs/themes/cirandas/images/grade-transparente.png') repeat-y;">&nbsp;</div>
--->
+<script type="text/javascript" src="/designs/themes/cirandas/javascripts/columnizer.js"></script>
+<script type="text/javascript" src="/designs/themes/cirandas/javascripts/theme.js"></script>
+
+<div id='grade'></div>
 
 <div id="cat_menu_cont">
   <% cache(environment.id.to_s +  '_categories_menu') do %>
@@ -11,27 +12,5 @@
 <div id="header-help" class="header-icon"><a href="/ajuda">Ajuda</a></div>
 
 <script type="text/javascript">
-  jQuery(function() {
-    var menus = '#category1, #category2, #category3';
-
-    // Split categories top menu in two
-    jQuery('#cat_menu ul').makeacolumnlists({ cols : 2, colWidth : 127, equalHeight : true, startN : 1 });
-
-    jQuery(menus).click(function() {
-      jQuery(this).siblings(menus).removeClass('category-menu-clicked');
-      jQuery('.li_container:visible').hide('slide', { 'direction' : 'up' }, 'slow');
-      jQuery(this).toggleClass('category-menu-clicked');
-      jQuery(this).find('.li_container:hidden').show('slide', { 'direction' : 'up' }, 'slow');
-      jQuery('#cat_menu').css('-moz-border-radius-bottomleft', '3px');
-      if (jQuery(this).hasClass('category-menu-clicked') && jQuery(this).attr('id') == 'category1')
-        jQuery('#cat_menu').css('-moz-border-radius-bottomleft', '0');
-    });
-
-    jQuery('body').click(function() {
-      jQuery('.li_container:visible').hide('slide', { 'direction' : 'up' }, 'slow');
-      jQuery('#cat_menu').css('-moz-border-radius-bottomleft', '3px');
-      jQuery(menus).removeClass('category-menu-clicked');
-    });
-    jQuery(menus).click(function(e) { e.stopPropagation(); });
-  });
+  cirandas_theme.load_header();
 </script>
