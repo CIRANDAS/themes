@@ -1,3 +1,5 @@
+<%= render :file => "#{Rails.root}/public/designs/themes/cirandas/common.html.erb" %>
+
 <div id='cirandas-top-bar'>
   <%= link_to '', environment.top_url, :id => 'tb-logo' %>
 
@@ -11,5 +13,6 @@
 </div>
 
 <script type="text/javascript">
-  cirandas_theme.load_small_header();
+  if (typeof cirandas_theme === 'undefined') cirandas_theme = {};
+  cirandas_theme.small_header = true;
 </script>

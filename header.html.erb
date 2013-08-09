@@ -1,7 +1,4 @@
-<script type="text/javascript" src="/designs/themes/cirandas/javascripts/columnizer.js"></script>
-<script type="text/javascript" src="/designs/themes/cirandas/javascripts/theme.js"></script>
-
-<div id='grade'></div>
+<%= render :file => "#{Rails.root}/public/designs/themes/cirandas/common.html.erb" %>
 
 <div id="cat_menu_cont">
   <% cache(environment.id.to_s +  '_categories_menu') do %>
@@ -11,6 +8,3 @@
 
 <div id="header-help" class="header-icon"><a href="/ajuda">Ajuda</a></div>
 
-<script type="text/javascript">
-  cirandas_theme.load_header();
-</script>

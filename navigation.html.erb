@@ -8,5 +8,6 @@
 <% calculate_spacing = true if !defined?(calculate_spacing) or calculate_spacing.nil? %>
 
 <script type="text/javascript">
-  cirandas_theme.load_navigation(<%= calculate_spacing.to_json %>);
+  if (typeof cirandas_theme === 'undefined') cirandas_theme = {};
+  cirandas_theme.calculate_spacing = <%= calculate_spacing.to_json %>;
 </script>
