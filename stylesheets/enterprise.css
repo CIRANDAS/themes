@@ -12,7 +12,7 @@ a {
 
 /* Help */
 
-#navigation #header-help a { 
+#navigation #header-help a {
   color: #24b66e;
 }
 
@@ -50,7 +50,6 @@ a {
 }
 
 #content h1.page-title {
-  top: 133px;
   background: #24B66E;
 }
 
