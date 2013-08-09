@@ -643,6 +643,7 @@ body.template-leftbar .box-1 {
 /* Navigation */
 
 #navigation {
+  z-index: 11;
   height: 60px;
   top: 70px;
   left: 275px;
