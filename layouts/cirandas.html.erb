@@ -17,6 +17,10 @@
         content.respond_to?(:call) ? content.call : content
       end.join("\n")
     %>
+
+    <script type='text/javascript'>
+      DEFAULT_LOADING_MESSAGE = <%="'#{ _('loading...') }'" %>;
+    </script>
   </head>
 
   <% content_classes = " #{controller.send(:content_classes) rescue ''}" %>
