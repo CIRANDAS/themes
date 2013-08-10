@@ -115,4 +115,7 @@
 #site-title {
   display: none;
 }
+#content h1.page-title {
+  margin-top: 30px;
+}
 
