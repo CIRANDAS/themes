@@ -1774,7 +1774,7 @@ div#article.forum #addThis {
 }
 #article td.forum-post-answers {
   height: 56px;
-  width: 12%;
+  width: 11%;
   background-image: url(images/forum-answers-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -1793,7 +1793,7 @@ div#article.forum #addThis {
 #article td.forum-post-title {
   font-size:20px;
   color:#4d5ba3;
-  width: 72%;
+  width: 70%;
 }
 #article td.forum-post-title a {
   text-decoration:none;
@@ -1805,7 +1805,7 @@ div#article.forum #addThis {
   text-decoration:underline;
 }
 #article td.forum-post-last-answer {
-  width:15%;
+  width:19%;
   padding-right: 20px;
   text-align:right;
   font-size:10px;
