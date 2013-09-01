@@ -1800,3 +1800,16 @@ div#article.forum #addThis {
   text-align:right;
   font-size:10px;
 }
+#article-tags {
+  color: #FFFFFF;
+  margin-top: -30px;
+}
+div#article-parent {
+  font-style: italic;
+  margin: 5px 0;
+  text-align: right;
+}
+#addThis {
+  margin-top: 4px;
+  text-align: right;
+}
