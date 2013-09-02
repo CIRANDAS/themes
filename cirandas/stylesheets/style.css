@@ -1806,12 +1806,13 @@ div#article.forum #addThis {
   color: #FFFFFF;
   margin-top: -30px;
 }
-div#article-parent {
-  font-style: italic;
-  margin: 5px 0;
-  text-align: right;
+#article-parent {
+  margin: 15px 0 0 0;
+}
+#article-parent a.button {
+  margin: 0;
 }
 #addThis {
-  margin-top: 4px;
+  margin-top: 5px;
   text-align: right;
 }
