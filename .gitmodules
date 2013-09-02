@@ -1,9 +1,3 @@
-[submodule "cirandas"]
-	path = cirandas
-	url = git://github.com/CIRANDAS/cirandas-theme.git
-[submodule "cirandas-green"]
-	path = cirandas-green
-	url = git://github.com/CIRANDAS/cirandas-green-theme.git
 [submodule "colivre-themes"]
 	path = colivre-themes
 	url = git://gitorious.org/noosfero/cirandas-themes.git

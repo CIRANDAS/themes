@@ -1,0 +1,13 @@
+<li id="navigation-contents"><%= search_contents_menu %></li>
+<li id="navigation-people"><%= search_people_menu %></li>
+<li id="navigation-products"><a href="/search/products"><span>Produtos</span></a></li>
+<li id="navigation-enterprises"><a href="/search/enterprises"><span>Empreendimentos</span></a></li>
+<li id="navigation-communities"><%= search_communities_menu %></li>
+<li id="navigation-events"><a href="/search/events"><span>Eventos</span></a></li>
+
+<% calculate_spacing = true if !defined?(calculate_spacing) or calculate_spacing.nil? %>
+
+<script type="text/javascript">
+  if (typeof cirandas_theme === 'undefined') cirandas_theme = {};
+  cirandas_theme.calculate_spacing = <%= calculate_spacing.to_json %>;
+</script>
