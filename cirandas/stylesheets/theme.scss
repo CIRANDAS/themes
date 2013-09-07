@@ -150,7 +150,10 @@ body.template-leftbar .box-1 {
     }
 
     #footer-middle {
-      text-align: center;
+      
+      p {
+        text-align: center;
+      }
     }
 
     #footer-right {

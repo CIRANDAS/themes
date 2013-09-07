@@ -10,10 +10,11 @@
   display: block;
   /* Sets element back to block */ }
 
+/* layout base parameters */
 /* heights should only use multiples of this */
 /* base measurements */
-/* widths should only use these */
-/* paddings and margins should only use these
+/* widths should only use one of these */
+/* paddings and margins should only use one of these
    REMEMBER to disccount the borders size from padding, as borders uses padding's space.
  */
 /* use for borders */
@@ -251,7 +252,7 @@ body.template-leftbar .box-1 {
     #theme-footer #footer-content #footer-left #language-chooser {
       margin: 0;
       text-align: left; }
-    #theme-footer #footer-content #footer-middle {
+    #theme-footer #footer-content #footer-middle p {
       text-align: center; }
     #theme-footer #footer-content #footer-right #footer-fbes {
       padding-left: 55px;
