@@ -24,10 +24,9 @@
   </head>
 
   <% content_classes = " #{controller.send(:content_classes) rescue ''}" %>
-  <% if defined?(DistributionPlugin) %>
-    <% extend DistributionPlugin::DistributionLayoutHelper %>
-    <% load_node %>
-    <% content_classes += ' distribution-enabled' if @node and @node.collective? %>
+  <% if defined?(ConsumersCoopPlugin) %>
+    <% extend ConsumersCoopPlugin::LayoutHelper %>
+    <% content_classes += ' consumers-coop-enabled' if collective? %>
   <% end %>
 
   <body class="<%= body_classes + content_classes %>">
@@ -56,7 +55,7 @@
           <div id="navigation-end"></div>
         </div><!-- end id="navigation" -->
         <div id="content">
-          <%= render_header if defined?(DistributionPlugin) %>
+          <%= render_header if defined?(ConsumersCoopPlugin) %>
 
           <div id="content-inner">
             <%= insert_boxes(yield) %>
