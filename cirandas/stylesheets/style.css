@@ -1802,17 +1802,17 @@ div#article.forum #addThis {
   text-align:right;
   font-size:10px;
 }
-#article-tags {
+div#article-tags {
   color: #FFFFFF;
   margin-top: -30px;
 }
-#article-parent {
-  margin: 15px 0 0 0;
+div#article-parent {
+  margin: 15px 0 0;
 }
-#article-parent a.button {
+div#article-parent a.button {
   margin: 0;
 }
-#addThis {
+div#addThis {
   margin-top: 5px;
   text-align: right;
 }
