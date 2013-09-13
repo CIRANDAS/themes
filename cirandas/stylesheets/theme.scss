@@ -195,10 +195,10 @@ body.template-leftbar .box-1 {
 
 /* Page title */
 
-#content {
+#content-inner {
+  position: relative;
   min-height: 500px;
-  margin-bottom: 60px;
-  padding-top: 5px;
+  padding-top: $half-padding;
 }
 
 #content h1,

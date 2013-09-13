@@ -1,3 +1,4 @@
 *.swp
 *.swo
 .sass-cache
+cirandas/stylesheets/*.css
