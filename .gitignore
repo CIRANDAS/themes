@@ -2,3 +2,5 @@
 *.swo
 .sass-cache
 cirandas/stylesheets/*.css
+*~
+.gitignore
