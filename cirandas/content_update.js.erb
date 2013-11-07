@@ -5,6 +5,3 @@ if (typeof cirandas_theme === 'undefined') cirandas_theme = {};
 cirandas_theme.title_name = <%= title_name.to_json %>;
 cirandas_theme.is_enterprise = <%= (!! @profile and @profile.enterprise?).to_json %>;
 
-jQuery(function ($) {
-  cirandas_theme.change_title_position();
-});

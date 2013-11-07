@@ -18,5 +18,8 @@
 
 <% javascript_tag do %>
   <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/content_update.js.erb" %>
+  jQuery(function ($) {
+    cirandas_theme.change_title_position();
+  });
 <% end %>
 
