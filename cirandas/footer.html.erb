@@ -16,11 +16,7 @@
   <div class="clean"></div>
 </div>
 
-<% title_name = @profile ? escape_javascript(@profile.short_name(53)) : '' %>
-
-<script type="text/javascript">
-  if (typeof cirandas_theme === 'undefined') cirandas_theme = {};
-  cirandas_theme.title_name = '<%= title_name %>';
-  cirandas_theme.is_enterprise = <%= (!! @profile and @profile.enterprise?).to_json %>;
-</script>
+<% javascript_tag do %>
+  <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/content_update.js.erb" %>
+<% end %>
 
