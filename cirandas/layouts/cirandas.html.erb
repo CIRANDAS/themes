@@ -23,13 +23,9 @@
     </script>
   </head>
 
-  <% content_classes = " #{controller.send(:content_classes) rescue ''}" %>
-  <% if defined?(ConsumersCoopPlugin) %>
-    <% extend ConsumersCoopPlugin::LayoutHelper %>
-    <% content_classes += ' consumers-coop-enabled' if collective? %>
-  <% end %>
+  <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/load.erb" %>
 
-  <body class="<%= body_classes + content_classes %>">
+  <body class="<%= body_classes + @body_extra_classes %>">
     <a href="#content" id="link-go-content"><span><%= _("Go to the content") %></span></a>
 
     <%=
@@ -55,12 +51,7 @@
           <div id="navigation-end"></div>
         </div><!-- end id="navigation" -->
         <div id="content">
-          <%= render_header if defined?(ConsumersCoopPlugin) %>
-
-          <div id="content-inner">
-            <%= insert_boxes(yield) %>
-            <br style='clear: both'/>
-          </div><!-- end id="content-inner" -->
+          <%= render :partial => 'layouts/content' %>
         </div><!-- end id="content" -->
       </div><!-- end id="wrap-2" -->
     </div><!-- end id="wrap-1" -->
