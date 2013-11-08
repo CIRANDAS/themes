@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  background: url(images/bg.png);
+  background: url(/designs/themes/cirandas/images/bg.png);
 }
 
 .block a,
@@ -100,7 +100,7 @@ body.template-leftbar .box-1 {
 }
 
 #site-title {
-  background: transparent url(images/logo.png) center left no-repeat;
+  background: transparent url(/designs/themes/cirandas/images/logo.png) center left no-repeat;
   height: 130px;
   width: 214px;
   top: 0;
@@ -162,7 +162,7 @@ body.template-leftbar .box-1 {
         padding-left: 55px;
         background-position: left -13px;
         background-repeat: no-repeat;
-        background-image: url(images/fbes.png);
+        background-image: url(/designs/themes/cirandas/images/fbes.png);
       }
     }
   }
@@ -341,13 +341,13 @@ body.template-leftbar .box-1 {
   height: 16px;
   overflow: hidden;
   display: block;
-  background: transparent url(images/submenu.png) 230px 4px no-repeat;
+  background: transparent url(/designs/themes/cirandas/images/submenu.png) 230px 4px no-repeat;
 }
 
 #user .logged-in:hover {
   overflow: visible;
   height: auto;
-  background-image: url(images/submenu-up.png);
+  background-image: url(/designs/themes/cirandas/images/submenu-up.png);
 }
 
 #user .logged-in a {
@@ -447,7 +447,7 @@ body.template-leftbar .box-1 {
 }
 #header-help a,
 #header-help a:hover {
-  background: transparent url(images/help.png) top center no-repeat;
+  background: transparent url(/designs/themes/cirandas/images/help.png) top center no-repeat;
   width: 40px;
 }
 
@@ -497,7 +497,7 @@ body.template-leftbar .box-1 {
   font-weight: bold;
   color: #fff;
   position: relative;
-  background: transparent url(images/submenu-hover.png) 143px 6px no-repeat;
+  background: transparent url(/designs/themes/cirandas/images/submenu-hover.png) 143px 6px no-repeat;
   display: block;
   height: 16px;
 }
@@ -539,7 +539,7 @@ body.template-leftbar .box-1 {
 }
 
 #cat_menu li.category-menu-clicked {
-  background-image: url(images/submenu-up.png);
+  background-image: url(/designs/themes/cirandas/images/submenu-up.png);
   color: #000;
 }
 
@@ -672,7 +672,7 @@ body.template-leftbar .box-1 {
   height: 9px;
   background-color: #b1dfef;
   border-color: #b1dfef;
-  background-image: url(images/submenu.png);
+  background-image: url(/designs/themes/cirandas/images/submenu.png);
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
 }
@@ -684,7 +684,7 @@ body.template-leftbar .box-1 {
 #navigation li:hover .menu-submenu-trigger:hover {
   background-color: #000;
   border-color: #000;
-  background-image: url(images/submenu-hover.png);
+  background-image: url(/designs/themes/cirandas/images/submenu-hover.png);
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
 }
@@ -754,7 +754,7 @@ body.template-leftbar .box-1 {
 }
 
 .menu-submenu-footer {
-  background: transparent url(images/balloon-blue.png) 92px top no-repeat;
+  background: transparent url(/designs/themes/cirandas/images/balloon-blue.png) 92px top no-repeat;
   height: 6px;
 }
 
@@ -850,7 +850,7 @@ body.template-leftbar .box-1 {
   display: block;
   left: auto;
   right: -3px;
-  background-image: url(images/submenu-up.png);
+  background-image: url(/designs/themes/cirandas/images/submenu-up.png);
 }
 
 .action-profile-friends .main-block .common-profile-list-block .vcard .menu-submenu,
@@ -865,7 +865,7 @@ body.template-leftbar .box-1 {
 }
 
 .common-profile-list-block .vcard .menu-submenu-trigger:hover, .menu-submenu-trigger:hover {
-  background-image: url(images/submenu-hover-up.png);
+  background-image: url(/designs/themes/cirandas/images/submenu-hover-up.png);
 }
 
 .action-friends-index .profile-list li, .common-profile-list-block .vcard {
@@ -909,7 +909,7 @@ body.template-leftbar .box-1 {
 .highlights-label {
   padding-left: 5px;
   font-weight: bold;
-  background-image: url(images/blue-alpha-pixel.png);
+  background-image: url(/designs/themes/cirandas/images/blue-alpha-pixel.png);
 }
 
 .highlights-block a {
@@ -991,7 +991,7 @@ body.template-leftbar .box-1 {
 }
 
 #content .login-block .not-logged-user input.button.with-text {
-  background: #000 url(images/login.png) 50px center no-repeat;
+  background: #000 url(/designs/themes/cirandas/images/login.png) 50px center no-repeat;
   padding: 5px 43px 7px 4px;
   color: #fff;
   font-weight: normal;
@@ -1203,7 +1203,7 @@ body.template-leftbar .box-1 {
 #content .communities-block .block-footer-content a,
 #content .friends-block .block-footer-content a,
 #content .news-area a.news-see-more {
-  background-image: url(images/raquo.png);
+  background-image: url(/designs/themes/cirandas/images/raquo.png);
   font-size: 9px;
   color: #333;
   padding-bottom: 1px;
@@ -1413,7 +1413,7 @@ li.article-item .search-result-title {
 
 }
 .search-content-first-column .icon-application-vnd-oasis-opendocument-text {
-  background: url("icons/icon-file-document-text.png") no-repeat !important;
+  background: url("/designs/themes/cirandas/icons/icon-file-document-text.png") no-repeat !important;
   display: block;
   width: 64px;
   height: 64px;
@@ -1425,7 +1425,7 @@ li.article-item .search-result-title {
   margin: 17px auto;
 }
 .search-content-first-column .icon-application-vnd-oasis-opendocument-spreadsheet {
-  background: url("icons/icon-file-document-spreadsheet.png") no-repeat !important;
+  background: url("/designs/themes/cirandas/icons/icon-file-document-spreadsheet.png") no-repeat !important;
   display: block;
   width: 64px;
   height: 64px;
@@ -1437,7 +1437,7 @@ li.article-item .search-result-title {
   margin: 17px auto;
 }
 .search-content-first-column .icon-application-pdf {
-  background: url("icons/icon-file-pdf.png") no-repeat !important;
+  background: url("/designs/themes/cirandas/icons/icon-file-pdf.png") no-repeat !important;
   display: block;
   width: 64px;
   height: 64px;
@@ -1460,22 +1460,22 @@ li.article-item .search-result-title {
 .search-content-first-column .icon-content-textile-article,
 .search-content-first-column .icon-content-tiny-mce-article,
 .search-content-first-column .icon-content-text-article {
-  background: url("icons/icon-article-text.png") no-repeat !important;
+  background: url("/designs/themes/cirandas/icons/icon-article-text.png") no-repeat !important;
 }
 .search-content-type-icon.icon-content-blog {
-  background: url("icons/icon-blog.png") no-repeat !important;
+  background: url("/designs/themes/cirandas/icons/icon-blog.png") no-repeat !important;
 }
 .search-content-type-icon.icon-content-folder {
-  background: url("icons/icon-folder.png") no-repeat !important;
+  background: url("/designs/themes/cirandas/icons/icon-folder.png") no-repeat !important;
 }
 .search-content-type-icon.icon-content-enterprise-homepage {
-  background: url("icons/icon-home.png") no-repeat !important;
+  background: url("/designs/themes/cirandas/icons/icon-home.png") no-repeat !important;
 }
 .search-content-type-icon.icon-content-event {
-  background: url("icons/icon-event.png") no-repeat !important;
+  background: url("/designs/themes/cirandas/icons/icon-event.png") no-repeat !important;
 }
 .search-content-type-icon.icon-content-forum {
-  background: url("icons/icon-forum.png") no-repeat !important;
+  background: url("/designs/themes/cirandas/icons/icon-forum.png") no-repeat !important;
 }
 a:hover.search-blog-sample-item.icon {
   background-color:transparent;
@@ -1645,11 +1645,11 @@ div.token-input-dropdown-facet {
 
 #chat .small-loading-dark {
   /* thanks http://www.loadinfo.net for loading gif generator */
-  background-image: url(images/loading-small.gif);
+  background-image: url(/designs/themes/cirandas/images/loading-small.gif);
 }
 
 #buddy-list {
-  background-image: url(images/bg-bw.png);
+  background-image: url(/designs/themes/cirandas/images/bg-bw.png);
 }
 
 #buddy-list .buddy-list li a {
@@ -1744,7 +1744,7 @@ div#article.forum #addThis {
 #article td.forum-post-answers {
   height: 56px;
   width: 11%;
-  background-image: url(images/forum-answers-bg.png);
+  background-image: url(/designs/themes/cirandas/images/forum-answers-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
   font-weight: normal;

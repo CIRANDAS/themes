@@ -1,0 +1,194 @@
+@import 'cirandas';
+@import 'small';
+
+body {
+  background: url(images/bg-unicafes.png);
+}
+ 
+#content {
+  padding-top: 5px;
+}
+
+#content h1.page-title {
+  display:none;
+}
+
+.profile-info-block a {
+  font-size: small !important;
+}
+ 
+#content .block h2,
+#content .block-title {
+  color: #217335;
+}
+ 
+#content .link-list-block li {
+  background: none repeat scroll 0 0 #a6de8d;
+  border-radius: 4px 4px 4px 4px;
+}
+
+#content .link-list-block li a {
+  background: transparent;
+  font-size: 12px;
+  color: #fff;
+}
+
+#content .link-list-block li:hover {
+  background-color: #217335;
+}
+
+#content .link-list-block li a:hover  {
+  background-color: #217335;
+}
+ 
+.controller-search #content .search-results-box a.see-more {
+  background: #217335;
+  border: 1px solid #217335;
+}
+
+.profile-info-block a {
+  font-size: normal;
+}
+
+#wrap-1 {
+  background: url(/designs/themes/unicafes/images/content-bg.png) repeat-y scroll center top transparent;
+}
+
+#wrap-2 {
+  margin-top: 40px;
+  border-top: 0;
+}
+
+#cirandas-top-bar {
+  background: url(/designs/themes/unicafes/images/bg-unicafes.png) repeat-x scroll 0 0 transparent;
+  box-shadow: none; 
+}
+
+#navigation li .menu-submenu-trigger {
+  background: #FFDF7A;
+  border-color: #ffce3b;
+}
+
+#navigation li .menu-submenu, #navigation li .menu-submenu ul {
+  background: #FFDF7A;
+}
+
+#user {
+  background: #FFDF7A;
+  opacity: 0.6;  
+}
+
+#profile-header {
+  padding-bottom: 20px;
+}
+
+#tb-logo {
+  left: 107px !important;
+}
+
+.block-inner-2 h3.block-title {
+  display: none;
+}
+
+.link-list-block ul {
+}
+
+#content .box-1 .link-list-block li {
+  margin: 5px 10px 5px;
+  padding: 0;
+}
+
+#content .link-list-block li a.link-this-page {
+  padding: 0 20px 0 20px;
+  margin-right: 0;
+  background-color: #217335;
+}
+
+#content .link-list-block li a.link-this-page:hover {
+  border-radius: 0;
+  border: 0;
+}
+
+div#block-372189 div.vcard h2.org {
+  display: none;
+}
+
+div#block-372189 div.block-inner-2 {
+  margin-top: -30px;
+}
+
+#footer-content {
+  background: url("/designs/themes/unicafes/images/content-footer-bg.png") no-repeat scroll center center transparent;
+}
+
+#footer-bottom {
+  background: url("/designs/themes/unicafes/images/footer-bg.png") no-repeat scroll center center transparent;
+}
+
+p.MsoTitle {
+    color: #a6de8d;
+}
+
+h1.title, #content .blog-post .title a  {
+  font-weight: bold;
+}
+
+h1.title, h1.title a, div.read-more a, div.pagination a, div.pagination span, div#theme-footer a {
+  color: #80900d !important;
+} 
+
+.controller-profile_design #titulo_materia {
+  top: 10px; /* somente na admin */
+}
+
+/* slideshow */
+#slideshow {
+  height: 425px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#slideshow #titulo_materia {
+  height: 50px;
+  opacity: 0.8;
+  width: 711px;
+  background-color: #9aad14;
+  position: absolute;
+  top: 373px;
+}
+
+#slideshow #titulo_materia a {
+  color: #fff;
+  text-align: right;
+  padding: auto;
+  margin-left: 100px;
+  width: 590px;
+  font-weight: bold;
+  margin-top: -15px;
+}
+
+#slideshow #imagens {
+  position: absolute;
+  height: 425px;
+  width: 710px;
+  overflow: hidden;
+}
+
+#slideshow #link_materia {
+  position: absolute;
+  top: 380px;
+  margin-left: 5px;
+}
+
+#slideshow #link_materia a {
+  color: #fff;
+}
+
+#slideshow a {
+  text-decoration: none;
+}
+
+.atual {
+  background-color: #ffcc00;
+  font-weight: bold;
+}
