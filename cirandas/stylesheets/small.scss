@@ -5,6 +5,12 @@
   position: inherit;
 }
 
+#wrap-2 {
+  #navigation, #user {
+    display: none;
+  }
+}
+
 #content {
   margin-top: 9px;
 }
