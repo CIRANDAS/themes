@@ -102,15 +102,15 @@ cirandas_theme.load_navigation = function () {
   // Adjust navigation submenu trigger width
   var contents = parseInt(navigation.find('#submenu-contents').first().width());
   navigation.find('#submenu-contents-trigger').first().width(contents - 2);
-  navigation.find('head').append('<style type="text/css">#navigation-contents .menu-submenu, #navigation-contents .menu-submenu li {width: ' + contents + 'px;}</style>');
+  jQuery('head').append('<style type="text/css">#navigation-contents .menu-submenu, #navigation-contents .menu-submenu li {width: ' + contents + 'px;}</style>');
 
   var comm = parseInt(navigation.find('#submenu-communities').first().width());
   navigation.find('#submenu-communities-trigger').first().width(comm - 2);
-  navigation.find('head').append('<style type="text/css">#navigation-communities .menu-submenu, #navigation-communities .menu-submenu li {width: ' + comm + 'px;}</style>');
+  jQuery('head').append('<style type="text/css">#navigation-communities .menu-submenu, #navigation-communities .menu-submenu li {width: ' + comm + 'px;}</style>');
 
   var people = parseInt(navigation.find('#submenu-people').first().width());
   navigation.find('#submenu-people-trigger').first().width(people - 2);
-  navigation.find('head').append('<style type="text/css">#navigation-people .menu-submenu, #navigation-people .menu-submenu li {width: ' + people + 'px;}</style>');
+  jQuery('head').append('<style type="text/css">#navigation-people .menu-submenu, #navigation-people .menu-submenu li {width: ' + people + 'px;}</style>');
 
   navigation.find('#submenu-contents-trigger, #submenu-communities-trigger, #submenu-people-trigger').show();
 };
