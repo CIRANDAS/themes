@@ -18,19 +18,22 @@ cirandas_theme.load_small_header = function () {
 cirandas_theme.change_title_position = function() {
   var title;
 
-  // Change title position
   if (!cirandas_theme.title_name)
     title = jQuery('#content h1').first();
-  else if (!cirandas_theme.is_enterprise)
-    title = jQuery('<h1>'+cirandas_theme.title_name+'</h1>');
   else {
-    title = jQuery('<span>Empreendimento de Economia Solidária</span><h1>'+cirandas_theme.title_name+'</h1>');
-    jQuery('.article-body-enterprise-homepage').siblings('div').find('h1.title').remove();
+    jQuery('#content > .page-title').remove();
+
+    if (!cirandas_theme.is_enterprise)
+      title = jQuery('<h1>'+cirandas_theme.title_name+'</h1>');
+    else {
+      title = jQuery('<span>Empreendimento de Economia Solidária</span><h1>'+cirandas_theme.title_name+'</h1>');
+      jQuery('.article-body-enterprise-homepage').siblings('div').find('h1.title').remove();
+    }
   }
 
   title.addClass('page-title').prependTo('#content');
-  if (jQuery('.no-boxes').length > 0) title.addClass('no-boxes');
 
+  if (jQuery('.no-boxes').length > 0) title.addClass('no-boxes');
 };
 
 cirandas_theme.load_footer = function () {

@@ -1,7 +1,7 @@
 <%
 
 @body_extra_classes = " #{controller.send :content_classes rescue ''}"
-if defined?(ConsumersCoopPlugin)
+if defined? ConsumersCoopPlugin
   extend ConsumersCoopPlugin::LayoutHelper
   @body_extra_classes += ' consumers-coop-enabled' if collective?
 end

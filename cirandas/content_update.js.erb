@@ -1,8 +1,7 @@
 <% ready = false unless defined? ready %>
-<% title_name = @profile ? escape_javascript(@profile.short_name(53)) : '' %>
+<% title_name = if @profile then escape_javascript @profile.short_name(53) else '' end %>
 
 if (typeof cirandas_theme === 'undefined') cirandas_theme = {};
-
 cirandas_theme.title_name = <%= title_name.to_json %>;
 cirandas_theme.is_enterprise = <%= (!! @profile and @profile.enterprise?).to_json %>;
 
