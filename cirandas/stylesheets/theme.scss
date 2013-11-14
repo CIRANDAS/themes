@@ -808,10 +808,6 @@ body.template-leftbar .box-1 {
   padding: 0;
 }
 
-#content .product-cat-icon {
-  display: none;
-}
-
 /* Chat */
 
 #title-bar {
@@ -1621,8 +1617,48 @@ div.token-input-dropdown-facet {
   margin-top: 0;
 }
 
+#content .product-cat-icon {
+  display: none;
+}
+
 #product-info {
   min-height: 35px;
+}
+
+#product-info .field-name, #product-info .field-value {
+  color: #EA6400;
+  font-size: 20px;
+}
+
+#product-info .field-name {
+  display:none;
+}
+
+body.template-default #product-image, body.template-2leftbars #product-image {
+  width: 250px;
+}
+body.template-default #content .product-pic, body.template-2leftbars .product-pic {
+  width: 250px;
+}
+body.template-default #product-info .field-name, body.template-default #product-info .field-value,  
+body.template-2leftbars #product-info .field-name, body.template-2leftbars #product-info .field-value {
+  font-size: 12px;
+}
+
+#content .block #display-product-name h2 {
+  background-color: transparent;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: none;
+  padding:0;
+}
+
+#content #product-list .ui-button-text {
+  color: #000;
+  font-weight:bold;
+  font-size: 0.8em;
+  padding: 0.1em 0.3em 0.1em 3em;
 }
 
 /* Chat */
