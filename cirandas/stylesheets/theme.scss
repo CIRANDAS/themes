@@ -1654,7 +1654,7 @@ body.template-2leftbars #product-info .field-name, body.template-2leftbars #prod
   padding:0;
 }
 
-#content #product-list .ui-button-text {
+#content #product-list .ui-button-text, #content #cart-add-item .ui-button-text {
   color: #000;
   font-weight:bold;
   font-size: 0.8em;
