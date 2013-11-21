@@ -18,10 +18,16 @@ cirandas_theme.load_small_header = function () {
 cirandas_theme.change_title_position = function() {
   var title;
 
+  title = jQuery('#content h1.page-title');
+  // check if page-title was statically added
+  if (title)
+    return;
+
   if (!cirandas_theme.title_name)
     title = jQuery('#content h1').first();
   else {
-    jQuery('#content > .page-title').remove();
+    // remove any previous added
+    jQuery('#content h1.page-title').remove();
 
     if (!cirandas_theme.is_enterprise)
       title = jQuery('<h1>'+cirandas_theme.title_name+'</h1>');
