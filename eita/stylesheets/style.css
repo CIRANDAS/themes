@@ -1013,7 +1013,7 @@ body.template-leftbar .box-1 {
 .profile_link span {
   font-size: 10px;
   line-height: 12px;
-  color: #1fa1d0;
+  color: #036276;
   text-decoration: underline; }
 
 .action-friends-index .profile-list li:hover,
@@ -1069,7 +1069,7 @@ body.template-leftbar .box-1 {
   padding: 5px 0; }
 
 #content .link-list-block li a {
-  background-color: #C4E6F2;
+  background-color: #cceaf4;
   font-size: 12px; }
 
 .blog-archives-block ul {
@@ -1090,7 +1090,7 @@ body.template-leftbar .box-1 {
 
 .blog-archives-block ul ul li a {
   list-style: square;
-  color: #1fa1d0;
+  color: #036276;
   text-decoration: underline; }
 
 .blog-archives-block ul ul li a:hover {
@@ -1100,7 +1100,7 @@ body.template-leftbar .box-1 {
   list-style: square; }
 
 .my-network-block li a {
-  color: #1fa1d0;
+  color: #036276;
   text-decoration: underline; }
 
 .my-network-block li a:hover {

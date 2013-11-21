@@ -20,7 +20,7 @@ cirandas_theme.change_title_position = function() {
 
   title = jQuery('#content h1.page-title');
   // check if page-title was statically added
-  if (title)
+  if (title.length > 0)
     return;
 
   if (!cirandas_theme.title_name)
