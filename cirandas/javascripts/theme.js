@@ -32,7 +32,9 @@ cirandas_theme.change_title_position = function() {
     if (!cirandas_theme.is_enterprise)
       title = jQuery('<h1>'+cirandas_theme.title_name+'</h1>');
     else {
-      title = jQuery('<span>Empreendimento de Economia Solidária</span><h1>'+cirandas_theme.title_name+'</h1>');
+      title = jQuery('<h1>'+cirandas_theme.title_name+'</h1>')
+        .append("<span class='solidarity-economy'>Empreendimento de Economia Solidária</span>");
+
       jQuery('.article-body-enterprise-homepage').siblings('div').find('h1.title').remove();
     }
   }

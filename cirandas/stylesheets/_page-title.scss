@@ -1,3 +1,4 @@
+@import 'base';
 @import 'colors';
 
 #content {
@@ -7,7 +8,8 @@
       z-index: 10;
       position: relative;
       margin-bottom: 20px;
-      padding: 5px 0 5px 244px;
+      top: 8px;
+      padding: 8px 0 4px 244px;
       height: 30px;
       display: block;
       overflow: hidden;
@@ -20,21 +22,32 @@
       font-weight: lighter;
       text-align: left;
 
-      small {
-        margin-left: 15px;
-        font-size: 17px;
+      span, a {
+        color: white;
+        font-size: 12px;
+      }
+
+      span {
+
+        &.solidarity-economy {
+          position: absolute;
+          right: 4px;
+          top: 4px;
+          font-style: italic;
+          opacity: 0.7;
+        }
+
+        &.network-tag {
+          margin-top: 1.5*$padding;
+          margin-right: $half-padding;
+
+          img {
+            vertical-align: middle;
+            margin-right: $half-padding;
+          }
+        }
       }
     }
   }
 
-  span.page-title {
-    font-size: 12px;
-    font-style: italic;
-    display: block;
-    position: absolute;
-    right: 10px;
-    top: 127px;
-    color: white;
-    opacity: 0.7;
-  }
 }
