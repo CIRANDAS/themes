@@ -22,7 +22,7 @@
       DEFAULT_LOADING_MESSAGE = <%="'#{ _('loading...') }'" %>;
     </script>
 
-    <%= render 'layouts/owa' %>
+    <%= render 'layouts/owa' if Rails.env.production? %>
 
   </head>
 
