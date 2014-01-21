@@ -47,16 +47,25 @@
   margin: 0;
   padding: 20px 0 4px 0;
   position: absolute;
-}
-#user .logged-in a,
-#user .logged-in > span {
-  padding: 2px 0 2px 8px;
-}
-#user .not-logged-in {
-  padding-left: 8px;
-}
-#user form {
-  display: none;
+
+  .logged-in {
+
+    a, > span {
+      padding: 2px 0 2px 8px;
+    }
+
+    #pending-tasks-count {
+      margin-top: 18px;
+    }
+  }
+
+  .not-logged-in {
+    padding-left: 8px;
+  }
+
+  form {
+    display: none;
+  }
 }
 
 #tb-middle {
@@ -74,41 +83,43 @@
 
 #navigation {
   width: 100%;
+  height: 40px;
   position: inherit;
   border-top: none;
-}
-#navigation a {
-  line-height: 16px;
-  height: 18px;
-  font-size: 9px;
-  right: 0;
-  left: 0;
-}
-#navigation ul {
-  border: none;
-  padding-top: 8px;
-}
-#navigation li {
-  padding-right: 8px;
-}
-#navigation .header-icon,
-#navigation #header-help {
-  width: 18px;
-  height: 19px;
-  top: 0;
-  left: 0;
-}
-#navigation .header-icon a {
-  width: 18px;
-  height: 19px;
-  right: 0;
-  top: 0;
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-#navigation li .menu-submenu-trigger {
-  height: 4px;
+
+  a {
+    line-height: 16px;
+    height: 18px;
+    font-size: 9px;
+    right: 0;
+    left: 0;
+  }
+  ul {
+    border: none;
+    padding-top: 8px;
+  }
+  li {
+    padding-right: 8px;
+  }
+  .header-icon,
+  #header-help {
+    width: 18px;
+    height: 19px;
+    top: 0;
+    left: 0;
+  }
+  .header-icon a {
+    width: 18px;
+    height: 19px;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  li .menu-submenu-trigger {
+    height: 4px;
+  }
 }
 
 #header-help a,

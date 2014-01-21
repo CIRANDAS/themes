@@ -409,6 +409,9 @@ body.template-leftbar .box-1 {
 #site-title a span {
   display: none; }
 
+#user .logged-in > * {
+  margin-left: 0; }
+
 /* Footer */
 #theme-footer {
   border-radius: 0 0 10px 10px;

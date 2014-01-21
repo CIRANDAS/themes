@@ -125,6 +125,12 @@ body.template-leftbar .box-1 {
   display: none;
 }
 
+
+// base theme override
+#user .logged-in > * {
+  margin-left: 0;
+}
+
 /* Footer */
 
 #theme-footer {
