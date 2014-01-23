@@ -14,27 +14,26 @@
     <%= yield :head %>
     <%=
       @plugins.dispatch(:head_ending).collect do |content|
-        content.respond_to?(:call) ? content.call : content
+        if content.respond_to?(:call) then instance_eval &content else content end
       end.join("\n")
     %>
 
     <script type='text/javascript'>
       DEFAULT_LOADING_MESSAGE = <%="'#{ _('loading...') }'" %>;
     </script>
+
+    <%= render 'layouts/owa' if Rails.env.production? %>
+
   </head>
 
-  <% content_classes = " #{controller.send(:content_classes) rescue ''}" %>
-  <% if defined?(ConsumersCoopPlugin) %>
-    <% extend ConsumersCoopPlugin::LayoutHelper %>
-    <% content_classes += ' consumers-coop-enabled' if collective? %>
-  <% end %>
+  <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/load.erb" %>
 
-  <body class="<%= body_classes + content_classes %>">
+  <body class="<%= body_classes + @body_extra_classes %>">
     <a href="#content" id="link-go-content"><span><%= _("Go to the content") %></span></a>
 
     <%=
       @plugins.dispatch(:body_beginning).collect do |content|
-        content.respond_to?(:call) ? content.call : content
+        if content.respond_to?(:call) then instance_eval &content else content end
       end.join("\n")
     %>
 
@@ -55,12 +54,7 @@
           <div id="navigation-end"></div>
         </div><!-- end id="navigation" -->
         <div id="content">
-          <%= render_header if defined?(ConsumersCoopPlugin) %>
-
-          <div id="content-inner">
-            <%= insert_boxes(yield) %>
-            <br style='clear: both'/>
-          </div><!-- end id="content-inner" -->
+          <%= render :partial => 'layouts/content' %>
         </div><!-- end id="content" -->
       </div><!-- end id="wrap-2" -->
     </div><!-- end id="wrap-1" -->
@@ -69,6 +63,6 @@
       <%= theme_footer %>
     </div><!-- end id="theme-footer" -->
     <%= noosfero_layout_features %>
-    <%= theme_javascript_ng %>
+    <%= addthis_javascript %>
   </body>
 </html>

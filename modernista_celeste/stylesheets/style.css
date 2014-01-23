@@ -1,4 +1,5 @@
 @import url(../base/style.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 /* use with @extend, CSS clear bugfix */
 .clean {
   clear: both; }
@@ -2063,3 +2064,124 @@ div#addThis {
 
 #content h1.page-title {
   margin-top: 30px; }
+
+/*Start of "Modernista Celeste" - inspired by Modernist Theme by orderedlist: https://github.com/orderedlist/modernist*/
+/*@import url(http://www.google.com/fonts#UsePlace:use/Collection:Imprima);*/
+html {
+  background: #6c7989 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6c7989), color-stop(100%, #434b55)) fixed;
+  background: #6c7989 -webkit-linear-gradient(#6c7989, #434b55) fixed;
+  background: #6c7989 -moz-linear-gradient(#6c7989, #434b55) fixed;
+  background: #6c7989 -o-linear-gradient(#6c7989, #434b55) fixed;
+  background: #6c7989 -ms-linear-gradient(#6c7989, #434b55) fixed;
+  background: #6c7989 linear-gradient(#6c7989, #434b55) fixed;
+  background: #6C7989; }
+
+body {
+  padding: 50px 0px;
+  margin: 0px;
+  font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAUdEVYdENyZWF0aW9uIFRpbWUAMy82LzEygrTcTAAAAFRJREFUSIljfPDggZRf5RIGGNjUHsNATz6jXmSL1Kb2GLiAX+USBnrymRgGGDCORgFmoNAXjEbBaBSMRsFoFIxGwWgUjEbBaBSMRsFoFIxGwWgUAABYNujumib3wAAAAABJRU5ErkJggg==") fixed;
+  color: #555; }
+
+#wrap-1 {
+  margin: 0px auto;
+  background: none;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2), 0px 3px 10px rgba(0, 0, 0, 0.45); }
+
+#wrap-2 {
+  top: 0;
+  border-radius: 8px 8px 0 0;
+  border: none;
+  padding: 0;
+  background: -webkit-gradient(linear, 50% 0%, 50% 700, color-stop(0%, #fafafa), color-stop(100%, #dedede));
+  background: -webkit-linear-gradient(#fafafa, #dedede 1000px);
+  background: -moz-linear-gradient(#fafafa, #dedede 1000px);
+  background: -o-linear-gradient(#fafafa, #dedede 1000px);
+  background: -ms-linear-gradient(#fafafa, #dedede 1000px);
+  background: linear-gradient(#fafafa, #dedede 1000px); }
+
+#content {
+  margin: 20px 0 0 0;
+  padding: 0; }
+
+#content h1.page-title, #content h3.block-title {
+  border-radius: 8px 8px 0px 0px;
+  background: #C6EAFA;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ddfbfc), color-stop(100%, #c6eafa));
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ddfbfc), color-stop(100%, #c6eafa));
+  background: -webkit-linear-gradient(#ddfbfc, #c6eafa);
+  background: -moz-linear-gradient(#ddfbfc, #c6eafa);
+  background: -o-linear-gradient(#ddfbfc, #c6eafa);
+  background: -ms-linear-gradient(#ddfbfc, #c6eafa);
+  background: linear-gradient(#ddfbfc, #c6eafa);
+  position: relative;
+  top: 0;
+  padding: 15px 40px;
+  border-bottom: 1px solid #b2d2e1;
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #006699;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.898);
+  font-weight: bold; }
+
+#content h1.page-title span.solidarity-economy {
+  color: #006699;
+  font-size: 13px; }
+
+#content h3.block-title {
+  padding: 0;
+  font-size: 16px;
+  background: none;
+  margin-bottom: 10px; }
+
+#site-title {
+  display: none; }
+
+#content-inner {
+  padding: 0;
+  font-size: 15px;
+  border-top: 1px solid #fff;
+  -webkit-border-radius: 0 0 8px 8px;
+  -moz-border-radius: 0 0 8px 8px;
+  -ms-border-radius: 0 0 8px 8px;
+  -o-border-radius: 0 0 8px 8px;
+  border-radius: 0 0 8px 8px;
+  position: relative; }
+
+#boxes {
+  padding: 15px 40px 0 40px; }
+
+#content h1, #content .main-block h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+  color: #222;
+  padding: 0;
+  margin: 0 0 20px;
+  line-height: 1.2;
+  font-weight: bold; }
+
+#content p, #content ul, #content ol, #content table, #content pre, #content dl {
+  margin: 0 0 20px; }
+
+#content h1, #content .main-block h1, #content h2, #content h3 {
+  line-height: 1.1; }
+
+#content h1 {
+  font-size: 28px; }
+
+#content h2 {
+  color: #393939; }
+
+#content h3, #content h4, #content h5, #content h6 {
+  color: #494949; }
+
+#content .link-list-block li a {
+  font: 300 14px/1.5 Lato,"Helvetica Neue",Helvetica,Arial,sans-serif; }
+
+#profile-footer {
+  border-top: 2px solid #222;
+  background-color: #fff;
+  float: left;
+  width: 100%; }
+
+/* End of "modernista celeste" */

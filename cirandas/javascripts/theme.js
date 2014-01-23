@@ -2,8 +2,8 @@
 if (typeof cirandas_theme === 'undefined') cirandas_theme = {};
 
 cirandas_theme.load_small_header = function () {
-  jQuery('#user').appendTo('#cirandas-top-bar');
-  jQuery('#navigation').prependTo('#tb-middle');
+  jQuery('#cirandas-top-bar').append(jQuery('#user').get(0).outerHTML);
+  jQuery('#cirandas-top-bar #tb-middle').prepend(jQuery('#navigation').get(0).outerHTML);
 
   jQuery('#tb-search input').focusout(function () {
     if (this.value == '')
@@ -15,22 +15,38 @@ cirandas_theme.load_small_header = function () {
   });
 };
 
-cirandas_theme.load_footer = function () {
-  // Hide profile footer if empty
-  jQuery('#profile-footer:empty').hide();
+cirandas_theme.change_title_position = function() {
+  var title;
 
-  // Change title position
-  if (!this.title_name)
+  title = jQuery('#content h1.page-title');
+  // check if page-title was statically added
+  if (title.length > 0)
+    return;
+
+  if (!cirandas_theme.title_name)
     title = jQuery('#content h1').first();
-  else if (!this.is_enterprise)
-    title = jQuery('<h1>'+this.title_name+'</h1>');
   else {
-    title = jQuery('<span>Empreendimento de Economia Solidária</span><h1>'+this.title_name+'</h1>');
-    jQuery('.article-body-enterprise-homepage').siblings('div').find('h1.title').remove();
+    // remove any previous added
+    jQuery('#content h1.page-title').remove();
+
+    if (!cirandas_theme.is_enterprise)
+      title = jQuery('<h1>'+cirandas_theme.title_name+'</h1>');
+    else {
+      title = jQuery('<h1>'+cirandas_theme.title_name+'</h1>')
+        .append("<span class='solidarity-economy'>Empreendimento de Economia Solidária</span>");
+
+      jQuery('.article-body-enterprise-homepage').siblings('div').find('h1.title').remove();
+    }
   }
 
   title.addClass('page-title').prependTo('#content');
+
   if (jQuery('.no-boxes').length > 0) title.addClass('no-boxes');
+};
+
+cirandas_theme.load_footer = function () {
+  // Hide profile footer if empty
+  jQuery('#profile-footer:empty').hide();
 
   // Add space between login button and signup link (RT#20190)
   jQuery('.login-block .login-box .button-bar input').after("<br/>");
@@ -89,32 +105,24 @@ cirandas_theme.alignMenuItems = function (ul) {
 };
 
 cirandas_theme.load_navigation = function () {
+  var navigation = this.small_header ? jQuery('#cirandas-top-bar #navigation') : jQuery('#navigation');
+
   if (this.calculate_spacing)
-    this.alignMenuItems(jQuery('#navigation ul'));
+    this.alignMenuItems(navigation.find('ul'));
 
   // Adjust navigation submenu trigger width
-  var contents = parseInt(jQuery('#submenu-contents').first().width());
-  jQuery('#submenu-contents-trigger').first().width(contents - 2);
+  var contents = parseInt(navigation.find('#submenu-contents').first().width());
+  navigation.find('#submenu-contents-trigger').first().width(contents - 2);
   jQuery('head').append('<style type="text/css">#navigation-contents .menu-submenu, #navigation-contents .menu-submenu li {width: ' + contents + 'px;}</style>');
 
-  var comm = parseInt(jQuery('#submenu-communities').first().width());
-  jQuery('#submenu-communities-trigger').first().width(comm - 2);
+  var comm = parseInt(navigation.find('#submenu-communities').first().width());
+  navigation.find('#submenu-communities-trigger').first().width(comm - 2);
   jQuery('head').append('<style type="text/css">#navigation-communities .menu-submenu, #navigation-communities .menu-submenu li {width: ' + comm + 'px;}</style>');
 
-  var people = parseInt(jQuery('#submenu-people').first().width());
-  jQuery('#submenu-people-trigger').first().width(people - 2);
+  var people = parseInt(navigation.find('#submenu-people').first().width());
+  navigation.find('#submenu-people-trigger').first().width(people - 2);
   jQuery('head').append('<style type="text/css">#navigation-people .menu-submenu, #navigation-people .menu-submenu li {width: ' + people + 'px;}</style>');
 
-  jQuery('#submenu-contents-trigger, #submenu-communities-trigger, #submenu-people-trigger').show();
+  navigation.find('#submenu-contents-trigger, #submenu-communities-trigger, #submenu-people-trigger').show();
 };
 
-jQuery(function ($) {
-  cirandas_theme.load_navigation();
-
-  if (cirandas_theme.small_header)
-    cirandas_theme.load_small_header();
-  else
-    cirandas_theme.load_header();
-
-  cirandas_theme.load_footer();
-});

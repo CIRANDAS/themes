@@ -1,0 +1,7 @@
+<%= consumers_coop_header if defined? ConsumersCoopPlugin and consumers_coop_enabled? %>
+<%= network_header if defined? NetworksPlugin and profile and (network_node? or profile.enterprise?) %>
+
+<div id="content-inner">
+  <%= insert_boxes(yield) %>
+  <br style='clear: both'/>
+</div><!-- end id="content-inner" -->

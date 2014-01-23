@@ -1,0 +1,140 @@
+@import 'base';
+
+/* Header */
+#wrap-1 {
+  position: inherit;
+}
+
+#wrap-2 {
+  #navigation, #user {
+    display: none;
+  }
+}
+
+#content {
+  margin-top: 9px;
+}
+
+#theme-header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  height: 50px;
+  width: auto;
+}
+#cirandas-top-bar {
+  background: #EDF8FA;
+  height: 40px;
+  box-shadow: 0 6px 10px -4px #888;
+  -moz-box-shadow: 0 6px 10px -4px #888;
+  -webkit-box-shadow: 0 6px 10px -4px #888;
+}
+
+#tb-logo {
+  background: transparent url(/designs/themes/cirandas/images/logo-small.png) center left no-repeat;
+  float: left;
+  width: 210px;
+  height: 50px;
+  position: absolute;
+  top: -5px;
+  left: 17px;
+}
+
+#user {
+  border: none;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding: 20px 0 4px 0;
+  position: absolute;
+
+  .logged-in {
+
+    a, > span {
+      padding: 2px 0 2px 8px;
+    }
+
+    #pending-tasks-count {
+      margin-top: 18px;
+    }
+  }
+
+  .not-logged-in {
+    padding-left: 8px;
+  }
+
+  form {
+    display: none;
+  }
+}
+
+#tb-middle {
+  width: 550px;
+  margin: 0 auto;
+}
+#tb-search {
+  position: absolute;
+  top: 4px;
+  width: 150px;
+}
+#tb-search form input {
+  width: 150px;
+}
+
+#navigation {
+  width: 100%;
+  height: 40px;
+  position: inherit;
+  border-top: none;
+
+  a {
+    line-height: 16px;
+    height: 18px;
+    font-size: 9px;
+    right: 0;
+    left: 0;
+  }
+  ul {
+    border: none;
+    padding-top: 8px;
+  }
+  li {
+    padding-right: 8px;
+  }
+  .header-icon,
+  #header-help {
+    width: 18px;
+    height: 19px;
+    top: 0;
+    left: 0;
+  }
+  .header-icon a {
+    width: 18px;
+    height: 19px;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  li .menu-submenu-trigger {
+    height: 4px;
+  }
+}
+
+#header-help a,
+#header-help a:hover {
+  background: transparent url(/designs/themes/cirandas/images/help-small.png) top center no-repeat;
+}
+#header-search a,
+#header-search a:hover {
+  background: transparent url(/designs/themes/cirandas/images/search-small.png) top center no-repeat;
+}
+
+#site-title {
+  display: none;
+}
+#content h1.page-title {
+  margin-top: 30px;
+}
+
