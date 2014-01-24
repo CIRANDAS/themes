@@ -1,0 +1,6 @@
+name: "Tema Coral - lilás para a Red Mujeres"
+layout: "cirandas" # don't change
+jquery_theme: "smoothness_mod"
+icon_theme: [default, pidgin]
+owner_type: 'Community'
+owner_id: 31371

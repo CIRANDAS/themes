@@ -1,6 +1,7 @@
+.gitignore
+
+.sass-cache
+
 *.swp
 *.swo
-.sass-cache
-cirandas/stylesheets/*.css
 *~
-.gitignore
