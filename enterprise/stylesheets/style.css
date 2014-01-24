@@ -2065,8 +2065,171 @@ div#addThis {
 #content h1.page-title {
   margin-top: 30px; }
 
+/* Globals */
+a {
+  color: #24b66e; }
+
+/* Structure */
+/* Header */
+/* User menu */
+/* Help */
+#navigation #header-help a {
+  color: #24b66e; }
+
+/* Categories Menu */
+/* Navigation */
+#navigation ul {
+  border-top-color: #ddffd9; }
+
+#navigation li .menu-submenu-trigger {
+  background-color: #8effa1;
+  border-color: #8effa1; }
+
+#navigation li .menu-submenu {
+  background-color: #8effa1; }
+
+#navigation li .menu-submenu ul {
+  background-color: #8effa1;
+  border-color: #8effa1;
+  border-bottom: 1px dotted #000; }
+
+/* Content */
 #content {
-  padding-top: 5px; }
+  border-top-color: #24b66e; }
+
+#content .main-block h1, #not-found h1, #access-denied h1 {
+  color: #24b66e; }
+
+#content h1.page-title {
+  background: #24b66e; }
+
+/* Chat */
+/* Balloon */
+#content .menu-submenu-content {
+  border-color: #24b66e; }
+
+.menu-submenu-footer {
+  background-image: url("../images/balloon-green.png"); }
+
+#content .menu-submenu h4 {
+  border-bottom-color: #8effa1; }
+
+.action-friends-index .profile-list li, .common-profile-list-block .vcard {
+  border-color: #24b66e; }
+
+#content .profile-list li a,
+#content .common-profile-list-block li a {
+  color: #24b66e; }
+
+/* Block */
+.highlights-label {
+  background-image: url(../images/green-alpha-pixel.png); }
+
+.highlights-block-pager a.activeSlide:visited, .highlights-block-pager a.activeSlide {
+  color: #24b66e; }
+
+#content .block h2, #content .block-title {
+  background-color: #ddffd9; }
+
+#content .block-title {
+  background-color: #ddffd9; }
+
+#content .login-block .not-logged-user {
+  background-color: #ddffd9; }
+
+.profile_link span {
+  color: #24b66e; }
+
+.common-profile-list-block .vcard .menu-submenu-trigger,
+.menu-submenu-trigger {
+  border-right-color: #24b66e;
+  border-top-color: #24b66e; }
+
+.common-profile-list-block .vcard .menu-submenu-trigger:hover,
+.menu-submenu-trigger:hover {
+  background-color: #24b66e; }
+
+.feed-reader-block li a, .recent-documents-block li a {
+  color: #24b66e; }
+
+#content .link-list-block li a {
+  background-color: #ddffd9; }
+
+#content .link-list-block li a:hover {
+  background-color: #24b66e; }
+
+#content .link-list-block li a.link-this-page {
+  background-color: #24b66e;
+  border-right: 0; }
+
+#content .link-list-block li a.link-this-page:hover {
+  background-color: #24b66e;
+  border-right: 0; }
+
+.blog-archives-block ul ul li a {
+  color: #24b66e; }
+
+.my-network-block li a {
+  color: #24b66e; }
+
+#profile-footer {
+  border-top: 1px solid #24b66e;
+  margin-top: 80px; }
+
+.controller-profile_editor .control-panel a:hover {
+  background-color: #ddffd9; }
+
+/* Footer */
+#theme-footer a {
+  color: #24b66e; }
+
+/* Blog */
+#content .blog-post .title a {
+  color: #24b66e; }
+
+/* Portal */
+#content #highlighted-news h2 a {
+  color: #24b66e; }
+
+/* Search */
+#content {
+  margin-top: 0;
+  padding-top: 0; }
+  #content #content-inner {
+    position: inherit;
+    padding-top: 0; }
+    #content #content-inner #profile-header {
+      margin-top: 80px;
+      margin-left: 224px; }
+    #content #content-inner .boxes .box-1, #content #content-inner .boxes .box-2, #content #content-inner .boxes .box-1 {
+      position: inherit; }
+    #content #content-inner .boxes .box-2 .blocks {
+      margin-top: 150px; }
+    #content #content-inner .boxes .box-2 .profile-image-block {
+      position: absolute;
+      top: 16px; }
+    #content #content-inner .boxes .box-2 .link-list-block {
+      position: absolute;
+      top: 16px;
+      left: 284px;
+      height: 80px;
+      width: 624px; }
+      #content #content-inner .boxes .box-2 .link-list-block ul li {
+        float: left;
+        margin: 0 2px; }
+        #content #content-inner .boxes .box-2 .link-list-block ul li a, #content #content-inner .boxes .box-2 .link-list-block ul li a.link-this-page {
+          background-position: 0;
+          margin: 0;
+          padding: 0 7px;
+          background: none;
+          font-size: 15px;
+          color: black;
+          font-weight: bold;
+          font-family: Ubuntu; }
+        #content #content-inner .boxes .box-2 .link-list-block ul li:hover, #content #content-inner .boxes .box-2 .link-list-block ul li a:hover, #content #content-inner .boxes .box-2 .link-list-block ul li a.link-this-page:hover {
+          background: #ddffd9;
+          border-radius: 20px;
+          border: none; }
 
 #content h1.page-title {
   display: none; }
@@ -2078,37 +2241,7 @@ div#addThis {
 #content .block-title {
   color: #217335; }
 
-#content .box-1 .link-list-block {
-  border-bottom: 4px solid black;
-  position: relative;
-  top: 74px;
-  left: -63px;
-  padding: 0 0 0 62px;
-  width: 717px; }
-  #content .box-1 .link-list-block ul {
-    margin-left: -7px; }
-  #content .box-1 .link-list-block li {
-    margin: 0 2px;
-    padding: 0; }
-    #content .box-1 .link-list-block li a, #content .box-1 .link-list-block li a.link-this-page {
-      background-position: 0;
-      margin: 0;
-      padding: 0 7px;
-      background: none;
-      font-size: 15px;
-      color: #000;
-      font-weight: bold;
-      font-family: Ubuntu; }
-    #content .box-1 .link-list-block li:hover, #content .box-1 .link-list-block li a:hover, #content .box-1 .link-list-block li a.link-this-page:hover {
-      color: #fff200;
-      background: #000;
-      border-radius: 20px;
-      border: none; }
-    #content .box-1 .link-list-block li a.link-this-page {
-      color: #ffc211; }
-#content .box-1 .main-block {
-  top: 100px; }
-#content .box-1 .main-block h1, #content .box-1 #not-found h1, #content .box-1 #access-denied h1 {
+#content .box-2 .main-block h1, #content .box-2 #not-found h1, #content .box-2 #access-denied h1 {
   font-variant: normal;
   font-weight: normal;
   font-family: Ubuntu;
@@ -2136,50 +2269,3 @@ div#addThis {
 .controller-profile_design #titulo_materia {
   top: 10px;
   /* somente na admin */ }
-
-/* slideshow */
-#slideshow {
-  height: 425px;
-  margin-top: 20px;
-  font-size: 18px; }
-
-#slideshow #titulo_materia {
-  height: 50px;
-  opacity: 0.8;
-  width: 711px;
-  background-color: #9aad14;
-  position: absolute;
-  top: 373px; }
-
-#slideshow #titulo_materia a {
-  color: #fff;
-  text-align: right;
-  padding: auto;
-  margin-left: 100px;
-  width: 590px;
-  font-weight: bold;
-  margin-top: -15px; }
-
-#slideshow #imagens {
-  position: absolute;
-  height: 425px;
-  width: 710px;
-  overflow: hidden; }
-
-#slideshow #link_materia {
-  position: absolute;
-  top: 380px;
-  margin-left: 5px; }
-
-#slideshow #link_materia a {
-  color: #fff; }
-
-#slideshow a {
-  text-decoration: none; }
-
-.atual {
-  background-color: #ffcc00;
-  font-weight: bold; }
-
-div#article {
-  padding-bottom: 80px; }
