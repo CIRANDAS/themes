@@ -1,4 +1,4 @@
-name: "Template for custom themes"
+name: "Tema Modernista - Celeste"
 layout: "cirandas" # don't change
 jquery_theme: "smoothness_mod"
 icon_theme: [default, pidgin]
