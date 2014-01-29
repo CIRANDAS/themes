@@ -1819,6 +1819,9 @@ div#addThis {
   margin-top: 5px;
   text-align: right; }
 
+#theme-options .opt-info {
+  position: static; }
+
 /* use with @extend, CSS clear bugfix */
 .clean {
   clear: both; }

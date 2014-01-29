@@ -1819,6 +1819,9 @@ div#addThis {
   margin-top: 5px;
   text-align: right; }
 
+#theme-options .opt-info {
+  position: static; }
+
 /* use with @extend, CSS clear bugfix */
 .clean {
   clear: both; }
@@ -2230,6 +2233,8 @@ a {
           background: #ddffd9;
           border-radius: 20px;
           border: none; }
+        #content #content-inner .boxes .box-2 .link-list-block ul li a.link-this-page {
+          text-decoration: underline; }
 
 #content h1.page-title {
   display: none; }
