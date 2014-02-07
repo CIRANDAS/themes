@@ -364,11 +364,6 @@ body.template-leftbar .box-1 {
 #content .link-list-block li a.link-this-page {
   max-width: none; }
 
-#profile-activity ul,
-#profile-network ul,
-#profile-wall ul {
-  width: 100%; }
-
 .ui-tabs .ui-tabs-panel {
   padding: 0; }
 
