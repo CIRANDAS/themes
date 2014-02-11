@@ -1,94 +1,32 @@
+$theme-name: "coral_lilas";
+$content-title: #10999C;
+$page-title: #FFF;
+$page-title-bg: #5A339E;
+$page-title-border-bottom: #417;
+$link-list-block: #FFF;
+$link-list-block-bg: #10999C;
+$link-this-page: #222;
+$link-this-page-bg: #CECECE;
+$links: #5A339E;
+$links-hover: #021848;
+$product-price: #0194C7;
+
+$catalog-details-bg: $link-list-block-bg;
+$catalog-details: $link-list-block;
+$catalog-details-bg-hover: $page-title-bg;
+$catalog-details-hover: $page-title;
+
+$block-title: $content-title;
+$profile-footer: #000;
+$profile-footer-bg: #9A73DE;
+$profile-footer-border-top: #339;
+$main-block-title: $content-title;
+$blog-post-title: $content-title;
+$body-bg-image-url: "";
+
+
 @import 'cirandas';
 @import 'small';
 @import url(http://fonts.googleapis.com/css?family=Imprima:regular,bold&subset=Latin);
+@import 'coral';
 
-body.template-leftbar .box-1 {
-  margin: 0 40px 0 284px;
-}
-
-body {
-  font-family: Imprima;
-}
-
-body p, ul, ol {
-	font-size:15px;
-}
-
-.no-boxes {
-	margin: 0 40px;
-}
-
-#content {
-	margin:0;
-	padding:0;
-}
-
-#content .block h2, #content .block-title {
-  color: #333333;
-  font-family: Imprima;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 6px 0 4px 4px;
-  background-color:transparent;
-}
-
-
-#content .link-list-block li a {
-  background-color: #10999C;
-  color: #FFFFFF;
-  font-size: 16px;
-}
-
-#content .article-body p {
-	text-align:justify;
-}
-
-#wrap-2 {
-	padding: 0;
-}
-
-#content .title {
-  font-family: Imprima;
-  font-size: 30px;
-  text-align:left;
-  color: #10999C;
-}
-
-#content .main-block h1, #not-found h1, #access-denied h1 {
-  color: #10999C;
-}
-
-#content .blog-post .title a {
-  color: #10999C;
-  font-size: 26px;
-}
-
-#content h1.page-title {
-  background-color: #5A339E;
-  font-family: Imprima;
-  font-size: 50px;
-  height: 60px;
-  padding: 20px 0;
-  text-align:center;
-  top:0;
-  margin:34px 0 0 0;
-  border-bottom: 2px solid #417;
-}
-
-.box-2 {
-  margin-left: 30px;
-  width: 220px;
-}
-
-#boxes {
-	padding-top:15px;
-}
-
-#profile-footer {
-	border-top:1px solid #339;
-	background-color: #9A73DE;
-	margin:0;
-	float:left;
-	width:100%;
-	padding: 20px 0;
-}

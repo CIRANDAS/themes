@@ -1,0 +1,137 @@
+body {
+  font-family: Imprima;
+  @if $body-bg-image-url != "" {
+  	background-image: $body-bg-image-url;
+  }
+}
+
+body p, ul, ol {
+	font-size:15px;
+}
+
+.no-boxes {
+	margin: 0 40px;
+}
+body.template-leftbar .box-1 {
+  margin: 0 40px 0 284px;
+}
+body.template-default .box-1 {
+  margin: 0 284px;
+}
+.box-2 {
+  margin-left: 40px;
+  width: 220px;
+}
+.box-3 {
+  margin-right: 40px;
+  width: 220px;
+}
+#boxes {
+	padding-top:15px;
+}
+
+#content {
+	margin:0;
+	padding:0;
+}
+
+#content .block h2, #content .block-title {
+  color: $block-title;
+  font-family: Imprima;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 6px 0 4px 4px;
+  background-color:transparent;
+}
+
+
+#content .link-list-block li a {
+  background-color: $link-list-block-bg;
+  color: $link-list-block;
+  font-size: 16px;
+}
+
+#content .link-list-block li a.link-this-page, 
+#content .link-list-block li a.link-this-page:hover, 
+#content .link-list-block li a:hover {
+  background-color: $link-this-page-bg;
+  color: $link-this-page;
+  border: none;
+}
+
+#content .article-body p {
+	text-align:justify;
+}
+
+#wrap-2 {
+	padding: 0;
+}
+
+#content .title {
+  font-family: Imprima;
+  font-size: 30px;
+  text-align:left;
+  color: $content-title;
+}
+
+#content .main-block h1, #not-found h1, #access-denied h1 {
+  color: $main-block-title;
+}
+
+#content .blog-post .title a {
+  color: $blog-post-title;
+  font-size: 26px;
+}
+
+#content h1.page-title {
+  background-color: $page-title-bg;
+  color: $page-title;
+  font-family: Imprima;
+  font-size: 50px;
+  height: 60px;
+  padding: 20px 0;
+  text-align:center;
+  top:0;
+  margin:34px 0 0 0;
+  border-bottom: 2px solid $page-title-border-bottom;
+}
+
+#profile-footer {
+	border-top:1px solid $profile-footer-border-top;
+	background-color: $profile-footer-bg;
+	color: $profile-footer;
+	margin:0;
+	float:left;
+	width:100%;
+	padding: 20px 0;
+}
+
+#product-list .expand-box {
+	background-color: $catalog-details-bg;
+}
+
+#product-list .expand-box:hover {
+	background-color: $catalog-details-bg-hover;
+}
+
+#content .block #display-product-name h2 {
+	color: $content-title;
+}
+
+.block a, a, .block a:visited, a:visited {
+	color: $links;
+}
+
+.block a:hover, a:hover, .block a:active, a:active {
+	color: $links-hover;
+}
+
+#product-list .product-price, #product-list .product-unit {
+	color: $product-price;
+}
+
+.controller-profile_editor .control-panel a:hover {
+	color: $link-this-page;
+	background-color: $link-this-page-bg;
+	border-radius: 5px;
+}
