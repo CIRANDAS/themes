@@ -120,12 +120,13 @@ overflow: hidden;
 
 /** HEADER */
 
-#content h1.page-title {
+#content #profile-theme-header {
 top: 0;
 margin: 0;
 padding: 0;
 height: 200px;
-background: #fff url(images/butterflybrilliance_left.jpg) no-repeat left top;
+//background: #fff url(images/butterflybrilliance_left.jpg) no-repeat left top;
+background-color:transparent;
 }
 
 #content h1.page-title, #content h1.page-title a:link, #content h1.page-title a:visited {
@@ -136,6 +137,15 @@ font-weight: normal;
 text-shadow: 0px 2px 3px #fff;
 color: #08B8F9;
 }
+#content h1.page-title {
+position:relative;
+z-index:2;
+top:0;
+padding:0;
+margin:0;
+height:100%;
+background-color:transparent;
+}
 
 #content h1.page-title a:link, #content h1.page-title a:visited {
 text-decoration: none;
@@ -145,9 +155,14 @@ text-decoration: none;
 text-shadow: #000 1px 1px;
 }
 
+#content img#profile-theme-header-bg {
+position:absolute;
+z-index:1;
+}
+
 #page-logo {
 float:left;
-height:200px;
+height:180px;
 min-width:260px;
 background-color:#fff;
 box-shadow: #000 4px 8px 10px;

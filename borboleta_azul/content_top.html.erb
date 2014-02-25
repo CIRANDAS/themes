@@ -1,4 +1,5 @@
-<div class="profile-theme-header">
+<div id="profile-theme-header">
+  <img id="profile-theme-header-bg" src="http://cirandas.net/designs/themes/borboleta_azul/images/butterflybrilliance.png">
   <h1 class='page-title'>
   	<% if profile.image.present? %>
   		<div id='page-logo'>
@@ -6,5 +7,6 @@
 	    </div>
 	<% end %>
     <div class="profile-name"><%= link_to profile.short_name, profile.url %></div>
+    <span class="solidarity-economy">Empreendimento de Economia Solidária</span>
   </h1>
 </div>
