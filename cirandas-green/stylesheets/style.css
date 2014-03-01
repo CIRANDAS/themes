@@ -1278,10 +1278,12 @@ body.template-leftbar .box-1 {
 #content .communities-block .block-footer-content a,
 #content .friends-block .block-footer-content a,
 #content .news-area a.news-see-more {
-  background-image: url(/designs/themes/cirandas/images/raquo.png);
-  font-size: 9px;
+  padding-bottom: 1px;
   color: #333;
-  padding-bottom: 1px; }
+  font-size: 9px;
+  background-image: url(/designs/themes/cirandas/images/raquo.png);
+  background-repeat: no-repeat;
+  background-position: right; }
 
 #content #highlighted-news h2 {
   text-transform: none;
