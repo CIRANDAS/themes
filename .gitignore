@@ -1,7 +1,5 @@
 .gitignore
-
 .sass-cache
-
+*~
 *.swp
 *.swo
-*~
