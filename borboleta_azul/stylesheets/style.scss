@@ -1,3 +1,28 @@
+$content-title: #06276F;
+$page-title: #FFFFFF;
+$page-title-bg: #06276F;
+$page-title-border-bottom: #417;
+$link-list-block: #021848;
+$link-list-block-bg: #08B8F9;
+$link-this-page: #fff;
+$link-this-page-bg: #333;
+$links: #175E91;
+$links-hover: #021848;
+$product-price: #0194C7;
+
+$catalog-details-bg: $page-title-bg;
+$catalog-details: $page-title;
+$catalog-details-bg-hover: $link-list-block-bg;
+$catalog-details-hover: $link-list-block;
+
+$block-title: $content-title;
+$profile-footer: $page-title;
+$profile-footer-bg: $page-title-bg;
+$profile-footer-border-top: $page-title-border-bottom;
+$main-block-title: $content-title;
+$blog-post-title: $content-title;
+
+
 @import 'variables';
 @import 'cirandas';
 @import 'small';

@@ -1,4 +1,4 @@
-$theme-name: "coral_lilas";
+$theme-name: "coral";
 $content-title: #10999C;
 $page-title: #FFF;
 $page-title-bg: #5A339E;
@@ -25,8 +25,10 @@ $blog-post-title: $content-title;
 $body-bg-image-url: "";
 
 
+
 @import 'variables';
 @import 'cirandas';
 @import 'small';
 @import url(http://fonts.googleapis.com/css?family=Imprima:regular,bold&subset=Latin);
-@import '../../coral/stylesheets/coral';
+@import 'coral';
+
