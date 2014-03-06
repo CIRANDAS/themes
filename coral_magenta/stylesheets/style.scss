@@ -1,6 +1,40 @@
+$theme-name: "coral_magenta";
+
+//tit: Títulos e links
+$content-title: #007439; // Títulos
+$links: #00743C; // Links
+$links-hover: #6D1B38; // Links qdo passa o mouse
+
+//tit: Cabeçalho geral
+$page-title: #FFF; // Nome do empreendimento
+$page-title-bg: #910033; // Fundo do nome do empreendimento
+$page-title-border-bottom: #417; // Borda do cabeçalho
+
+//tit: Menu
+$link-list-block: #FFF; // Letra do menu
+$link-list-block-bg: #c83267; // Fundo do menu
+$link-this-page: #fff; // Letra do menu qdo passa o mouse
+$link-this-page-bg: #53ba86; // Fundo do menu qdo passa o mouse
+
+//tit: Catálogo (loja)
+$product-price: #c83267; // Preço dos produtos
+$catalog-details-bg: #53ba86; // Fundo botão 'detalhes'
+$catalog-details-bg-hover: #910033; // Fundo botão 'detalhes' qdo passa o mouse
+
+//tit: Rodapé
+$profile-footer: #FFF; // Letra no rodapé
+$profile-footer-bg: #910033; // Fundo do rodapé
+
+$block-title: $content-title;
+$profile-footer-border-top: $page-title-border-bottom;
+$main-block-title: $content-title;
+$blog-post-title: $content-title;
+$body-bg-image-url: "";
+
+
 @import 'variables';
 @import 'cirandas';
 @import 'small';
 @import url(http://fonts.googleapis.com/css?family=Imprima:regular,bold&subset=Latin);
-@import '../../coral_lilas/stylesheets/coral';
+@import '../../coral/stylesheets/coral';
 
