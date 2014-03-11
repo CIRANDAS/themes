@@ -1,0 +1,37 @@
+//tit: Geral
+$body-bg: #6c7989; // Fundo
+$text: Cor do texto;
+$page-title: #006699; // Cor do nome do empreendimento
+$page-title-span: $page-title; // Cor do 'EES'
+$page-title-bg: #c6eafa; // Fundo do cabeçalho geral
+$content-title-bg: transparent; // Fundo dos títulos
+$content-title-h1: #222; // cor dos títulos principais
+$content-title-h2: #393939; // cor dos subtítulos
+$content-title-hn: #494949; // cor dos sub-sub-títulos
+$links: #036276; // Links
+$links-hover: #2E3436; // Links qdo passa o mouse
+
+//tit: Menu superior (horizontal)
+$top-menu-bg: #333; // Fundo do menu superior
+$top-menu-color: #08B8F9; // Texto do menu superior
+$top-menu-hover-color: #ccc; // Texto menu superior qdo passa o mouse
+$top-menu-hover-color-bg: transparent; // Fundo do menu superior qdo passa o mouse
+
+//tit: Menu lateral (vertical):
+$link-list-block: #021848; // Texto do menu lateral
+$link-list-block-bg: #08B8F9; // Fundo do menu lateral
+$link-this-page: #fff; // Texto menu lateral qdo passa o mouse
+$link-this-page-bg: #333; // Fundo menu lateral qdo passa o mouse
+
+//tit: Catálogo (loja):
+$product-price: #0194C7; // Preço do produto
+$catalog-details-bg: #06276F; // Fundo botão detalhes produto
+$catalog-details-bg-hover: #3AAACF; // Fundo botão detalhes produto qdo passa o mouse
+$product-name-color: #333; // Cor do nome do produto
+
+
+@import 'cirandas';
+@import 'small';
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+@import 'variables';
+@import 'modernista';
