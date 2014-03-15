@@ -12,7 +12,8 @@ body p, ul, ol {
 .no-boxes {
 	margin: 0 40px;
 }
-body.template-leftbar .box-1 {
+body.template-leftbar .box-1,
+body.template-leftbottom .box-1 {
   margin: 0 40px 0 284px;
 }
 body.template-default .box-1 {
