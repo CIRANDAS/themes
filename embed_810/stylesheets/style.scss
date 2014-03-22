@@ -1,0 +1,117 @@
+@import 'cirandas';
+@import 'small';
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300italic,300,400italic,400,500italic,500,700italic,700);
+
+//Geral:
+body.controller-fb_app_ecosol_store_plugin {
+	margin:0;
+	padding:0;
+}
+body.controller-fb_app_ecosol_store_plugin #wrap-1, body.controller-fb_app_ecosol_store_plugin #wrap-2 {
+	border-radius:0;
+}
+#content h1.page-title, #profile-header {
+	display:none;
+}
+#wrap-1, #theme-footer {
+	width:810px;
+	margin:0;
+	padding:0;
+	box-shadow:none;
+	border-radius:0;
+}
+#wrap-2 {
+	margin:40px 0 0 0;
+	padding:0;
+}
+
+//Cabecalho:
+body.controller-fb_app_ecosol_store_plugin #theme-header {
+	display:inherit;
+	width: 810px
+}
+#cirandas-top-bar {
+    background-color: #1EB46D;
+}
+#tb-middle {
+	width:auto;
+	margin:0 0 0 170px;
+	font-size:34px;
+	text-shadow: #222 1px 1px 1px;
+	color: #fff;
+	padding-top:0;
+	font-family: 'Ubuntu';
+	font-weight: bold;
+}
+#tb-logo {
+	background-size: 150px;
+	width: 150px;
+	left: 0;
+	top: 0;
+}
+#user {
+	width: auto;
+	background-color: transparent;
+}
+#user .logged-in {
+	color: #fff;
+}
+#user .logged-in a#logout {
+	border-left: 1px solid #030;
+	border-bottom: 1px solid #030;
+	box-shadow: 0 10px 10px #333;
+}
+#user .logged-in a {
+	background-position: 100% 4px;
+	color: inherit;
+	margin:0;
+	padding-right:8px;
+	border-left: 1px solid #030;
+}
+#user .logged-in a:hover, #user .logged-in a#logout:hover {
+	background-color: #ccc;
+	color: #000;
+}
+#user .logged-in a.admin-link {
+	margin-top: 4px;
+}
+.admin-link, #manage-enterprises, .ctrl-panel, #user .logged-in a#logout {
+	background-color: #1EB46D;
+	color: inherit;
+	opacity: 0.9;
+}
+#user a strong {
+	color: inherit;
+}
+
+//Rodapé:
+#theme-footer #footer-content {
+	border-radius:0;
+}
+#footer-content {
+	padding: 8px 0;
+}
+#theme-footer #footer-content #footer-left, #theme-footer #footer-content #footer-middle, #theme-footer #footer-content #footer-right {
+	margin-right: 2%;
+	width: 30%;
+}
+
+//Interno:
+#product-catalog h1 { 
+	display:none;
+}
+#product-list li.product {
+    width: 230px;
+    padding: 10px 15px;
+}
+#product-list .product-image-link {
+	width: 100%;
+}
+#product-list .product-big {
+    width: 230px;
+    background-size: 200px;
+}
+#product-list .expand-box {
+    width: 100%;
+}

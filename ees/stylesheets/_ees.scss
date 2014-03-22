@@ -18,10 +18,16 @@ body.template-leftbottom .box-1 {
 body.template-default .box-1 {
   margin: 0 270px;
 }
+body.template-rightbar .box-1 {
+  margin: 0 270px 0 30px;
+}
 .box-2 {
   margin: 0;
   width: 200px;
   padding-left:20px;
+}
+body.template-rightbar .box-2 {
+  padding: 0 20px 0 0;
 }
 .box-3 {
   margin: 0;
