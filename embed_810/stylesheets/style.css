@@ -2076,7 +2076,7 @@ body.controller-fb_app_ecosol_store_plugin #wrap-1, body.controller-fb_app_ecoso
   display: none; }
 
 #wrap-1, #theme-footer {
-  width: 810px;
+  width: 100%;
   margin: 0;
   padding: 0;
   box-shadow: none;
@@ -2088,7 +2088,7 @@ body.controller-fb_app_ecosol_store_plugin #wrap-1, body.controller-fb_app_ecoso
 
 body.controller-fb_app_ecosol_store_plugin #theme-header {
   display: inherit;
-  width: 810px; }
+  width: 100%; }
 
 #cirandas-top-bar {
   background-color: #1EB46D; }
@@ -2152,6 +2152,10 @@ body.controller-fb_app_ecosol_store_plugin #theme-header {
 #theme-footer #footer-content #footer-left, #theme-footer #footer-content #footer-middle, #theme-footer #footer-content #footer-right {
   margin-right: 2%;
   width: 30%; }
+
+.cart {
+  right: 0px;
+  top: 40px; }
 
 #product-catalog h1 {
   display: none; }

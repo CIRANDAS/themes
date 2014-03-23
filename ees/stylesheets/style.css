@@ -2077,16 +2077,23 @@ body {
 .no-boxes {
   margin: 0 40px; }
 
-body.template-leftbar .box-1 {
+body.template-leftbar .box-1,
+body.template-leftbottom .box-1 {
   margin: 0 30px 0 270px; }
 
 body.template-default .box-1 {
   margin: 0 270px; }
 
+body.template-rightbar .box-1 {
+  margin: 0 270px 0 30px; }
+
 .box-2 {
   margin: 0;
   width: 200px;
   padding-left: 20px; }
+
+body.template-rightbar .box-2 {
+  padding: 0 20px 0 0; }
 
 .box-3 {
   margin: 0;
@@ -2099,7 +2106,7 @@ body.template-default .box-1 {
 #boxes {
   border-top: 50px solid #333; }
 
-body.template-leftbar #boxes, body.template-default #boxes {
+body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbottom #boxes {
   background: url("images/colbg.png") repeat-y scroll 0% 0% white;
   overflow: hidden; }
 

@@ -7,6 +7,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="description" content="<%= @environment.name %>" />
     <link rel="shortcut icon" href="<%= image_path(theme_favicon) %>" type="image/x-icon" />
+
+    <%= render :file => "#{Rails.root}/public#{theme_path}/head.html.erb" rescue nil %>
+
     <%= noosfero_javascript %>
     <%= noosfero_stylesheets %>
 
