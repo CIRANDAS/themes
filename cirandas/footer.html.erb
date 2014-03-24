@@ -16,16 +16,6 @@
   <div class="clean"></div>
 </div>
 
-<script src="http://connect.facebook.net/en_US/all.js"></script>
-<script>
-  FB.init({
-    appId: fb_app_ecosol_store.fb.id,
-    status: true,
-    cookie: true,
-    xfbml: true
-  });
-</script>
-
 <% javascript_tag do %>
   <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/content_update.js.erb" %>
 <% end %>
