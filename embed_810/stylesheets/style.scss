@@ -7,6 +7,7 @@
 body.controller-fb_app_ecosol_store_plugin {
 	margin:0;
 	padding:0;
+	background:#fff;
 }
 body.controller-fb_app_ecosol_store_plugin #wrap-1, body.controller-fb_app_ecosol_store_plugin #wrap-2 {
 	border-radius:0;
@@ -53,6 +54,7 @@ body.controller-fb_app_ecosol_store_plugin #theme-header {
 #user {
 	width: auto;
 	background-color: transparent;
+	display:none;
 }
 #user .logged-in {
 	color: #fff;
@@ -85,6 +87,12 @@ body.controller-fb_app_ecosol_store_plugin #theme-header {
 	color: inherit;
 }
 
+//Barra de ferramentas (botão):
+#manage-fb-store-ctrl {
+    float: right;
+    margin-left: 20px;
+}
+
 //Rodapé:
 #theme-footer #footer-content {
 	border-radius:0;
@@ -92,9 +100,12 @@ body.controller-fb_app_ecosol_store_plugin #theme-header {
 #footer-content {
 	padding: 8px 0;
 }
-#theme-footer #footer-content #footer-left, #theme-footer #footer-content #footer-middle, #theme-footer #footer-content #footer-right {
-	margin-right: 2%;
-	width: 30%;
+#theme-footer #footer-content #footer-left {
+	display: none;
+}
+#theme-footer #footer-content #footer-middle, #theme-footer #footer-content #footer-right {
+    margin: 10px 2%;
+    width: 46%;
 }
 
 //Cesto de compras:
