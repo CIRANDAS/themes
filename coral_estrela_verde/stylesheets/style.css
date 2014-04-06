@@ -119,7 +119,7 @@
     /* css3 enabled */ }
 
 /* Buttons */
-.action-button {
+.action-button, .selection-button {
   display: inline-block;
   padding: 4px 8px;
   margin: 0;
@@ -137,6 +137,9 @@
   text-transform: uppercase;
   text-shadow: none;
   border-radius: 5px; }
+
+.selection-button {
+  background: white; }
 
 /* use with @extend, CSS clear bugfix */
 .clean {
@@ -257,7 +260,7 @@
     /* css3 enabled */ }
 
 /* Buttons */
-.action-button {
+.action-button, .selection-button {
   display: inline-block;
   padding: 4px 8px;
   margin: 0;
@@ -275,6 +278,9 @@
   text-transform: uppercase;
   text-shadow: none;
   border-radius: 5px; }
+
+.selection-button {
+  background: white; }
 
 #content h1.page-title {
   z-index: 10;
@@ -1938,7 +1944,7 @@ div#addThis {
     /* css3 enabled */ }
 
 /* Buttons */
-.action-button {
+.action-button, .selection-button {
   display: inline-block;
   padding: 4px 8px;
   margin: 0;
@@ -1956,6 +1962,9 @@ div#addThis {
   text-transform: uppercase;
   text-shadow: none;
   border-radius: 5px; }
+
+.selection-button {
+  background: white; }
 
 /* Header */
 #wrap-1 {

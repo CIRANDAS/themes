@@ -25,8 +25,8 @@
       DEFAULT_LOADING_MESSAGE = <%="'#{ _('loading...') }'" %>;
     </script>
 
-    <%# render 'layouts/owa' if Rails.env.production? %>
-    <%= render 'layouts/purechat' if Rails.env.production? %>
+    <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/layouts/_owa.html.erb" if Rails.env.production? %>
+    <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/layouts/_purechat.html.erb" if Rails.env.production? %>
 
   </head>
 
@@ -58,7 +58,7 @@
           <div id="navigation-end"></div>
         </div><!-- end id="navigation" -->
         <div id="content">
-          <%= render :partial => 'layouts/content' %>
+          <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/layouts/_content.html.erb" %>
         </div><!-- end id="content" -->
       </div><!-- end id="wrap-2" -->
     </div><!-- end id="wrap-1" -->
