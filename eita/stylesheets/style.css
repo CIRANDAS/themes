@@ -342,9 +342,6 @@ body p {
 #footer-content {
   padding: 8px 40px; }
 
-#wrap-1 {
-  position: relative; }
-
 #wrap-2 {
   background: white;
   border-color: transparent;
@@ -1967,9 +1964,6 @@ div#addThis {
   background: white; }
 
 /* Header */
-#wrap-1 {
-  position: inherit; }
-
 #wrap-2 #navigation, #wrap-2 #user {
   display: none; }
 
@@ -1977,13 +1971,15 @@ div#addThis {
   margin-top: 9px; }
 
 #theme-header {
+  height: 50px; }
+
+#cirandas-top-bar {
   position: fixed;
   right: 0;
   left: 0;
   height: 50px;
-  width: auto; }
-
-#cirandas-top-bar {
+  z-index: 32;
+  width: auto;
   background: #EDF8FA;
   height: 40px;
   box-shadow: 0 6px 10px -4px #888;

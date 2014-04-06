@@ -1,0 +1,49 @@
+<div id="footer-content">
+
+  <div id="footer-links">
+    <a href="http://redemoinho.coop.br/conheca-mais-a-redemoinho">Conheça a Rede Moinho!</a>
+    <span class="footer-links-separator">|</span>
+    <a href="http://redemoinho.coop.br/catalog/redemoinho">Faça as suas compras!</a>
+    <span class="footer-links-separator">|</span>
+    <a href="http://redemoinho.coop.br/como-se-associar-a-redemoinho">Como se associar?</a>
+    <span class="footer-links-separator">|</span>
+    <a href="http://redemoinho.coop.br/nossos-contatos">Contato</a>
+  </div><!-- end id="footer-links" -->
+
+  <a href="/account/login#TB_inline?height=300&amp;width=500&amp;inlineId=inlineLoginBox&amp;modal=true" class="thickbox" id="bt-login">Administrar</a>
+
+  <div id="copyright">
+    <p>Esta rede social usa o <a href="http://noosfero.org/">Noosfero</a>, desenvolvido pela <a href="http://colivre.coop.br">Colivre</a> e licenciado sob a <a href="http://www.gnu.org/licenses/agpl.html">GNU Affero General Public License</a> versão 3 ou qualquer versão posterior. Design criado pela <a href="http://www.dodesign-s.com.br">DoDesign-s</a></p>
+  </div><!-- end id="copyright" -->
+
+  <div id="producao">
+    <a id="logo-dodesigns" title="DoDesign-s" href="http://www.dodesign-s.com.br"><span>DoDesign-s</span></a>
+    <a id="logo-colivre" title="Colivre" href="http://colivre.coop.br"><span>Colivre</span></a>
+  </div><!-- end id="producao" -->
+
+</div><!-- end id="footer-content" -->
+
+<script>
+
+//  jQuery('.controller-catalog .l-sidebar-left-bar > ul').prepend(
+//    '<li class="home"><a href="/">Home da Loja</a></li>'
+//  );
+  jQuery('.controller-catalog #product-list').prepend(
+    '<div id="banner"></div>'
+  );
+  jQuery('#breadcrumb').prependTo('#product-list');
+  jQuery('.product-discount').each(function(num, el) {
+    el.parentNode.parentNode.className = 'has-discount';
+  });
+  jQuery('.read-more').each(function(pos, el) {
+    jQuery(el).appendTo( jQuery(el).siblings()[0] );
+  });
+
+  // add title:
+  jQuery('.blog-description').prepend('<h1>RedeMoinho &mdash; Sua oportunidade de fazer parte do comércio justo!</h1>');
+
+  // move bt carrinho para depois do preço:
+  jQuery('.action-manage_products-show #product-extra-content')
+    .insertAfter('#display-product-info > :first-child');
+
+</script>

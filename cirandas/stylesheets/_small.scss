@@ -1,9 +1,9 @@
 @import 'base';
 
 /* Header */
-#wrap-1 {
-  position: inherit;
-}
+//#wrap-1 {
+  //position: inherit;
+//}
 
 #wrap-2 {
   #navigation, #user {
@@ -16,13 +16,15 @@
 }
 
 #theme-header {
+  height: 50px;
+}
+#cirandas-top-bar {
   position: fixed;
   right: 0;
   left: 0;
   height: 50px;
+  z-index: 32;
   width: auto;
-}
-#cirandas-top-bar {
   background: #EDF8FA;
   height: 40px;
   box-shadow: 0 6px 10px -4px #888;
