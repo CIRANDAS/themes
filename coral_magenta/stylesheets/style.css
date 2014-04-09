@@ -1674,6 +1674,25 @@ div.token-input-dropdown-facet {
   font-size: 0.8em;
   padding: 0.1em 0.3em 0.1em 3em; }
 
+/* category selection for products */
+.categories_container select {
+  font-size: 24px;
+  color: #080;
+  text-shadow: 1px 1px #000; }
+
+#content form#category_form input.button.submit {
+  font-size: 24px;
+  font-weight: bold; }
+
+.controller-manage_products #categories_selection_actionbar input.button {
+  height: 34px !important; }
+
+form#category_form input.button.with-text {
+  max-height: 42px; }
+
+#content #new_product_title {
+  margin-top: 40px; }
+
 /* Chat */
 #title-bar {
   background-color: #1fa1d0; }
