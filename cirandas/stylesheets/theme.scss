@@ -38,6 +38,10 @@ body p {
   padding: $padding $wireframe-padding;
 }
 
+#wrap-1 {
+  position: relative;
+}
+
 #wrap-2 {
   background: white;
   border-color: transparent;
@@ -1625,6 +1629,9 @@ div.token-input-dropdown-facet {
 #content form#category_form input.button.submit {
   font-size: 24px;
   font-weight: bold;
+}
+#category_form {
+  margin-bottom: 100px;
 }
 
 .controller-manage_products #categories_selection_actionbar input.button {

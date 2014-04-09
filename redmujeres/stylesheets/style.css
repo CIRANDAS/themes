@@ -342,6 +342,9 @@ body p {
 #footer-content {
   padding: 8px 40px; }
 
+#wrap-1 {
+  position: relative; }
+
 #wrap-2 {
   background: white;
   border-color: transparent;
@@ -1684,6 +1687,9 @@ div.token-input-dropdown-facet {
   font-size: 24px;
   font-weight: bold; }
 
+#category_form {
+  margin-bottom: 100px; }
+
 .controller-manage_products #categories_selection_actionbar input.button {
   height: 34px !important; }
 
@@ -1983,6 +1989,9 @@ div#addThis {
   background: white; }
 
 /* Header */
+#wrap-1 {
+  position: static; }
+
 #wrap-2 #navigation, #wrap-2 #user {
   display: none; }
 
