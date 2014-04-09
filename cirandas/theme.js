@@ -8,3 +8,4 @@ jQuery(function ($) {
 
   cirandas_theme.load_footer();
 });
+
