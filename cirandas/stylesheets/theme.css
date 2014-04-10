@@ -1848,3 +1848,6 @@ div#addThis {
 
 #theme-options .opt-info {
   position: static; }
+
+#profile-data .formfield input {
+  width: 400px; }
