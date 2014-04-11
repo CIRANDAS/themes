@@ -3,6 +3,10 @@
 @import 'colors';
 @import 'page-title';
 
+/* configurations */
+$style-headers: true !default;
+$change-wireframe: true !default;
+
 /* Globals */
 
 body {
@@ -27,15 +31,19 @@ body p {
 
 #wrap-1,
 #theme-footer {
-  width: $wireframe + 2*$wireframe-padding;
+  @if $change-wireframe {
+    width: $wireframe + 2*$wireframe-padding;
+  }
   box-shadow: 0 0 10px black;
   -ms-box-shadow: 0 0 10px black;
   -moz-box-shadow: 0 0 10px black;
   -webkit-box-shadow: 0 0 10px black;
 }
-#wrap-2,
-#footer-content {
-  padding: $padding $wireframe-padding;
+@if $change-wireframe {
+  #wrap-2,
+  #footer-content {
+    padding: $padding $wireframe-padding;
+  }
 }
 
 #wrap-1 {
@@ -50,21 +58,23 @@ body p {
 
 }
 
-.box-2,
-.box-3 {
-  width: 220px;
-}
-body.template-default .box-1 {
-  margin: 0 244px 0 244px;
-}
-body.template-2leftbars .box-1 {
-  margin: 0 0 0 488px;
-}
-body.template-rightbar .box-1 {
-  margin: 0 244px 0 0;
-}
-body.template-leftbar .box-1 {
-  margin: 0 0 0 244px;
+@if $change-wireframe {
+  .box-2,
+  .box-3 {
+    width: 220px;
+  }
+  body.template-default .box-1 {
+    margin: 0 244px 0 244px;
+  }
+  body.template-2leftbars .box-1 {
+    margin: 0 0 0 488px;
+  }
+  body.template-rightbar .box-1 {
+    margin: 0 244px 0 0;
+  }
+  body.template-leftbar .box-1 {
+    margin: 0 0 0 244px;
+  }
 }
 
 #content .link-list-block li a.link-this-page {
@@ -204,43 +214,46 @@ body.template-leftbar .box-1 {
   padding-top: $half-padding;
 }
 
-#content h1,
-#content h2,
-#content h3,
-#content h4,
-#content h5,
-#content h6 {
-  font-weight: lighter;
-}
 
-#content h1 {
-  font-size: 24px;
-}
-#content h2 {
-  font-size: 18px;
-  margin-top: 0;
-}
-#content h3 {
-  font-size: 15px;
-}
-#content h4 {
-  font-size: 12px;
-}
-#content h5 {
-  font-size: 11px;
-}
-#content h6 {
-  font-size: 10px;
-}
+@if $style-headers {
+  #content h1,
+  #content h2,
+  #content h3,
+  #content h4,
+  #content h5,
+  #content h6 {
+    font-weight: lighter;
+  }
+
+  #content h1 {
+    font-size: 24px;
+  }
+  #content h2 {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  #content h3 {
+    font-size: 15px;
+  }
+  #content h4 {
+    font-size: 12px;
+  }
+  #content h5 {
+    font-size: 11px;
+  }
+  #content h6 {
+    font-size: 10px;
+  }
 
 
-#content .main-block h1,
-#not-found h1,
-#access-denied h1 {
-  font-variant: normal;
-  font-weight: lighter;
-  color: $link-color;
-  border: 0;
+  #content .main-block h1,
+  #not-found h1,
+  #access-denied h1 {
+    font-variant: normal;
+    font-weight: lighter;
+    color: $link-color;
+    border: 0;
+  }
 }
 
 #main-content-wrapper-1,
@@ -913,26 +926,28 @@ body.template-leftbar .box-1 {
   text-decoration: none;
 }
 
-#content .block h2,
-#content .block-title {
-  background-color: $blocks-color;
-  color: black;
-  padding: 12px 0 4px 8px;
-  text-transform: uppercase;
-  border-bottom: 0;
-  font-variant: normal;
-  font-size: 12px;
-  text-align: left;
-}
+@if $style-headers {
+  #content .block h2,
+  #content .block-title {
+    background-color: $blocks-color;
+    color: black;
+    padding: 12px 0 4px 8px;
+    text-transform: uppercase;
+    border-bottom: 0;
+    font-variant: normal;
+    font-size: 12px;
+    text-align: left;
+  }
 
-#content .login-block .not-logged-user h2 {
-  background: transparent;
-  padding: 0;
-  color: black;
-  text-transform: uppercase;
-  border-bottom: 0;
-  font-variant: normal;
-  font-size: 12px;
+  #content .login-block .not-logged-user h2 {
+    background: transparent;
+    padding: 0;
+    color: black;
+    text-transform: uppercase;
+    border-bottom: 0;
+    font-variant: normal;
+    font-size: 12px;
+  }
 }
 
 .logged-user-info .user-actions {
@@ -943,8 +958,10 @@ body.template-leftbar .box-1 {
   margin-bottom: 0;
 }
 
-#content .logged-user-info h2 {
-  overflow: hidden;
+@if $style-headers {
+  #content .logged-user-info h2 {
+    overflow: hidden;
+  }
 }
 
 #content .login-block .not-logged-user {
@@ -1053,11 +1070,13 @@ body.template-leftbar .box-1 {
   border-top-color: #E67817;
 }
 
-#content .environment-statistics-block .block-title,
-#content .environment-statistics-block h3,
-#content .environment-statistics-block h2 {
-  background: transparent;
-  padding: 0;
+@if $style-headers {
+  #content .environment-statistics-block .block-title,
+  #content .environment-statistics-block h3,
+  #content .environment-statistics-block h2 {
+    background: transparent;
+    padding: 0;
+  }
 }
 
 #content .environment-statistics-block li {
@@ -1176,33 +1195,37 @@ body.template-leftbar .box-1 {
   background-position: right;
 }
 
-#content #highlighted-news h2 {
-  text-transform: none;
-  font-variant: normal;
-  border: 0;
-  padding: 0;
-  padding: 5px 0;
-  border-top: 2px dotted black;
-  background: transparent;
+@if $style-headers {
+  #content #highlighted-news h2 {
+    text-transform: none;
+    font-variant: normal;
+    border: 0;
+    padding: 0;
+    padding: 5px 0;
+    border-top: 2px dotted black;
+    background: transparent;
+  }
 }
 
 .news-area li {
   text-align: left;
 }
 
-#content .news-area h3 {
-  width: 180px;
-  height: 21px;
-  overflow: hidden;
-  text-align: left;
-}
+@if $style-headers {
+  #content .news-area h3 {
+    width: 180px;
+    height: 21px;
+    overflow: hidden;
+    text-align: left;
+  }
 
-#content #highlighted-news h2 a {
-  font-weight: lighter;
-  color: $link-color;
-  padding: 0;
-  margin: 5px 0;
-  font-size: 18px;
+  #content #highlighted-news h2 a {
+    font-weight: lighter;
+    color: $link-color;
+    padding: 0;
+    margin: 5px 0;
+    font-size: 18px;
+  }
 }
 
 .highlighted-news-item {
@@ -1604,13 +1627,15 @@ div.token-input-dropdown-facet {
   display:none;
 }
 
-#content .block #display-product-name h2 {
-  background-color: transparent;
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: none;
-  padding:0;
+@if $style-headers {
+  #content .block #display-product-name h2 {
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: none;
+    padding:0;
+  }
 }
 
 #content #product-list .ui-button-text, #content #cart-add-item .ui-button-text {
