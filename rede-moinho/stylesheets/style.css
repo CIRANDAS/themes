@@ -1912,12 +1912,6 @@ a {
 #content {
   border-top-color: #24b66e; }
 
-#content .main-block h1, #not-found h1, #access-denied h1 {
-  color: #24b66e; }
-
-#content h1.page-title {
-  background: #24b66e; }
-
 /* Chat */
 /* Balloon */
 #content .menu-submenu-content {
@@ -1925,9 +1919,6 @@ a {
 
 .menu-submenu-footer {
   background-image: url("../images/balloon-green.png"); }
-
-#content .menu-submenu h4 {
-  border-bottom-color: #8effa1; }
 
 .action-friends-index .profile-list li, .common-profile-list-block .vcard {
   border-color: #24b66e; }
@@ -1942,9 +1933,6 @@ a {
 
 .highlights-block-pager a.activeSlide:visited, .highlights-block-pager a.activeSlide {
   color: #24b66e; }
-
-#content .block h2, #content .block-title {
-  background-color: #ddffd9; }
 
 #content .block-title {
   background-color: #ddffd9; }
@@ -2003,9 +1991,6 @@ a {
   color: #24b66e; }
 
 /* Portal */
-#content #highlighted-news h2 a {
-  color: #24b66e; }
-
 /* Search */
 /* use with @extend, CSS clear bugfix */
 .clean {
@@ -2690,9 +2675,6 @@ body {
 
 .action-catalog-index .no-boxes h1 {
   display: none; }
-
-.action-catalog-index #product-list {
-  margin-top: -40px; }
 
 .action-catalog-index #banner {
   height: 90px;

@@ -47,12 +47,16 @@
     border-top-color: $base-color;
   }
 
-  #content .main-block h1, #not-found h1, #access-denied h1 {
-    color: $base-color;
+  @if $style-headers {
+    #content .main-block h1, #not-found h1, #access-denied h1 {
+      color: $base-color;
+    }
   }
 
-  #content h1.page-title {
-    background: $base-color;
+  @if $style-headers {
+    #content h1.page-title {
+      background: $base-color;
+    }
   }
 
   /* Chat */
@@ -67,8 +71,10 @@
     background-image: url('../images/balloon-green.png');
   }
 
-  #content .menu-submenu h4 {
-    border-bottom-color: $navigation-color;
+  @if $style-headers {
+    #content .menu-submenu h4 {
+      border-bottom-color: $navigation-color;
+    }
   }
 
   .action-friends-index .profile-list li, .common-profile-list-block .vcard {
@@ -90,8 +96,11 @@
     color: $base-color;
   }
 
-  #content .block h2, #content .block-title {
-    background-color: $blocks-color;
+  
+  @if $style-headers {
+    #content .block h2, #content .block-title {
+      background-color: $blocks-color;
+    }
   }
 
   #content .block-title {
@@ -170,8 +179,10 @@
 
   /* Portal */
 
-  #content #highlighted-news h2 a {
-    color: $base-color;
+  @if $style-headers {
+    #content #highlighted-news h2 a {
+      color: $base-color;
+    }
   }
 
   /* Search */
