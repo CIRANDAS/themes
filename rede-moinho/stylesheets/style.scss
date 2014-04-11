@@ -53,56 +53,8 @@ body {
 
 }
 
-.logged-in #user {
-  top: -150px;
-  background: rgba(255,255,255,0.75);
-  padding: 2px 6px;
-  border-radius: 0 0 5px 5px;
-  text-shadow: 1px 1px 0px #FFF;
-  display: block;
-}
-
 #redemoinho-ctrl {
   margin-left: 25px;
-}
-
-#user a {
-  text-decoration: none;
-}
-#user a strong {
-  color: #000;
-}
-
-#user form {
-  display: none;
-}
-
-.logged-out #user {
-  top: 5px;
-  background: transparent;
-  padding: 0px;
-  font-size: 11px;
-  color: #B85;
-  display: block;
-}
-
-.logged-out #user a {
-  color: #EC9;
-}
-.logged-out #user a:hover {
-  text-decoration: underline;
-}
-.logged-out #user a strong {
-  color: #B85;
-  font-weight: normal;
-}
-.logged-out #user a:hover strong {
-  color: #A63;
-}
-
-.logged-out #user a i,
-.not-logged-in {
-  display: none;
 }
 
 #content {
