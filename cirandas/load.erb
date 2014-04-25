@@ -9,7 +9,7 @@ if defined? ConsumersCoopPlugin
 end
 
 if defined? NetworksPlugin
-  require 'networks_plugin/layout_helper'
+  require_dependency 'networks_plugin/layout_helper'
   extend NetworksPlugin::LayoutHelper
 
   @body_extra_classes += ' network-node' if network_node?
