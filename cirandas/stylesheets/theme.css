@@ -1850,5 +1850,8 @@ div#addThis {
 #theme-options .opt-info {
   position: static; }
 
+.controller-profile_editor #profile-data {
+  display: block; }
+
 #profile-data .formfield input {
   width: 400px; }

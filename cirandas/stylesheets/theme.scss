@@ -1846,6 +1846,10 @@ div#addThis {
   position: static;
 }
 
+// remove display table
+.controller-profile_editor #profile-data {
+  display: block;
+}
 // fix structure
 #profile-data .formfield input {
   width: 400px;
