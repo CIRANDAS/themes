@@ -2014,6 +2014,7 @@ div#addThis {
   position: fixed;
   right: 0;
   left: 0;
+  top: 0;
   height: 50px;
   z-index: 32;
   width: auto;
