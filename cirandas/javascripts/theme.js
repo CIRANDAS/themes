@@ -34,8 +34,6 @@ cirandas_theme.change_title_position = function() {
     else {
       title = jQuery('<h1>'+cirandas_theme.title_name+'</h1>')
         .append("<span class='solidarity-economy'>Empreendimento de Economia Solidária</span>");
-
-      jQuery('.article-body-enterprise-homepage').siblings('div').find('h1.title').remove();
     }
   }
 
