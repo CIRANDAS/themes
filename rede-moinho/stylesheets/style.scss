@@ -931,3 +931,9 @@ body {
   color: white;
 }
 
+select#customer_payment {
+  option[value=credit_card], option[value=bank_transfer] {
+    display: none;
+  }
+}
+

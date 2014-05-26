@@ -2991,3 +2991,6 @@ body {
 .l-sidebar-left-bar .catalog-categories-link a {
   line-height: 20px;
   color: white; }
+
+select#customer_payment option[value=credit_card], select#customer_payment option[value=bank_transfer] {
+  display: none; }
