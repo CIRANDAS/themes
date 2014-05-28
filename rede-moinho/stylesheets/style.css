@@ -2994,3 +2994,6 @@ body {
 
 select#customer_payment option[value=credit_card], select#customer_payment option[value=bank_transfer] {
   display: none; }
+
+.purechat {
+  display: none; }
