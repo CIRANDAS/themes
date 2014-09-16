@@ -1,6 +1,5 @@
 name: "Padrão de empreendimentos verde"
 layout: "cirandas" # don't change
-jquery_theme: "smoothness_mod"
 icon_theme: [default, pidgin]
 # FIXME: disabled till ready
 #owner_type: Enterprise
