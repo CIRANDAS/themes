@@ -2205,6 +2205,9 @@ body {
 #boxes {
   padding: 15px 40px 0 40px; }
 
+.no-boxes {
+  margin: 0 40px; }
+
 #content h1, #content .main-block h1, #content h2, #content .block-title, #content h3, #content h4, #content h5, #content h6,
 #content .block h1, #content .block h2, #content .block h3, #content .block h4, #content .block h5, #content .block h6 {
   color: #222222;
