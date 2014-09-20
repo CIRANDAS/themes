@@ -2,7 +2,7 @@
 
 @body_extra_classes = " #{controller.send :content_classes rescue ''}"
 if defined? ConsumersCoopPlugin
-  require 'consumers_coop_plugin/layout_helper'
+  require_dependency 'consumers_coop_plugin/layout_helper'
   extend ConsumersCoopPlugin::LayoutHelper
 
   @body_extra_classes += ' consumers-coop-enabled' if consumers_coop_enabled?
