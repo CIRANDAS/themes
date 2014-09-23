@@ -1,6 +1,7 @@
+@charset "UTF-8";
 @import url(../base/style.css);
-@import url(http://fonts.googleapis.com/css?family=Capriola);
 /* use with @extend, CSS clear bugfix */
+@import url(http://fonts.googleapis.com/css?family=Capriola);
 .clean {
   clear: both; }
 
@@ -126,8 +127,8 @@
   /* remove submit input browser's margin */
   height: auto;
   width: auto;
-  background: #fbca47;
-  border: 1px solid #f4a439;
+  background: #FBCA47;
+  border: 1px solid #F4A439;
   cursor: pointer;
   color: black;
   font-weight: bold;
@@ -267,8 +268,8 @@
   /* remove submit input browser's margin */
   height: auto;
   width: auto;
-  background: #fbca47;
-  border: 1px solid #f4a439;
+  background: #FBCA47;
+  border: 1px solid #F4A439;
   cursor: pointer;
   color: black;
   font-weight: bold;
@@ -292,7 +293,7 @@
   display: block;
   overflow: hidden;
   color: white;
-  background: #1fa1d0;
+  background: #1FA1D0;
   border: none;
   font-variant: normal;
   font-size: 24px;
@@ -574,7 +575,7 @@ body p {
   margin-right: 30px;
   text-align: center;
   font-size: 11px;
-  color: #1fa1d0;
+  color: #1FA1D0;
   text-decoration: none;
   text-align: center;
   line-height: normal;
@@ -1025,7 +1026,7 @@ body p {
 
 #content .login-block .not-logged-user {
   padding: 5px;
-  background-color: #cceaf4;
+  background-color: #CCEAF4;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
@@ -1087,7 +1088,7 @@ body p {
 .action-friends-index .profile-list li:hover,
 .common-profile-list-block .vcard:hover {
   border: 1px solid #E67817;
-  background-color: #fefbae; }
+  background-color: #FEFBAE; }
 
 .common-profile-list-block .vcard .menu-submenu-trigger,
 .common-profile-list-block .vcard .menu-submenu-trigger:hover,
@@ -1131,7 +1132,7 @@ body p {
   padding: 5px 0; }
 
 #content .link-list-block li a {
-  background-color: #cceaf4;
+  background-color: #CCEAF4;
   font-size: 12px; }
 
 .blog-archives-block ul {
@@ -1317,7 +1318,7 @@ li.article-item .search-result-title {
   background-color: transparent; }
 
 #search-results .common-profile-list-block .vcard:hover {
-  background-color: #fefbae; }
+  background-color: #FEFBAE; }
 
 #search-results .menu-submenu-footer {
   background-position: 109px center; }
@@ -1524,7 +1525,7 @@ div.token-input-dropdown-facet {
   text-align: center; }
 
 #facets-menu .facet-menu-label {
-  background: #cceaf4; }
+  background: #CCEAF4; }
 
 #facets-menu .facet-menu-options a {
   color: #007788; }
@@ -1590,10 +1591,10 @@ form#category_form input.button.with-text {
 
 /* Chat */
 #title-bar {
-  background-color: #1fa1d0; }
+  background-color: #1FA1D0; }
 
 #buddy-list .toolbar {
-  background-color: #1fa1d0; }
+  background-color: #1FA1D0; }
 
 #user-status .simplemenu-trigger {
   color: white; }
@@ -1868,8 +1869,8 @@ div#addThis {
   /* remove submit input browser's margin */
   height: auto;
   width: auto;
-  background: #fbca47;
-  border: 1px solid #f4a439;
+  background: #FBCA47;
+  border: 1px solid #F4A439;
   cursor: pointer;
   color: black;
   font-weight: bold;
@@ -1885,19 +1886,19 @@ div#addThis {
 
 /* Globals */
 a {
-  color: #24b66e; }
+  color: #24B66E; }
 
 /* Structure */
 /* Header */
 /* User menu */
 /* Help */
 #navigation #header-help a {
-  color: #24b66e; }
+  color: #24B66E; }
 
 /* Categories Menu */
 /* Navigation */
 #navigation ul {
-  border-top-color: #ddffd9; }
+  border-top-color: #DDFFD9; }
 
 #navigation li .menu-submenu-trigger {
   background-color: #8effa1;
@@ -1913,85 +1914,85 @@ a {
 
 /* Content */
 #content {
-  border-top-color: #24b66e; }
+  border-top-color: #24B66E; }
 
 /* Chat */
 /* Balloon */
 #content .menu-submenu-content {
-  border-color: #24b66e; }
+  border-color: #24B66E; }
 
 .menu-submenu-footer {
   background-image: url("../images/balloon-green.png"); }
 
 .action-friends-index .profile-list li, .common-profile-list-block .vcard {
-  border-color: #24b66e; }
+  border-color: #24B66E; }
 
 #content .profile-list li a,
 #content .common-profile-list-block li a {
-  color: #24b66e; }
+  color: #24B66E; }
 
 /* Block */
 .highlights-label {
   background-image: url(../images/green-alpha-pixel.png); }
 
 .highlights-block-pager a.activeSlide:visited, .highlights-block-pager a.activeSlide {
-  color: #24b66e; }
+  color: #24B66E; }
 
 #content .block-title {
-  background-color: #ddffd9; }
+  background-color: #DDFFD9; }
 
 #content .login-block .not-logged-user {
-  background-color: #ddffd9; }
+  background-color: #DDFFD9; }
 
 .profile_link span {
-  color: #24b66e; }
+  color: #24B66E; }
 
 .common-profile-list-block .vcard .menu-submenu-trigger,
 .menu-submenu-trigger {
-  border-right-color: #24b66e;
-  border-top-color: #24b66e; }
+  border-right-color: #24B66E;
+  border-top-color: #24B66E; }
 
 .common-profile-list-block .vcard .menu-submenu-trigger:hover,
 .menu-submenu-trigger:hover {
-  background-color: #24b66e; }
+  background-color: #24B66E; }
 
 .feed-reader-block li a, .recent-documents-block li a {
-  color: #24b66e; }
+  color: #24B66E; }
 
 #content .link-list-block li a {
-  background-color: #ddffd9; }
+  background-color: #DDFFD9; }
 
 #content .link-list-block li a:hover {
-  background-color: #24b66e; }
+  background-color: #24B66E; }
 
 #content .link-list-block li a.link-this-page {
-  background-color: #24b66e;
+  background-color: #24B66E;
   border-right: 0; }
 
 #content .link-list-block li a.link-this-page:hover {
-  background-color: #24b66e;
+  background-color: #24B66E;
   border-right: 0; }
 
 .blog-archives-block ul ul li a {
-  color: #24b66e; }
+  color: #24B66E; }
 
 .my-network-block li a {
-  color: #24b66e; }
+  color: #24B66E; }
 
 #profile-footer {
-  border-top: 1px solid #24b66e;
+  border-top: 1px solid #24B66E;
   margin-top: 80px; }
 
 .controller-profile_editor .control-panel a:hover {
-  background-color: #24b66e; }
+  background-color: #24B66E; }
 
 /* Footer */
 #theme-footer a {
-  color: #24b66e; }
+  color: #24B66E; }
 
 /* Blog */
 #content .blog-post .title a {
-  color: #24b66e; }
+  color: #24B66E; }
 
 /* Portal */
 /* Search */
@@ -2121,8 +2122,8 @@ a {
   /* remove submit input browser's margin */
   height: auto;
   width: auto;
-  background: #fbca47;
-  border: 1px solid #f4a439;
+  background: #FBCA47;
+  border: 1px solid #F4A439;
   cursor: pointer;
   color: black;
   font-weight: bold;
@@ -2254,7 +2255,7 @@ a {
 /**** General ***************************************************************/
 body {
   color: #888;
-  background: white url(images/fundo.png) 50% 50%; }
+  background: #FFF url(images/fundo.png) 50% 50%; }
 
 #content h1.page-title {
   display: none; }
@@ -2399,7 +2400,7 @@ body {
 }*/
 /**** Rodapé ****************************************************************/
 #theme-footer {
-  background: #f0fcca url(images/renda-footer.png) 50% 1px repeat-x;
+  background: #F0FCCA url(images/renda-footer.png) 50% 1px repeat-x;
   width: auto;
   margin: 0px;
   padding: 35px 0px 10px;

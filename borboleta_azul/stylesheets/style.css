@@ -125,8 +125,8 @@
   /* remove submit input browser's margin */
   height: auto;
   width: auto;
-  background: #fbca47;
-  border: 1px solid #f4a439;
+  background: #FBCA47;
+  border: 1px solid #F4A439;
   cursor: pointer;
   color: black;
   font-weight: bold;
@@ -266,8 +266,8 @@
   /* remove submit input browser's margin */
   height: auto;
   width: auto;
-  background: #fbca47;
-  border: 1px solid #f4a439;
+  background: #FBCA47;
+  border: 1px solid #F4A439;
   cursor: pointer;
   color: black;
   font-weight: bold;
@@ -291,7 +291,7 @@
   display: block;
   overflow: hidden;
   color: white;
-  background: #1fa1d0;
+  background: #1FA1D0;
   border: none;
   font-variant: normal;
   font-size: 24px;
@@ -629,7 +629,7 @@ body.template-leftbar .box-1 {
   margin-right: 30px;
   text-align: center;
   font-size: 11px;
-  color: #1fa1d0;
+  color: #1FA1D0;
   text-decoration: none;
   text-align: center;
   line-height: normal;
@@ -1074,7 +1074,7 @@ body.template-leftbar .box-1 {
 
 #content .block h2,
 #content .block-title {
-  background-color: #cceaf4;
+  background-color: #CCEAF4;
   color: black;
   padding: 12px 0 4px 8px;
   text-transform: uppercase;
@@ -1103,7 +1103,7 @@ body.template-leftbar .box-1 {
 
 #content .login-block .not-logged-user {
   padding: 5px;
-  background-color: #cceaf4;
+  background-color: #CCEAF4;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
@@ -1165,7 +1165,7 @@ body.template-leftbar .box-1 {
 .action-friends-index .profile-list li:hover,
 .common-profile-list-block .vcard:hover {
   border: 1px solid #E67817;
-  background-color: #fefbae; }
+  background-color: #FEFBAE; }
 
 .common-profile-list-block .vcard .menu-submenu-trigger,
 .common-profile-list-block .vcard .menu-submenu-trigger:hover,
@@ -1215,7 +1215,7 @@ body.template-leftbar .box-1 {
   padding: 5px 0; }
 
 #content .link-list-block li a {
-  background-color: #cceaf4;
+  background-color: #CCEAF4;
   font-size: 12px; }
 
 .blog-archives-block ul {
@@ -1423,7 +1423,7 @@ li.article-item .search-result-title {
   background-color: transparent; }
 
 #search-results .common-profile-list-block .vcard:hover {
-  background-color: #fefbae; }
+  background-color: #FEFBAE; }
 
 #search-results .menu-submenu-footer {
   background-position: 109px center; }
@@ -1630,7 +1630,7 @@ div.token-input-dropdown-facet {
   text-align: center; }
 
 #facets-menu .facet-menu-label {
-  background: #cceaf4; }
+  background: #CCEAF4; }
 
 #facets-menu .facet-menu-options a {
   color: #007788; }
@@ -1704,10 +1704,10 @@ form#category_form input.button.with-text {
 
 /* Chat */
 #title-bar {
-  background-color: #1fa1d0; }
+  background-color: #1FA1D0; }
 
 #buddy-list .toolbar {
-  background-color: #1fa1d0; }
+  background-color: #1FA1D0; }
 
 #user-status .simplemenu-trigger {
   color: white; }
@@ -1982,8 +1982,8 @@ div#addThis {
   /* remove submit input browser's margin */
   height: auto;
   width: auto;
-  background: #fbca47;
-  border: 1px solid #f4a439;
+  background: #FBCA47;
+  border: 1px solid #F4A439;
   cursor: pointer;
   color: black;
   font-weight: bold;
@@ -2122,7 +2122,6 @@ body {
   src: url("font/BLACKR-webfont.eot?iefix") format("eot"), url("font/BLACKR-webfont.woff") format("woff"), url("font/BLACKR-webfont.ttf") format("truetype"), url("font/BLACKR-webfont.svg#webfont21KuPMyg") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 .no-boxes {
   margin: 0 40px; }
 
@@ -2149,7 +2148,7 @@ body.template-default .box-1 {
   border-top: 50px solid #333; }
 
 body.template-leftbar #boxes, body.template-default #boxes {
-  background: url("images/colbg.png") repeat-y scroll 0% 0% white;
+  background: url("images/colbg.png") repeat-y scroll 0% 0% #FFF;
   overflow: hidden; }
 
 /* FOOTER */
@@ -2218,7 +2217,7 @@ body.template-leftbar #boxes, body.template-default #boxes {
   margin: 0;
   padding: 0;
   height: 200px;
-  background: white url(images/butterflybrilliance_left.jpg) no-repeat left top; }
+  background: #fff url(images/butterflybrilliance_left.jpg) no-repeat left top; }
 
 #content h1.page-title, #content h1.page-title a:link, #content h1.page-title a:visited {
   line-height: normal;
@@ -2317,8 +2316,8 @@ color: #ddd;
 #content .box-3 .link-list-block li a.link-this-page,
 #content .box-3 .link-list-block li a.link-this-page:hover,
 #content .box-3 .link-list-block li a:hover {
-  background-color: #333333;
-  color: white;
+  background-color: #333;
+  color: #fff;
   border: none; }
 
 /* FOOTER */
@@ -2348,11 +2347,11 @@ color: #ddd;
   color: #333; }
 
 #product-list .product-price, #product-list .product-unit {
-  color: #0194c7; }
+  color: #0194C7; }
 
 .controller-profile_editor .control-panel a:hover {
-  color: white;
-  background-color: #333333;
+  color: #fff;
+  background-color: #333;
   border-radius: 5px; }
 
 /* CONTROL PANEL */

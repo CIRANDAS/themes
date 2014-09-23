@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
 @import url(../base/style.css);
 /* use with @extend, CSS clear bugfix */
@@ -126,8 +127,8 @@
   /* remove submit input browser's margin */
   height: auto;
   width: auto;
-  background: #fbca47;
-  border: 1px solid #f4a439;
+  background: #FBCA47;
+  border: 1px solid #F4A439;
   cursor: pointer;
   color: black;
   font-weight: bold;
@@ -267,8 +268,8 @@
   /* remove submit input browser's margin */
   height: auto;
   width: auto;
-  background: #fbca47;
-  border: 1px solid #f4a439;
+  background: #FBCA47;
+  border: 1px solid #F4A439;
   cursor: pointer;
   color: black;
   font-weight: bold;
@@ -292,7 +293,7 @@
   display: block;
   overflow: hidden;
   color: white;
-  background: #1fa1d0;
+  background: #1FA1D0;
   border: none;
   font-variant: normal;
   font-size: 24px;
@@ -630,7 +631,7 @@ body.template-leftbar .box-1 {
   margin-right: 30px;
   text-align: center;
   font-size: 11px;
-  color: #1fa1d0;
+  color: #1FA1D0;
   text-decoration: none;
   text-align: center;
   line-height: normal;
@@ -1075,7 +1076,7 @@ body.template-leftbar .box-1 {
 
 #content .block h2,
 #content .block-title {
-  background-color: #cceaf4;
+  background-color: #CCEAF4;
   color: black;
   padding: 12px 0 4px 8px;
   text-transform: uppercase;
@@ -1104,7 +1105,7 @@ body.template-leftbar .box-1 {
 
 #content .login-block .not-logged-user {
   padding: 5px;
-  background-color: #cceaf4;
+  background-color: #CCEAF4;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
@@ -1166,7 +1167,7 @@ body.template-leftbar .box-1 {
 .action-friends-index .profile-list li:hover,
 .common-profile-list-block .vcard:hover {
   border: 1px solid #E67817;
-  background-color: #fefbae; }
+  background-color: #FEFBAE; }
 
 .common-profile-list-block .vcard .menu-submenu-trigger,
 .common-profile-list-block .vcard .menu-submenu-trigger:hover,
@@ -1216,7 +1217,7 @@ body.template-leftbar .box-1 {
   padding: 5px 0; }
 
 #content .link-list-block li a {
-  background-color: #cceaf4;
+  background-color: #CCEAF4;
   font-size: 12px; }
 
 .blog-archives-block ul {
@@ -1424,7 +1425,7 @@ li.article-item .search-result-title {
   background-color: transparent; }
 
 #search-results .common-profile-list-block .vcard:hover {
-  background-color: #fefbae; }
+  background-color: #FEFBAE; }
 
 #search-results .menu-submenu-footer {
   background-position: 109px center; }
@@ -1631,7 +1632,7 @@ div.token-input-dropdown-facet {
   text-align: center; }
 
 #facets-menu .facet-menu-label {
-  background: #cceaf4; }
+  background: #CCEAF4; }
 
 #facets-menu .facet-menu-options a {
   color: #007788; }
@@ -1705,10 +1706,10 @@ form#category_form input.button.with-text {
 
 /* Chat */
 #title-bar {
-  background-color: #1fa1d0; }
+  background-color: #1FA1D0; }
 
 #buddy-list .toolbar {
-  background-color: #1fa1d0; }
+  background-color: #1FA1D0; }
 
 #user-status .simplemenu-trigger {
   color: white; }
@@ -1983,8 +1984,8 @@ div#addThis {
   /* remove submit input browser's margin */
   height: auto;
   width: auto;
-  background: #fbca47;
-  border: 1px solid #f4a439;
+  background: #FBCA47;
+  border: 1px solid #F4A439;
   cursor: pointer;
   color: black;
   font-weight: bold;
@@ -2111,9 +2112,9 @@ div#addThis {
 
 body {
   line-height: 1;
-  background: black;
+  background: #000;
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  color: #666666;
+  color: #666;
   font-size: 14px;
   line-height: 18px; }
 
@@ -2151,7 +2152,7 @@ body.template-rightbar .box-2 {
   border-top: 50px solid #333; }
 
 body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbottom #boxes {
-  background: url("images/colbg.png") repeat-y scroll 0% 0% white;
+  background: url("images/colbg.png") repeat-y scroll 0% 0% #FFF;
   overflow: hidden; }
 
 #wrap-2 {
@@ -2180,16 +2181,16 @@ body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbo
   float: left; }
 
 #theme-footer #footer-content {
-  background: #333333;
-  color: white;
+  background: #333;
+  color: #fff;
   font-size: 90%; }
 
 #theme-footer #footer-content a, #theme-footer #footer-content a:visited {
-  color: #08b8f9; }
+  color: #08B8F9; }
 
 /* Conteúdos */
 #content .block h2, #content .block-title, #content .block-title, #content .main-block h1, #not-found h1, #access-denied h1 {
-  color: #333333;
+  color: #333;
   margin: 0px;
   line-height: 1.5em;
   font-weight: bold;
@@ -2202,7 +2203,7 @@ body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbo
   font-size: 26px; }
 
 #content h1, #content h2, #content h3, #content h4, #content h5 {
-  color: #333333;
+  color: #333;
   background-color: transparent;
   font-weight: bold; }
 
@@ -2210,7 +2211,7 @@ body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbo
   text-align: justify; }
 
 #content .block h2, #content .block-title {
-  color: #333333;
+  color: #333;
   margin: 0px 0px 20px;
   line-height: 1.5em;
   font-weight: bold;
@@ -2233,7 +2234,7 @@ body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbo
   font-size: 60px;
   font-weight: normal;
   text-shadow: 0px 2px 3px #fff;
-  color: #08b8f9; }
+  color: #08B8F9; }
 
 #content h1.page-title {
   position: relative;
@@ -2256,7 +2257,7 @@ body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbo
   width: 1040px;
   z-index: 1;
   overflow: hidden;
-  background: #222222; }
+  background: #222; }
 
 #content #profile-theme-header-bg img {
   min-height: 200px;
@@ -2295,7 +2296,7 @@ body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbo
   width: 1040px;
   height: 50px;
   margin: 0 auto;
-  background-color: #333333; }
+  background-color: #333; }
 
 #content .box-1 .blocks .link-list-block .block-inner-2 h3 {
   display: none; }
@@ -2319,14 +2320,14 @@ body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbo
   margin-right: 5px;
   padding: 0px 10px;
   text-decoration: none;
-  color: #08b8f9;
+  color: #08B8F9;
   background-color: transparent;
   font-size: 16px;
   font-weight: bold; }
 
 #content .box-1 .blocks .link-list-block .block-inner-2 a:hover {
   text-decoration: underline;
-  color: #cccccc;
+  color: #ccc;
   background-color: transparent;
   font-size: 16px;
   font-weight: bold; }
@@ -2334,7 +2335,7 @@ body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbo
 #content .box-1 .blocks .link-list-block li a.link-this-page,
 #content .box-1 .blocks .link-list-block li a.link-this-page:hover,
 #content .box-1 .blocks .link-list-block li a:hover {
-  color: #cccccc;
+  color: #ccc;
   background-color: transparent;
   border: none; }
 
@@ -2345,14 +2346,14 @@ body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbo
 #content .box-3 .link-list-block li a.link-this-page,
 #content .box-3 .link-list-block li a.link-this-page:hover,
 #content .box-3 .link-list-block li a:hover {
-  background-color: #333333;
-  color: white;
+  background-color: #333;
+  color: #fff;
   border: none; }
 
 /* FOOTER */
 #profile-footer {
-  background-color: #333333;
-  color: white;
+  background-color: #333;
+  color: #fff;
   font-size: 90%;
   border-top: 2px solid #33A;
   margin: 0;
@@ -2361,29 +2362,29 @@ body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbo
   padding: 20px 0; }
 
 #profile-footer a, #profile-footer a:visited {
-  color: #08b8f9; }
+  color: #08B8F9; }
 
 #product-list .expand-box {
-  background-color: #06276f; }
+  background-color: #06276F; }
 
 #product-list .expand-box:hover {
-  background-color: #3aaacf; }
+  background-color: #3AAACF; }
 
 #content .block #display-product-name h2 {
-  color: #333333; }
+  color: #333; }
 
 .block a, a, .block a:visited, a:visited {
-  color: #085e9b; }
+  color: #085E9B; }
 
 .block a:hover, a:hover, .block a:active, a:active {
-  color: #333333; }
+  color: #333; }
 
 #product-list .product-price, #product-list .product-unit {
-  color: #0194c7; }
+  color: #0194C7; }
 
 .controller-profile_editor .control-panel a:hover {
-  color: white;
-  background-color: #333333;
+  color: #fff;
+  background-color: #333;
   border-radius: 5px; }
 
 /* CONTROL PANEL */

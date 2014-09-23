@@ -1,6 +1,6 @@
 @import url(../base/style.css);
-@import url(http://fonts.googleapis.com/css?family=Imprima:regular,bold&subset=Latin);
 /* use with @extend, CSS clear bugfix */
+@import url(http://fonts.googleapis.com/css?family=Imprima:regular,bold&subset=Latin);
 .clean {
   clear: both; }
 
@@ -126,8 +126,8 @@
   /* remove submit input browser's margin */
   height: auto;
   width: auto;
-  background: #fbca47;
-  border: 1px solid #f4a439;
+  background: #FBCA47;
+  border: 1px solid #F4A439;
   cursor: pointer;
   color: black;
   font-weight: bold;
@@ -267,8 +267,8 @@
   /* remove submit input browser's margin */
   height: auto;
   width: auto;
-  background: #fbca47;
-  border: 1px solid #f4a439;
+  background: #FBCA47;
+  border: 1px solid #F4A439;
   cursor: pointer;
   color: black;
   font-weight: bold;
@@ -292,7 +292,7 @@
   display: block;
   overflow: hidden;
   color: white;
-  background: #1fa1d0;
+  background: #1FA1D0;
   border: none;
   font-variant: normal;
   font-size: 24px;
@@ -630,7 +630,7 @@ body.template-leftbar .box-1 {
   margin-right: 30px;
   text-align: center;
   font-size: 11px;
-  color: #1fa1d0;
+  color: #1FA1D0;
   text-decoration: none;
   text-align: center;
   line-height: normal;
@@ -1075,7 +1075,7 @@ body.template-leftbar .box-1 {
 
 #content .block h2,
 #content .block-title {
-  background-color: #cceaf4;
+  background-color: #CCEAF4;
   color: black;
   padding: 12px 0 4px 8px;
   text-transform: uppercase;
@@ -1104,7 +1104,7 @@ body.template-leftbar .box-1 {
 
 #content .login-block .not-logged-user {
   padding: 5px;
-  background-color: #cceaf4;
+  background-color: #CCEAF4;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
@@ -1166,7 +1166,7 @@ body.template-leftbar .box-1 {
 .action-friends-index .profile-list li:hover,
 .common-profile-list-block .vcard:hover {
   border: 1px solid #E67817;
-  background-color: #fefbae; }
+  background-color: #FEFBAE; }
 
 .common-profile-list-block .vcard .menu-submenu-trigger,
 .common-profile-list-block .vcard .menu-submenu-trigger:hover,
@@ -1216,7 +1216,7 @@ body.template-leftbar .box-1 {
   padding: 5px 0; }
 
 #content .link-list-block li a {
-  background-color: #cceaf4;
+  background-color: #CCEAF4;
   font-size: 12px; }
 
 .blog-archives-block ul {
@@ -1424,7 +1424,7 @@ li.article-item .search-result-title {
   background-color: transparent; }
 
 #search-results .common-profile-list-block .vcard:hover {
-  background-color: #fefbae; }
+  background-color: #FEFBAE; }
 
 #search-results .menu-submenu-footer {
   background-position: 109px center; }
@@ -1631,7 +1631,7 @@ div.token-input-dropdown-facet {
   text-align: center; }
 
 #facets-menu .facet-menu-label {
-  background: #cceaf4; }
+  background: #CCEAF4; }
 
 #facets-menu .facet-menu-options a {
   color: #007788; }
@@ -1705,10 +1705,10 @@ form#category_form input.button.with-text {
 
 /* Chat */
 #title-bar {
-  background-color: #1fa1d0; }
+  background-color: #1FA1D0; }
 
 #buddy-list .toolbar {
-  background-color: #1fa1d0; }
+  background-color: #1FA1D0; }
 
 #user-status .simplemenu-trigger {
   color: white; }
@@ -1983,8 +1983,8 @@ div#addThis {
   /* remove submit input browser's margin */
   height: auto;
   width: auto;
-  background: #fbca47;
-  border: 1px solid #f4a439;
+  background: #FBCA47;
+  border: 1px solid #F4A439;
   cursor: pointer;
   color: black;
   font-weight: bold;
@@ -2142,7 +2142,7 @@ body.template-default .box-1 {
   padding: 0; }
 
 #content .block h2, #content .block-title {
-  color: #06276f;
+  color: #06276F;
   font-family: Imprima;
   font-size: 18px;
   font-weight: bold;
@@ -2150,14 +2150,14 @@ body.template-default .box-1 {
   background-color: transparent; }
 
 #content .link-list-block li a {
-  background-color: #3aaacf;
+  background-color: #3AAACF;
   color: #021848;
   font-size: 16px; }
 
 #content .link-list-block li a.link-this-page,
 #content .link-list-block li a.link-this-page:hover,
 #content .link-list-block li a:hover {
-  background-color: #cecece;
+  background-color: #CECECE;
   color: #021848;
   border: none; }
 
@@ -2171,18 +2171,18 @@ body.template-default .box-1 {
   font-family: Imprima;
   font-size: 30px;
   text-align: left;
-  color: #06276f; }
+  color: #06276F; }
 
 #content .main-block h1, #not-found h1, #access-denied h1 {
-  color: #06276f; }
+  color: #06276F; }
 
 #content .blog-post .title a {
-  color: #06276f;
+  color: #06276F;
   font-size: 26px; }
 
 #content h1.page-title {
-  background-color: #06276f;
-  color: white;
+  background-color: #06276F;
+  color: #FFFFFF;
   font-family: Imprima;
   font-size: 50px;
   height: 60px;
@@ -2190,38 +2190,38 @@ body.template-default .box-1 {
   text-align: center;
   top: 0;
   margin: 34px 0 0 0;
-  border-bottom: 2px solid #441177; }
+  border-bottom: 2px solid #417; }
 
 #profile-footer {
-  border-top: 1px solid #441177;
-  background-color: #06276f;
-  color: white;
+  border-top: 1px solid #417;
+  background-color: #06276F;
+  color: #FFFFFF;
   margin: 0;
   float: left;
   width: 100%;
   padding: 20px 0; }
 
 #product-list .expand-box {
-  background-color: #06276f; }
+  background-color: #06276F; }
 
 #product-list .expand-box:hover {
-  background-color: #3aaacf; }
+  background-color: #3AAACF; }
 
 #content .block #display-product-name h2 {
-  color: #06276f; }
+  color: #06276F; }
 
 .block a, a, .block a:visited, a:visited {
-  color: #175e91; }
+  color: #175E91; }
 
 .block a:hover, a:hover, .block a:active, a:active {
   color: #021848; }
 
 #product-list .product-price, #product-list .product-unit {
-  color: #0194c7; }
+  color: #0194C7; }
 
 .controller-profile_editor .control-panel a:hover {
   color: #021848;
-  background-color: #cecece;
+  background-color: #CECECE;
   border-radius: 5px; }
 
 body {
