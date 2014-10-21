@@ -45,7 +45,7 @@
       DEFAULT_LOADING_MESSAGE = <%="'#{ _('loading...') }'" %>;
     </script>
 
-    <%# render :file => "#{Rails.root}/public/designs/themes/cirandas/layouts/_owa.html.erb" if Rails.env.production? %>
+    <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/layouts/_owa.html.erb" if Rails.env.production? %>
     <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/layouts/_purechat.html.erb" if Rails.env.production? %>
 
   </head>
