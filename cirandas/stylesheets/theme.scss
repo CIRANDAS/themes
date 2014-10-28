@@ -163,7 +163,7 @@ body p {
     }
 
     #footer-middle {
-      
+
       p {
         text-align: center;
       }
@@ -210,7 +210,8 @@ body p {
 
 #content-inner {
   position: relative;
-  min-height: 500px;
+  // minimum size to draw background. 500px is too high
+  min-height: 400px;
   padding-top: $half-padding;
 }
 
