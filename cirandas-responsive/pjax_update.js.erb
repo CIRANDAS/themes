@@ -1,0 +1,5 @@
+<%= render :file => "#{Rails.root}/public/designs/themes/cirandas/load.erb" %>
+
+<%= render :file => "#{Rails.root}/public/designs/themes/cirandas/content_update.js.erb", :ready => true %>
+
+document.body.className += ' <%= @body_extra_classes %>';

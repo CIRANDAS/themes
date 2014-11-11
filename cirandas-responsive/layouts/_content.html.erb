@@ -1,0 +1,17 @@
+<% if defined? ConsumersCoopPlugin %>
+  <% require_dependency 'consumers_coop_plugin/layout_helper' %>
+  <% extend ConsumersCoopPlugin::LayoutHelper %>
+  <%= consumers_coop_header if consumers_coop_enabled? %>
+<% end %>
+<% if defined? NetworksPlugin %>
+  <% require_dependency 'networks_plugin/layout_helper' %>
+  <% extend NetworksPlugin::LayoutHelper %>
+  <%= network_header if profile and (network_node? or profile.enterprise?) %>
+<% end %>
+
+<%= render :file => "#{Rails.root}/public/designs/themes/#{current_theme}/content_top.html.erb" rescue nil %>
+
+<div id="content-inner">
+  <%= insert_boxes(yield) %>
+  <br style='clear: both'/>
+</div><!-- end id="content-inner" -->

@@ -1,0 +1,14 @@
+<%= render :file => "#{Rails.root}/public/designs/themes/cirandas/common.html.erb" %>
+
+<div id="cat_menu_cont">
+  <% cache(environment.id.to_s +  '_categories_menu') do %>
+    <%= render :file => 'shared/categories_menu' %>
+  <% end %>
+</div>
+
+<div id="header-help" class="header-icon"><a href="/ajuda">Ajuda</a></div>
+
+<script type="text/javascript">
+  if (typeof cirandas_theme === 'undefined') cirandas_theme = {};
+  cirandas_theme.small_header = false;
+</script>

@@ -1,0 +1,17 @@
+<%
+
+@body_extra_classes = " #{controller.send :content_classes rescue ''}"
+if defined? ConsumersCoopPlugin
+  require_dependency 'consumers_coop_plugin/layout_helper'
+  extend ConsumersCoopPlugin::LayoutHelper
+
+  @body_extra_classes += ' consumers-coop-enabled' if consumers_coop_enabled?
+end
+
+if defined? NetworksPlugin
+  require_dependency 'networks_plugin/layout_helper'
+  extend NetworksPlugin::LayoutHelper
+
+  @body_extra_classes += ' network-node' if network_node?
+end
+%>
