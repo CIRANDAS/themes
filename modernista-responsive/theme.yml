@@ -1,4 +1,4 @@
-name: "Padrão azul Cirandas Responsive"
+name: "Base Modernista - Responsive"
 layout: "application-ng"
 jquery_theme: "smoothness"
 responsive: true
