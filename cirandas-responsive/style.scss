@@ -4,10 +4,30 @@
 
 @import "stylesheets/theme";
 
-#wrap-1 {
-  background-color: white !important;
+
+@media screen and (min-width: 768px) {
+  .block, .no-boxes {
+    border: none !important;
+  }
+
+  #wrap-1 {
+    background-color: white !important;
+    box-shadow: 0 0 10px black;
+    -ms-box-shadow: 0 0 10px black;
+    -moz-box-shadow: 0 0 10px black;
+    -webkit-box-shadow: 0 0 10px black;
+  }
 }
 
-.block, .no-boxes {
-  border: none !important;
+@media screen and (max-width: 767px) {
+  .block, .no-boxes {
+    box-shadow: 0 0 10px black;
+    -ms-box-shadow: 0 0 10px black;
+    -moz-box-shadow: 0 0 10px black;
+    -webkit-box-shadow: 0 0 10px black;
+  }
+}
+
+.navbar-default {
+  color: #333333;
 }

@@ -1,9 +1,10 @@
 <li id="navigation-contents"><%= search_contents_menu %></li>
 <li id="navigation-people"><%= search_people_menu %></li>
-<li id="navigation-products"><%= link_to 'Produtos', {:action => :products, :controller => :search}, {:class => 'icon-product'} %></li>
-<li id="navigation-enterprises"><%= link_to 'Empreendimentos', {:action => :enterprises, :controller => :search}, {:class => 'icon-menu-enterprise'} %></li>
+<li id="navigation-products"><%= link_to 'Produtos', {:action => :products, :controller => :search}, {:class => 'icon-product', :title => 'Produtos'} %></li>
+<li id="navigation-enterprises"><%= link_to 'Empreendimentos', {:action => :enterprises, :controller => :search}, {:class => 'icon-menu-enterprise', :title => 'Empreendimentos'} %></li>
 <li id="navigation-communities"><%= search_communities_menu %></li>
-<li id="navigation-events"><%= link_to 'Eventos', {:action => :events, :controller => :search},  {:class => 'icon-event'} %></li>
+<li id="navigation-events"><%= link_to 'Eventos', {:action => :events, :controller => :search},  {:class => 'icon-event', :title => 'Eventos'} %></li>
+<li id="navigation-help"><%= link_to 'Ajuda', '/ajuda', {:class => 'icon-help', :title => 'Ajuda'} %></li>
 
 <% calculate_spacing = true if calculate_spacing.nil? %>
 
