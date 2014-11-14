@@ -1,1 +1,13 @@
-@import "stylesheets/theme"
+
+@import url(bootstrap/all.css);
+@import url(../base-responsive/style.css);
+
+@import "stylesheets/theme";
+
+#wrap-1 {
+  background-color: white !important;
+}
+
+.block, .no-boxes {
+  border: none !important;
+}
