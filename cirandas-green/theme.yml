@@ -1,4 +1,5 @@
 name: "Padrão verde"
-layout: "cirandas"
-icon_theme: [default, pidgin]
+layout: "application-ng"
+responsive: true
+icon_theme: [awesome, pidgin]
 owner_type: 'Enterprise'

@@ -23,8 +23,8 @@ a {
 }
 
 body p {
-  text-align: left;
-  line-height: 20px;
+/*  text-align: left; */
+  line-height: 1.5em;
 }
 
 /* Structure */
@@ -102,15 +102,13 @@ body p {
       }
     }
 
-    #footer-right {
+  }
 
-      #footer-fbes {
-        padding-left: 55px;
-        background-position: left -13px;
-        background-repeat: no-repeat;
-        background-image: url(/designs/themes/cirandas/images/fbes.png);
-      }
-    }
+  #footer-fbes {
+    padding-left: 50px;
+    background-position: left -13px;
+    background-repeat: no-repeat;
+    background-image: url(/designs/themes/cirandas/images/fbes.png);
   }
 
   a {
@@ -122,6 +120,21 @@ body p {
   }
   p {
     margin: 0;
+  }
+}
+
+/* --- footer - mobile -- */
+@media screen and (max-width: 767px) {
+  #theme-footer #language-chooser {
+    text-align: center !important;
+  }
+
+  #noosfero-version-info {
+    text-align: center;
+  }
+
+  #footer-fbes {
+    text-align: center;
   }
 }
 
