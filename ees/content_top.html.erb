@@ -1,10 +1,5 @@
-<% logo = Hpricot(profile.custom_header).search('img').first.attributes['src'] rescue nil %>
-<div id="profile-theme-header">
-	<div id="profile-theme-header-bg">
-		<% if logo.present? %>
-			<img src="<%= logo %>">
-		<% end %>
-	</div>
+<% theme_header = Nokogiri::HTML.fragment(profile.custom_header).search('img').first['src'] rescue nil %>
+<div id="profile-theme-header" <% if theme_header.present? %> style="background-image: url('<%= theme_header %>')" <% end %>>
 	<h1 class='page-title'>
   	<% if profile.image.present? %>
   		<div id='page-logo'>

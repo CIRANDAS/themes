@@ -1807,3 +1807,9 @@ div#addThis {
 .navbar-static-bottom {
   margin-bottom: 0px !important;
 }
+
+@media screen and (min-width: 1200px) {
+  .navbar-static-top {
+    font-size: 12px;
+  }
+}

@@ -1,11 +1,16 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<%= html_language %>" lang="<%= html_language %>">
+<!DOCTYPE html>
+<html lang="<%= html_language %>">
   <head>
     <title><%= h page_title %></title>
     <%= yield(:feeds) %>
     <!--<meta http-equiv="refresh" content="1"/>-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="description" content="<%= @environment.name %>" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" value="summary">
+    <meta name="twitter:title" content="<%= h page_title %>">
+    <meta name="twitter:description" content="<%= meta_description_tag(@page) %>">
 
     <!-- Twitter Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +25,7 @@
 
     <%=
       @plugins.dispatch(:head_ending).map do |content|
-        if content.respond_to?(:call) then instance_exec(&content).html_safe else content.html_safe end
+        if content.respond_to?(:call) then instance_exec(&content).to_s.html_safe else content.html_safe end
       end.join("\n")
     %>
 
@@ -47,15 +52,13 @@
     <%= render :partial => 'layouts/menu_responsive' %>
 
     <div id="wrap-1" class="container">
+
+      <%= render :file => "#{Rails.root}/public/designs/themes/#{current_theme}/content_top.html.erb" rescue nil %>
+
       <div id='theme-header'>
         <%= theme_header %>
       </div>
-        <div id="navigation">
-          <ul>
-            <%= theme_extra_navigation %>
-          </ul>
-          <div id="navigation-end"></div>
-        </div><!-- end id="navigation" -->
+
         <div id="content">
           <%= render :file => "#{Rails.root}/public/designs/themes/cirandas-responsive/layouts/_content.html.erb" %>
         </div><!-- end id="content" -->
@@ -63,13 +66,13 @@
     </div><!-- end id="wrap-1" -->
 
     <%= render_environment_features(:logged_in) %>
-    <div id="theme-footer">
+    <div id="theme-footer" >
       <%= theme_footer %>
     </div><!-- end id="theme-footer" -->
 
     <%= noosfero_layout_features %>
+    <%= theme_javascript_ng %>
     <%= addthis_javascript %>
-
     <%=
       @plugins.dispatch(:body_ending).map do |content|
         if content.respond_to?(:call) then instance_exec(&content).html_safe else content.html_safe end

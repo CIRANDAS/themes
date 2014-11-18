@@ -1,3 +1,5 @@
+@import '../../cirandas-responsive/style';
+
 body {
 line-height: 1;
 background: $body-background;
@@ -57,12 +59,10 @@ body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbo
 
 /* FOOTER */
 #wrap-1, #theme-footer {
-	margin: 65px auto 0;
-	-webkit-box-shadow: 3px 3px 7px #777;
-	-moz-box-shadow: 3px 3px 7px #777;
+  -webkit-box-shadow: 3px 3px 7px #777;
+  -moz-box-shadow: 3px 3px 7px #777;
 }
 #theme-footer {
-	margin: 0 auto 5px;
 	border-top: 2px solid #eee;
 }
 #theme-footer #footer-content #footer-left, #theme-footer #footer-content #footer-middle, #theme-footer #footer-content #footer-right {
@@ -120,15 +120,17 @@ body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbo
 
 /** HEADER */
 
-#content #profile-theme-header {
-top: 0;
-margin: 0;
-padding: 0;
-height: 200px;
-background-color: transparent;
+#profile-theme-header {
+  margin: 0 -15px;
+  padding: 0;
+  height: 200px;
+  background-color: transparent;
+  -webkit-background-size: cover;
+  background-size: cover;
+
 }
 
-#content h1.page-title, #content h1.page-title a:link, #content h1.page-title a:visited {
+h1.page-title, h1.page-title a:link, h1.page-title a:visited {
 line-height: normal;
 font-family: $ees_name_font, Verdana, Arial, Helvetica, sans-serif;
 font-size: 60px;
@@ -136,7 +138,7 @@ font-weight: normal;
 text-shadow: 0px 2px 3px #fff;
 color: $ees-name-color;
 }
-#content h1.page-title {
+h1.page-title {
 position:relative;
 z-index:2;
 top:0;
@@ -146,32 +148,19 @@ height:100%;
 background-color:transparent;
 }
 
-#content h1.page-title a:link, #content h1.page-title a:visited {
+h1.page-title a:link, h1.page-title a:visited {
 text-decoration: none;
 }
 
-#content h1.page-title span.solidarity-economy {
+h1.page-title span.solidarity-economy {
 text-shadow: #000 1px 1px;
 }
 
-#content #profile-theme-header-bg {
-position:absolute;
-height: 200px;
-width: 1040px;
-z-index:1;
-overflow:hidden;
-background: $header-bg;
-}
-#content #profile-theme-header-bg img {
-min-height: 200px;
-width: 1040px;
-}
 #profile-header {
 display:none;
 }
 #page-logo {
 float:left;
-max-height:160px;
 max-width:260px;
 background-color:#fff;
 box-shadow: #000 4px 8px 10px;
@@ -179,11 +168,11 @@ text-align:center;
 margin-right: 30px;
 padding: 20px;
 }
-#content h1.page-title img {
+h1.page-title img {
 height:160px;
 }
-#content h1.page-title .profile-name {
-margin-top: 20px;
+h1.page-title .profile-name {
+padding-top: 20px;
 }
 .profile-big-image, .vcard p {
 display:none;
@@ -321,4 +310,14 @@ font-weight: bold;
 }
 body.noosfero #box-organizer a.button:hover, #content #box-organizer input.button:hover, #content #box-organizer a.button:hover {
 	border: 1px solid #ccc;
+}
+
+.box-container-3 {
+  padding: 0;
+  margin-top: -21px;
+  margin-bottom: 21px;
+}
+
+.box-container-3 nav.navbar {
+  border-radius: 0;
 }

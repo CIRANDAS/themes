@@ -9,10 +9,8 @@
   <%= network_header if profile and (network_node? or profile.enterprise?) %>
 <% end %>
 
-<%= render :file => "#{Rails.root}/public/designs/themes/#{current_theme}/content_top.html.erb" rescue nil %>
 <%= render :file => "#{Rails.root}/public/designs/themes/#{current_theme}/profile_title.html.erb" rescue nil %>
 
 <div id="content-inner">
   <%= insert_boxes(yield) %>
-  <br style='clear: both'/>
 </div><!-- end id="content-inner" -->
