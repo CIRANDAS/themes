@@ -1,5 +1,0 @@
-name: "Base EES Responsive"
-layout: "application-ng"
-jquery_theme: "smoothness"
-responsive: true
-icon_theme: [awesome, pidgin]
