@@ -60,7 +60,7 @@
       </div>
 
         <div id="content">
-          <%= render :file => "#{Rails.root}/public/designs/themes/cirandas-responsive/layouts/_content.html.erb" %>
+          <%= render :file => "#{Rails.root}/public/designs/themes/#{current_theme}/layouts/_content.html.erb" %>
         </div><!-- end id="content" -->
       </div><!-- end id="wrap-2" -->
     </div><!-- end id="wrap-1" -->
@@ -79,7 +79,7 @@
       end.join("\n")
     %>
 
-    <%= render :file => "#{Rails.root}/public/designs/themes/cirandas-responsive/layouts/_modal.html.erb" %>
+    <%= render :file => "#{Rails.root}/public/designs/themes/#{current_theme}/layouts/_modal.html.erb" %>
 
   </body>
 </html>

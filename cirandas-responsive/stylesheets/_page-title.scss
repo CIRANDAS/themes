@@ -2,6 +2,7 @@
 @import 'colors';
 
 
+#content {
 
   h1 {
     &.page-title {
@@ -53,6 +54,7 @@
     }
   }
 
+}
 
 
 @media screen and (max-width: 767px) {
