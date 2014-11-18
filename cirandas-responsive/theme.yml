@@ -1,5 +1,5 @@
 name: "Padrão azul Cirandas Responsive"
-layout: "application-ng"
 jquery_theme: "smoothness"
 responsive: true
+layout: cirandas-responsive
 icon_theme: [awesome, pidgin]

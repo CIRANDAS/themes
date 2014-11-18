@@ -7,34 +7,17 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="description" content="<%= @environment.name %>" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" value="summary">
-    <meta name="twitter:title" content="<%= h page_title %>">
-    <meta name="twitter:description" content="<%= meta_description_tag(@page) %>">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="<%= @page ? 'article' : 'website' %>">
-    <meta property="og:url" content="<%= @page ? url_for(@page.url) : @environment.top_url %>">
-    <meta property="og:title" content="<%= h page_title %>">
-    <meta property="og:site_name" content="<%= profile ? profile.name : @environment.name %>">
-    <meta property="og:description" content="<%= @page ? truncate(strip_tags(@page.body.to_s), :length => 200) : @environment.name %>">
-
-    <% if @page %>
-      <meta property="article:published_time" content="<%= show_date(@page.published_at) %>">
-      <% @page.body_images_paths.each do |img| %>
-        <meta name="twitter:image" content="<%= img.to_s %>">
-        <meta property="og:image" content="<%= img.to_s %>">
-      <% end %>
-    <% end %>
-
-    <%= render :file => "#{Rails.root}/public#{theme_path}/head.html.erb" rescue nil %>
+    <!-- Twitter Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" href="<%= image_path(theme_favicon) %>" type="image/x-icon" />
     <%= noosfero_javascript %>
     <%= noosfero_stylesheets %>
 
+    <%= render :file => "#{Rails.root}/public#{theme_path}/head.html.erb" rescue nil %>
     <%# Add custom tags/styles/etc via content_for %>
     <%= yield :head %>
+
     <%=
       @plugins.dispatch(:head_ending).map do |content|
         if content.respond_to?(:call) then instance_exec(&content).html_safe else content.html_safe end
@@ -45,14 +28,14 @@
       DEFAULT_LOADING_MESSAGE = <%="'#{ _('loading...') }'" %>;
     </script>
 
-    <%# render :file => "#{Rails.root}/public/designs/themes/cirandas/layouts/_owa.html.erb" if Rails.env.production? %>
-    <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/layouts/_purechat.html.erb" if Rails.env.production? %>
+    <%= render :file => "#{Rails.root}/public/designs/themes/cirandas-responsive/layouts/_owa.html.erb" if Rails.env.production? %>
+    <%= render :file => "#{Rails.root}/public/designs/themes/cirandas-responsive/layouts/_purechat.html.erb" if Rails.env.production? %>
 
   </head>
 
-  <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/load.erb" %>
+  <%= render :file => "#{Rails.root}/public/designs/themes/cirandas-responsive/load.erb" %>
 
-  <body class="<%= body_classes + @body_extra_classes %>">
+  <body class="<%= h body_classes %>">
     <a href="#content" id="link-go-content"><span><%= _("Go to the content") %></span></a>
 
     <%=
@@ -61,16 +44,12 @@
       end.join("\n")
     %>
 
-    <div id="wrap-1">
+    <%= render :partial => 'layouts/menu_responsive' %>
+
+    <div id="wrap-1" class="container">
       <div id='theme-header'>
         <%= theme_header %>
       </div>
-      <div id="wrap-2">
-        <%= render :partial => 'layouts/user' %>
-
-        <h1 id="site-title">
-          <%= theme_site_title %>
-        </h1>
         <div id="navigation">
           <ul>
             <%= theme_extra_navigation %>
@@ -78,15 +57,26 @@
           <div id="navigation-end"></div>
         </div><!-- end id="navigation" -->
         <div id="content">
-          <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/layouts/_content.html.erb" %>
+          <%= render :file => "#{Rails.root}/public/designs/themes/cirandas-responsive/layouts/_content.html.erb" %>
         </div><!-- end id="content" -->
       </div><!-- end id="wrap-2" -->
     </div><!-- end id="wrap-1" -->
+
     <%= render_environment_features(:logged_in) %>
     <div id="theme-footer">
       <%= theme_footer %>
     </div><!-- end id="theme-footer" -->
+
     <%= noosfero_layout_features %>
     <%= addthis_javascript %>
+
+    <%=
+      @plugins.dispatch(:body_ending).map do |content|
+        if content.respond_to?(:call) then instance_exec(&content).html_safe else content.html_safe end
+      end.join("\n")
+    %>
+
+    <%= render :file => "#{Rails.root}/public/designs/themes/cirandas-responsive/layouts/_modal.html.erb" %>
+
   </body>
 </html>
