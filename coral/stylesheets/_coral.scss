@@ -1,3 +1,5 @@
+@import '../../cirandas-responsive/style';
+
 body {
   font-family: Imprima;
   @if $body-bg-image-url != "" {
@@ -89,12 +91,17 @@ body.template-default .box-1 {
   color: $page-title;
   font-family: Imprima;
   font-size: 50px;
-  height: 60px;
+  height: 100px;
   padding: 20px 0;
   text-align:center;
   top:0;
-  margin:34px 0 0 0;
+  margin: 0;
   border-bottom: 2px solid $page-title-border-bottom;
+}
+
+#profile-title {
+  padding: 0;
+  margin:0;
 }
 
 #profile-footer {
@@ -135,4 +142,42 @@ body.template-default .box-1 {
 	color: $link-this-page;
 	background-color: $link-this-page-bg;
 	border-radius: 5px;
+}
+
+/* MENU HORIZONTAL */
+
+.box-container-3 {
+  padding: 0;
+}
+
+.box-container-3 nav.navbar {
+  border-radius: 0;
+}
+
+
+#content .box-container-3 nav {
+  background-color: $top-menu-bg;
+  border: none;
+
+  li a {
+    color: $top-menu-color;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    font-family: $coral-name-font;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 5px;
+  }
+  li a:hover {
+    text-decoration: underline;
+  }
+  li a.link-this-page,
+  li a.link-this-page:hover,
+  li a:hover {
+    color: $top-menu-hover-color;
+    background-color: $top-menu-hover-color-bg;
+    border: none;
+  }
 }

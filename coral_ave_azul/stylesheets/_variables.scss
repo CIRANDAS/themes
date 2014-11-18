@@ -1,0 +1,25 @@
+$theme-name: "coral_ave_azul";
+$content-title: #06276F;
+$page-title: #FFFFFF;
+$page-title-bg: #06276F;
+$page-title-border-bottom: #417;
+$link-list-block: #021848;
+$link-list-block-bg: #3AAACF;
+$link-this-page: #021848;
+$link-this-page-bg: #CECECE;
+$links: #175E91;
+$links-hover: #021848;
+$product-price: #0194C7;
+
+$catalog-details-bg: $page-title-bg;
+$catalog-details: $page-title;
+$catalog-details-bg-hover: $link-list-block-bg;
+$catalog-details-hover: $link-list-block;
+
+$block-title: $content-title;
+$profile-footer: $page-title;
+$profile-footer-bg: $page-title-bg;
+$profile-footer-border-top: $page-title-border-bottom;
+$main-block-title: $content-title;
+$blog-post-title: $content-title;
+$body-bg-image-url: url(/designs/themes/#{$theme-name}/images/bg.png);

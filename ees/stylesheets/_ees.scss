@@ -120,6 +120,10 @@ body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbo
 
 /** HEADER */
 
+#profile-title {
+  display: none;
+}
+
 #profile-theme-header {
   margin: 0 -15px;
   padding: 0;
@@ -183,6 +187,18 @@ padding-top:0;
 
 
 /* MENU horizontal*/
+
+
+.box-container-3 {
+  padding: 0;
+  margin-top: -21px;
+  margin-bottom: 21px;
+}
+
+.box-container-3 nav.navbar {
+  border-radius: 0;
+}
+
 #content .box-1 .blocks .link-list-block {
 position:absolute;
 top:0;
@@ -252,6 +268,35 @@ font-weight: bold;
   border: none;
 }
 
+/* MENU HORIZONTAL */
+
+#content .box-container-3 nav {
+  background-color: $top-menu-bg;
+  border: none;
+
+  li a {
+    color: $top-menu-color;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    font-family: $ees-name-font;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 5px;
+  }
+  li a:hover {
+    text-decoration: underline;
+  }
+  li a.link-this-page,
+  li a.link-this-page:hover,
+  li a:hover {
+    color: $top-menu-hover-color;
+    background-color: $top-menu-hover-color-bg;
+    border: none;
+  }
+}
+
 
 /* FOOTER */
 
@@ -259,7 +304,8 @@ font-weight: bold;
 	background-color: $profile-footer-bg;
 	color: $profile-footer;
 	font-size: 90%;
-	border-top:2px solid #33A;
+	border-top:2px solid darken($footer-bg, 33.5%);
+;
 	margin:0;
 	float:left;
 	width:100%;
@@ -312,12 +358,19 @@ body.noosfero #box-organizer a.button:hover, #content #box-organizer input.butto
 	border: 1px solid #ccc;
 }
 
-.box-container-3 {
-  padding: 0;
-  margin-top: -21px;
-  margin-bottom: 21px;
-}
+/* BOOTSTRAP CUSTOMIZATION */
 
-.box-container-3 nav.navbar {
-  border-radius: 0;
+/* FUTURE
+#theme-footer {
+  border-color: darken($footer-bg, 33.5%);
+  color: $footer-color;
+  a {
+    color: $footer-link-color;
+  }
+
+  nav.navbar-static-bottom {
+    background-color: $footer-bg;
+  }
+
 }
+*/

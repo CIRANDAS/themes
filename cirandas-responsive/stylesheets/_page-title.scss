@@ -2,8 +2,6 @@
 @import 'colors';
 
 
-#content {
-
   h1 {
     &.page-title {
       text-align: left;
@@ -54,7 +52,6 @@
     }
   }
 
-}
 
 
 @media screen and (max-width: 767px) {
@@ -63,7 +60,7 @@
     text-align: center;
   }
 
-  #content h1.page-title span.solidarity-economy {
+  h1.page-title span.solidarity-economy {
     display: none;
   }
 }
