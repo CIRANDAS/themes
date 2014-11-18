@@ -1,0 +1,23 @@
+$theme-name: "coral_estrela_verde";
+$content-title: #004B27;
+$page-title: #FFF;
+$page-title-bg: #499500;
+$page-title-border-bottom: #417;
+$link-list-block: #FFFFFF;
+$link-list-block-bg: #00743C;
+$link-this-page: #FFFFFF;
+$link-this-page-bg: #7CCA33;
+$links: #00743C;
+$links-hover: #021848;
+$product-price: #0194C7;
+
+$catalog-details-bg: $link-this-page-bg;
+$catalog-details-bg-hover: $link-list-block-bg;
+
+$block-title: $content-title;
+$profile-footer: $page-title;
+$profile-footer-bg: $page-title-bg;
+$profile-footer-border-top: $page-title-border-bottom;
+$main-block-title: $content-title;
+$blog-post-title: $content-title;
+$body-bg-image-url: url(/designs/themes/#{$theme-name}/images/bg.png);
