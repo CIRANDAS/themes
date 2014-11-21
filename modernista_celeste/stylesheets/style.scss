@@ -1,5 +1,5 @@
-@import 'cirandas';
-@import 'small';
+@import '../../cirandas/stylesheets/cirandas';
+@import '../../cirandas/stylesheets/small';
 
 /*Start of "Modernista Celeste" - inspired by Modernist Theme by orderedlist: https://github.com/orderedlist/modernist*/
 
@@ -88,7 +88,7 @@ body {
   -o-border-radius: 0 0 8px 8px;
   border-radius: 0 0 8px 8px;
   position: relative; }
-  
+
 #boxes {
   padding: 15px 40px 0 40px;
 }

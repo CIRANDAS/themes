@@ -15,7 +15,7 @@ $links-hover: #333; // Links qdo passa o mouse
 
 //tit: Menu superior (horizontal):
 $top-menu-bg: #333; // Fundo do menu superior
-$top-menu-font: $ees-name-font; 
+$top-menu-font: $ees-name-font;
 $top-menu-color: #08B8F9; // Texto do menu superior
 $top-menu-hover-color: #ccc; // Texto menu superior qdo passa o mouse
 $top-menu-hover-color-bg: transparent; // Fundo do menu superior qdo passa o mouse
@@ -52,7 +52,5 @@ $block-title: $content-title;
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
 
 // Ação!
-//@import 'cirandas';
-//@import 'small';
 @import '../../ees/stylesheets/ees';
 

@@ -31,10 +31,7 @@ $top-menu-hover-color-bg: #ddd;
 $coral-name-font: 'Imprima';
 
 
-
 @import 'variables';
-//@import 'cirandas';
-//@import 'small';
 @import url(http://fonts.googleapis.com/css?family=Imprima:regular,bold&subset=Latin);
-@import '../../coral/stylesheets/coral';
+@import 'stylesheets/coral';
 
