@@ -1,4 +1,5 @@
 name: "Tema Modernista - Celeste"
-layout: "cirandas" # don't change
-icon_theme: [default, pidgin]
+layout: "cirandas-responsive" # don't change
+icon_theme: [awesome, pidgin]
 owner_type: Enterprise
+responsive: true

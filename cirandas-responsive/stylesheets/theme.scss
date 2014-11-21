@@ -112,9 +112,10 @@ body p {
   }
 
   a {
-    color: $link-color;
+    color: $light-link-color;
     text-decoration: underline;
-    :hover {
+    :hover {  
+      color: darken($light-link-color,6.5%);
       text-decoration: none;
     }
   }
