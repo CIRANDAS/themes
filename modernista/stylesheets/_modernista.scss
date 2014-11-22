@@ -32,7 +32,7 @@ body {
   background: -moz-linear-gradient(#fafafa, #dedede 1000px);
   background: -o-linear-gradient(#fafafa, #dedede 1000px);
   background: -ms-linear-gradient(#fafafa, #dedede 1000px);
-  background: linear-gradient(#fafafa, #dedede 1000px); 
+  background: linear-gradient(#fafafa, #dedede 1000px);
 }
 
 #content {
@@ -89,7 +89,7 @@ body {
 
 #site-title {
   display: none; }
-  
+
 #profile-header {
 	margin-top: 0;
 }
@@ -107,12 +107,12 @@ body {
   -o-border-radius: 0 0 8px 8px;
   border-radius: 0 0 8px 8px;
   position: relative; }
-  
+
 #boxes {
   padding: 15px 40px 0 40px;
 }
 
-#content h1, #content .main-block h1, #content h2, #content .block-title, #content h3, #content h4, #content h5, #content h6, 
+#content h1, #content .main-block h1, #content h2, #content .block-title, #content h3, #content h4, #content h5, #content h6,
 #content .block h1, #content .block h2, #content .block h3, #content .block h4, #content .block h5, #content .block h6 {
   color: $content-title-h1;
   padding: 0;
@@ -131,7 +131,7 @@ body {
   line-height: 1.1; }
 
 #content .block h1, #content .block-title {
-  font-size: 28px; 
+  font-size: 28px;
 }
 
 #content .block h2 {
@@ -139,9 +139,9 @@ body {
   font-size: 18px;
 }
 
-#content h3, #content h4, #content h5, #content h6, 
+#content h3, #content h4, #content h5, #content h6,
 #content .block h3, #content .block h4, #content .block h5, #content .block h6 {
-  color: $content-title-hn; 
+  color: $content-title-hn;
 }
 
 #content .link-list-block li a {
@@ -154,7 +154,7 @@ body {
   width: 100%;
   border-radius: 0 0 8px 8px;
 }
-  
+
 /* MENU horizontal*/
 
 .box-container-3 {
@@ -238,8 +238,8 @@ font-size: 16px;
 font-weight: bold;
 }
 
-#content .box-1 .blocks .link-list-block li a.link-this-page, 
-#content .box-1 .blocks .link-list-block li a.link-this-page:hover, 
+#content .box-1 .blocks .link-list-block li a.link-this-page,
+#content .box-1 .blocks .link-list-block li a.link-this-page:hover,
 #content .box-1 .blocks .link-list-block li a:hover {
   color: $top-menu-hover-color;
   background-color: $top-menu-hover-color-bg;
@@ -248,11 +248,11 @@ font-weight: bold;
 
 /* MENU VERTICAL */
 
-#content .box-2 .link-list-block li a.link-this-page, 
-#content .box-2 .link-list-block li a.link-this-page:hover, 
+#content .box-2 .link-list-block li a.link-this-page,
+#content .box-2 .link-list-block li a.link-this-page:hover,
 #content .box-2 .link-list-block li a:hover,
-#content .box-3 .link-list-block li a.link-this-page, 
-#content .box-3 .link-list-block li a.link-this-page:hover, 
+#content .box-3 .link-list-block li a.link-this-page,
+#content .box-3 .link-list-block li a.link-this-page:hover,
 #content .box-3 .link-list-block li a:hover {
   background-color: $link-this-page-bg;
   color: $link-this-page;

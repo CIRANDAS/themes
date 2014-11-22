@@ -1,5 +1,7 @@
 #!/bin/sh
 
+perl -pi -e 's/smoothness_mod/smoothness/g' **/theme.yml
+
 for tema in `ls -d tantascores*`; do
   tema_destino=`ls $tema/stylesheets | grep -v style | grep -v variables | sed -e 's/_//g' | sed -e 's/\..*//g'`
   echo "convertendo $tema para $tema_destino responsivo..."
