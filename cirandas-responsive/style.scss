@@ -55,24 +55,56 @@
   }
 }
 
+
+/* Top bar - common to all cirandas */
+
 .cirandas-responsive-top-logo {
   background:url(/designs/themes/cirandas-responsive/images/cirandas-logo-110.png) no-repeat scroll 0% 0% / 70px auto;
   width:70px;
   height:64px;
   margin:-10px 0 0 0;
   vertical-align: top;
-  float: right;
 }
 
-.container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-  margin-left: -60px;
-  font-size: 18px;
+@media screen and (min-width:1200px) {
+  .navbar-brand, .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    font-size: 18px;
+    color: rgba(117, 185, 97, 1);
+    text-shadow: 2px 2px 2px #222;
+  }
+
+  #top-search .form-group, #top-search .form-group .form-control {
+    width: 120px;
+  }
 }
 
-#top-search .form-group, #top-search .form-group .form-control {
-  width: 170px;
+@media screen and (max-width:767px) and (min-width:360px) {
+  .navbar-brand, .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    font-size: 18px;
+    color: rgba(117, 185, 97, 1);
+    text-shadow: 2px 2px 2px #222;
+  }
+}
+@media screen and (max-width:767px) {
+  .form-horizontal .form-group {
+    margin: 0;
+  }
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
 
+.navbar-default .navbar-toggle {
+  border: none;
+  margin-right: 10px;
+}
 
+.navbar-toggle .icon-bar {
+  width: 18px;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: rgba(118, 177, 103, 1);
+}
 
