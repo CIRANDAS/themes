@@ -45,5 +45,28 @@
   width: 96%;
 }
 
+@media screen and (min-width:1200px) {
+  a.icon-help {
+    font-size: 0;
+  }
+
+  a.icon-help:before {
+    font-size:15px;
+  }
+}
+
+.cirandas-responsive-top-logo {
+  background:url(/designs/themes/cirandas-responsive/images/cirandas-logo-110.png);
+  width:110px;
+  height:64px;
+  margin-right:10px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -10px;
+}
+
+.navbar-brand {
+  font-size: 0;
+}
 
 
