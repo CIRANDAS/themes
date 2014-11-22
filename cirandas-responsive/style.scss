@@ -56,17 +56,23 @@
 }
 
 .cirandas-responsive-top-logo {
-  background:url(/designs/themes/cirandas-responsive/images/cirandas-logo-110.png);
-  width:110px;
+  background:url(/designs/themes/cirandas-responsive/images/cirandas-logo-110.png) no-repeat scroll 0% 0% / 70px auto;
+  width:70px;
   height:64px;
-  margin-right:10px;
-  display: inline-block;
+  margin:-10px 0 0 0;
   vertical-align: top;
-  margin-top: -10px;
+  float: right;
 }
 
-.navbar-brand {
-  font-size: 0;
+.container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  margin-left: -60px;
+  font-size: 18px;
 }
+
+#top-search .form-group, #top-search .form-group .form-control {
+  width: 170px;
+}
+
+
 
 
