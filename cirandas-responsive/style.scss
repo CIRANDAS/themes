@@ -1,5 +1,6 @@
 
-@import url(bootstrap/all.css);
+// need to specify cirandas-responsive here as others include this file
+@import url(../cirandas-responsive/bootstrap/all.css);
 
 @import "stylesheets/theme";
 
@@ -39,7 +40,7 @@
 
 /* armengue */
 
-/* didn't find why .no-boxes has bigger width than its parent */ 
+/* didn't find why .no-boxes has bigger width than its parent */
 .no-boxes {
   width: 96%;
 }
