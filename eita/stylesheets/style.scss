@@ -1,2 +1,166 @@
-@import 'stylesheets/style';
+@import '../../cirandas/stylesheets/cirandas';
+@import '../../cirandas/stylesheets/small';
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin);
+
+#content {
+  padding-top: 5px;
+  margin-bottom: 80px;
+}
+
+#content h1.page-title {
+  display:none;
+}
+
+.profile-info-block a {
+  font-size: small !important;
+}
+
+#content .block h2,
+#content .block-title {
+  color: #217335;
+}
+
+#content {
+
+  .box-1 {
+
+    .link-list-block {
+      border-bottom: 4px solid black;
+      position: relative;
+      top: 74px;
+      left: -63px;
+      padding: 0 0 0 62px;
+      width: 717px;
+
+      ul {
+        margin-left: -7px;
+      }
+
+      li {
+        margin: 0 2px;
+        padding: 0;
+
+        a, a.link-this-page {
+          background-position: 0;
+          margin: 0;
+          padding: 0 7px;
+          background: none;
+          font-size: 15px;
+          color: #000;
+          font-weight:bold;
+          font-family: Ubuntu;
+        }
+
+        &:hover, a:hover, a.link-this-page:hover {
+          color: #fff200;
+          background: #000;
+          border-radius: 20px;
+          border:none;
+        }
+
+        a.link-this-page {
+          color:#ffc211;
+        }
+      }
+    }
+
+    .main-block {
+      top: 100px;
+    }
+    .main-block h1, #not-found h1, #access-denied h1 {
+      font-variant: normal;
+      font-weight: normal;
+      font-family:Ubuntu;
+      font-size:28px;
+    }
+  }
+}
+
+
+#profile-footer {
+	padding-top: 150px;
+}
+
+.profile-info-block a {
+  font-size: normal;
+}
+
+#wrap-2 {
+  margin-top: 40px;
+  border-top: 0;
+}
+
+#profile-header {
+  padding-bottom: 20px;
+}
+
+.block-inner-2 h3.block-title {
+  display: none;
+}
+
+#content .blog-post .title a  {
+  font-weight: bold;
+}
+
+
+.controller-profile_design #titulo_materia {
+  top: 10px; /* somente na admin */
+}
+
+/* slideshow */
+#slideshow {
+  height: 425px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#slideshow #titulo_materia {
+  height: 50px;
+  opacity: 0.8;
+  width: 711px;
+  background-color: #9aad14;
+  position: absolute;
+  top: 373px;
+}
+
+#slideshow #titulo_materia a {
+  color: #fff;
+  text-align: right;
+  padding: auto;
+  margin-left: 100px;
+  width: 590px;
+  font-weight: bold;
+  margin-top: -15px;
+}
+
+#slideshow #imagens {
+  position: absolute;
+  height: 425px;
+  width: 710px;
+  overflow: hidden;
+}
+
+#slideshow #link_materia {
+  position: absolute;
+  top: 380px;
+  margin-left: 5px;
+}
+
+#slideshow #link_materia a {
+  color: #fff;
+}
+
+#slideshow a {
+  text-decoration: none;
+}
+
+.atual {
+  background-color: #ffcc00;
+  font-weight: bold;
+}
+
+div#article {
+  padding-bottom: 80px;
+}
 

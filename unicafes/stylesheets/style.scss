@@ -1,2 +1,299 @@
-@import 'stylesheets/style';
+//tit: Menu superior (horizontal):
+$top-menu-bg: #a4b914; // Fundo do menu superior
+$top-menu-color: #fff; // Texto do menu superior
+$top-menu-hover-color: #222; // Texto menu superior qdo passa o mouse
+$top-menu-hover-color-bg: transparent; // Fundo do menu superior qdo passa o mouse
+
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+@import '../../cirandas/stylesheets/cirandas';
+@import '../../cirandas/stylesheets/small';
+
+body {
+  background: url('images/bg-unicafes.png') repeat scroll 0% 0% black;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#content {
+  padding-top: 5px;
+}
+
+#content h1.page-title {
+  display:none;
+}
+
+.profile-info-block a {
+  font-size: small !important;
+}
+
+#content .block h2,
+#content .block-title {
+  color: #217335;
+}
+
+#content .link-list-block li {
+  background: none repeat scroll 0 0 #a6de8d;
+  border-radius: 4px 4px 4px 4px;
+}
+
+#content .link-list-block li a {
+  background: transparent;
+  font-size: 12px;
+  color: #fff;
+}
+
+#content .link-list-block li:hover {
+  background-color: #217335;
+}
+
+#content .link-list-block li a:hover  {
+  background-color: #217335;
+}
+
+.controller-search #content .search-results-box a.see-more {
+  background: #217335;
+  border: 1px solid #217335;
+}
+
+.profile-info-block a {
+  font-size: normal;
+}
+
+#wrap-1 {
+  background: url(/designs/themes/unicafes/images/content-bg.png) repeat-y scroll center top transparent;
+}
+
+#wrap-2 {
+  margin-top: 40px;
+  border-top: 0;
+}
+
+#cirandas-top-bar {
+}
+
+#navigation li .menu-submenu-trigger {
+  background: #FFDF7A;
+  border-color: #ffce3b;
+}
+
+#navigation li .menu-submenu, #navigation li .menu-submenu ul {
+  background: #FFDF7A;
+}
+
+#user {
+  background: #FFDF7A;
+  opacity: 0.6;
+}
+
+#profile-header {
+  padding-bottom: 20px;
+}
+
+#tb-logo {
+  left: 107px !important;
+}
+
+.block-inner-2 h3.block-title {
+  display: none;
+}
+
+.link-list-block ul {
+}
+
+#content .box-1 .link-list-block li {
+  margin: 5px 10px 5px;
+  padding: 0;
+}
+
+#content .link-list-block li a.link-this-page {
+  padding: 0 20px 0 20px;
+  margin-right: 0;
+  background-color: #217335;
+}
+
+#content .link-list-block li a.link-this-page:hover {
+  border-radius: 0;
+  border: 0;
+}
+
+div#block-372189 div.vcard h2.org {
+  display: none;
+}
+
+div#block-372189 div.block-inner-2 {
+  margin-top: -30px;
+}
+
+#footer-content {
+  background: url("/designs/themes/unicafes/images/content-footer-bg.png") no-repeat scroll center center transparent;
+}
+
+#footer-bottom {
+  background: url("/designs/themes/unicafes/images/footer-bg.png") no-repeat scroll center center transparent;
+}
+
+p.MsoTitle {
+    color: #a6de8d;
+}
+
+h1.title, #content .blog-post .title a  {
+  font-weight: bold;
+}
+
+h1.title, h1.title a, div.read-more a, div.pagination a, div.pagination span, div#theme-footer a {
+  color: #80900d !important;
+}
+
+.controller-profile_design #titulo_materia {
+  top: 10px; /* somente na admin */
+}
+
+
+/* Estrutura */
+
+body.template-leftbar .box-1 {
+  margin: 0 30px 0 270px;
+}
+body.template-default .box-1 {
+  margin: 0 270px;
+}
+.box-2 {
+  margin: 0;
+  width: 200px;
+  padding-left:20px;
+}
+.box-3 {
+  margin: 0;
+  padding-right: 20px;
+  width: 200px;
+}
+.box-1, .box-2, .box-3 {
+	padding-top:20px;
+}
+#boxes {
+	border-top:50px solid #333;
+}
+body.template-leftbar #boxes, body.template-default #boxes {
+	overflow: hidden;
+}
+#wrap-2 {
+	padding: 0;
+	border:none;
+}
+#content {
+	margin:0;
+}
+#content-inner {
+	padding: 0;
+}
+
+
+
+/* slideshow */
+#slideshow {
+  height: 425px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#slideshow #titulo_materia {
+  height: 50px;
+  opacity: 0.8;
+  width: 711px;
+  background-color: #9aad14;
+  position: absolute;
+  top: 373px;
+}
+
+#slideshow #titulo_materia a {
+  color: #fff;
+  text-align: right;
+  padding: auto;
+  margin-left: 100px;
+  width: 590px;
+  font-weight: bold;
+  margin-top: -15px;
+}
+
+#slideshow #imagens {
+  position: absolute;
+  height: 425px;
+  width: 710px;
+  overflow: hidden;
+}
+
+#slideshow #link_materia {
+  position: absolute;
+  top: 380px;
+  margin-left: 5px;
+}
+
+#slideshow #link_materia a {
+  color: #fff;
+}
+
+#slideshow a {
+  text-decoration: none;
+}
+
+.atual {
+  background-color: #ffcc00;
+  font-weight: bold;
+}
+
+
+#content .box-1 .blocks .link-list-block {
+position:absolute;
+top:170px;
+left:0;
+width: 1040px;
+height: 50px;
+margin: 0 auto;
+background-color: $top-menu-bg;
+}
+
+#content .box-1 .blocks .link-list-block .block-inner-2 h3 {
+display:none;
+}
+#content .box-1 .blocks .link-list-block .block-inner-2 ul {
+margin: 0;
+padding: 17px 0 0 20px;
+list-style: none;
+line-height: normal;
+}
+
+#content .box-1 .blocks .link-list-block .block-inner-2 li {
+background-color:transparent;
+border:none;
+display: block;
+float: left;
+}
+
+#content .box-1 .blocks .link-list-block .block-inner-2 a {
+display: block;
+float: left;
+margin-right: 5px;
+padding: 0px 10px;
+text-decoration: none;
+color: $top-menu-color;
+background-color:transparent;
+font-size: 16px;
+font-weight: bold;
+}
+
+#content .box-1 .blocks .link-list-block .block-inner-2 a:hover {
+text-decoration: underline;
+color: $top-menu-hover-color;
+background-color:transparent;
+font-size: 16px;
+font-weight: bold;
+}
+
+#content .box-1 .blocks .link-list-block li a.link-this-page,
+#content .box-1 .blocks .link-list-block li a.link-this-page:hover,
+#content .box-1 .blocks .link-list-block li a:hover {
+  color: $top-menu-hover-color;
+  background-color: $top-menu-hover-color-bg;
+  border: none;
+}
 
