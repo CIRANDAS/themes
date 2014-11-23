@@ -1,5 +1,9 @@
 @import 'stylesheets/style';
 
+body {
+  background: #000;
+}
+
 @font-face {
   font-family: 'BlackRoseRegular';
   src: url('font/BLACKR-webfont.eot');
@@ -16,8 +20,11 @@
   margin-right: -15px;
   margin-left: -15px;
   padding-right: 15px;
+  height: 200px;
   a:link {
     font-family: BlackRoseRegular,Verdana,Arial,Helvetica,sans-serif;
   }
 }
+
+
 
