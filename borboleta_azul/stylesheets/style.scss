@@ -1,1 +1,85 @@
-../../ees/stylesheets/style.scss
+//tit: Cabeçalho geral:
+$ees-name-font: 'Varela Round';
+$ees-name-color: #08B8F9; // Cor do nome do EES - antigo era #08B8F9
+//$default-header-bg: url('images/header-bg2.jpg') repeat-x 0 0 transparent;
+$header-bg: #222; // Fundo do cabeçalho geral
+
+//tit: Conteúdos:
+$body-background: ""; // Fundo lateral
+$general-font: Verdana;
+$text-color: #666; // Cor do texto
+$content-title: #333; // Cor dos títulos
+$content-title-bg: transparent; // Fundo dos títulos
+$links: #085E9B; // Links
+$links-hover: #333; // Links qdo passa o mouse
+
+//tit: Menu superior (horizontal):
+$top-menu-bg: #333; // Fundo do menu superior
+$top-menu-font: $ees-name-font;
+$top-menu-color: #08B8F9; // Texto do menu superior - antigo era #08B8F9
+$top-menu-hover-color: #ccc; // Texto menu superior qdo passa o mouse
+$top-menu-hover-color-bg: transparent; // Fundo do menu superior qdo passa o mouse
+
+//tit: Menu lateral (vertical):
+$link-list-block: #021848; // Texto do menu lateral
+$link-list-block-bg: #08B8F9; // Fundo do menu lateral
+$link-this-page: #fff; // Texto menu lateral qdo passa o mouse
+$link-this-page-bg: #333; // Fundo menu lateral qdo passa o mouse
+
+//tit: Catálogo (loja):
+$product-price: #0194C7; // Preço do produto
+$catalog-details-bg: #06276F; // Fundo botão detalhes produto
+$catalog-details-bg-hover: #3AAACF; // Fundo botão detalhes produto qdo passa o mouse
+$product-name-color: #333; // Cor do nome do produto
+
+//tit: Rodapé:
+$profile-footer: #fff; // Texto de rodapé
+$profile-footer-bg: #333; // Fundo do rodapé
+$profile-footer-link-color: #08B8F9; // Links no rodapé
+
+// Rodapé geral:
+$footer-bg: $profile-footer-bg;
+$footer-color: $profile-footer;
+$footer-link-color: $profile-footer-link-color;
+
+// Título dos blocos:
+$block-title: $content-title;
+
+//Customização das variáveis:
+@import 'variables';
+
+// Fontes extra:
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
+// Ação!
+@import '../../ees/stylesheets/ees';
+
+body {
+  background: #000;
+}
+
+@font-face {
+  font-family: 'BlackRoseRegular';
+  src: url('font/BLACKR-webfont.eot');
+  src: url('font/BLACKR-webfont.eot?iefix') format('eot'),
+  url('font/BLACKR-webfont.woff') format('woff'),
+  url('font/BLACKR-webfont.ttf') format('truetype'),
+  url('font/BLACKR-webfont.svg#webfont21KuPMyg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1.page-title {
+  background: linear-gradient(#525e5e,#161a1b);
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-right: 15px;
+  height: 200px;
+  a:link {
+    font-family: BlackRoseRegular,Verdana,Arial,Helvetica,sans-serif;
+  }
+}
+
+#page-logo {
+  box-shadow: #000 4px 0 10px;
+}
