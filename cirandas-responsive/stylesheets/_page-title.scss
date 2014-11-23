@@ -1,8 +1,7 @@
 @import 'base';
 @import 'colors';
 
-
-  h1 {
+  #content h1 {
     &.page-title {
       text-align: left;
       margin: 0 10px 0 10px;
@@ -15,13 +14,11 @@
       height: 42px;
       display: block;
       overflow: hidden;
-
-      color: white;
-      background: $base-color;
+      color: $profile-title-color;
       border: none;
       font-variant: normal;
       font-size: 24px;
-      font-weight: lighter;
+      font-weight: bold;
       text-align: left;
 
       span, a {
@@ -52,16 +49,28 @@
     }
   }
 
-
+#profile-title.person {
+    display: none;
+}
 
 @media screen and (max-width: 767px) {
   #content h1.page-title {
     padding-left: 0;
-    text-align: center;
+    height: auto;
   }
 
   h1.page-title span.solidarity-economy {
     display: none;
+  }
+  
+  #profile-title.person {
+    display: block;
+    height: auto;
+    padding: 0;
+  }
+  #page-title-profile-image {
+    margin-right: 20px;
+    float: left;
   }
 }
 

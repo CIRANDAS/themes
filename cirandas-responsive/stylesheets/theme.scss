@@ -2,6 +2,7 @@
 @import 'top_bar';
 @import 'base';
 @import 'colors';
+@import 'modal';
 @import 'page-title';
 
 /* configurations */
@@ -117,8 +118,8 @@ body p {
 }
 #signup-form input[type="checkbox"] {
   height: 20px;
-  margin: 0;
-  width: 28px;
+  /*margin: 0;
+  width: 28px;*/
 }
 
 /* Page title */
@@ -526,6 +527,66 @@ body p {
   top: 0;
 }
 
+.common-profile-list-block .vcard a, .comment-actions .vcard a {
+  width: 100%;
+}
+.common-profile-list-block img {
+  max-width: 100%;
+  max-height: 50px;
+}
+
+#content .enterprises-block .profile-image, 
+#content .communities-block .profile-image, 
+#content .members-block .profile-image {
+  height: 50px;
+}
+
+.box-container-2 .common-profile-list-block span, 
+.box-container-3 .common-profile-list-block span {
+  height: 28px;
+  overflow: hidden;
+}
+
+#content .enterprises-block .common-profile-list-block li,
+#content .communities-block .common-profile-list-block li {
+  margin: 1px;
+  height: 80px;
+  width: 80px;
+}
+
+#content .friends-block .common-profile-list-block li,
+#content .people-block .common-profile-list-block li {
+  height: 60px;
+  width: 60px;
+  border: 1px solid #CCC;
+  border-radius: 0px;
+  margin: 0;
+  padding: 0;
+}
+#content .friends-block .common-profile-list-block li .fn {
+  display: none;
+}
+.friends-block .common-profile-list-block .vcard a, .comment-actions .vcard a,
+.people-block .common-profile-list-block .vcard a, .comment-actions .vcard a {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+#content .friends-block .profile-image, 
+#content .people-block .profile-image {
+  height: 60px;
+  text-align: center;
+}
+#content .people-block ul,
+#content .friends-block ul {
+  padding: 0;
+}
+.friends-block .common-profile-list-block img, 
+.people-block .common-profile-list-block img {
+  max-height: 56px;
+}
+
+
 .tags-block .tag_cloud a:hover {
   color: black;
 }
@@ -646,7 +707,7 @@ body p {
 
 .login-box p {
   text-align: left;
-  margin-top: -30px;
+  margin-top: -20px;
 }
 
 .login-box .forgot-passwd a {

@@ -1,19 +1,23 @@
 @import '../../cirandas-responsive/style';
 
 body {
-line-height: 1;
-background: $body-background;
-font-family: $general-font, Arial, Helvetica, sans-serif;
-color: $text-color;
-font-size: 14px;
-line-height: 18px;
+  line-height: 1;
+  font-family: $general-font, Arial, Helvetica, sans-serif;
+  color: $text-color;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: $body-background;
+  background-image: none;
 }
 
 /* estrutura */
+.boxes {
+  min-height: 600px
+}
 .no-boxes {
 	margin: 0 40px;
 }
-body.template-leftbar .box-1,
+/*body.template-leftbar .box-1,
 body.template-leftbottom .box-1 {
   margin: 0 30px 0 270px;
 }
@@ -45,7 +49,7 @@ body.template-rightbar .box-2 {
 body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbottom #boxes {
 	background: url('images/colbg.png') repeat-y scroll 0% 0% #FFF;
 	overflow: hidden;
-}
+}*/
 #wrap-2 {
 	padding: 0;
 	border:none;
@@ -55,6 +59,7 @@ body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbo
 }
 #content-inner {
 	padding: 0;
+	min-height: 0;
 }
 
 /* FOOTER */
@@ -128,10 +133,13 @@ body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbo
   margin: 0 -15px;
   padding: 0;
   height: 200px;
-  background-color: transparent;
+  background-color: $header-bg;
+  @if $header-bg == "" {
+    background-image: url(/designs/themes/ees/images/paisagem.jpg);
+  }
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-
 }
 
 h1.page-title, h1.page-title a:link, h1.page-title a:visited {
@@ -142,6 +150,12 @@ font-weight: normal;
 text-shadow: 0px 2px 3px #fff;
 color: $ees-name-color;
 }
+@media screen and (max-width: 768px) {
+  h1.page-title, h1.page-title a:link, h1.page-title a:visited {
+    font-size: 36px;
+  }
+}
+
 h1.page-title {
 position:relative;
 z-index:2;
@@ -157,7 +171,17 @@ text-decoration: none;
 }
 
 h1.page-title span.solidarity-economy {
+position: absolute;
+right: 4px;
+top: 4px;
+font-style: italic;
+opacity: 0.8;
+background-color: #333;
+border-radius: 5px;
+padding: 3px;
 text-shadow: #000 1px 1px;
+font-size: 10px;
+color: #fff;
 }
 
 #profile-header {
@@ -177,6 +201,7 @@ height:160px;
 }
 h1.page-title .profile-name {
 padding-top: 20px;
+margin-left: 15px;
 }
 .profile-big-image, .vcard p {
 display:none;
@@ -247,8 +272,8 @@ font-size: 16px;
 font-weight: bold;
 }
 
-#content .box-1 .blocks .link-list-block li a.link-this-page, 
-#content .box-1 .blocks .link-list-block li a.link-this-page:hover, 
+#content .box-1 .blocks .link-list-block li a.link-this-page,
+#content .box-1 .blocks .link-list-block li a.link-this-page:hover,
 #content .box-1 .blocks .link-list-block li a:hover {
   color: $top-menu-hover-color;
   background-color: $top-menu-hover-color-bg;
@@ -257,11 +282,11 @@ font-weight: bold;
 
 /* MENU VERTICAL */
 
-#content .box-2 .link-list-block li a.link-this-page, 
-#content .box-2 .link-list-block li a.link-this-page:hover, 
+#content .box-2 .link-list-block li a.link-this-page,
+#content .box-2 .link-list-block li a.link-this-page:hover,
 #content .box-2 .link-list-block li a:hover,
-#content .box-3 .link-list-block li a.link-this-page, 
-#content .box-3 .link-list-block li a.link-this-page:hover, 
+#content .box-3 .link-list-block li a.link-this-page,
+#content .box-3 .link-list-block li a.link-this-page:hover,
 #content .box-3 .link-list-block li a:hover {
   background-color: $link-this-page-bg;
   color: $link-this-page;

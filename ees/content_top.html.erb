@@ -1,5 +1,8 @@
-<% theme_header = Nokogiri::HTML.fragment(profile.custom_header).search('img').first['src'] rescue nil %>
-<div id="profile-theme-header" <% if theme_header.present? %> style="background-image: url('<%= theme_header %>')" <% end %>>
+<%
+  theme_header = Nokogiri::HTML.fragment(profile.custom_header).search('img').first['src'] rescue nil
+%>
+
+<div id="profile-theme-header" style="<%= "background-image: url('#{theme_header}')" if theme_header %>">
 	<h1 class='page-title'>
   	<% if profile.image.present? %>
   		<div id='page-logo'>

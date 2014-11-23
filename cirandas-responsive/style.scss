@@ -27,84 +27,33 @@
     -webkit-box-shadow: 0 0 10px black;
   }
 }
-/*
-.navbar-default {
-  color: #333333;
-}*/
 
 #theme-footer #language-chooser {
   text-align: left;
 }
 
-
-
 /* armengue */
-
 /* didn't find why .no-boxes has bigger width than its parent */
 .no-boxes {
   width: 96%;
 }
 
 @media screen and (min-width:1200px) {
-  a.icon-help {
+  #top-bar a.icon-help {
     font-size: 0;
   }
 
-  a.icon-help:before {
+  #top-bar a.icon-help:before {
     font-size:15px;
   }
 }
 
-
-/* Top bar - common to all cirandas */
-
-.cirandas-responsive-top-logo {
-  background:url(/designs/themes/cirandas-responsive/images/cirandas-logo-110.png) no-repeat scroll 0% 0% / 70px auto;
-  width:70px;
-  height:64px;
-  margin:-10px 0 0 0;
-  vertical-align: top;
+/* Default color for buttons */
+a.btn, .block a.btn, a.btn:visited, .block a.btn:visited, a.btn:hover, .block a.btn:hover {
+  color: #fff;
 }
 
-@media screen and (min-width:1200px) {
-  .navbar-brand, .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-    font-size: 18px;
-    color: rgba(117, 185, 97, 1);
-    text-shadow: 2px 2px 2px #222;
-  }
-
-  #top-search .form-group, #top-search .form-group .form-control {
-    width: 120px;
-  }
+/* Adjustments for no-boxes */
+#content .no-boxes {
+  padding: 30px;
 }
-
-@media screen and (max-width:767px) and (min-width:360px) {
-  .navbar-brand, .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-    font-size: 18px;
-    color: rgba(117, 185, 97, 1);
-    text-shadow: 2px 2px 2px #222;
-  }
-}
-@media screen and (max-width:767px) {
-  .form-horizontal .form-group {
-    margin: 0;
-  }
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff;
-}
-
-.navbar-default .navbar-toggle {
-  border: none;
-  margin-right: 10px;
-}
-
-.navbar-toggle .icon-bar {
-  width: 18px;
-}
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: rgba(118, 177, 103, 1);
-}
-
