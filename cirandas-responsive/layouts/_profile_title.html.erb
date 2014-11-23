@@ -2,7 +2,7 @@
   <div class="block-outer">
     <div id="profile-title" class="<%= profile.type.underscore %> block col-lg-12 col-md-12 col-sm-12">
       <h1 class="page-title">
-      <% unless profile.enterprise? || profile.community? %>
+      <% unless profile.enterprise? %>
         <% if profile.image %>
           <div id="page-title-profile-image">
             <%= profile_image profile, :thumb %>

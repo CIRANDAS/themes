@@ -14,9 +14,8 @@
       height: 42px;
       display: block;
       overflow: hidden;
-
-      color: white;
-      background: $base-gradient;
+      //color: white;
+      //background: $base-gradient;
       border: none;
       font-variant: normal;
       font-size: 24px;
@@ -51,7 +50,8 @@
     }
   }
 
-#profile-title.person {
+#profile-title.person,
+#profile-title.community {
     display: none;
 }
 
@@ -65,7 +65,8 @@
     display: none;
   }
 
-  #profile-title.person {
+  #profile-title.person,
+  #profile-title.community {
     display: block;
     height: auto;
     padding: 0;
