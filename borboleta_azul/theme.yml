@@ -1,5 +1,5 @@
 name: "Borboleta azul"
-layout: "application-ng"
+layout: "cirandas-responsive"
 responsive: true
 icon_theme: [awesome, pidgin]
 owner_type: Enterprise

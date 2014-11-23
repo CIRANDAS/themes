@@ -14,7 +14,9 @@
       height: 42px;
       display: block;
       overflow: hidden;
-      color: $profile-title-color;
+
+      color: white;
+      background: $base-gradient;
       border: none;
       font-variant: normal;
       font-size: 24px;
@@ -62,7 +64,7 @@
   h1.page-title span.solidarity-economy {
     display: none;
   }
-  
+
   #profile-title.person {
     display: block;
     height: auto;

@@ -1,1 +1,23 @@
-stylesheets/style.scss
+@import 'stylesheets/style';
+
+@font-face {
+  font-family: 'BlackRoseRegular';
+  src: url('font/BLACKR-webfont.eot');
+  src: url('font/BLACKR-webfont.eot?iefix') format('eot'),
+  url('font/BLACKR-webfont.woff') format('woff'),
+  url('font/BLACKR-webfont.ttf') format('truetype'),
+  url('font/BLACKR-webfont.svg#webfont21KuPMyg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1.page-title {
+  background: linear-gradient(#525e5e,#161a1b);
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-right: 15px;
+  a:link {
+    font-family: BlackRoseRegular,Verdana,Arial,Helvetica,sans-serif;
+  }
+}
+
