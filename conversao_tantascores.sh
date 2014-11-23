@@ -1,10 +1,12 @@
 #!/bin/sh
 
+perl -pi -e 's/smoothness_mod/smoothness/g' **/theme.yml
+
 for tema in `ls -d tantascores*`; do
   tema_destino=`ls $tema/stylesheets | grep -v style | grep -v variables | sed -e 's/_//g' | sed -e 's/\..*//g'`
   echo "convertendo $tema para $tema_destino responsivo..."
   cd $tema
-  for file in footer.html.erb header.html.erb navigation.html.erb site_title.html.erb layouts; do
+  for file in content_top.html.erb footer.html.erb header.html.erb navigation.html.erb site_title.html.erb layouts; do
     rm $file
     ln -s ../$tema_destino/$file .
   done
