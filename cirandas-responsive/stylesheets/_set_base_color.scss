@@ -55,7 +55,7 @@
 
   @if $style-headers {
     #content h1.page-title {
-      background: $base-color;
+      background: $base-gradient;
     }
   }
 
@@ -99,16 +99,16 @@
   
   @if $style-headers {
     #content .block h2, #content .block-title {
-      background-color: $blocks-color;
+      background: $blocks-gradient;
     }
   }
 
   #content .block-title {
-    background-color: $blocks-color;
+    background: $blocks-gradient;
   }
 
   #content .login-block .not-logged-user {
-    background-color: $blocks-color;
+    background: $blocks-gradient;
   }
 
   .profile_link span {
@@ -131,7 +131,7 @@
   }
 
   #content .link-list-block li a {
-    background-color: $blocks-color;
+    background: $blocks-gradient;
   }
 
   #content .link-list-block li a:hover {
@@ -139,7 +139,7 @@
   }
 
   #content .link-list-block li a.link-this-page {
-    background-color: $base-color;
+    background: $base-gradient;
     border-right: 0;
   }
 

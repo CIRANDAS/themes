@@ -586,7 +586,7 @@ body p {
 @if $style-headers {
   #content .block h2,
   #content .block-title {
-    background-color: $blocks-color;
+    background: $blocks-gradient;
     color: black;
     padding: 12px 0 4px 8px;
     text-transform: uppercase;
@@ -594,6 +594,7 @@ body p {
     font-variant: normal;
     font-size: 12px;
     text-align: left;
+    border-radius: 4px;
   }
 
   #content .login-block .not-logged-user h2 {
@@ -623,7 +624,7 @@ body p {
 
 #content .login-block .not-logged-user {
   padding: 5px;
-  background-color: $blocks-color;
+  background: $blocks-gradient;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -757,7 +758,7 @@ body p {
 }
 
 #content .link-list-block li a {
-  background-color: $blocks-color;
+  background: $blocks-gradient;
   font-size: 12px;
 }
 
@@ -1234,7 +1235,7 @@ div.token-input-dropdown-facet {
 }
 
 #facets-menu .facet-menu-label {
-  background:$blocks-color;
+  background: $blocks-gradient;
 }
 
 #facets-menu .facet-menu-options a {
@@ -1329,11 +1330,11 @@ form#category_form input.button.with-text {
 /* Chat */
 
 #title-bar {
-  background-color: $base-color;
+  background: $base-gradient;
 }
 
 #buddy-list .toolbar {
-  background-color: $base-color;
+  background: $base-gradient;
 }
 
 #user-status .simplemenu-trigger {
