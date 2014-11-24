@@ -5,12 +5,12 @@
       <% unless profile.enterprise? %>
         <% if profile.image %>
           <div id="page-title-profile-image">
-            <%= profile_image profile, :thumb %>
+            <a href="<%= url_for(profile.url) %>"><%= profile_image profile, :thumb %></a>
           </div>
         <% end %>
       <% end %>
       
-      <%= profile.short_name %>
+      <a href="<%= url_for(profile.url) %>"><%= profile.short_name(nil) %></a>
       
       <% if profile.enterprise? %>
         <span class="solidarity-economy">Empreendimento de Economia Solidária</span>

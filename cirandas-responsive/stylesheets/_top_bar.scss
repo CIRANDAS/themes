@@ -1,5 +1,5 @@
 #top-bar ul {
-  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 #top-bar .navbar-brand {
@@ -12,7 +12,9 @@
 
 .cirandas-responsive-top-logo {
   display: inline-block;
-  background:url(/designs/themes/cirandas-responsive/images/cirandas-logo-110.png) no-repeat scroll 0% 0% / 70px auto;
+  background-image:url(/designs/themes/cirandas-responsive/images/cirandas-logo-110.png);
+  background-repeat: no-repeat;
+  background-size: 70px auto;
   width:70px;
   height:64px;
   margin:-10px 0 0 0;
@@ -20,7 +22,7 @@
 }
 @media screen and (min-width:1200px) {
   #top-bar .navbar-nav > li > a {
-    font-size: 12px;
+    font-size: 13px;
   }
   #top-bar .navbar-brand, #top-bar .container .navbar-brand,
   #top-bar > .container-fluid .navbar-brand {
