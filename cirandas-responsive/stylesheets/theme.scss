@@ -125,7 +125,7 @@ body p {
 #content-inner {
   position: relative;
   min-height: 500px;
-  /*padding-top: 0;*/
+  padding-top: 0;
 }
 
 
@@ -654,7 +654,7 @@ body p {
     border-bottom: 0;
     font-variant: normal;
     text-align: left;
-    font-size: 22px;
+    font-size: 18px;
   }
   
   #content .block h2 {
@@ -688,6 +688,7 @@ body p {
 @if $style-headers {
   #content .logged-user-info h2 {
     overflow: hidden;
+    font-size: 18px;
   }
 }
 

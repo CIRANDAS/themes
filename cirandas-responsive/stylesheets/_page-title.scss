@@ -71,6 +71,11 @@
     height: auto;
     padding: 0;
   }
+  #profile-title.person h1.page-title a,
+  #profile-title.community h1.page-title a {
+    color: inherit;
+    font-size: inherit;
+  }
   #page-title-profile-image {
     margin-right: 20px;
     float: left;
