@@ -2,6 +2,12 @@
   font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+@media screen and (min-width: 1200px) {
+  #top-bar ul {
+    margin-top:3px;
+  }
+}
+
 #top-bar .navbar-brand {
   font-size: 0;
 }
