@@ -71,10 +71,11 @@
     height: auto;
     padding: 0;
   }
+  #profile-title.enterprise h1.page-title a,
   #profile-title.person h1.page-title a,
   #profile-title.community h1.page-title a {
     color: inherit;
-    font-size: inherit;
+    font-size: 32px;
   }
   #page-title-profile-image {
     margin-right: 20px;

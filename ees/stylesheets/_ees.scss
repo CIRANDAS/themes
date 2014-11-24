@@ -142,7 +142,7 @@ body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbo
   background-size: cover;
 }
 
-h1.page-title, h1.page-title a:link, h1.page-title a:visited {
+#content h1.page-title, #content h1.page-title a:link, #content h1.page-title a:visited {
 line-height: normal;
 font-family: $ees_name_font, Verdana, Arial, Helvetica, sans-serif;
 font-size: 60px;
@@ -151,7 +151,7 @@ text-shadow: 0px 2px 3px #fff;
 color: $ees-name-color;
 }
 @media screen and (max-width: 768px) {
-  h1.page-title, h1.page-title a:link, h1.page-title a:visited {
+  #content h1.page-title, #content h1.page-title a:link, #content h1.page-title a:visited {
     font-size: 36px;
   }
 }
