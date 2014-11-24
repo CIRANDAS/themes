@@ -59,7 +59,6 @@ body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbo
 	margin:0;
 }
 #content-inner {
-	padding: 0;
 	min-height: 0;
 }
 
@@ -192,7 +191,7 @@ display:none;
 float:left;
 max-width:260px;
 background-color:#fff;
-box-shadow: #000 4px 8px 10px;
+box-shadow: #000 4px 0 10px;
 text-align:center;
 margin-right: 30px;
 padding: 20px;
