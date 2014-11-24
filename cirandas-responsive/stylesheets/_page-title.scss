@@ -55,6 +55,11 @@
     display: none;
 }
 
+#profile-title.enterprise h1.page-title a {
+    color: inherit;
+    font-size: 39px;
+}
+
 @media screen and (max-width: 767px) {
   #content h1.page-title {
     padding-left: 0;
