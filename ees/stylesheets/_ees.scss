@@ -154,6 +154,13 @@ color: $ees-name-color;
   #profile-theme-header h1.page-title, #profile-theme-header h1.page-title a:link, #profile-theme-header h1.page-title a:visited {
     font-size: 36px;
   }
+  #profile-theme-header {
+    height: auto;
+    min-height: 140px;
+  }
+  #profile-theme-header h1.page-title img {
+    height: 100px;
+  }
 }
 
 h1.page-title {
