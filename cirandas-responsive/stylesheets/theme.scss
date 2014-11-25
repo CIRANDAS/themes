@@ -924,6 +924,10 @@ body p {
   .news-area {
     width: 100%;
   }
+  .news-area ul {
+    overflow: visible;
+    height: auto;
+  }
 }
 
 @if $style-headers {
