@@ -72,10 +72,11 @@ body p {
   }
 
   #footer-fbes {
-    padding-left: 50px;
-    background-position: left -13px;
+    background-position: left 25px 0;
     background-repeat: no-repeat;
-    background-image: url(/designs/themes/cirandas/images/fbes.png);
+    background-image: url('/designs/themes/cirandas-responsive/images/cirandas-logo-110.png');
+    background-size: 50px auto;
+    height: 40px;
   }
 
   a {
