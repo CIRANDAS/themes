@@ -13,7 +13,6 @@
     <meta name="twitter:description" content="<%= meta_description_tag(@page) %>">
 
     <% if @page %>
-      <meta property="article:published_time" content="<%= show_date(@page.published_at) %>">
       <% @page.body_images_paths.each do |img| %>
         <meta name="twitter:image" content="<%= img.to_s %>">
       <% end %>
