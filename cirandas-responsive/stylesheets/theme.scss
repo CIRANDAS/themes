@@ -1303,6 +1303,14 @@ div.token-input-dropdown-facet {
   color: #080;
   text-shadow: 1px 1px #000;
 }
+
+@media screen and (max-width: 767px) {
+  .categories_container select {
+    font-size: 17px !important;
+    text-shadow: none !important;
+  }
+}
+
 #content form#category_form input.button.submit {
   font-size: 24px;
   font-weight: bold;
