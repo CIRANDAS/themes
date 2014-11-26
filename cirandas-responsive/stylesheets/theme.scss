@@ -1498,6 +1498,15 @@ div#article-parent {
 div#article-parent a.button {
   margin: 0;
 }
+#article-header a.blog-feed-link {
+    background-color: transparent;
+    color: #153D35;
+    border: medium none;
+    font-size: 20px;
+}
+#article-header a.blog-feed-link:hover {
+    background-color: #ccc;
+}
 div#addThis {
   margin-top: 5px;
   text-align: right;
