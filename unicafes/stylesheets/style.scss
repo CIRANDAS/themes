@@ -86,7 +86,10 @@ body {
 }
 
 #profile-header {
-  padding-bottom: 20px;
+  padding-bottom: 0;
+}
+#profile-header p {
+  margin: 0;
 }
 
 #tb-logo {
@@ -244,7 +247,7 @@ body.template-leftbar #boxes, body.template-default #boxes {
 
 #content .box-1 .blocks .link-list-block {
 position:absolute;
-top:170px;
+top:137px;
 left:0;
 width: 1040px;
 height: 50px;
