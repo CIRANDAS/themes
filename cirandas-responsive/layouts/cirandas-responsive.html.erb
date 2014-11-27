@@ -51,13 +51,13 @@
 
     <%= render :partial => 'layouts/menu_responsive' %>
 
+    <div id='theme-header'>
+      <%= theme_header %>
+    </div>
+
     <div id="wrap-1" class="container">
 
       <%= render :file => "#{Rails.root}/public/designs/themes/#{current_theme}/content_top.html.erb" rescue nil %>
-
-      <div id='theme-header'>
-        <%= theme_header %>
-      </div>
 
         <div id="content">
           <%= render :file => "#{Rails.root}/public/designs/themes/#{current_theme}/layouts/_content.html.erb" %>
