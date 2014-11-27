@@ -1,9 +1,11 @@
 $style-headers: false;
 $change-wireframe: false;
 
-@import '../../cirandas/stylesheets/cirandas';
-@import '../../cirandas/stylesheets/enterprise';
-@import '../../cirandas/stylesheets/small';
+@import '../../cirandas-responsive/style';
+
+//@import '../../cirandas/stylesheets/cirandas';
+//@import '../../cirandas/stylesheets/enterprise';
+//@import '../../cirandas/stylesheets/small';
 
 /*
  Reduza então o botão de RSS e deixe do tamanho dos outros.
@@ -23,8 +25,23 @@ body {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  #wrap-1 {
+    background-color: #FFF9E9 !important;
+  }
+}
+
 #wrap-1 {
-  width: 100%;
+  padding-top: 30px;
+  margin-top: -50px;
+}
+
+.block, .no-boxes {
+  background-color: #FFF9E9;
+}
+
+#content > .row {
+  display: none;
 }
 
 #wrap-2 {
@@ -38,23 +55,15 @@ body {
   border-bottom: none;
 
   #wrap-2 {
-    #site-title {
+    #site-title-redemoinho {
       display: none;
     }
     #content {
-      #site-title {
+      #site-title-redemoinho {
         display: block;
       }
     }
   }
-}
-
-#theme-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-
 }
 
 #redemoinho-ctrl {
@@ -62,7 +71,6 @@ body {
 }
 
 #content {
-  margin-top: 244px;
 
   .box-1 .block {
     padding: 0px 20px;
@@ -95,77 +103,58 @@ body {
 /**** Navegação *************************************************************/
 
 #rede-moinho-header {
-  width: 100%;
-  height: 150px;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  background: #EEE0D0;
-  //background: url(images/top.png) 50% 0% repeat-x;
-  //adding-top: 15px;
+  //height: 150px;
 
   .margin-wrap {
-    position: relative;
-    top: -40px;
-    width: 1040px;
-    margin: auto;
   }
 
-  #site-title {
-    display: block;
-    position: absolute;
-    top: -110px;
-    left: 13px;
+  #site-title-redemoinho {
     width: 203px;
     height: 199px;
     background: url(images/logo-top.png);
-
-    a {
-      width: 162px;
-      height: 158px;
-      left: 20px;
-      top: 12px;
-    }
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
   }
 
   #header-cobertura {
-    position: absolute;
-    top: 0px;
-    left: 0px;
     width: 100%;
-    height: 149px;
+    height: 150px;
     background: url(images/renda-top.png) 50% 100% repeat-x;
     border-bottom: 1px solid #F1BD49;
     opacity: 0.8;
   }
 
+  #header-bitmap {
+    background: url(images/verduras.jpg) center 50% no-repeat;
+  }
+
   #top-banner {
-    width: 982px;
+    width: 100%;
     height: 150px;
     margin: auto;
-    background: url(images/verduras.jpg) 100% 50% no-repeat;
-  }
-  #header-navigation {
+    background: #EEE0D0;
     position: absolute;
-    width: 100%;
-    text-align: right;
-    top: -45px;
-    left: 239px;
-    width: 745px;
-    height: 37px;
+  }
+  .navbar-menu-redemoinhoa {
     background: url(images/fita.png) 100% 50%;
+  }
+
+  @media screen and (min-width:768px) and (max-width: 991px) {
+    #header-navigation {
+      left: 30px;
+    }
   }
 
   #header-navigation-end {
     display: none;
   }
-
+/*
   #header-navigation ul {
     padding: 3px 30px;
-    height: 42px;
     margin: 0px;
     float: right;
-  }
+  }*/
 
   #header-navigation li {
     width: auto;
@@ -222,7 +211,6 @@ body {
 
   #footer-content {
     background: url(images/rede-moinho.png) 0% 50% no-repeat;
-    width: 900px;
     padding: 0 20px;
     height: 95px;
     margin: auto;
@@ -241,9 +229,7 @@ body {
 
   #footer-links {
     font-size: 14px;
-    position: absolute;
-    top: 0px;
-    left: 105px;
+    margin-left: 105px;
   }
 
   #footer-links a {
@@ -252,19 +238,19 @@ body {
   }
 
   #bt-login {
-    position: absolute;
-    bottom: 41px;
-    left: 110px;
+    margin-bottom: 41px;
+    margin-left: 110px;
   }
 
   #copyright {
     color: #699;
-    position: absolute;
-    bottom: 0px;
-    left: 110px;
+    margin-left: 110px;
     font-style: italic;
     text-align: left;
-    margin-right: 200px;
+    margin-top: 5px;
+    @media screen and (min-width: 768px) {
+      margin-right: 200px;
+    }
   }
 
   #producao {
@@ -319,7 +305,7 @@ body {
   position: relative;
   top: 40px;
   padding: 0px 20px 80px 20px;
-  background: url(images/renda-menu.png) 50% 100% no-repeat;
+  background: url(images/renda-menu.png) 50% 100% repeat-x;
 }
 
 #content .link-list-block li {
@@ -939,4 +925,86 @@ select#customer_payment {
 
 .purechat {
   display: none;
+}
+
+
+.navbar-redemoinho {
+  color: #663;
+  background-color: none;
+  border: none;
+  font-family: 'Tahoma', 'Trebuchet MS', 'Capriola', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  z-index: 1;
+
+  a {
+    color: #663;
+
+    &:hover {
+      color: #F60 !important;
+    }
+  }
+
+  .navbar-toggle {
+    border-color: #F1BD49;
+    .icon-bar {
+      background-color: #663;
+    }
+
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+
+  .nav > li > a {
+    padding-right: 12px;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+}
+
+@media screen and (min-width:768px) {
+  .navbar-redemoinho {
+    margin-top: 55px;
+    background: url(images/fita.png) right center no-repeat;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .navbar-redemoinho {
+    background-color: #EEE0D0 !important;
+    border: 1px solid #F1BD49;
+    margin-bottom: 20px;
+
+    .navbar-collapse {
+      border-top: 1px solid #F1BD49;
+    }
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .navbar-container {
+    margin-left: -210px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .navbar-container {
+    margin-left: -44px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-redemoinho {
+    .nav > li > a {
+      padding-right: 25px;
+    }
+
+    .nav > li:last-child > a {
+      padding-right: 70px;
+    }
+  }
 }

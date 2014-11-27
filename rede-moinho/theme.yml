@@ -1,3 +1,4 @@
 name: "Rede Moinho"
-layout: "cirandas"
-icon_theme: [default, pidgin]
+layout: "cirandas-responsive"
+icon_theme: [awesome, pidgin]
+responsive: true

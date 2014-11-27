@@ -1,30 +1,55 @@
-<%= render :file => "#{Rails.root}/public/designs/themes/cirandas/small_header.html.erb" %>
 
 <div id="rede-moinho-header">
-  <div id="header-cobertura"></div>
 
-  <div id="top-banner"></div>
-  <div class="margin-wrap">
-    <div id="site-title">
-      <a href="http://redemoinho.coop.br"><span>RedeMoinho - Cooperativa de Comércio Justo e Solidário</span></a>
+  <div id="top-banner">
+    <div id="header-bitmap">
+      <div id="header-cobertura"></div>
     </div>
+  </div>
 
-    <div id="header-navigation">
-      <ul>
-        <li><a href="http://redemoinho.coop.br/conheca-mais-a-redemoinho">Quem Somos</a></li>
-        <li><a href="http://redemoinho.coop.br/catalog/rede-moinho">Compre Aqui!</a></li>
-        <li><a href="http://redemoinho.coop.br/como-se-associar-a-redemoinho" id="bt-associar">Como se Associar?</a></li>
-        <li><a href="http://redemoinho.coop.br/nossos-contatos">Fale Conosco!</a></li>
-      </ul>
+  <div class="margin-wrap container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-2">
+        <div id="site-title-redemoinho" title="RedeMoinho - Cooperativa de Comércio Justo e Solidário" onclick="window.location='http://redemoinho.coop.br'">
+        </div>
+      </div>
+      <div class="col-lg-9 col-md-9 col-sm-10 navbar-container">
+          <nav class="navbar navbar-redemoinho" role="navigation">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse in" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="http://redemoinho.coop.br/conheca-mais-a-redemoinho">Quem Somos</a></li>
+                  <li><a href="http://redemoinho.coop.br/catalog/rede-moinho">Compre Aqui!</a></li>
+                  <li><a href="http://redemoinho.coop.br/como-se-associar-a-redemoinho" id="bt-associar">Como se Associar?</a></li>
+                  <li><a href="http://redemoinho.coop.br/nossos-contatos">Fale Conosco!</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+
+      </div>
     </div>
   </div>
 
   <% javascript_tag do %>
+ /*
     jQuery(window).bind('userDataLoaded', function(ev, data) {
       //jQuery('<a href="/myprofile/redemoinho" id="redemoinho-ctrl"><i class="icon-menu-ctrl-panel"></i><strong>RedeMoinho</strong></a>').insertAfter('#homepage-link');
       if ( data && data.login ) document.body.className += ' logged-in';
         else document.body.className += ' logged-out';
-      });
+        });
+        */
   <% end %>
 
 </div>
