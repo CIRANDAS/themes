@@ -1,5 +1,0 @@
-name: "Padrão de empreendimentos verde"
-layout: "cirandas" # don't change
-icon_theme: [default, pidgin]
-# FIXME: disabled till ready
-#owner_type: Enterprise
