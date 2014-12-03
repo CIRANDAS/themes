@@ -49,6 +49,15 @@
   #top-bar a.icon-help:before {
     font-size:15px;
   }
+  #top-bar #search-dropdown-menu .dropdown-toggle span {
+    display:none;
+  }
+  #navbar-search-collapse {
+    display:none !important;
+  }
+  #search-dropdown-menu {
+    display: none;
+  }
 }
 
 @media screen and (max-width:767px) and (min-width:360px) {
