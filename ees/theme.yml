@@ -1,4 +1,5 @@
-name: "Base EES"
-layout: "cirandas" # don't change
-jquery_theme: "smoothness_mod"
-icon_theme: [default, pidgin]
+name: "Padrão Empreendimento"
+layout: "cirandas-responsive" # don't change
+icon_theme: [awesome, pidgin]
+responsive: true
+owner_type: 'Enterprise'

@@ -24,11 +24,14 @@ $main-block-title: $content-title;
 $blog-post-title: $content-title;
 $body-bg-image-url: "";
 
+$top-menu-bg: #ddd;
+$top-menu-color: black;
+$top-menu-hover-color: #06276f;
+$top-menu-hover-color-bg: #ddd;
+$coral-name-font: 'Imprima';
 
 
 @import 'variables';
-@import 'cirandas';
-@import 'small';
 @import url(http://fonts.googleapis.com/css?family=Imprima:regular,bold&subset=Latin);
-@import 'coral';
+@import 'stylesheets/coral';
 

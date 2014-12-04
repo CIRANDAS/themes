@@ -1,4 +1,7 @@
-@import url(../base/style.css);
+// for bootstrap modal support
+@import url(/assets/designs/themes/cirandas-responsive/bootstrap/all.css);
+@import url(/assets/designs/themes/base/style.css);
+
 @import 'base';
 @import 'colors';
 @import 'page-title';
@@ -83,17 +86,6 @@ body p {
 
 .ui-tabs .ui-tabs-panel {
   padding: 0;
-}
-
-#grade {
-  display: none;
-  width: 1040px;
-  height: 1552px;
-  position: absolute;
-  top: 0px;
-  margin-left: -520px;
-  left: 50%;
-  background: url('/designs/themes/cirandas/images/grade-transparente.png') repeat-y;
 }
 
 /* Header */
@@ -1855,4 +1847,3 @@ div#addThis {
 #profile-data .formfield input {
   width: 400px;
 }
-

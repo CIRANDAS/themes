@@ -1,0 +1,38 @@
+@import '../cirandas-responsive/style';
+
+
+#content h1.page-title span, #content h1.page-title a {
+  color: white;
+  font-size: 12px; }
+#content h1.page-title span.solidarity-economy {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  font-style: italic;
+  opacity: 0.7; }
+#content h1.page-title span.network-tag {
+  margin-top: 12px;
+  margin-right: 4px; }
+#content h1.page-title span.network-tag img {
+  vertical-align: middle;
+  margin-right: 4px; }
+
+#content h1.page-title {
+  background: #24b66e;
+}
+
+
+#content .link-list-block li a {
+  background-color: #ddffd9;
+}
+
+#content .link-list-block li a:hover,
+#content .link-list-block li a.link-this-page
+{
+  background-color: #24b66e;
+}
+
+#theme-footer a {
+  color: #24b66e;
+}
+

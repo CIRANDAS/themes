@@ -1,11 +1,11 @@
 //tit: Cabeçalho geral:
 $ees-name-font: 'Varela Round';
-$ees-name-color: #08B8F9; // Cor do nome do EES
+$ees-name-color: #000; // Cor do nome do EES - antigo era #08B8F9
 //$default-header-bg: url('images/header-bg2.jpg') repeat-x 0 0 transparent;
 $header-bg: #222; // Fundo do cabeçalho geral
 
 //tit: Conteúdos:
-$body-background: #000; // Fundo lateral
+$body-background: ""; // Fundo lateral
 $general-font: Verdana;
 $text-color: #666; // Cor do texto
 $content-title: #333; // Cor dos títulos
@@ -14,9 +14,9 @@ $links: #085E9B; // Links
 $links-hover: #333; // Links qdo passa o mouse
 
 //tit: Menu superior (horizontal):
-$top-menu-bg: #333; // Fundo do menu superior
-$top-menu-font: $ees-name-font; 
-$top-menu-color: #08B8F9; // Texto do menu superior
+$top-menu-bg: rgba(53, 18, 39, 1); // Fundo do menu superior
+$top-menu-font: $ees-name-font;
+$top-menu-color: rgba(221, 215, 109, 1); // Texto do menu superior - antigo era #08B8F9
 $top-menu-hover-color: #ccc; // Texto menu superior qdo passa o mouse
 $top-menu-hover-color-bg: transparent; // Fundo do menu superior qdo passa o mouse
 
@@ -52,7 +52,5 @@ $block-title: $content-title;
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
 
 // Ação!
-@import 'cirandas';
-@import 'small';
-@import 'ees';
+@import '../../ees/stylesheets/ees';
 

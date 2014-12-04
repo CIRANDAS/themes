@@ -1,5 +1,5 @@
-@import 'cirandas';
-@import 'small';
+@import '../../cirandas/stylesheets/cirandas';
+@import '../../cirandas/stylesheets/small';
 
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300italic,300,400italic,400,500italic,500,700italic,700);
 
@@ -115,7 +115,7 @@ body.controller-fb_app_ecosol_store_plugin #theme-header {
 }
 
 //Interno:
-#product-catalog h1 { 
+#product-catalog h1 {
 	display:none;
 }
 #product-list li.product {

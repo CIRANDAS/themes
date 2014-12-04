@@ -12,18 +12,9 @@
     <meta name="twitter:title" content="<%= h page_title %>">
     <meta name="twitter:description" content="<%= meta_description_tag(@page) %>">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="<%= @page ? 'article' : 'website' %>">
-    <meta property="og:url" content="<%= @page ? url_for(@page.url) : @environment.top_url %>">
-    <meta property="og:title" content="<%= h page_title %>">
-    <meta property="og:site_name" content="<%= profile ? profile.name : @environment.name %>">
-    <meta property="og:description" content="<%= @page ? truncate(strip_tags(@page.body.to_s), :length => 200) : @environment.name %>">
-
     <% if @page %>
-      <meta property="article:published_time" content="<%= show_date(@page.published_at) %>">
       <% @page.body_images_paths.each do |img| %>
         <meta name="twitter:image" content="<%= img.to_s %>">
-        <meta property="og:image" content="<%= img.to_s %>">
       <% end %>
     <% end %>
 
@@ -37,7 +28,7 @@
     <%= yield :head %>
     <%=
       @plugins.dispatch(:head_ending).map do |content|
-        if content.respond_to?(:call) then instance_eval(&content).html_safe else content.html_safe end
+        if content.respond_to?(:call) then instance_exec(&content).to_s.html_safe else content.to_s.html_safe end
       end.join("\n")
     %>
 
@@ -57,7 +48,7 @@
 
     <%=
       @plugins.dispatch(:body_beginning).map do |content|
-        if content.respond_to?(:call) then instance_eval(&content).html_safe else content.html_safe end
+        if content.respond_to?(:call) then instance_exec(&content).to_s.html_safe else content.to_s.html_safe end
       end.join("\n")
     %>
 
@@ -88,5 +79,9 @@
     </div><!-- end id="theme-footer" -->
     <%= noosfero_layout_features %>
     <%= addthis_javascript %>
+
+    <%# support bootstrap modal %>
+    <%= render :file => "#{Rails.root}/public/designs/themes/cirandas-responsive/layouts/_modal.html.erb" %>
+
   </body>
 </html>

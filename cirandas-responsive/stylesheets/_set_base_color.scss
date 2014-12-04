@@ -1,0 +1,190 @@
+@mixin set_base_color($base-color, $navigation-color, $blocks-color) {
+
+  /* Globals */
+
+  a {
+    color: $base-color;
+  }
+
+  /* Structure */
+
+  /* Header */
+
+  /* User menu */
+
+  /* Help */
+
+  #navigation #header-help a {
+    color: $base-color;
+  }
+
+  /* Categories Menu */
+
+  /* Navigation */
+
+  #navigation ul {
+    border-top-color: $blocks-color;
+  }
+
+  #navigation li .menu-submenu-trigger {
+    background-color: $navigation-color;
+    border-color: $navigation-color;
+  }
+
+  #navigation li .menu-submenu {
+    background-color: $navigation-color;
+  }
+
+  #navigation li .menu-submenu ul {
+    background-color: $navigation-color;
+    border-color: $navigation-color;
+    border-bottom: 1px dotted #000;
+  }
+
+  /* Content */
+
+  #content {
+    border-top-color: $base-color;
+  }
+
+  @if $style-headers {
+    #content .main-block h1, #not-found h1, #access-denied h1 {
+      color: $base-color;
+    }
+  }
+
+  @if $style-headers {
+    #content h1.page-title {
+      background: $base-gradient;
+    }
+  }
+
+  /* Chat */
+
+  /* Balloon */
+
+  #content .menu-submenu-content {
+    border-color: $base-color;
+  }
+
+  .menu-submenu-footer {
+    background-image: url('../images/balloon-green.png');
+  }
+
+  @if $style-headers {
+    #content .menu-submenu h4 {
+      border-bottom-color: $navigation-color;
+    }
+  }
+
+  .action-friends-index .profile-list li, .common-profile-list-block .vcard {
+    border-color: $base-color;
+  }
+
+  #content .profile-list li a,
+  #content .common-profile-list-block li a {
+    color: $base-color;
+  }
+
+  /* Block */
+
+  .highlights-label {
+    background-image: url(../images/green-alpha-pixel.png);
+  }
+
+  .highlights-block-pager a.activeSlide:visited, .highlights-block-pager a.activeSlide {
+    color: $base-color;
+  }
+
+  
+  @if $style-headers {
+    #content .block h2, #content .block-title {
+      background: $blocks-gradient;
+    }
+  }
+
+  #content .block-title {
+    background: $blocks-gradient;
+  }
+
+  #content .login-block .not-logged-user {
+    background: $blocks-gradient;
+  }
+
+  .profile_link span {
+    color: $base-color;
+  }
+
+  .common-profile-list-block .vcard .menu-submenu-trigger,
+  .menu-submenu-trigger {
+    border-right-color: $base-color;
+    border-top-color: $base-color;
+  }
+
+  .common-profile-list-block .vcard .menu-submenu-trigger:hover,
+  .menu-submenu-trigger:hover {
+    background-color: $base-color;
+  }
+
+  .feed-reader-block li a, .recent-documents-block li a {
+    color: $base-color;
+  }
+
+  #content .link-list-block li a {
+    background: $blocks-gradient;
+  }
+
+  #content .link-list-block li a:hover {
+    background-color: $base-color;
+  }
+
+  #content .link-list-block li a.link-this-page {
+    background: $base-gradient;
+    border-right: 0;
+  }
+
+  #content .link-list-block li a.link-this-page:hover {
+    background-color: $base-color;
+    border-right: 0;
+  }
+
+  .blog-archives-block ul ul li a {
+    color: $base-color;
+  }
+
+  .my-network-block li a {
+    color: $base-color;
+  }
+
+  #profile-footer {
+    border-top: 1px solid $base-color;
+    margin-top: 5*$margin;
+  }
+
+  .controller-profile_editor .control-panel a:hover {
+    background-color: $base-color;
+  }
+
+  /* Footer */
+
+  #theme-footer a {
+    color: $base-color;
+  }
+
+  /* Blog */
+
+  #content .blog-post .title a {
+    color: $base-color;
+  }
+
+  /* Portal */
+
+  @if $style-headers {
+    #content #highlighted-news h2 a {
+      color: $base-color;
+    }
+  }
+
+  /* Search */
+
+}

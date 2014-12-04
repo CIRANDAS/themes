@@ -1,0 +1,108 @@
+@import 'base';
+@import 'colors';
+
+  #content h1 {
+    &.page-title {
+      text-align: left;
+      margin: 0 10px 0 10px;
+      z-index: 10;
+      position: relative;
+      margin-bottom: 20px;
+      top: 8px;
+      padding-top: 8px;
+      padding-bottom: 4px;
+      //height: 42px;
+      display: block;
+      overflow: hidden;
+      //color: white;
+      //background: $base-gradient;
+      border: none;
+      font-variant: normal;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: left;
+
+      span, a {
+        color: white;
+        font-size: 12px;
+      }
+
+      span {
+
+        &.solidarity-economy {
+          position: absolute;
+          right: 4px;
+          top: 4px;
+          font-style: italic;
+          opacity: 0.7;
+        }
+
+        &.network-tag {
+          margin-top: 1.5*$padding;
+          margin-right: $half-padding;
+
+          img {
+            vertical-align: middle;
+            margin-right: $half-padding;
+          }
+        }
+      }
+    }
+  }
+
+#profile-title.person,
+#profile-title.community {
+    display: none;
+}
+
+#profile-title.enterprise h1.page-title a {
+    color: inherit;
+    font-size: 39px;
+}
+
+@media screen and (max-width: 767px) {
+  #content h1.page-title {
+    padding-left: 0;
+    height: auto;
+  }
+
+  h1.page-title span.solidarity-economy {
+    display: none;
+  }
+
+  #profile-title.person,
+  #profile-title.community {
+    display: block;
+    height: auto;
+    padding: 0;
+  }
+  #profile-title.enterprise h1.page-title a,
+  #profile-title.person h1.page-title a,
+  #profile-title.community h1.page-title a {
+    color: inherit;
+    font-size: 32px;
+  }
+  #page-title-profile-image {
+    margin-right: 20px;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #content h1.page-title {
+    padding-left: 247px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #content h1.page-title {
+    padding-left: 240px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #content h1.page-title {
+    padding-left: 288px;
+  }
+}
+
