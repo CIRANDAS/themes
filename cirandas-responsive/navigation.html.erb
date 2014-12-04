@@ -1,11 +1,11 @@
-<% cache_timeout 'cirandas-responsive/navigation.html.erb', 1.day do %>
+<% cache_timeout "cirandas-responsive/navigation-#{I18n.locale}.html.erb", 1.day do %>
   <li id="navigation-contents"><%= search_contents_menu %></li>
   <li id="navigation-people"><%= search_people_menu %></li>
-  <li id="navigation-products"><%= link_to 'Produtos', {:action => :products, :controller => :search}, {:class => 'icon-product', :title => 'Produtos'} %></li>
-  <li id="navigation-enterprises"><%= link_to 'Empreendimentos', {:action => :enterprises, :controller => :search}, {:class => 'icon-menu-enterprise', :title => 'Empreendimentos'} %></li>
+  <li id="navigation-products"><%= link_to content_tag('span', 'Produtos'), {host: environment.default_hostname, action: :products, controller: :search}, {class: 'icon-product', title: 'Produtos'} %></li>
+  <li id="navigation-enterprises"><%= link_to content_tag('span', 'Empreendimentos'), {host: environment.default_hostname, action: :enterprises, controller: :search}, {class: 'icon-menu-enterprise', title: 'Empreendimentos'} %></li>
   <li id="navigation-communities"><%= search_communities_menu %></li>
-  <li id="navigation-events"><%= link_to 'Eventos', {:action => :events, :controller => :search},  {:class => 'icon-event', :title => 'Eventos'} %></li>
-  <li id="navigation-help"><%= link_to 'Ajuda', '/ajuda', {:class => 'icon-help', :title => 'Ajuda'} %></li>
+  <li id="navigation-events"><%= link_to content_tag('span', 'Eventos'), {host: environment.default_hostname, action: :events, controller: :search}, {class: 'icon-event', title: 'Eventos'} %></li>
+  <li id="navigation-help"><%= link_to content_tag('span', 'Ajuda'), '//cirandas.net/ajuda', {class: 'icon-help', title: 'Ajuda'} %></li>
 
   <% calculate_spacing = true if calculate_spacing.nil? %>
 

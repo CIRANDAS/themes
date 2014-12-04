@@ -150,22 +150,6 @@ font-weight: normal;
 text-shadow: 0px 2px 3px #fff;
 color: $ees-name-color;
 }
-@media screen and (max-width: 768px) {
-  #profile-theme-header h1.page-title, #profile-theme-header h1.page-title a:link, #profile-theme-header h1.page-title a:visited {
-    font-size: 36px;
-  }
-  #profile-theme-header {
-    height: auto;
-    min-height: 140px;
-  }
-  #profile-theme-header h1.page-title img {
-    height: 100px;
-  }
-  #page-logo {
-    padding: 3px;
-  }
-}
-
 h1.page-title {
 position:relative;
 z-index:2;
@@ -218,6 +202,21 @@ display:none;
 }
 .profile-info-options {
 padding-top:0;
+}
+@media screen and (max-width: 768px) {
+  #profile-theme-header h1.page-title, #profile-theme-header h1.page-title a:link, #profile-theme-header h1.page-title a:visited {
+    font-size: 36px;
+  }
+  #profile-theme-header {
+    height: auto;
+    min-height: 140px;
+  }
+  #profile-theme-header h1.page-title img {
+    height: 100px;
+  }
+  #page-logo {
+    padding: 3px;
+  }
 }
 
 

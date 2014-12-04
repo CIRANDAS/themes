@@ -1,0 +1,4 @@
+name: "Tema para coletivos de consumo"
+layout: "cirandas" # don't change
+jquery_theme: "smoothness"
+icon_theme: [default, pidgin]

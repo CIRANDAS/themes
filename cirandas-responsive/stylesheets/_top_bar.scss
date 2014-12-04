@@ -43,11 +43,18 @@
   #top-search .form-group, #top-search .form-group .form-control {
     width: 120px;
   }
-  #top-bar .navbar-nav > li > a.icon-help {
-    font-size: 0;
-  }
   #top-bar a.icon-help:before {
     font-size:15px;
+  }
+  #top-bar .navbar-nav > li > .icon-help span,
+  #top-bar #search-dropdown-menu .dropdown-toggle span {
+    display:none;
+  }
+  #navbar-search-collapse {
+    display:none !important;
+  }
+  #search-dropdown-menu {
+    display: inline;
   }
 }
 
