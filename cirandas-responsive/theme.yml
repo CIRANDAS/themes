@@ -1,0 +1,7 @@
+name: "Cirandas"
+layout: "cirandas-responsive"
+jquery_theme: "smoothness"
+responsive: true
+icon_theme: [awesome, pidgin]
+public: true
+

@@ -1,0 +1,98 @@
+#top-bar ul {
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+@media screen and (min-width: 1200px) {
+  #top-bar ul {
+    margin-top:3px;
+  }
+}
+
+#top-bar .navbar-brand {
+  font-size: 0;
+}
+
+#top-bar .navbar-nav > li > a:hover, #top-bar .navbar-nav > li > a:focus {
+  color: rgba(117, 185, 97, 1);
+}
+
+.cirandas-responsive-top-logo {
+  display: inline-block;
+  background-image:url(/designs/themes/cirandas-responsive/images/cirandas-logo-110.png);
+  background-repeat: no-repeat;
+  background-size: 70px auto;
+  width:70px;
+  height:64px;
+  margin:-10px 0 0 0;
+  vertical-align: top;
+}
+@media screen and (min-width:1200px) {
+  #top-bar .navbar-nav > li > a {
+    font-size: 13px;
+  }
+  #top-bar .navbar-brand, #top-bar .container .navbar-brand,
+  #top-bar > .container-fluid .navbar-brand {
+    font-size: 18px;
+    color: rgba(117, 185, 97, 1);
+    text-shadow: 2px 2px 2px #222;
+  }
+  #top-bar .navbar-brand, #top-bar .container .navbar-brand:hover,
+  #top-bar > .container-fluid .navbar-brand:hover {
+    color: #fff;
+  }
+  #top-search .form-group, #top-search .form-group .form-control {
+    width: 120px;
+  }
+  #top-bar a.icon-help:before {
+    font-size:15px;
+  }
+  #top-bar .navbar-nav > li > .icon-help span,
+  #top-bar #search-dropdown-menu .dropdown-toggle span {
+    display:none;
+  }
+  #navbar-search-collapse {
+    display:none !important;
+  }
+  #search-dropdown-menu {
+    display: inline;
+  }
+}
+
+@media screen and (max-width:767px) and (min-width:360px) {
+  #top-bar .navbar-brand, #top-bar .container .navbar-brand, #top-bar > .container-fluid .navbar-brand {
+    font-size: 18px;
+    color: rgba(117, 185, 97, 1);
+    text-shadow: 2px 2px 2px #222;
+  }
+}
+.form-horizontal .form-group {
+  margin: 0;
+}
+
+#top-bar .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+#top-bar .navbar-toggle {
+  border: none;
+  margin-right: 10px;
+}
+
+#top-bar .navbar-toggle .icon-bar {
+  width: 18px;
+}
+
+#top-bar .navbar-toggle:hover, #top-bar .navbar-toggle:focus {
+  background-color: rgba(118, 177, 103, 1);
+}
+
+
+@media screen and (min-width:1200px) {
+  #top-bar a.icon-help {
+    font-size: 0;
+  }
+
+  #top-bar a.icon-help:before {
+    font-size:15px;
+  }
+}

@@ -1,9 +1,9 @@
 $style-headers: false;
 $change-wireframe: false;
 
-@import 'cirandas';
-@import 'enterprise';
-@import 'small';
+@import '../../cirandas/stylesheets/cirandas';
+@import '../../cirandas/stylesheets/enterprise';
+@import '../../cirandas/stylesheets/small';
 
 /*
  Reduza então o botão de RSS e deixe do tamanho dos outros.
@@ -215,7 +215,7 @@ body {
   border-radius: 0px;
   border: none;
   box-shadow: none;
-  
+
   a {
     text-decoration: none;
   }

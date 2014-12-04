@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="block-outer">
+    <div id="profile-title" class="<%= profile.type.underscore %> block col-lg-12 col-md-12 col-sm-12">
+      <h1 class="page-title">
+      <% unless profile.enterprise? %>
+        <% if profile.image %>
+          <div id="page-title-profile-image">
+            <a href="<%= url_for(profile.url) %>"><%= profile_image profile, :thumb %></a>
+          </div>
+        <% end %>
+      <% end %>
+      
+      <a href="<%= url_for(profile.url) %>"><%= profile.short_name(nil) %></a>
+      
+      <% if profile.enterprise? %>
+        <span class="solidarity-economy">Empreendimento de Economia Solidária</span>
+      <% end %>
+      </h1>
+    </div>
+  </div>
+</div>

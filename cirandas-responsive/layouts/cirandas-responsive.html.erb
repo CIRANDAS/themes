@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="<%= html_language %>">
+  <head>
+    <title><%= h page_title %></title>
+    <%= yield(:feeds) %>
+    <!--<meta http-equiv="refresh" content="1"/>-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="<%= @environment.name %>" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" value="summary">
+    <meta name="twitter:title" content="<%= h page_title %>">
+    <meta name="twitter:description" content="<%= meta_description_tag(@page) %>">
+
+    <!-- Twitter Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="<%= image_path(theme_favicon) %>" type="image/x-icon" />
+    <%= noosfero_javascript %>
+    <%= noosfero_stylesheets %>
+
+    <%= render :file => "#{Rails.root}/public#{theme_path}/head.html.erb" rescue nil %>
+    <%# Add custom tags/styles/etc via content_for %>
+    <%= yield :head %>
+
+    <%=
+      @plugins.dispatch(:head_ending).map do |content|
+        if content.respond_to?(:call) then instance_exec(&content).to_s.html_safe else content.to_s.html_safe end
+      end.join("\n")
+    %>
+
+    <script type='text/javascript'>
+      DEFAULT_LOADING_MESSAGE = <%="'#{ _('loading...') }'" %>;
+    </script>
+
+    <%# render :file => "#{Rails.root}/public/designs/themes/cirandas-responsive/layouts/_owa.html.erb" if Rails.env.production? %>
+    <%= render :file => "#{Rails.root}/public/designs/themes/cirandas-responsive/layouts/_purechat.html.erb" if Rails.env.production? %>
+
+  </head>
+
+  <%= render :file => "#{Rails.root}/public/designs/themes/cirandas-responsive/load.erb" %>
+
+  <body class="<%= h body_classes %>">
+    <a href="#content" id="link-go-content"><span><%= _("Go to the content") %></span></a>
+
+    <%=
+      @plugins.dispatch(:body_beginning).map do |content|
+        if content.respond_to?(:call) then instance_exec(&content).to_s.html_safe else content.to_s.html_safe end
+      end.join("\n")
+    %>
+
+    <%= render :partial => 'layouts/menu_responsive' %>
+
+    <div id="wrap-1" class="container">
+
+      <%= render :file => "#{Rails.root}/public/designs/themes/#{current_theme}/content_top.html.erb" rescue nil %>
+
+      <div id='theme-header'>
+        <%= theme_header %>
+      </div>
+
+        <div id="content">
+          <%= render :file => "#{Rails.root}/public/designs/themes/#{current_theme}/layouts/_content.html.erb" %>
+        </div><!-- end id="content" -->
+      </div><!-- end id="wrap-2" -->
+    </div><!-- end id="wrap-1" -->
+
+    <%= render_environment_features(:logged_in) %>
+    <div id="theme-footer" >
+      <%= theme_footer %>
+    </div><!-- end id="theme-footer" -->
+
+    <%= noosfero_layout_features %>
+    <%= theme_javascript_ng %>
+    <%= addthis_javascript %>
+    <%=
+      @plugins.dispatch(:body_ending).map do |content|
+        if content.respond_to?(:call) then instance_exec(&content).to_s.html_safe else content.to_s.html_safe end
+      end.join("\n")
+    %>
+
+    <%= render :file => "#{Rails.root}/public/designs/themes/#{current_theme}/layouts/_modal.html.erb" %>
+
+  </body>
+</html>

@@ -1,5 +1,5 @@
 name: "Coral ondas da terra"
-layout: "cirandas" # don't change
-jquery_theme: "smoothness_mod"
-icon_theme: [default, pidgin]
+layout: "cirandas-responsive" # don't change
+icon_theme: [awesome, pidgin]
 owner_type: Enterprise
+responsive: true

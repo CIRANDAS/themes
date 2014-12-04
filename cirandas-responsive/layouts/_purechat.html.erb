@@ -1,0 +1,5 @@
+<% unless @without_pure_chat %>
+  <script type='text/javascript'>
+    (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://widget.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({ c: 'b21b898d-a90d-40fa-817d-c6686055ca60', f: true }); done = true; } }; })();
+  </script>
+<% end %>

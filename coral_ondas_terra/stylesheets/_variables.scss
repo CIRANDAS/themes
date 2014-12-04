@@ -1,0 +1,25 @@
+$theme-name: "coral_ondas_terra";
+$content-title: #6D1B38;
+$page-title: #FFF;
+$page-title-bg: #DF583D;
+$page-title-border-bottom: #417;
+$link-list-block: #FFF;
+$link-list-block-bg: #B22D47;
+$link-this-page: #6D1B38;
+$link-this-page-bg: #DF583D;
+$links: #6D1B38;
+$links-hover: #2E3436;
+$product-price: #DF583D;
+
+$catalog-details-bg: $link-list-block-bg;
+$catalog-details: $link-list-block;
+$catalog-details-bg-hover: $page-title-bg;
+$catalog-details-hover: $page-title;
+
+$block-title: $content-title;
+$profile-footer: $page-title;
+$profile-footer-bg: $page-title-bg;
+$profile-footer-border-top: $page-title-border-bottom;
+$main-block-title: $content-title;
+$blog-post-title: $content-title;
+$body-bg-image-url: url(/designs/themes/#{$theme-name}/images/bg.png);

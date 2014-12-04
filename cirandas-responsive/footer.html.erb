@@ -1,0 +1,23 @@
+<nav class="navbar navbar-default navbar-static-bottom" role="navigation">
+  <div class="container">
+    <div class="col-lg-4 col-md-4 col-sm-4 text-left">
+      <%= language_chooser %>
+      <p id="noosfero-version-info"><a href="http://noosfero.org">Noosfero</a>, versão <%= Noosfero::VERSION %></p>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+      <p>Veja quem são nossos <a href="http://cirandas.net/fbes/apoios-ao-cirandas">Parceiros e apoiadores</a></p>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-4 text-right">
+      <p id="footer-fbes">Um projeto do <a href="http://www.fbes.org.br">FBES</a>, Fórum Brasileiro de Economia Solidária</p>
+    </div>
+  </div>
+
+</nav>
+
+
+<% javascript_tag do %>
+  <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/content_update.js.erb" %>
+<% end %>
+

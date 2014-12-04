@@ -6,14 +6,14 @@ $top-menu-hover-color-bg: transparent; // Fundo do menu superior qdo passa o mou
 
 
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
-@import 'cirandas';
-@import 'small';
+@import '../../cirandas/stylesheets/cirandas';
+@import '../../cirandas/stylesheets/small';
 
 body {
   background: url('images/bg-unicafes.png') repeat scroll 0% 0% black;
   font-family: 'Ubuntu', sans-serif;
 }
- 
+
 #content {
   padding-top: 5px;
 }
@@ -25,12 +25,12 @@ body {
 .profile-info-block a {
   font-size: small !important;
 }
- 
+
 #content .block h2,
 #content .block-title {
   color: #217335;
 }
- 
+
 #content .link-list-block li {
   background: none repeat scroll 0 0 #a6de8d;
   border-radius: 4px 4px 4px 4px;
@@ -49,7 +49,7 @@ body {
 #content .link-list-block li a:hover  {
   background-color: #217335;
 }
- 
+
 .controller-search #content .search-results-box a.see-more {
   background: #217335;
   border: 1px solid #217335;
@@ -82,11 +82,14 @@ body {
 
 #user {
   background: #FFDF7A;
-  opacity: 0.6;  
+  opacity: 0.6;
 }
 
 #profile-header {
-  padding-bottom: 20px;
+  padding-bottom: 0;
+}
+#profile-header p {
+  margin: 0;
 }
 
 #tb-logo {
@@ -142,7 +145,7 @@ h1.title, #content .blog-post .title a  {
 
 h1.title, h1.title a, div.read-more a, div.pagination a, div.pagination span, div#theme-footer a {
   color: #80900d !important;
-} 
+}
 
 .controller-profile_design #titulo_materia {
   top: 10px; /* somente na admin */
@@ -244,7 +247,7 @@ body.template-leftbar #boxes, body.template-default #boxes {
 
 #content .box-1 .blocks .link-list-block {
 position:absolute;
-top:170px;
+top:137px;
 left:0;
 width: 1040px;
 height: 50px;
@@ -289,10 +292,11 @@ font-size: 16px;
 font-weight: bold;
 }
 
-#content .box-1 .blocks .link-list-block li a.link-this-page, 
-#content .box-1 .blocks .link-list-block li a.link-this-page:hover, 
+#content .box-1 .blocks .link-list-block li a.link-this-page,
+#content .box-1 .blocks .link-list-block li a.link-this-page:hover,
 #content .box-1 .blocks .link-list-block li a:hover {
   color: $top-menu-hover-color;
   background-color: $top-menu-hover-color-bg;
   border: none;
 }
+
