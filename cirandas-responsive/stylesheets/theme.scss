@@ -555,7 +555,8 @@ body p {
 }
 
 #content .friends-block .common-profile-list-block li,
-#content .people-block .common-profile-list-block li {
+#content .people-block .common-profile-list-block li,
+#content .members-block .common-profile-list-block li {
   height: 60px;
   width: 60px;
   border: 1px solid #CCC;
@@ -573,15 +574,18 @@ body p {
   border: none;
 }
 #content .friends-block .profile-image, 
-#content .people-block .profile-image {
+#content .people-block .profile-image,
+#content .members-block .profile-image {
   height: 60px;
   text-align: center;
 }
 #content .people-block ul,
-#content .friends-block ul {
+#content .friends-block ul,
+#content .members-block ul {
   padding: 0;
 }
 .friends-block .common-profile-list-block img, 
+.people-block .common-profile-list-block img,
 .people-block .common-profile-list-block img {
   max-height: 56px;
 }
