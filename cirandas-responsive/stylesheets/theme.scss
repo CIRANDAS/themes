@@ -659,6 +659,10 @@ body p {
     font-variant: normal;
     text-align: left;
     font-size: 18px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #9EDAEF;
   }
   
   #content .block h2 {
@@ -699,9 +703,10 @@ body p {
 #content .login-block .not-logged-user {
   padding: 5px;
   background-color: $blocks-color;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #9EDAEF;
 }
 
 #content .login-block .not-logged-user input.button.with-text {
@@ -1239,6 +1244,10 @@ div.token-input-dropdown-facet {
 
 #facets-menu .facet-menu-label {
   background:$blocks-color;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #9EDAEF;
 }
 
 #facets-menu .facet-menu-options a {
