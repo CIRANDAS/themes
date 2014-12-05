@@ -651,7 +651,6 @@ body p {
 @if $style-headers {
   #content .block h2,
   #content .block-title {
-    background-color: $blocks-color;
     color: black;
     padding: 12px 0 4px 8px;
     text-transform: none;
@@ -659,13 +658,14 @@ body p {
     font-variant: normal;
     text-align: left;
     font-size: 18px;
+  }
+  
+  #content .block h2 {
+    background-color: $blocks-color;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
     border: 1px solid #9EDAEF;
-  }
-  
-  #content .block h2 {
     font-size: 32px;
   }
   
