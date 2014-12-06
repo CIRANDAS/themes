@@ -661,15 +661,16 @@ body p {
   
   #content .block h2 {
     background-color: $blocks-color;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-    border: 1px solid #9EDAEF;
     font-size: 32px;
   }
   
   #content .profile-info-block h2 {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #9EDAEF;
     font-size: 22px;
+    padding-left: 6px;
   }
 
   #content .login-block .not-logged-user h2 {
