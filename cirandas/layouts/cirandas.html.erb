@@ -21,6 +21,11 @@
     <%= render :file => "#{Rails.root}/public#{theme_path}/head.html.erb" rescue nil %>
 
     <link rel="shortcut icon" href="<%= image_path(theme_favicon) %>" type="image/x-icon" />
+
+    <!-- externals come first for parallelism -->
+    <%# render :file => "#{Rails.root}/public/designs/themes/cirandas/layouts/_owa.html.erb" if Rails.env.production? %>
+    <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/layouts/_purechat.html.erb" if Rails.env.production? %>
+
     <%= noosfero_javascript %>
     <%= noosfero_stylesheets %>
 
@@ -35,9 +40,6 @@
     <script type='text/javascript'>
       DEFAULT_LOADING_MESSAGE = <%="'#{ _('loading...') }'" %>;
     </script>
-
-    <%# render :file => "#{Rails.root}/public/designs/themes/cirandas/layouts/_owa.html.erb" if Rails.env.production? %>
-    <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/layouts/_purechat.html.erb" if Rails.env.production? %>
 
   </head>
 
