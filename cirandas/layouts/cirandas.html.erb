@@ -75,14 +75,18 @@
         </div><!-- end id="content" -->
       </div><!-- end id="wrap-2" -->
     </div><!-- end id="wrap-1" -->
-    <%= render_environment_features(:logged_in) %>
+    <%= render_environment_features(:logged_in) if logged_in? %>
     <div id="theme-footer">
       <%= theme_footer %>
     </div><!-- end id="theme-footer" -->
     <%= noosfero_layout_features %>
     <%= addthis_javascript %>
+    <%=
+      @plugins.dispatch(:body_ending).map do |content|
+        if content.respond_to?(:call) then instance_exec(&content).html_safe else content.html_safe end
+      end.join("\n")
+    %>
 
-    <%# support bootstrap modal %>
     <%= render :file => "#{Rails.root}/public/designs/themes/cirandas-responsive/layouts/_modal.html.erb" %>
 
   </body>
