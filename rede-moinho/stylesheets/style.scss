@@ -118,15 +118,17 @@ body {
   }
 
   #header-cobertura {
-    width: 100%;
     height: 150px;
     background: url(images/renda-top.png) 50% 100% repeat-x;
     border-bottom: 1px solid #F1BD49;
     opacity: 0.8;
+    margin-left:-15px;
+    margin-right:-15px;
   }
 
   #header-bitmap {
-    background: url(images/verduras.jpg) center 50% no-repeat;
+    background-image: url(images/verduras.jpg);
+    background-size: cover;
   }
 
   #top-banner {
