@@ -1,4 +1,4 @@
-<%= cache_unless @disable_cache_theme_navigation, "cirandas-responsive/navigation-#{I18n.locale}.html.erb", expires_in: 1.day do %>
+<%= cache_unless (logged_in? or @disable_cache_theme_navigation), "cirandas-responsive/navigation-#{I18n.locale}.html.erb", expires_in: 1.day do %>
   <li id="navigation-contents"><%= search_contents_menu %></li>
   <li id="navigation-people"><%= search_people_menu %></li>
   <li id="navigation-products"><%= link_to content_tag('span', 'Produtos'), {host: environment.default_hostname, action: :products, controller: :search}, {class: 'icon-product', title: 'Produtos'} %></li>
