@@ -526,7 +526,7 @@ body p {
 
 .box-container-2 .common-profile-list-block .vcard a.profile_link,
 .box-container-3 .common-profile-list-block .vcard a.profile_link,
-.common-profile-list-block .vcard a, 
+.common-profile-list-block .vcard a,
 .comment-actions .vcard a {
   width: 100%;
 }
@@ -535,13 +535,13 @@ body p {
   max-height: 50px;
 }
 
-#content .enterprises-block .profile-image, 
-#content .communities-block .profile-image, 
+#content .enterprises-block .profile-image,
+#content .communities-block .profile-image,
 #content .members-block .profile-image {
   height: 50px;
 }
 
-.box-container-2 .common-profile-list-block span, 
+.box-container-2 .common-profile-list-block span,
 .box-container-3 .common-profile-list-block span {
   height: 28px;
   overflow: hidden;
@@ -573,7 +573,7 @@ body p {
   padding: 0;
   border: none;
 }
-#content .friends-block .profile-image, 
+#content .friends-block .profile-image,
 #content .people-block .profile-image,
 #content .members-block .profile-image {
   height: 60px;
@@ -584,7 +584,7 @@ body p {
 #content .members-block ul {
   padding: 0;
 }
-.friends-block .common-profile-list-block img, 
+.friends-block .common-profile-list-block img,
 .people-block .common-profile-list-block img,
 .people-block .common-profile-list-block img {
   max-height: 56px;
@@ -658,12 +658,12 @@ body p {
     text-align: left;
     font-size: 18px;
   }
-  
+
   #content .block h2 {
     background-color: $blocks-color;
     font-size: 32px;
   }
-  
+
   #content .profile-info-block h2 {
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -1553,4 +1553,9 @@ div#addThis {
 .explanation {
   font-size: 14px;
   line-height: 120%;
+}
+
+/* while it don't work */
+#oauth-login-options {
+  display: none;
 }
