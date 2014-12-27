@@ -620,10 +620,6 @@ body p {
   color: $link-color;
 }
 
-.profile-image-block p {
-  text-align: center;
-}
-
 #content .link-list-block li a.link-this-page {
   border-right: 0;
   max-width: auto;
@@ -664,7 +660,8 @@ body p {
     font-size: 32px;
   }
 
-  #content .profile-info-block h2 {
+  #content .profile-info-block h2,
+  .profile-image-block h2 {
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
