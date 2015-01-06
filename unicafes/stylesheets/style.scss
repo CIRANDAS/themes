@@ -202,7 +202,7 @@ body.template-leftbar #boxes, body.template-default #boxes {
 #slideshow #titulo_materia {
   height: 50px;
   opacity: 0.8;
-  width: 711px;
+  width: 820px;
   background-color: #9aad14;
   position: absolute;
   top: 373px;
@@ -213,15 +213,15 @@ body.template-leftbar #boxes, body.template-default #boxes {
   text-align: right;
   padding: auto;
   margin-left: 100px;
-  width: 590px;
-  font-weight: bold;
-  margin-top: -15px;
+  width: 700px;
+  font-weight: normal;
+  margin-top: -5px;
 }
 
 #slideshow #imagens {
   position: absolute;
   height: 425px;
-  width: 710px;
+  width: 820px;
   overflow: hidden;
 }
 
@@ -249,7 +249,7 @@ body.template-leftbar #boxes, body.template-default #boxes {
 position:absolute;
 top:137px;
 left:0;
-width: 1040px;
+width: 1120px;
 height: 50px;
 margin: 0 auto;
 background-color: $top-menu-bg;
