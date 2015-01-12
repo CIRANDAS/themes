@@ -1,3 +1,31 @@
 @import '../../cirandas/stylesheets/cirandas';
 @import '../../cirandas/stylesheets/small';
 
+@import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+
+body {
+  background-color: #996;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-image: url("http://bemdaterra.org/content/wp-content/themes/bemdaterra/img/bg.jpg");
+}
+
+#wrap-1 {
+  margin-top: 180px;
+}
+
+#brand {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+}
+
+#slogan-header {
+  position: absolute;
+  top: 100px;
+  font-family: Gloria Hallelujah;
+  font-size: 20px;
+  color: #FFF;
+  left: 409px;
+}
