@@ -3,6 +3,10 @@
 
 @import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah);
 
+#theme-header {
+  left: 0;
+  width: 100%;
+}
 body {
   background-color: #996;
   background-attachment: scroll;
@@ -27,5 +31,14 @@ body {
   font-family: Gloria Hallelujah;
   font-size: 20px;
   color: #FFF;
-  left: 409px;
+  left: 600px;
 }
+
+#wrap-2 {
+  padding-top: 0;
+}
+
+#content, #consumers-coop-plugin-header {
+  margin-top: 0;
+}
+
