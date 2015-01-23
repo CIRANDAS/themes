@@ -12,12 +12,6 @@
     <meta name="twitter:title" content="<%= h page_title %>">
     <meta name="twitter:description" content="<%= meta_description_tag(@page) %>">
 
-    <% if @page %>
-      <% @page.body_images_paths.each do |img| %>
-        <meta name="twitter:image" content="<%= img.to_s %>">
-      <% end %>
-    <% end %>
-
     <%= render :file => "#{Rails.root}/public#{theme_path}/head.html.erb" rescue nil %>
 
     <link rel="shortcut icon" href="<%= image_path(theme_favicon) %>" type="image/x-icon" />
