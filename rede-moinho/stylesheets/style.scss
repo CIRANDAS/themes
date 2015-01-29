@@ -135,7 +135,7 @@ body {
     width: 100%;
     height: 150px;
     margin: auto;
-    background: #EEE0D0;
+    background: url(images/renda-top.png) 50% 100% repeat-x #EEE0D0;
     position: absolute;
   }
   .navbar-menu-redemoinhoa {
@@ -321,12 +321,13 @@ body {
 
 #content .link-list-block li a {
   padding: 0px 8px;
-  margin: 0px -7px;
+  margin: 0px;
   border: 2px solid #FFD685;
   border-radius: 5px;
   background: transparent;
   color: #C63;
   text-shadow: 0 0 1px #B52, 1px 1px 1px #FED;
+  box-shadow: none;
 }
 #content .link-list-block li a:hover {
   color: #820;
@@ -972,6 +973,7 @@ select#customer_payment {
   .navbar-redemoinho {
     margin-top: 55px;
     background: url(images/fita.png) right center no-repeat;
+    background-size: cover;
   }
 }
 
