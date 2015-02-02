@@ -552,14 +552,11 @@ body {
   color: #FFF;
 }
 
-#product-list {
-  width: 760px;
-}
-
 #product-list li.product {
   background: #FFFCF8;
   padding: 5px;
-  margin: 10px 20px;
+  margin: 10px 0;
+  margin-right: 20px;
   font-family: 'Liberation Sans Narrow', 'Arial Narrow', 'Arial', sans-serif;
 }
 
