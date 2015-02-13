@@ -1,9 +1,16 @@
 @import '../cirandas-responsive/style';
 @import url(http://fonts.googleapis.com/css?family=Fenix);
 
-
 body{
-  background: #DCDCDC;
+  background-image: linear-gradient(to right, #cdebde, white, #cdebde);
+  background-image: -webkit-gradient(linear, right bottom, left bottom,
+    color-stop(0, #cdebde), color-stop(0.5, white), color-stop(1, #cdebde)
+  );
+  background-image: -o-linear-gradient(left, #cdebde, white, #cdebde);
+  background-image: -moz-linear-gradient(left, #cdebde, white, #cdebde);
+  background-image: -webkit-linear-gradient(left, #cdebde, white, #cdebde);
+  background-image: -ms-linear-gradient(left, #cdebde, white, #cdebde);
+  background-image: linear-gradient(to left, #cdebde, white, #cdebde);
 }
 
 #wrap-1{
