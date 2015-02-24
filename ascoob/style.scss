@@ -1,5 +1,5 @@
 @import '../cirandas-responsive/style';
-@import url(http://fonts.googleapis.com/css?family=Fondamento);
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
 
 body {
   background: #15A543;
@@ -22,17 +22,19 @@ body {
       border: none;
       li {
         margin: 0 20px; 
-        a{
-          color: #556B2F;
+        a {
+          color: #006400;
           font-size: 28px;
-          font-family: 'Fondamento';
-          &:hover{
-            color: #BDB76B;
+          &:hover {
+            color: #ADFF2F;
           }
         }
       }
-      li:first-child {
-        margin-left: 0;
+      li:last-child {
+        margin-right: 0;
+      }
+      ul.navbar-nav {
+        float: right;
       }
     }
     .container-fluid {
@@ -49,14 +51,14 @@ body {
         background: none;
       }
       a, a[class*='icon-'] {
-        font-family: 'Fondamento';
         font-size: 16px;
-        background-color: #B8860B;
+        background-color: #006400;
         border-radius: 5px;
         color: #fff;
         padding-left: 5px;
         &:hover{
-          background-color: #556B2F;
+          background-color: #FFD700;
+          color: #000;
         }
       }
     }
@@ -65,68 +67,69 @@ body {
     }
   }
 
-  .main-block, #not-found, #access-denied {
+  .main-block {
     h1 {
-      border-bottom:2px solid #556B2F;
-      color: #556B2F;
-      font-family: 'Fondamento';
+      border-bottom:2px solid #006400;
+      color: #006400;
     }
   }
 
-  .block h2, .block-title{
-    border-bottom: 2px solid #556B2F;
-    color: #556B2F;
-    font-family: 'Fondamento';
+  .block h2, .block-title {
+    border: 0;
+    border-radius: 0;
+    background: none;
+    border-bottom:2px solid #006400;
+    color: #006400;
   }
 
 }
 
-.block a, a{
+.block a, a {
   color: #556B2F;
 }
 
-#theme-footer{
+#theme-footer {
   background: #fff;
 }
 
 #footer-profile {
   width: 100%;
   height: 80px;
-  a{
-    color: #556B2F;
+  a {
+    color: #006400;
   }
 }
 
-#footer-logo{
+#footer-logo {
   float: left;
   width: 40%;
   height: 60px;
   display: block;
   margin: 10px;
-  #logo{
+  #logo {
     background: url("images/fazcultura.png") no-repeat top left;
     width: 100%;
     height: 50px;
     display: block;
-    span{
+    span {
       display: none;
     }
   }
 }
 
-#footer-info{
+#footer-info {
   float:left;
   width: 50%;
   height: 80px;
 }
 
-#footer-links{
+#footer-links {
   width: 100%;
   margin: 10px 0;
   float: left;
 }
 
-#copyright{
+#copyright {
   width: 100%;
   float: left;
   p{
@@ -168,5 +171,9 @@ h1,
 #navigation,
 .block-title span,
 #content .link-list-block li a {
-  font-family: 'Fondamento', serif;
+  font-family: 'Oxygen', sans-serif;
+}
+
+#content .blog-post .title a {
+  color: #006400;
 }
