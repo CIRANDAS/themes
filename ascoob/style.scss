@@ -1,0 +1,179 @@
+@import '../cirandas-responsive/style';
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+
+body {
+  background: #15A543;
+}
+
+#wrap-1 {
+  border-radius: 20px;
+  margin: 20px auto;
+}
+
+#profile-title{
+  display: none;
+}
+
+#content {
+
+  .box-container-3 {
+    nav.navbar.navbar-inverse {
+      background: none;
+      border: none;
+      li {
+        margin: 0 20px; 
+        a {
+          color: #006400;
+          font-size: 28px;
+          &:hover {
+            color: #ADFF2F;
+          }
+        }
+      }
+      li:last-child {
+        margin-right: 0;
+      }
+      ul.navbar-nav {
+        float: right;
+      }
+    }
+    .container-fluid {
+      padding-left: 0;
+    }
+    .raw-html-block img {
+      width: 100%;
+    }
+  }
+
+  .box-container-2 { 
+    .link-list-block {
+      li {
+        background: none;
+      }
+      a, a[class*='icon-'] {
+        font-size: 16px;
+        background-color: #006400;
+        border-radius: 5px;
+        color: #fff;
+        padding-left: 5px;
+        &:hover{
+          background-color: #FFD700;
+          color: #000;
+        }
+      }
+    }
+    .slideshow-block-navigation .icon-media-pause {
+      width: 26px;
+    }
+  }
+
+  .main-block {
+    h1 {
+      border-bottom:2px solid #006400;
+      color: #006400;
+    }
+  }
+
+  .block h2, .block-title {
+    border: 0;
+    border-radius: 0;
+    background: none;
+    border-bottom:2px solid #006400;
+    color: #006400;
+  }
+
+}
+
+.block a, a {
+  color: #556B2F;
+}
+
+#theme-footer {
+  background: #fff;
+}
+
+#footer-profile {
+  width: 100%;
+  height: 80px;
+  a {
+    color: #006400;
+  }
+}
+
+#footer-logo {
+  float: left;
+  width: 40%;
+  height: 60px;
+  display: block;
+  margin: 10px;
+  #logo {
+    background: url("images/fazcultura.png") no-repeat top left;
+    width: 100%;
+    height: 50px;
+    display: block;
+    span {
+      display: none;
+    }
+  }
+}
+
+#footer-info {
+  float:left;
+  width: 50%;
+  height: 80px;
+}
+
+#footer-links {
+  width: 100%;
+  margin: 10px 0;
+  float: left;
+}
+
+#copyright {
+  width: 100%;
+  float: left;
+  p{
+    text-align: center; 
+  }
+}
+
+.quick-admin-link {
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid #87CEEB;
+  background: #333;
+  text-align: center;
+  padding: 5px 10px;
+  position: fixed;
+  z-index: 100;
+  border-left: none;
+  border-radius: 0px 8px 8px 0px;
+  left: 0px;
+  text-decoration: none;
+}  
+
+#theme-footer a.quick-admin-link {
+  color: #87CEEB;
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+#profile-admin {
+  top: 10px;
+}
+
+#edit-blocks.quick-admin-link {
+  top: 40px;
+}
+
+h1,
+#navigation,
+.block-title span,
+#content .link-list-block li a {
+  font-family: 'Oxygen', sans-serif;
+}
+
+#content .blog-post .title a {
+  color: #006400;
+}
