@@ -158,9 +158,12 @@ body, h3.block-title, h1, h2{
     padding: 10px 20px;
     border: none;
   }
-  .block h2 {
-    font-family: 'Open Sans';
-    font-size: 14px;
+  .block{
+     padding: 0;
+     h2 {
+      font-family: 'Open Sans';
+      font-size: 14px;
+     }
   }
   p {
     text-align: center;
