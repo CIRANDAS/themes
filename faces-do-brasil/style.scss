@@ -61,13 +61,16 @@ body, h3.block-title, h1, h2{
 }
 
 #top-search {
-  width: 300px;
+  width: 290px;
   float: right;
   max-height: 60px;
+  .form-group{
+    width: 200px;
+  }
 }
 
 #profile-header{
-  max-height: 410px;
+  max-height: none;
   max-width: 110%;
   margin: auto -14px;
   p{
