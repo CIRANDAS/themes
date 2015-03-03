@@ -61,13 +61,16 @@ body, h3.block-title, h1, h2{
 }
 
 #top-search {
-  width: 300px;
+  width: 290px;
   float: right;
   max-height: 60px;
+  .form-group{
+    width: 200px;
+  }
 }
 
 #profile-header{
-  max-height: 410px;
+  max-height: none;
   max-width: 110%;
   margin: auto -14px;
   p{
@@ -155,9 +158,12 @@ body, h3.block-title, h1, h2{
     padding: 10px 20px;
     border: none;
   }
-  .block h2 {
-    font-family: 'Open Sans';
-    font-size: 14px;
+  .block{
+     padding: 0;
+     h2 {
+      font-family: 'Open Sans';
+      font-size: 14px;
+     }
   }
   p {
     text-align: center;
@@ -253,7 +259,7 @@ body, h3.block-title, h1, h2{
 
 /* Blog */
 #content{ 
-  .box-1{
+  .box-container-1{
     .blog-post{
       padding-left: 4px; 
       .title {
