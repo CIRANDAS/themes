@@ -12,13 +12,13 @@
     <link rel="shortcut icon" href="<%= image_path(theme_favicon) %>" type="image/x-icon" />
 
     <!-- externals come first for parallelism -->
-    <%# render :file => "#{Rails.root}/public/designs/themes/cirandas/layouts/_owa.html.erb" if Rails.env.production? %>
-    <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/layouts/_purechat.html.erb" if Rails.env.production? %>
+    <%# render file: "#{Rails.root}/public/designs/themes/cirandas/layouts/_owa.html.erb" if Rails.env.production? %>
+    <%= render file: "#{Rails.root}/public/designs/themes/cirandas/layouts/_purechat.html.erb" if Rails.env.production? %>
 
     <%= noosfero_javascript %>
     <%= noosfero_stylesheets %>
 
-    <%= render :file => "#{Rails.root}/public#{theme_path}/head.html.erb" rescue nil %>
+    <%= render file: "#{Rails.root}/public#{theme_path}/head.html.erb" rescue nil %>
     <%# Add custom tags/styles/etc via content_for %>
     <%= yield :head %>
 
@@ -34,7 +34,7 @@
 
   </head>
 
-  <%= render :file => "#{Rails.root}/public/designs/themes/cirandas-responsive/load.erb" %>
+  <%= render file: "#{Rails.root}/public/designs/themes/cirandas-responsive/load.erb" %>
 
   <body class="<%= h body_classes %>">
     <a href="#content" id="link-go-content"><span><%= _("Go to the content") %></span></a>
@@ -45,21 +45,11 @@
       end.join("\n")
     %>
 
-    <%= render :partial => 'layouts/menu_responsive' %>
+    <%= render partial: 'layouts/menu_responsive' %>
 
     <div id="wrap-1" class="container">
-
-      <%= render :file => "#{Rails.root}/public/designs/themes/#{current_theme}/content_top.html.erb" rescue nil %>
-
-      <div id='theme-header'>
-        <%= theme_header %>
-      </div>
-
-        <div id="content">
-          <%= render :file => "#{Rails.root}/public/designs/themes/#{current_theme}/layouts/_content.html.erb" %>
-        </div><!-- end id="content" -->
-      </div><!-- end id="wrap-2" -->
-    </div><!-- end id="wrap-1" -->
+      <%= render file: "#{Rails.root}/public/designs/themes/#{current_theme}/layouts/_content.html.erb" %>
+    </div>
 
     <%= render_environment_features(:logged_in) if logged_in? %>
     <div id="theme-footer" >
@@ -75,7 +65,7 @@
       end.join("\n")
     %>
 
-    <%= render :file => "#{Rails.root}/public/designs/themes/#{current_theme}/layouts/_modal.html.erb" %>
+    <%= render file: "#{Rails.root}/public/designs/themes/#{current_theme}/layouts/_modal.html.erb" %>
 
   </body>
 </html>
