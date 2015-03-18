@@ -6,11 +6,4 @@
   <li id="navigation-communities"><%= search_communities_menu %></li>
   <li id="navigation-events"><%= link_to content_tag('span', _('Events')), {host: environment.default_hostname, action: :events, controller: :search}, {class: 'icon-event', title: 'Eventos'} %></li>
   <li id="navigation-help"><%= link_to content_tag('span', _('Help')), '//cirandas.net/ajuda', {class: 'icon-help', title: 'Ajuda'} %></li>
-
-  <% calculate_spacing = true if calculate_spacing.nil? %>
-
-  <script type="text/javascript">
-    if (typeof cirandas_theme === 'undefined') cirandas_theme = {};
-    cirandas_theme.calculate_spacing = <%= (!! calculate_spacing).to_json %>;
-  </script>
 <% end %>
