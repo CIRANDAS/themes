@@ -1,9 +1,5 @@
 <%= render file: "#{Rails.root}/public/designs/themes/#{current_theme}/content_top.html.erb" rescue nil %>
 
-<div id='theme-header'>
-  <%= theme_header %>
-</div>
-
 <div id="content">
   <% if defined? ConsumersCoopPlugin %>
     <% require_dependency 'consumers_coop_plugin/layout_helper' %>
