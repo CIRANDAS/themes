@@ -1,0 +1,345 @@
+@import url(/designs/themes/cirandas/style.css);
+/*@import url(/designs/themes/cirandas/stylesheets/small.css);*/
+@import url(cirandas-small.css);
+
+
+/*** Ajustes no tema base do cirandas *****************************************/
+
+#navigation {
+  top: 0;
+  height: auto;
+  border: none;
+  background: #EDF8FA;
+}
+
+#theme-header {
+  position: relative;
+  left: auto;
+  right: auto;
+  width: 100%;
+}
+
+#cirandas-top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#content h1.page-title {
+  display: none;
+}
+
+/*** Thema Rede de Profissionais Solidários ***********************************/
+
+body {
+  background: #FFF url(imgs/fundo-pessoas.png);
+  font-family: "Liberation Sans", Arial, sans-serif;
+}
+
+#wrap-1 {
+  margin: 70px auto 0px auto;
+  background: rgba(0,0,0,0.2);
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 1;
+  width: 960px;
+}
+
+#wrap-2 {
+  border: none;
+  margin-top: 0px;
+  padding-top: 150px;
+}
+
+#user {
+  opacity: 0.2;
+  top: -190px;
+  right: 20px;
+}
+.logged-in #user, #user:hover {
+  opacity: 1;
+}
+
+/* * * Header * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#site-header {
+  border-radius: 20px 20px 0px 0px;
+  width: 960px;
+  height: 150px;
+  background: #DDD url(imgs/header.png) 100% 0% no-repeat;
+  background: url(imgs/header.png) 100% 0% no-repeat,
+              linear-gradient(to bottom, #E4E4E4 10%, #D8D8D8 90%);
+  border-bottom: 10px solid #EA5;
+  position: relative;
+  width: 100%;
+  right: 0;
+}
+
+#site-logo {
+  position: absolute;
+  top: -5px;
+  left: 20px;
+}
+
+#site-logo a {
+  display: block;
+  width: 230px;
+  height: 128px;
+  background: url(imgs/logo-redeprosolidarios-relevo.png) 50% 50% no-repeat;
+  overflow: hidden;
+}
+
+#site-logo span {
+  position: relative;
+  top: -100px;
+}
+
+#user #top-search {
+  display: none;
+}
+
+/* * * Menu Top * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#site-navigation {
+  display: block;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  border-top: 5px solid #6CE;
+  background: #6AA;
+}
+
+#site-navigation ul {
+  position: relative;
+  display: inline-block;
+  float: none;
+  height: auto;
+  margin: 0;
+}
+
+#site-navigation li {
+  position: relative;
+  display: inline-block;
+  float: none;
+  width: auto;
+  padding: 4px 0px;
+  margin: 0px;
+}
+
+#site-navigation ul:after,
+#site-navigation li:before {
+  content: "\2022";
+  font-size: 30px;
+  line-height: 28px;
+  vertical-align: middle;
+  color: #CCF0F4;
+  text-shadow: -1px -1px 1px rgba(0,0,0,0.3);
+}
+
+#site-navigation a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+  color: #CCF0F4;
+  text-shadow: -1px -1px 1px rgba(0,0,0,0.3);
+  text-decoration: none;
+  border: none;
+  padding: 0px 10px;
+  margin: 0px 10px;
+  border-radius: 15px;
+}
+#site-navigation a:hover {
+  background: #388;
+  color: #FFF;
+}
+
+/* * * Conteúdo * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#content .main-block h1 {
+  color: #388;
+  border-bottom: 2px solid #CDD;
+}
+
+#content .blog-post .title {
+  border-bottom: 2px solid #CDD;
+}
+
+#content .blog-post .title a,
+#content h2, #content h3, #content h4, #content h5, #content h6 {
+  color: #388;
+}
+
+#article-tags a {
+  padding: 1px 3px;
+  border-radius: 4px;
+  background: #6AA;
+}
+#article-tags a:hover {
+  background: #388
+}
+
+/* * * Blocos * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+body.template-leftbar .box-1 {
+  margin: 0 0 0 230px;
+  width: 700px;
+}
+
+.box-2 {
+  margin-left: 10px;
+  width: 190px;
+}
+
+#content .block-title {
+  color: #6AA;
+  border-bottom: 2px solid #6AA;
+}
+
+.highlights-label {
+  text-align: center;
+  line-height: 30px;
+}
+
+.profile-image-block, .profile-image-block .profile-big-image {
+  display: none;
+}
+.logged-in .profile-image-block {
+  display: block;
+}
+
+#content .link-list-block li a {
+  font-size: 14px;
+  background-color: #EEE;
+  color: #000;
+}
+#content .link-list-block li a.link-this-page {
+  background-color: #7BB;
+}
+
+.article-block .sobre {
+  padding: 10px 15px;
+  border-radius: 7px;
+  background: #7BB;
+  color: #FFF;
+  font-size: 15px;
+  line-height: 18px;
+  text-shadow: 0 0 1px #FFF, -1px -1px 1px #377;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+#block-562422 .read-more {
+  display: none;
+}
+
+/* * * Rodapé * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#profile-footer {
+  border: none;
+  background: transparent;
+}
+
+#theme-footer {
+  width: 960px;
+  position: relative;
+  background: #DDD;
+  background-image: linear-gradient(to bottom, #D0D0D0 5%, #E0E0E0 90%);
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  margin-bottom: 40px;
+  color: #FFF;
+  border: none;
+}
+
+#theme-footer a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+#theme-footer #site-footer {
+  background: transparent;
+  padding: 20px 40px;
+}
+
+#copyright {
+  font-size: 120%;
+  float: left;
+  text-align: left;
+}
+#theme-footer:hover #copyright {
+  color: #111;
+}
+
+#developed-by {
+  float: right;
+  text-align: center;
+  opacity: 0.4;
+}
+#developed-by:hover {
+  opacity: 1;
+}
+
+#developed-by h2 {
+  display: none;
+}
+
+#developed-by a {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  overflow: hidden;
+  background: url(imgs/colivre-branco.png) 50% 50% no-repeat;
+  border-radius: 6px;
+}
+#developed-by a:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+#developed-by span {
+  position: relative;
+  top: -20px;
+}
+
+#theme-footer #profile-controlpanel:hover {
+  opacity: 1;
+}
+
+#cirandas-footer {
+  clear: both;
+}
+
+#theme-footer #cirandas-footer #footer-content {
+  background: transparent;
+}
+
+#cirandas-footer p {
+  font-size: 12px;
+}
+
+#theme-footer #footer-content #footer-left,
+#theme-footer #footer-content #footer-middle,
+#theme-footer #footer-content #footer-right {
+  width: 280px;
+  margin: 0 20px 0 0;
+}
+#theme-footer #footer-content #footer-right {
+  margin: 0;
+}
+
+#profile-ctrl {
+  position: absolute;
+  bottom: -35px;
+}
+
+#theme-footer #profile-ctrl a {
+  color: #444;
+}
+#theme-footer #profile-ctrl a:hover {
+  color: #444;
+}
