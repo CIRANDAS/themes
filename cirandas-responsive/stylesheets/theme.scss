@@ -1010,8 +1010,9 @@ body p {
   overflow: auto;
 }
 #content #search-results .common-profile-list-block .vcard a.profile_link {
-  height: 103px;
+  height: 100%;
   overflow: hidden;
+  border: none;
 }
 
 .controller-search #search-results h3 {
