@@ -1,1 +1,1 @@
-../../../cirandas/theme.js
+../cirandas/theme.js
