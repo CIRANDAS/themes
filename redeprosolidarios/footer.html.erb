@@ -1,0 +1,42 @@
+<div id="site-footer">
+
+  <a href="<%= "/#{profile.identifier}/contato#mapa" %>" id="copyright">
+    Copyright &copy; 2010-<%=Date.today.year%>
+    &mdash; Rede de profissionais solidários pela cidadania
+    <br>
+    Travessa São João, n&ordm; 53, 10&ordm; andar, Engenho Velho da Federação, Salvador-BA
+    <br>
+    CEP 40.200.600
+  </a><!-- end id="copyright" -->
+
+  <div id="developed-by">
+    <h2>Desenvolvido pela:</h2>
+    <a href="http://colivre.coop.br" target="_blank"><span>Colivre</span></a>
+  </div><!-- end id="developed_by" -->
+
+</div>
+
+<div id="cirandas-footer">
+  <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/footer.html.erb" %>
+</div>
+
+<% if user && profile.admins.include?(user) %>
+<div id="profile-ctrl">
+  <% if menu = profile.articles.find_by_slug('menu') %>
+    <%= link_to 'Editar Menu', myprofile_path(
+      :controller=>:cms, :profile=>profile.identifier,
+      :action=>:edit, :id=>menu.id
+    ), :class=>'button with-text icon-menu-ctrl-panel' %>
+  <% else %>
+    <%= link_to 'Criar Menu', myprofile_path(
+      :controller=>:cms, :profile=>profile.identifier,
+      :action=>:new, :type=>:TinyMceArticle, 'article[name]'=>'Menu',
+      'article[body]'=>"<ul><li>#{link_to 'Home', profile.url}</li></ul>"
+    ), :class=>'button with-text icon-menu-ctrl-panel' %>
+  <% end %>
+  <a id="profile-controlpanel" class="button with-text icon-menu-ctrl-panel"
+     href="<%= '/myprofile/' + profile.identifier %>">
+    <span>Gerenciar <%= profile.name %></span>
+  </a>
+</div>
+<% end %>

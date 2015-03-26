@@ -1,0 +1,24 @@
+<div id="site-header">
+  <h2 id="site-logo">
+    <a href="<%= '/' + profile.identifier %>">
+      <span><%= profile.name %></span>
+    </a>
+  </h2>
+</div>
+
+<div id="site-navigation">
+<ul>
+<% menu = profile.articles.find_by_slug 'menu' %>
+<% if menu && menu.body %> 
+  <% menu_list = HTML::Document.new(menu.body).find(:tag=>'ul') %>
+  <% if menu_list %>
+    <%= menu_list.children.map(&:to_s).join() %>
+  <% end %>
+<% else %>
+  <%= content_tag('li', link_to('Home', profile.url)) + content_tag('li', link_to('Editar Menu', myprofile_path( :controller=>:cms, :profile=>profile.identifier, :action=>:new, :type=>:TinyMceArticle, 'article[name]'=>'Menu', 'article[body]'=>"<ul><li>#{link_to 'Home', profile.url}</li></ul>"))) %>
+<% end %>
+</ul>
+</div>
+
+<% theme_dir = "#{Rails.root}/public/designs/themes/cirandas" %>
+<%= render :file => "#{theme_dir}/small_header.html.erb" %>

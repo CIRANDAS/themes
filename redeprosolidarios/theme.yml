@@ -1,0 +1,6 @@
+name: "Rede de Profissionais Solidários"
+theme: "Rede de Profissionais Solidários"
+layout: "cirandas"
+icon_theme: [default, pidgin]
+owner_type: "Profile"
+owner_id: 45029
