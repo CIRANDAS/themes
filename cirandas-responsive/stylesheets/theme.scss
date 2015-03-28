@@ -1230,6 +1230,11 @@ div.token-input-dropdown-facet {
 
 /* Facets */
 
+.controller-search #facets-menu {
+  background-color: #efefef;
+  padding: 7px;
+  border-radius: 5px;
+}
 #facets-menu .facet-menu-options.facet-menu-more-options a {
   color:black;
   text-decoration:none;
@@ -1247,11 +1252,12 @@ div.token-input-dropdown-facet {
   padding: 20px 10px;
   text-align: center;
 }
-
 #facets-menu .facet-menu-label {
   background:none;
   border: none;
   padding: 0;
+  text-transform: none;
+  margin: 0;
 }
 .facet-menu-options {
   font-size: 90%;
