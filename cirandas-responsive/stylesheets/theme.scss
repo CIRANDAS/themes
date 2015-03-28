@@ -1249,13 +1249,20 @@ div.token-input-dropdown-facet {
 }
 
 #facets-menu .facet-menu-label {
-  background:$blocks-color;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  border: 1px solid #9EDAEF;
+  background:none;
+  border: none;
+  padding: 0;
 }
-
+.facet-menu-options {
+  font-size: 90%;
+  line-height: 100%;
+  padding: 0 0 0 6px;
+}
+.facet-menu-item {
+  padding: 0;
+  margin: 0;
+  line-height: 100%;
+}
 .facet-menu-less-options .facet-result-link-selected {
   background-color: $navigation-color;
 }
