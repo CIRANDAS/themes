@@ -1,0 +1,665 @@
+@import url(/designs/themes/cirandas/style.css);
+@import url(stylesheets/style.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Fjord+One);
+
+/***** General *****/
+
+body {
+  font-family: 'Open Sans';
+  background: #FFF url("images/bg.png") bottom left repeat-x;
+  padding-bottom: 0px;
+  background-size: 40px 330px;
+}
+
+#wrap-1{
+  width: 100%;
+  box-shadow: none;
+}
+
+#wrap-2{
+  width: 1024px;
+  margin: auto;
+  top: 40px;
+  border: none;
+  margin-bottom: 50px;
+}
+
+
+/***** Top menu *****/
+
+#top-menu{
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  height: 40px;
+  line-height: 20px;
+  top: 40px;
+  position: absolute;
+  z-index: 7;
+}
+
+#top-menu ul{
+  width: 840px;
+  list-style: none;
+  margin: auto;
+}
+
+#top-menu li{
+  float: left;  
+  border-left: 1px solid #FFF;
+  margin-top: 10px;
+}
+
+#top-menu li:first-child{
+  border-left: none;
+}
+
+#top-menu a{
+  text-transform: uppercase;
+  color: #FFF;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+#top-menu a:hover{
+  color: #00FFFF;
+}
+
+#top-menu a.link-this-page{
+  color: #00FFFF;
+}
+
+/***** Highlights Block *****/
+
+.highlights-block{
+  background: #000;
+  top: 40px;
+  padding: 0px;
+  height: 390px;
+  z-index: 2;
+}
+
+#wrap-1 .highlights-container{
+  max-width: 960px !important;
+  height: 388px !important;
+  margin: auto; 
+  border-color: transparent;
+}
+
+a.highlights-image-link{
+  max-width: 960px !important;
+  height: 389px !important;
+  max-height: 389px !important;
+  border: none;
+}
+
+.highlights-label{
+  display: block;
+  background: transparent url('images/logo-vera-cruz.png') no-repeat;
+  background-position: 97% 0%;
+  height: 60px;
+}
+
+.highlights-block-pager{
+  float: none;
+  position: relative;
+  top: -30px;
+  z-index: 1;
+  font-size: 18px;
+}
+
+.highlights-block-pager a.activeSlide{
+  color: #AA0000;
+}
+
+.highlights-block .button-bar{
+  width: 960px;
+  margin: auto;
+  margin-top: -20px;
+  height: 60px;
+}
+
+p.highlights-block-footer{
+  display: none;
+}
+
+/***** Content *****/
+
+#content h1.page-title{
+  display: none;
+}
+
+#content{
+  width: 1024px;
+  margin: auto;
+}
+
+.profile-homepage #content .box-2, 
+#content.not-context-content .box-2{
+  display: none;
+}
+
+#content .box-2{
+  margin-left: 0px;
+}
+
+.profile-homepage #content .box-1, 
+#content.not-context-content .box-1{
+  margin: 0 40px 0 0px;
+}
+
+body.template-leftbar .box-1{
+  margin: 0 40px 0 220px;
+}
+
+.box-1 .blocks{
+  padding: 20px;
+  background-color: #FFF;
+  min-height: 400px;  
+}
+
+#content-inner{
+  background-color: #F9F9F9;
+  padding: 0;
+}
+
+.profile-homepage .box-1 .blocks,
+.not-context-content .box-1 .blocks{
+  background-color: transparent;
+  padding: 0px;
+  width: 960px;
+}
+
+
+#content .main-block h1, #not-found h1, #access-denied h1, #content .title{
+  display: none;
+}
+
+#content #not-found, #content #access-denied{
+  margin-top: 60px;
+}
+
+.action-profile_design-index #content #sign-up-naplos,
+.action-profile_design-index #content #sign-in-naplos{
+  display: block;
+}
+
+#content #sign-up-naplos,
+#content #sign-in-naplos{
+  display: none;
+  background: #FFF;
+  border-radius: 10px;
+  border: 2px dotted #bdbdbd;
+  padding: 20px;
+  width: 300px;
+  margin-left: 110px;
+  float:left;
+}
+
+#content #sign-in-naplos{
+  margin-left: 50px;
+}
+
+#content #sign-up-naplos h3,
+#content #sign-in-naplos h3{
+  color: #214478;
+  font-family: 'Fjord One';
+  text-align: center;
+  font-size: 14px;
+}
+
+#content #sign-up-naplos a,
+#content #sign-in-naplos a{
+  width: 100%;
+  margin-left: 70px;
+}
+
+#content #sign-up-naplos img,
+#content #sign-in-naplos img{
+  width: 150px;
+  margin: auto;
+}
+
+.no-boxes {
+  margin: 0;
+}
+/***** Context Content *****/
+
+.box-2 .contents{
+  margin-top: 30px;
+}
+
+/*** Menu ***/
+
+#left-menu{
+  width: 220px;
+  padding: 0;
+  margin: 10px 0;
+}
+
+#left-menu li{
+  display: block;
+  width: 100%;
+  height: 80px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+#left-menu li:hover{
+  border: none;
+  background-color: transparent;
+}
+
+#left-menu li a{
+  text-align: left;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 25px 15px 0px 15px;
+  background-color: #f9f9f9;
+  text-decoration: none;
+  display: block;
+  height: 80px;
+  line-height: normal;
+}
+
+#left-menu li a.link-this-page{
+  color: #AA0000;
+  background-color: #FFF;
+}
+
+#left-menu li:first-child a.link-this-page{
+  border-top: 1px solid #e2e2e2;
+}
+
+#left-menu li a:hover{
+  color: #AA0000;
+}
+
+#left-menu img {
+  width: 70px !important;
+  margin: -25px 5px 0 0px !important;
+  height: 70px !important;
+  float: left; 
+}
+
+/**** Bread Crumbs ***/
+
+#content .breadcrumbs-plugin_content-breadcrumbs-block{
+  top: 30px;
+  left: 10px;
+}
+
+#content .breadcrumbs-plugin_content-breadcrumbs-block a{
+  color: #000;
+} 
+#content .breadcrumbs-plugin_content-breadcrumbs-block a:visited{
+  color: #333;
+}
+
+/***** Article *****/
+
+#article {
+  padding: 0px 30px;
+  margin: auto;
+}
+
+.profile-homepage #article .article-body p {
+  width: 191px;
+  height: 191px;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+#content .block #article h5{
+  padding-bottom: 40px;
+  font-family: 'Fjord';
+  padding-left: 10px;
+}
+
+#content .block #article h2{
+  padding-bottom: 40px;
+  font-family: 'Open Sans';
+  padding-left: 10px;
+}
+
+#article p {
+  background-color: #FFF;
+  margin: 0 0 0 10px;
+  padding: 0 10px;
+}
+
+#article p span{
+  background-color: transparent;
+}
+
+#article-parent{
+  display: none;
+}
+
+.profile-homepage #article .article-body span{
+  position: absolute;
+  color: #FFF;
+  font-weight: bolder;
+  margin-top: 150px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Fjord One';
+  text-shadow: 1px 1px 3px #000;
+  width: 190px;
+  text-align: center; 
+}
+
+.profile-homepage #article img{
+  min-width: 190px;
+  min-height: 190px;
+  position: absolute;
+}
+
+.profile-homepage #article .zoomable-image{
+  width: 190px !important;
+  height: 190px !important;
+  position: absolute;
+}
+
+.profile-homepage #article .zoomify-image{
+  display: none;
+}
+
+#article-toolbar .vote-actions, #article #addThis {
+  display: none; 
+}
+
+#article h4{
+  color: #AA0000;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+#article pre{
+  color: #AA0000;
+  font-size: 18px;
+  font-family: 'Fjord One';
+  border: none;
+  background: transparent;
+  padding: 0 50px 0 50px;
+}
+
+#article .article-body tr {
+  background-color: transparent;
+}
+
+#article .article-body tr td:first-child div{
+  overflow-y: scroll;
+  background-color: #FFF;
+}
+
+#article .article-body .folder-content{
+  display: none;
+}
+
+.logged-in #article .article-body .folder-content{
+  display: block;
+  width: 100%;
+}
+
+.logged-in #article .article-body .folder-content tr {
+height: 30px;
+}
+
+/***** Comments *****/
+.comment-wrapper-1, .comment-wrapper-2, .comment-wrapper-3,
+.comment-wrapper-4, .comment-wrapper-5, .comment-wrapper-6,
+.comment-wrapper-7, .comment-wrapper-8{
+  background: none;
+  margin:0;
+}
+
+.comment-picture img{
+  display: none;
+}
+
+.article-comment .comment-details{
+  padding-top: 40px;
+  padding-left: 10px;
+}
+
+.comment-balloon-content{
+  margin-left: 1px;
+}
+
+.comment-info{
+  color: #000;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 10px 10px 0px 10px;
+  width: 100%;
+}
+
+.article-comment{
+  border: 2px dotted #ccc;
+  border-radius: 10px;
+}
+
+#comments_list a.display-comment-form{
+ font-size: 12px;
+  border: none;
+  border-radius: 0px;
+  height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 20px;
+  line-height: 40px;
+  background: rgba(92,177,35,1);
+  background: -moz-linear-gradient(top, rgba(92,177,35,1) 0%, rgba(80,156,30,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(92,177,35,1)), color-stop(100%, rgba(80,156,30,1)));
+  background: -webkit-linear-gradient(top, rgba(92,177,35,1) 0%, rgba(80,156,30,1) 100%);
+  background: -o-linear-gradient(top, rgba(92,177,35,1) 0%, rgba(80,156,30,1) 100%);
+  background: -ms-linear-gradient(top, rgba(92,177,35,1) 0%, rgba(80,156,30,1) 100%);
+  background: linear-gradient(to bottom, rgba(92,177,35,1) 0%, rgba(80,156,30,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5cb123', endColorstr='#509c1e', GradientType=0 );
+  color: #fff;
+  text-decoration: none;
+}
+
+#comments_list h3{
+  display: none;
+}
+
+/***** Theme Footer *****/
+
+#theme-footer{
+  width: 100%;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  margin: 80px 0 0;
+}
+
+#theme-footer a{
+  text-decoration: none;
+}
+
+#facebook-footer{
+  display:none;
+}
+
+#enterprise-footer{
+  height: 160px;
+  background: transparent url('images/logo-big.png') no-repeat top left;
+  width: 1200px;
+  margin: auto;
+}
+
+#footer-index{
+  padding-top: 20px;
+}
+
+#profile-footer{
+  background: transparent;
+  width: 550px;
+  margin-left: 150px;
+  border: none;
+  float: left;
+  padding: 0px;
+}
+
+#profile-footer ul{
+  list-style: none;
+  float: left;
+  color: #9cbcce;
+  padding-left: 60px;
+}
+
+#profile-footer ul li:first-child{
+  text-transform: uppercase;
+  color: #FFF;
+  font-weight: bolder;
+}
+
+#profile-footer ul li a{
+  text-decoration: none;
+}
+
+#profile-footer ul li a, #profile-footer ul li a:hover{
+  color: #9cbcce;
+}
+
+#footer-social{
+  width: 250px;
+  float:right;
+  padding-left: 30px;
+}
+
+#footer-social ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+#footer-social li{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: 7px;
+}
+
+#footer-social #plus{
+  background: transparent url('images/google-icon.png') center no-repeat;
+}
+
+#footer-social #twitter{
+  background: transparent url('images/tw-icon.png') center no-repeat;
+}
+
+#footer-social #facebook{
+  background: transparent url('images/fb-icon.png') center no-repeat;
+}
+
+#footer-social #feed{
+  background: transparent url('images/feed-icon.png') center no-repeat;
+}
+
+#footer-social a{
+  display: block;
+  height: 40px;
+  width: 40px;
+  margin: 0;
+}
+
+#footer-social span{
+  display: none;
+}
+
+#footer-logo{
+  background: transparent url('images/logo-text.png') no-repeat;
+  width: 200px;
+  text-decoration: none;
+}
+
+#footer-logo:hover{
+  text-decoration: none;
+}
+
+#footer-logo span{
+  display: block;
+  font-family: 'Fjord One';
+  font-size: 24px;
+  font-weight: bolder;
+  margin-left: 50px; 
+  color: #FFF;
+  width: 150px;
+  text-transform: uppercase;
+  opacity: 0.3;
+  line-height: 40px;
+}
+
+#footer-copyright{
+  background: #000;
+  color: #ccc;
+}
+
+#footer-copyright a,
+#footer-copyright a:hover{
+  color: #FFF;
+}
+
+#footer-copyright p{
+  font-size: 14px;
+}
+
+#cirandas-footer{
+  background: #eee;
+}
+
+#footer-copyright p, #cirandas-footer #footer-content{
+  width: 1024px;
+  margin: auto;
+}
+
+/***** Quick links *****/
+ 
+#admin-links {
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  z-index: 100;
+}
+ 
+.quick-admin-link {
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid #AAA;
+  background: #EDF8FA;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 10px 0px;
+  border-left: none;
+  border-radius: 0px 8px 8px 0px;
+  left: 0px;
+  text-decoration: none;
+  box-shadow: 0 6px 10px -4px #888;
+  -moz-box-shadow: 0 6px 10px -4px #888;
+  -webkit-box-shadow: 0 6px 10px -4px #888;
+}
+ 
+#theme-footer a.quick-admin-link {
+  color: #000;
+}
+ 
+#theme-footer a.quick-admin-link a:hover {
+  text-decoration: underline;
+}
+ 
+#profile-admin {
+  top: 10px;
+}
+ 
+#edit-blocks.quick-admin-link {
+  top: 40px;
+}

@@ -1,13 +1,27 @@
-<%= theme_include('env_navigation') %>
+<div id='cirandas-navigation'>
+  <%= theme_include('env_navigation') %>
+</div>
 
 <div id="header-content">
   <div id='logo'><%= link_to('<span>Faces do Brasil</span>', '/'+profile.identifier) %></div>
   <div id='right-elements'>
     <ul>
-      <li><div id="top-search"><%= render :partial => 'shared/profile_search_form' %></div></form>
+      <li><form action="/search" id="top-search" class="search_form clean" method="get"><input name="query" size="15" title="Buscar..." onfocus="this.form.className='focused';" onblur="this.form.className=''" /><script type="text/javascript">//<![CDATA[jQuery("#user form input").hint();//]]></script></form>
       </li>
       <li><span>Portal de Comércio Justo e Solidário</span></li>
     </ul>
   </div>
+</div>
+
+<div id='top-menu'>
+  <ul>
+   <li><%= link_to('<span>Notícias</span>', '/'+profile.identifier) %></li>
+   <li><%= link_to('<span>Midiateca</span>', '/'+profile.identifier) %></li>
+   <li><%= link_to('<span>Ponto de Vista</span>', '/'+profile.identifier) %></li>
+   <li><%= link_to('<span>Enquetes</span>', '/'+profile.identifier) %></li> 
+   <li><%= link_to('<span>Álbum de Fotos</span>', '/'+profile.identifier) %></li>
+   <li><%= link_to('<span>Contato</span>', '/'+profile.identifier) %></li>
+   <li><%= link_to('<span>Links</span>', '/'+profile.identifier) %></li>
+  </ul>
 </div>
 

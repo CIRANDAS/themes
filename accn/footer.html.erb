@@ -1,0 +1,35 @@
+<div id="footer-profile">
+<div id="footer-logo">
+  <a id="logo" href="#"><span>Logos do projeto</span></a>
+</div><!-- end id="footer-logo" -->
+<div id="footer-info">
+  <div id="footer-links">
+    <a href="/<%= profile.identifier %>">Início</a>
+    <span class="footer-links-separator">&nbsp;</span>
+    <a href="/<%= profile.identifier %>/quem-somos">Quem Somos</a>
+    <span class="footer-links-separator">&nbsp;</span>
+    <a href="/catalog/<%= profile.identifier %>">Loja Virtual</a>
+    <span class="footer-links-separator">&nbsp;</span>
+  </div><!-- end id="footer-links" -->
+  <div id="copyright">
+    <p><%= 'Esta rede social usa o <a href="http://noosfero.org/">Noosfero</a>, desenvolvido pela %s e licenciado sob a <a href="http://www.gnu.org/licenses/agpl.html">GNU Affero General Public License</a> versão 3 ou qualquer versão posterior.' % link_to('Colivre', 'http://colivre.coop.br/') %></p>
+  </div><!-- end id="copyright" -->
+</div><!-- end id="footer-info" -->
+</div>
+
+<% if logged_in? && profile && profile.admins.include?(user) %>
+  <div id='admin-links'>
+    <a id="profile-admin" class="quick-admin-link" href="/myprofile/<%= profile.identifier %>">Painel de controle</a>
+    <a id="edit-blocks" class="quick-admin-link" href="/myprofile/<%= profile.identifier %>/profile_design">Editar blocos</a>
+  </div>
+<% end %>
+
+<div id='cirandas-footer'>
+  <%= theme_include('env_footer') %>
+</div>
+
+<script type="text/javascript">
+  jQuery(function($) {
+    $("#profile-header").insertAfter(".toprow");
+  });
+</script>

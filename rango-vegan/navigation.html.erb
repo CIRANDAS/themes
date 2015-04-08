@@ -1,0 +1,8 @@
+<script>
+  var ua = navigator.userAgent, b = document.body;
+  if (ua.indexOf('Firefox') > 0) b.className += 'is-gecko';
+  if (ua.indexOf('AppleWebKit') > 0) b.className += 'is-webkit';
+</script>
+<div id="cirandas-navigation">
+  <%= theme_include('env_navigation') %>
+</div>

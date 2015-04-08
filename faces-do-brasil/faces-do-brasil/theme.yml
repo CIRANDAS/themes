@@ -1,0 +1,6 @@
+name: "Faces do Brasil"
+layout: "cirandas-responsive" # don't change
+icon_theme: [awesome, pidgin]
+responsive: true
+owner_type: Profile
+owner_id: 102

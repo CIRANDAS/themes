@@ -1,4 +1,5 @@
-@import url(../base/style.css);
+@import url(/designs/themes/cirandas/style.css);
+@import url(stylesheets/style.css);
 
 /* Base */
 
@@ -7,132 +8,193 @@ body {
 }
 
 #content {
-  margin-top: 295px;
-}
-
-#user {
-  top: -43px;
+  padding-top: 5px;
+  margin-top: 80px;
 }
 
 #wrap-1 {
   position: relative;
-  width: 100%;
+  margin-top: 70px;
 }
 
 #wrap-2 {
-  border-top-left-radius:20px;
-  border-top-right-radius:20px;
-  -moz-border-top-left-radius:20px;
-  -moz-border-top-right-radius:20px;
-  -webkit-border-top-left-radius:20px;
-  -webkit-border-top-right-radius:20px;
-  border-color: transparent;
-  border-bottom: 0;
-  width: 938px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  padding-top: 0;
+  background: #FFF;
+  border: medium none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  padding: 0px 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
-/* Header */
-
-#theme-header {
-  height: 27px;
-  background: #cceaf4;
-  box-shadow: 0px 2px 6px black;
-  -moz-box-shadow: 0px 2px 6px black;
-  -webkit-box-shadow: 0px 2px 6px black;
+.box-2 {
+  margin-left: 0px;
+  width: 190px; 
 }
 
-#cirandas-logo {
-	margin: 0px;
-	padding: 0px;
+#content-inner{
+  margin-top: 220px;
 }
 
-#cirandas-logo a {
-  float: left;
-	display: block;
-	height: 22px;
-	width: 116px;
-	background: url(images/cirandas-logo.png) 50% 50% no-repeat;
-  margin-left: 160px;
-  margin-top: 3px;
+#article{
+  top: 30px;
 }
 
-#cirandas-logo span {
-	display: none;
+body.template-leftbar .box-1 {
+  margin: 0 0 0 220px;
+}
+
+/* Redefining Cirandas theme */
+
+#cirandas-top-bar {
+  top: 0px;
+}
+
+#wrap-1,
+#theme-footer {
+  box-shadow: none;
+  -ms-box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#theme-footer #footer-content {
+  margin-left: 0px;
+  background: transparent;
+  margin-top: 30px;
+}
+
+#footer-content,
+#footer-bottom {
+  background-image: none;
+}
+
+#content {
+  padding-top: 70px;
+  margin-top: 80px;
+}
+
+#content h1.page-title {
+  background-color: transparent;
+  padding-left: 10px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  border-bottom: none;
+  display: none;
+}
+
+#profile-header {
+  max-height: 210px;
+  margin-bottom: 10px;
+}
+
+#profile-footer {
+  background-color: transparent;
+  border-top: none;
+}
+
+#content .products-block li,
+input.button {
+  font-size: 14px;
+}
+
+#content .block-title {
+  font-size: 16px;
+}
+
+/*Profile options*/
+
+.profile-big-image img{
+  display: none;
+}
+
+.profile-info-options{
+  display:none;
 }
 
 /* Site Title */
 
 #site-title {
-  background: url(images/site-title.png);
-  height: 241px;
-  width: 163px;
+  background: url(images/logo-coopaed.png) no-repeat;
+  height: 260px;
+  width: 165px;
   margin-left: 23px;
-  margin-top: 15px;
+  margin-top: 30px;
+  display:block;
 }
 
-/* Navigation */
+/* Top menu */
 
-#navigation {
-  background: none;
+#top-menu {
   font-family: 'JustAnotherHand';
+  display: block;
+  top: 25px;
+  position: absolute;
+  z-index: 10;
+  padding: 0px;
+  text-align: right;
+  width: 90%;
 }
 
-#navigation ul {
-  margin: -25px -14px 0 0;
+#top-menu ul {
+  margin: -25px -34px 0 0;
 }
 
-#navigation li {
+#top-menu li {
   width: auto;
   margin: 0 35px;
+  display: inline-block;
 }
 
-#navigation li a {
+#top-menu li a {
   float: left;
   font-size: 42px;
-  border-left: none;
+  border: none;
   color: #d53223;
+  text-decoration: none;
+  text-transform: capitalize;
+  height: 42px;
+  line-height: 42px;
 }
 
-#navigation li a:hover {
+#top-menu li a:hover {
   background: none;
-  text-decoration: underline;
   margin: auto;
+  text-decoration: underline;
   color: #d53223;
+  opacity: 0.7;
 }
 
-#navigation li + li a {
+#top-menu li + li a {
   color: #0093dd;
 }
 
-#navigation li + li + li a {
+#top-menu li + li + li a {
   color: #009548;
 }
 
-#navigation li + li + li + li a {
+#top-menu li + li + li + li a {
   color: #d92960;
 }
 
-#navigation li + li + li + li + li a {
+#top-menu li + li + li + li + li a {
   color: #e89022;
 }
 
-#navigation li + li a:hover {
+#top-menu li + li a:hover {
   color: #0093dd;
 }
 
-#navigation li + li + li a:hover {
+#top-menu li + li + li a:hover {
   color: #009548;
 }
 
-#navigation li + li + li + li a:hover {
+#top-menu li + li + li + li a:hover {
   color: #d92960;
 }
 
-#navigation li + li + li + li + li a:hover {
+#top-menu li + li + li + li + li a:hover {
   color: #e89022;
 }
 
@@ -141,6 +203,7 @@ body {
 #content .box .link-list-block {
   border: none;
   padding: 0px;
+  margin-top: 0px;
 }
 
 #content .link-list-block li a {
@@ -156,6 +219,7 @@ body {
   line-height: 54px;
   overflow: hidden;
   padding-left: 15px;
+  padding-bottom: 10px;
 }
 
 #content .link-list-block li a.link-this-page {
@@ -180,7 +244,7 @@ body {
 
 #content .highlights-container {
   position: absolute;
-  margin-top: -236px;
+  margin-top: -210px;
   height: 200px !important;
   width: 730px !important;
   background: none;
@@ -233,16 +297,36 @@ body {
 
 /* Footer */
 
+#wrap-1,
+#theme-footer {
+  box-shadow: none;
+  -ms-box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
 #theme-footer {
   background: #931822 url(images/footer-top.png) repeat-x;
-  height: 175px;
   margin-bottom: 0;
 }
 
+#theme-footer {
+  border-left: none;
+  border-right: none;
+}
+
+#theme-footer {
+  border-top: none;
+}
+#footer-project{
+  height: 200px;
+  width: 800px;
+  margin: auto;
+}
 #footer-logo {
   width: 85px;
   height: 125px;
-  background: url(images/footer-logo.png);
+  background: url(images/footer-logo.png) no-repeat;
   float: left;
   margin: 35px 30px 0 25px;
 }
@@ -272,6 +356,11 @@ body {
   margin: 0 40px;
 }
 
+#profile-footer {
+  background-color: transparent;
+  border-top: none;
+}
+
 #copyright {
   width: 640px;
   text-align: left;
@@ -287,6 +376,66 @@ body {
 #copyright a:hover {
   color: white;
   text-decoration: underline;
+}
+
+#cirandas-footer {
+  z-index: 0;
+}
+
+#theme-footer #footer-content {
+  color: #d27577;
+  background: transparent;
+}
+
+#theme-footer #footer-content a{
+  color: #d27577;
+}
+
+#theme-footer #footer-content a:hover {
+  color: white;
+}
+
+/* Quick links */
+ 
+#admin-links {
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  z-index: 100;
+}
+ 
+.quick-admin-link {
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid #AAA;
+  background: #EDF8FA;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 10px 0px;
+  border-left: none;
+  border-radius: 0px 8px 8px 0px;
+  left: 0px;
+  text-decoration: none;
+  box-shadow: 0 6px 10px -4px #888;
+  -moz-box-shadow: 0 6px 10px -4px #888;
+  -webkit-box-shadow: 0 6px 10px -4px #888;
+}
+ 
+#theme-footer a.quick-admin-link {
+  color: #000;
+}
+ 
+#theme-footer a.quick-admin-link a:hover {
+  text-decoration: underline;
+}
+ 
+#profile-admin {
+  top: 10px;
+}
+ 
+#edit-blocks.quick-admin-link {
+  top: 40px;
 }
 
 /* Main Wrappers */
