@@ -1,0 +1,237 @@
+@import '../cirandas-responsive/style';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+@mixin shadow($top, $left, $blur, $inset, $color){
+  -webkit-box-shadow: $top $left $blur $inset $color;
+  -moz-box-shadow: $top $left $blur $inset $color;
+  box-shadow: $top $left $blur $inset $color;
+}
+
+body {
+  background: rgb(238, 238, 238);
+}
+
+#top-header{
+  #logo{
+    background: url("images/logo-top.png") no-repeat top left;
+    width: 200px;
+    float: left;
+    height: 160px;
+    margin-left: 10px;
+    span{
+      display: none;
+    }
+  }
+  #first-row{
+    ul{
+      background: #3a66c6;
+      @include shadow(0px, 4px, 5px, 0px, #999);
+      list-style: none;
+      height: 40px;
+      width: 100%;
+      border-bottom: 5px solid #5698c8;
+    } 
+    li {
+      float: left;
+      background: none;
+      a{
+        background:  #436CC6;
+        color: #FFF;
+        font: 700 12px 'Open Sans';
+        box-shadow: none;
+        padding: 5px 0px;
+        margin: 4px 5px;
+        border-radius: 5px;
+        &:hover{
+          background: #5698c8;
+        }
+        span{
+          padding: 0px 20px;
+        }
+      }
+      &:last-child{
+        span{
+          border: none;
+        }
+      }
+    }
+  }
+  #second-row{
+    ul{
+      height: 80px;
+      background: #779724;
+    }
+    li{
+      float: left;
+      background: none;
+      margin-top: 20px;
+      padding: 0;
+      height: 50px;
+      &:first-child{
+        margin-left: 50px;
+        a{
+          background: url('images/logo-uno.png') no-repeat top left;
+          height: 50px;
+          width: 100px;
+          display: block;
+          padding: 0;
+          box-shadow: none;
+        }
+      }
+      span{
+        display: none;
+      }
+    }
+    ul li form{
+      input{
+        padding: 0 5px;
+        line-height: 25px;
+        font-size: 15px;
+        border-radius: 7px 0 0 7px;
+        border: 1px solid #ccc;
+      }
+      .form-group div{
+        width: 250px;
+        display: flex;
+      }
+      .input-group-btn{
+        display:block;
+        .btn-default{
+          height: 34px;
+          background: #3a66c6;
+          border: none;
+          color: #fff;
+          border-radius: 0 7px 7px 0;
+          border: 1px solid #3a66c6;
+          cursor: pointer;
+        }
+      }
+      label.radio-inline {
+        display: none;
+        font: 400 12px 'Open Sans';
+        line-height: 21px;
+      }
+    }
+
+  }
+  .link-list-block{
+    padding: 0
+  }
+  #social-net{
+    max-height: 50px;
+    background: none !important;
+    li{
+      margin: 0;
+      &:first-child a, a{
+        height: 35px;
+        width: 35px;
+        display: block;
+        box-shadow: none;
+      }
+    }
+    #fb a{
+      background: url('images/icon-fb.png') no-repeat top left;
+    }
+    #tw a{
+      background: url('images/icon-tw.png') no-repeat top left;
+    }
+    #yt a{
+      background: url('images/icon-yt.png') no-repeat top left;
+    }
+  }
+}
+
+
+#content{ 
+  .blog-post {
+    p, th, td, tr, table {
+      font-size: 16px;
+    }
+  }
+  #profile-title{
+    display: block;
+    padding: 0;
+    h1.page-title{
+      display: none;
+    }
+  }
+}
+
+#theme-footer{
+  background-color: #3a66c6;
+  border-top: 4px solid #769723;
+}
+
+#cirandas-footer {
+  border-top: 4px solid #769723;
+}
+
+#footer-profile {
+  width: 100%;
+  height: 80px;
+  a {
+    color: #8B0000;
+  }
+}
+
+.quick-admin-link {
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid #87CEEB;
+  background: #333;
+  text-align: center;
+  padding: 5px 10px;
+  position: fixed;
+  z-index: 100;
+  border-left: none;
+  border-radius: 0px 8px 8px 0px;
+  left: 0px;
+  text-decoration: none;
+}  
+
+#theme-footer a.quick-admin-link {
+  color: #87CEEB;
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+#profile-admin {
+  top: 70px;
+}
+
+#edit-blocks.quick-admin-link {
+  top: 100px;
+}
+
+#content-inner{ 
+  .box-container-1{
+    left: 0
+  }
+  .box-container-2{
+    right: 0
+  }
+}
+
+#coperil-footer {
+  color: white;
+  font-variant: small-caps;
+  .row div {
+    text-align: center;
+    min-height: 150px;
+    &:first-child {
+      background: url("images/footer-sep.png") no-repeat right center;
+    }
+    &:last-child {
+      background: url("images/footer-sep.png") no-repeat left center;
+    }
+  }
+}
+
+#profile-footer {
+  display: none;
+}
+
+.fb-page {
+  margin-top: 10px;
+}

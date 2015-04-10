@@ -1,0 +1,40 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="container" id="coperil-footer">
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+      <img src="/designs/themes/coperil/images/logo-footer.png" />
+    </div>
+    <div  class="col-lg-4 col-md-4 col-sm-4">
+      <h3>Contatos</h3>
+      <p><%= profile.custom_footer %></p>
+    </div>
+    <div  class="col-lg-4 col-md-4 col-sm-4">
+      <div class="fb-page" data-href="http://www.facebook.com/pages/Coperil/240732045954204" data-hide-cover="true" data-show-facepile="false" data-show-posts="false" data-width="280">
+        <div class="fb-xfbml-parse-ignore">
+          <blockquote cite="http://www.facebook.com/pages/Coperil/240732045954204">
+            <a href="http://www.facebook.com/pages/Coperil/240732045954204">Coperil</a>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% if logged_in? && profile && profile.admins.include?(user) %>
+  <div id='admin-links'>
+    <a id="profile-admin" class="quick-admin-link" href="/myprofile/<%= profile.identifier %>">Painel de controle</a>
+    <a id="edit-blocks" class="quick-admin-link" href="/myprofile/<%= profile.identifier %>/profile_design">Editar blocos</a>
+  </div>
+<% end %>
+
+<div id='cirandas-footer'>
+  <%= theme_include('env_footer') %>
+</div>
