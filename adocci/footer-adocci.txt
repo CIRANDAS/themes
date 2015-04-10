@@ -1,0 +1,6 @@
+<div id="onde-comprar">
+<h1><strong>Onde</strong> Comprar</h1>
+<p>Os produtos da Adocci são feitos sob encomenda. Para encomendar um produto é necessário pagar 50% do valor antecipado e 50% no momento da entrega. O pagamento é feito à vista.</p>
+<p>Faça sua encomenda clicando no botão:</p>
+<p id="order"><a class="icon-order" href="/contact/addoci/new">Encomendar</a></p>
+</div>

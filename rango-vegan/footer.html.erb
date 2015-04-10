@@ -1,0 +1,46 @@
+<script>
+  jQuery('.profile-search-block input:first').attr('placeholder', 'Busca...');
+  jQuery('.profile-search-block').parent().addClass('profile-search');
+  jQuery('.highlights-block:first script').empty();
+  jQuery('.highlights-block:first').prependTo('#content').addClass('top');
+</script>
+
+<div id="footer-project">
+<a id="footer-title" href="http://rangovegan.com">Rango Vegan</a>
+<div class="slogan">Alimentando a vida com Ética e Saúde</div>
+
+<div id="contato">
+  <span class="tel">
+    <strong>(71) 3488 2756</strong> | 8601 9673 | 9232 0848
+  </span>
+  <a class="email" href="mailto:rangovegan@gmail.com">rangovegan@gmail.com</a>
+</div>
+</div>
+
+<% if logged_in? && profile && profile.admins.include?(user) %>
+  <div id='admin-links'>
+    <a id="profile-admin" class="quick-admin-link" href="/myprofile/<%= profile.identifier %>">Painel de controle</a>
+    <a id="edit-blocks" class="quick-admin-link" href="/myprofile/<%= profile.identifier %>/profile_design">Editar blocos</a>
+  </div>
+<% end %>
+
+<div id='cirandas-footer'>
+  <%= theme_include('env_footer') %>
+</div>
+
+<% if user && profile.admins.include?(user) %>
+<div id="profile-ctrl">
+  <% if menu = profile.articles.find_by_slug('menu') %>
+    <%= link_to 'Editar Menu', myprofile_path(
+      :controller=>:cms, :profile=>profile.identifier,
+      :action=>:edit, :id=>menu.id
+    ), :class=>'button with-text icon-menu-ctrl-panel' %>
+  <% else %>
+    <%= link_to 'Criar Menu', myprofile_path(
+      :controller=>:cms, :profile=>profile.identifier,
+      :action=>:new, :type=>:TinyMceArticle, 'article[name]'=>'Menu',
+      'article[body]'=>"<ul><li>#{link_to 'Home', profile.url}</li></ul>"
+    ), :class=>'button with-text icon-menu-ctrl-panel' %>
+  <% end %>
+</div>
+<% end %>

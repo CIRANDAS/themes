@@ -1,6 +1,5 @@
---- 
-name: coopaed
-layout: application-ng
-icon_theme: 
-- default
-- pidgin
+name: "coopaed"
+layout: "cirandas"
+icon_theme: [default, pidgin]
+owner_type: 'Profile'
+owner_id: 11990

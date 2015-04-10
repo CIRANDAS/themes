@@ -1,0 +1,51 @@
+<div id="footer-page">
+  <div id="footer-info">
+  </div>
+  <div id="footer-links">
+    <ul>
+      <li><a href="/<%= profile.identifier %>/quem-somos">Quem Somos</a></li>
+      <li><a href="/catalog/<%= profile.identifier %>">Nossos Produtos</a></li>
+      <li><a href="/<%= profile.identifier %>/socioambiental">Socioambiental</a></li>
+      <li><a href="/<%= profile.identifier %>/mix-faca-em-casa">Mix: faça em casa!</a></li>
+      <li><a href="/<%= profile.identifier %>/galeria-de-imagens">Imagens</a></li>
+      <li><a href="/<%= profile.identifier %>/vale-do-capao">Vale do Capão</a></li>
+      <li><a href="/contact/<%= profile.identifier %>/new">Contato</a></li>
+    </ul>
+  </div>
+</div>
+<div id="footer-copyright">
+  <p>Esta rede social usa o <a href="http://noosfero.org/">Noosfero</a>, desenvolvido pela <a href="http://colivre.coop.br/">Colivre</a> e licenciado sob a <a href="http://www.gnu.org/licenses/agpl.html">GNU Affero General Public License</a> versão 3 ou qualquer versão posterior.</p>
+</div>
+
+
+<% if logged_in? && profile && profile.admins.include?(user) %>
+  <div id='admin-links'>
+    <a id="profile-admin" class="quick-admin-link" href="/myprofile/<%= profile.identifier %>">Painel de controle</a>
+    <a id="edit-blocks" class="quick-admin-link" href="/myprofile/<%= profile.identifier %>/profile_design">Editar blocos</a>
+  </div>
+<% end %>
+
+<div id='cirandas-footer'>
+  <%= theme_include('env_footer') %>
+</div>
+
+<script type="text/javascript">
+  jQuery(function($) {
+    $("#top-menu").prependTo("#wrap-1");
+    $("#profile-footer").prependTo("#footer-info");
+  });
+</script>
+
+<script type="text/javascript">
+  jQuery(".products-block a").each(function(){
+    var bg = jQuery(this).css("background-image"); 
+    bgr = bg.replace("_minor", "");
+    jQuery(this).css("background-image", bgr);
+  });
+
+  jQuery('#main-content-wrapper-8 h1').each(function(){
+    var boldMe = jQuery(this);
+    boldMe.html( boldMe.text().replace(/(^\w+|\s+\w+)/,'<strong>$1</strong>') );
+  });
+</script>
+

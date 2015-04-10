@@ -1,0 +1,18 @@
+<div id='cirandas-navigation'>
+  <%= theme_include('env_navigation') %>
+</div>
+
+<div id="top-menu">
+  <ul>
+    <li><a id="oficina-canjerana" href="/<%= profile.identifier %>">Oficina Canjerana</a></li>
+    <li><form action="/search" id="top-search" class="search_form clean" method="get">
+    <input name="query" size="15" title="" value="Buscar..."onfocus="this.form.className='focused'; this.value='';" onblur="this.form.className=''" />
+    <script type="text/javascript">
+//<![CDATA[
+jQuery("#user form input").hint();
+//]]>
+</script>
+  </form></li> 
+  <li><a href="/<%= profile.identifier %>/responsabilidade-socioambiental">Responsabilidade Socioambiental</a></li>  
+  </ul>
+</div>

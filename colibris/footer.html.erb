@@ -1,0 +1,30 @@
+<div id="footer-page">
+  <div id="footer-logo">
+  <%= link_to('<span>'+profile.name+'</span>', profile.url) %>
+  </div>
+  <div id="footer-info">
+  </div>
+  <div id="footer-copyright">
+    <p>Esta rede social usa o <a href="http://noosfero.org/">Noosfero</a>, desenvolvido pela <a href="http://colivre.coop.br/">Colivre</a> e licenciado sob a <a href="http://www.gnu.org/licenses/agpl.html">GNU Affero General Public License</a> versão 3 ou qualquer versão posterior.</p>
+  </div>
+</div>
+
+
+<% if logged_in? && profile && profile.admins.include?(user) %>
+  <div id='admin-links'>
+    <a id="profile-admin" class="quick-admin-link" href="/myprofile/<%= profile.identifier %>">Painel de controle</a>
+    <a id="edit-blocks" class="quick-admin-link" href="/myprofile/<%= profile.identifier %>/profile_design">Editar blocos</a>
+  </div>
+<% end %>
+
+
+<div id='cirandas-footer'>
+  <%= theme_include('env_footer') %>
+</div>
+
+<script type="text/javascript">
+  jQuery(function($) {
+    $("#top-menu").prependTo("#wrap-1");
+    $("#profile-footer").prependTo("#footer-info");
+  });
+</script>

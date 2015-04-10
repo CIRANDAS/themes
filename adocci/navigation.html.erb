@@ -1,0 +1,20 @@
+<div id='cirandas-navigation'>
+  <%= theme_include('env_navigation') %>
+</div>
+
+<div id="top-menu">
+  <ul>
+    <li id="who"><a id="quem-somos" href="/<%= profile.identifier %>/quem-somos">Quem Somos</a></li>
+    <li><a id="catalog" href="/catalog/<%= profile.identifier %>">Nossos Produtos</a></li>
+    <li><a id="onde-estamos"href="/<%= profile.identifier %>/onde-estamos">Onde Estamos</a></li> 
+    <li><a id="contact" href="/contact/<%= profile.identifier %>/new">Contato</a></li> 
+    <li><form action="/search" id="top-search" class="search_form clean" method="get">
+    <input name="query" size="15" title="Buscar..." onfocus="this.form.className='focused';" onblur="this.form.className=''" />
+    <script type="text/javascript">
+//<![CDATA[
+jQuery("#user form input").hint();
+//]]>
+</script>
+  </form></li>  
+  </ul>
+</div>

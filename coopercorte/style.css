@@ -1,0 +1,416 @@
+@import url(/designs/themes/cirandas/style.css);
+@import url(stylesheets/style.css);
+@import url(http://fonts.googleapis.com/css?family=Flamenco);
+
+/**** General ***************************************************************/
+
+body {
+  background: url(images/bkg.png);
+  padding-bottom: 0px;
+}
+
+h1,
+#top-menu,
+.block-title span,
+#content .link-list-block li a {
+  font-family: "Trebuchet MS", "Liberation Sans", Arial, sans-serif;
+}
+
+#wrap-1 {
+  background: none;
+  margin: auto;
+  margin-top: 40px;
+  position: relative;
+  width: 100%;
+}
+
+#wrap-2 {
+  background: #FFF;
+  border: medium none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0px 20px;
+  margin: auto;
+  box-shadow: 0 0 20px #D87575;
+  -moz-box-shadow: 0 0 20px #D87575;
+  -webkit-box-shadow: 0 0 20px #D87575;
+}
+
+#wrap-2,
+#theme-footer {
+  width: 1040px;
+}
+
+#site-title {
+  display: none;
+}
+
+#site-title span {
+ display: none;
+}
+
+#footer-content,
+#theme-footer {
+  border-left: none;
+  border-right: none;
+}
+
+#theme-footer {
+  border-top: none;
+  padding: 20px;
+  padding-top: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #800000;
+}
+
+/* Redefining Cirandas theme */
+
+#cirandas-top-bar {
+  top: 0px;
+}
+
+#wrap-1{
+  box-shadow: none;
+  -ms-box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#theme-footer #footer-content {
+  margin-left: 0px;
+  background: transparent;
+  padding: 0px;
+  margin-top: 30px;
+}
+
+#footer-content,
+#footer-bottom {
+  background-image: none;
+}
+
+#content {
+  padding-top: 5px;
+  margin-top: 80px;
+}
+
+#content h1.page-title {
+  background-color: transparent;
+  padding-left: 10px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  border-bottom: none;
+  display: none;
+}
+
+#profile-header {
+  max-height: 210px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+#profile-footer {
+  background-color: transparent;
+  border-top: none;
+}
+
+#content .products-block li,
+input.button {
+  font-size: 14px;
+}
+
+#content .block-title {
+  font-size: 16px;
+}
+
+/*********************** theme customization ************************/
+/* Include here more CSS customization */
+
+/************************** user bar ***************************/
+
+#user {
+   text-align: right;
+}
+
+#user a,
+#user a strong {
+  color: #7093DB;
+  margin: 0 5px;
+}
+
+#user form,
+#link-go-content {
+  display: none;
+}
+
+/* Top menu */
+
+#top-menu {
+  width: 100%;
+  position: absolute;
+  top: -1px;
+  background-color: #800000;
+  margin-left: -20px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  z-index: 10;
+}
+
+#top-menu ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+#top-menu li {
+  width: auto;
+  margin: 0px 20px;
+  display: inline-block;
+}
+
+#top-menu li:hover {
+  background-color: transparent;
+}
+
+#top-menu li a {
+  float: left;
+  font-size: 20px;
+  border: none;
+  color: #FFF;
+  text-decoration: none;
+  text-transform: none;
+  line-height: normal;
+  height: auto;
+  padding: 10px;
+}
+
+#top-menu li a:hover {
+  color: #fff;
+  margin: auto;
+  background-color: transparent;
+  opacity: 0.6;
+}
+
+#top-menu li a.link-this-page,
+#content .products-block li a:hover {
+  color: #FFF;
+  background-color: #B30000;
+}
+
+/************************** content ***************************/
+
+#content .block-title,
+#content .main-block h1, #not-found h1, #access-denied h1 {
+  border-bottom:2px solid #800000;
+  color: #800000;
+}
+
+#content-inner {
+  margin-top: 80px;
+}
+
+.profile-image-block p {
+  color: #7093DB;
+}
+
+.block a {
+  color: #B30000;
+}
+
+.block a:visited {
+  opacity: 0.5;
+}
+
+.control-panel a,
+.control-panel a:visited {
+  color: #000;
+}
+
+.controller-profile_editor .control-panel a:hover {
+  background-color: #7093DB;
+  color: #FFF;
+}
+
+#content .link-list-block li a {
+  background-color: #800000;
+  color: #FFF;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+
+#content .link-list-block li a:hover {
+  text-decoration: none;
+  background-color: #800000;
+  opacity: 0.8;
+}
+
+#content .link-list-block li a.link-this-page {
+  background-color: #B30000;
+  border-right:2px solid #800000;
+  color: #FFF;
+}
+
+#content .link-list-block li a.link-this-page:hover {
+  border-right: 2px solid #800000;
+}
+
+#content .box-1 .link-list-block li a.icon-no-icon {
+  padding-left: 10px;
+}
+
+#content .box-1 .link-list-block li a.link-this-page:hover {
+  border-right: none;
+}
+
+.template-rightbar #content .link-list-block li a.link-this-page,
+#content .box-3 .link-list-block li a.link-this-page {
+  border-left: 2px solid #800000;
+}
+
+.box-2 {
+  margin-left: 0px;
+}
+
+body.template-rightbar .box-1 {
+  margin: 0 270px 0 0;
+}
+
+/************************** blocks ***************************/
+
+#content .tags-block .block-footer-content a,
+#content .people-block .block-footer-content a,
+#content .profile-list-block .block-footer-content a,
+#content .enterprises-block .block-footer-content a,
+#content .members-block .block-footer-content a,
+#content .communities-block .block-footer-content a,
+#content .friends-block .block-footer-content a,
+#content .news-area a.news-see-more {
+  background-image: none;
+}
+
+.common-profile-list-block .vcard,
+.common-profile-list-block .vcard .menu-submenu-trigger,
+.common-profile-list-block .vcard .menu-submenu-trigger:hover,
+.menu-submenu-trigger,
+.menu-submenu-trigger:hover {
+  border-color: transparent;
+}
+
+/************** blog **************/
+
+#content .blog-post .title a:hover {
+  color: #5C3566;
+}
+
+/**************************** Comments *******************************/
+
+#content .comments h3 {
+  color: #5C3566;
+  border-bottom: 2px solid #7093DB;
+}
+
+.post_comment_box h4 {
+  background-color: #7093DB;
+  color: #FFF;
+}
+
+/************************** theme footer ***************************/
+
+#footer-content a,
+#footer-content a:hover,
+#footer-content a:visited {
+  color: #7093DB;
+}
+
+#theme-footer,
+#theme-footer a,
+#theme-footer a:hover,
+#theme-footer #footer-content a {
+  color: #d27577;
+}
+
+#theme-footer{
+  box-shadow: 0 0 20px #D87575;
+  -moz-box-shadow: 0 0 20px #D87575;
+  -webkit-box-shadow: 0 0 20px #D87575;
+}
+
+#footer-logo {
+  text-align: right;
+}
+
+#footer-logo a {
+  background-image: url(images/fazcultura.png);
+  width: 400px;
+  height: 50px;
+  display: none;
+}
+
+#footer-logo span {
+  display: none;
+}
+
+#footer-menu {
+  text-align: center;
+}
+
+#footer-menu ul {
+  list-style: none;
+  padding: 0px;
+}
+
+#footer-menu li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+#footer-menu a:hover {
+  color: #FFF;
+}
+
+/* Quick links */
+
+#admin-links {
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  z-index: 100;
+}
+
+.quick-admin-link {
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid #AAA;
+  background: #EDF8FA;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 10px 0px;
+  border-left: none;
+  border-radius: 0px 8px 8px 0px;
+  left: 0px;
+  text-decoration: none;
+  box-shadow: 0 6px 10px -4px #888;
+  -moz-box-shadow: 0 6px 10px -4px #888;
+  -webkit-box-shadow: 0 6px 10px -4px #888;
+}
+
+#theme-footer a.quick-admin-link {
+  color: #000;
+}
+
+#theme-footer a.quick-admin-link a:hover {
+  text-decoration: underline;
+}
+
+#profile-admin {
+  top: 10px;
+}
+
+#edit-blocks.quick-admin-link {
+  top: 40px;
+}

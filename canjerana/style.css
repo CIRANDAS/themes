@@ -1,0 +1,572 @@
+@import url(/designs/themes/cirandas/style.css);
+@import url(stylesheets/style.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+@font-face {
+    font-family: 'Industria';
+    src: url('fonts/industria-solid.eot');
+    src: url('fonts/industria-solid.eot?#iefix') format('embedded-opentype'),
+         url('fonts/industria-solid.woff') format('woff'),
+         url('fonts/industria-solid.ttf') format('truetype'),
+         url('fonts/industria-solid.svg#Industria') format('svg');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+/***** General *****/
+
+body {
+  font-family: 'Open Sans';
+  background: #fff url('images/bg.png') top center no-repeat fixed;
+}
+
+#wrap-1{
+  background: transparent;
+  width:100%;
+}
+
+h1, h2, h3, #content .block #display-product-name h2{
+  font-family: 'Industria';
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #552200;
+}
+
+#content .main-block h1, #not-found h1, #access-denied h1, #content .no-boxes h1{
+  font-family: 'Industria';
+  font-size: 42px;
+  color: #552200;
+  border: none;
+  font-weight: normal;
+}
+
+#content .control-panel a:hover{
+  background-color:#FAF4F1;
+}
+
+#profile-header{
+  max-height: 180px;
+  margin-top: -5px;
+  max-width: 1022px;
+  margin-bottom: 20px;
+}
+
+#profile-header p{
+  margin: 0;
+}
+
+#content .a-oficina, #content .nosso-trabalho, 
+#content .materia-prima, .action-contact-new #content .main-block h1 {
+  height: 180px;
+  width: 696px;
+  margin-bottom: 10px;
+}
+
+#content #article .a-oficina h1, #content #article .nosso-trabalho h1, #content .materia-prima h1 {
+  display: none;
+}
+
+#content .a-oficina{
+  background: transparent url("images/a-oficina.png") bottom left no-repeat;
+}
+
+#content .materia-prima{
+  background: transparent url("images/materia-prima.png") bottom left no-repeat;
+  height: 219px;
+}
+
+#content .nosso-trabalho {
+  background: transparent url("images/nosso-trabalho.png") bottom left no-repeat;
+}
+
+#content #article .article-body img{
+  border: 4px solid #FAE3B8;
+  box-shadow: 0 5px 10px 0px #888;
+  -moz-box-shadow: 0 5px 10px 0px #888;
+  -webkit-box-shadow: 0 5px 10px 0px #888;
+}
+
+#article a{
+  color: #668000;
+}
+
+/***** Products *****/
+
+#content #product-catalog h1{
+  color: transparent;
+  background: transparent url("images/catalog-header.png") bottom left no-repeat;
+  height: 249px;
+  width: 700px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.l-sidebar-left-bar{
+  display: none;
+}
+
+#product-list .product-big{
+  border: 5px solid #FAE3B8;
+  box-shadow: 0 5px 10px 0px #888;
+  -moz-box-shadow: 0 5px 10px 0px #888;
+  -webkit-box-shadow: 0 5px 10px 0px #888;
+  background-size: 100%;
+  max-width: 190px;
+  max-height: 150px;
+  background-color: #fff;
+}
+
+#product-list .product-image-link{
+  border: none;
+}
+
+#product-list .product-link{
+  text-align: center;
+}
+
+#product-list .product-link a{
+  font-family: 'Open Sans';
+  color: #552200;
+  border: none;
+  text-decoration: none;
+  margin: auto;
+}
+
+#product-list .product-price-line, #product-list .product-description.expand-box{
+  display: none;
+}
+
+/***** Gallery *****/
+#article .image-gallery-item a{
+  border: 5px solid #FAE3B8;
+  box-shadow: 0 5px 10px 0px #888;
+  -moz-box-shadow: 0 5px 10px 0px #888;
+  -webkit-box-shadow: 0 5px 10px 0px #888;
+  background-size: 140px 130px;
+  background-color: #fff;
+}
+
+#article .image-gallery-item span{
+  display: none;
+}
+
+.image-gallery ul{
+  width: 100%;
+}
+
+#article .image-gallery-item[title="Nosso Trabalho"], #article .image-gallery-item[title="A Oficina"]{
+  width: 100%
+}
+
+#article .image-gallery-item[title="Nosso Trabalho"] a, #article .image-gallery-item[title="A Oficina"] a{
+  border: none;
+  width: 680px;
+  height: 155px;
+}
+
+#article .image-gallery-item[title="Nosso Trabalho"] a{
+  background: transparent url('images/nosso-trabalho.png') no-repeat;
+}
+
+#article .image-gallery-item[title="A Oficina"] a{
+  background: transparent url('images/a-oficina.png') no-repeat;
+}
+
+/***** Slide block *****/
+
+.slideshow-block {
+  background: transparent url("images/photos-banner.png") bottom right no-repeat;
+  height: 240px;
+}
+
+.slideshow-block .slideshow-container{
+  background: #fff;
+}
+
+/***** Contact *****/
+
+.action-contact-new #content .main-block h1{
+  color: transparent;
+  background: transparent url("images/fale-conosco.png") bottom left no-repeat;
+  height: 194px;
+}
+
+.tooltip{
+  background: #FAF4F1;
+  border: 1px solid #552200;
+  color: #552200;
+  width: 660px;
+}
+
+#content input.button.with-text.icon-send, .icon-order{
+  font-size: 14px;
+  border: none;
+  border-radius: 0px;
+  height: 37px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+  background: rgba(92,177,35,1);
+  background: -moz-linear-gradient(top, rgba(92,177,35,1) 0%, rgba(80,156,30,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(92,177,35,1)), color-stop(100%, rgba(80,156,30,1)));
+  background: -webkit-linear-gradient(top, rgba(92,177,35,1) 0%, rgba(80,156,30,1) 100%);
+  background: -o-linear-gradient(top, rgba(92,177,35,1) 0%, rgba(80,156,30,1) 100%);
+  background: -ms-linear-gradient(top, rgba(92,177,35,1) 0%, rgba(80,156,30,1) 100%);
+  background: linear-gradient(to bottom, rgba(92,177,35,1) 0%, rgba(80,156,30,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5cb123', endColorstr='#509c1e', GradientType=0 );
+}
+
+#content input.button.with-text.icon-send{
+  width: 100px;
+  line-height: 22px;
+  color: #FFF;
+}
+
+.action-profile_design-index #onde-comprar, .action-catalog-index #onde-comprar{
+ display:block;
+}
+
+#onde-comprar{
+ display: none;
+}
+
+#onde-comprar #order{
+  text-align: center;
+}
+
+#onde-comprar .icon-order{
+ color: #fff;
+ text-decoration: none;
+ padding: 10px;
+}
+
+
+.required-field label.formlabel{
+  color: #000;
+  font-family: 'Trebuchet MS';
+  font-size: 13px;
+  font-weight: normal;
+}
+
+
+
+/***** Navigation top bar *****/
+
+/* Top menu */
+
+#top-menu {
+  z-index: 10;
+  width: 100%;
+  height: 35px;
+  background-color: #552200;
+  border-top: #AAD400 solid 3px;
+  border-bottom: #ED5F00 solid 1px;
+  margin: 0;
+}
+
+#top-menu ul {
+  width: 1024px;
+  list-style: none;
+  margin: auto;
+  padding: 0px;
+}
+
+#top-menu li {
+  width: auto;
+  display: inline-block;
+  float: right;
+  border-left: #ED5F00 solid 1px;
+  margin-top: 8px;
+  padding: 0 10px 0 20px;
+}
+
+#top-menu ul li:first-child, #top-menu ul li:last-child, #footer-links ul li:first-child{
+  border: none;
+}
+
+#top-menu ul li:first-child{
+  float:left;
+}
+
+#top-menu ul li:last-child{
+  padding-right: 20px;
+}
+
+#top-menu li a {
+  border: none;
+  color: #EF6000;
+  text-decoration: none;
+  text-transform: none;
+  line-height: normal;
+  height: auto;
+  text-shadow: 1.5px 1.5px 0.05em black;
+  font-size: 14px;
+}
+
+#top-menu li a:hover {
+  color: #FFF;
+}
+
+#top-search input{
+  background-color: #AA4400;
+  border: none;
+  height: 15px;
+  width: 120px;
+  color: #FAF4F1;
+  padding-left: 5px;
+}
+
+
+/***** Redefining Cirandas Theme *****/
+
+body{
+  padding-bottom: 0;
+}
+
+#wrap-1{
+  margin-top: 40px;
+  box-shadow: none;
+  -ms-box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#wrap-2{
+  width: 1024px;
+  margin: auto;
+  border-left: 1px solid #fff;
+  border-left: 1px solid #fff;
+  background: rgba(255,255,255, 0.8);
+}
+
+#content h1.page-title {
+  display: none;
+}
+
+.product-categories-block{
+  display: none;
+}
+
+#cirandas-top-bar #navigation {
+  font-family: Liberation Sans, Arial, sans-serif;
+}
+
+/***** Link list *****/
+
+#content .link-list-block li{
+  height: 30px;
+}
+
+#content .link-list-block li a{
+  background: #FAF4F1;
+  border: none;
+  border-left: 3px solid #884011;
+  color: #552200;
+  border-radius: 0;
+  height: 30px;
+  line-height: 34px;
+  padding-left: 20px;
+  font-family: 'Industria';
+  font-size: 24px;
+}
+
+#content .link-list-block li a:hover, #content .link-list-block li a.link-this-page{
+  background: #552200 url('images/icon-item.png') left top no-repeat;
+  color: #FAF4F1;
+  border-radius: 0;
+  border: none;
+  padding-left: 23px;
+}
+
+/***** Footer *****/
+
+/* Redefining cirandas-footer*/
+#cirandas-footer{
+  background: #eee;
+}
+
+#theme-footer #footer-content{
+  width: 1024px;
+  margin: auto;
+  padding: 0px;
+}
+
+#theme-footer #footer-content p{
+  font-size: 10px;
+}
+
+#theme-footer #footer-content a{
+ color: #668000;
+}
+
+/*Theme footer*/
+
+#theme-footer {
+  z-index: 10;
+  width: 100%;
+  height: auto;
+  background-color: #668000;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  -ms-box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#footer-page{
+  width: 1024px;
+  margin: auto;
+  height: 100px;
+}
+
+#footer-info{
+  width: 700px;
+  float: left;
+  height: 100px;
+}
+
+#footer-info ul{
+  list-style: none;
+  padding-left: 0px;
+}
+
+#footer-info li{
+  height: 25px;
+  line-height: 25px;
+}
+
+#footer-info #telefone{
+  background: transparent url('images/telefone.png') center left no-repeat;
+}
+
+#footer-info #endereco{
+  background: transparent url('images/endereco.png') center left no-repeat;
+}
+
+#footer-info #email{
+  background: transparent url('images/email.png') center left no-repeat;
+}
+
+#profile-footer{
+  color: #EEFFAA;
+  font-family: 'Trebuchet MS';
+  font-size: 14px;
+  margin-top: 15px;
+  margin-left: 18px;
+  display: block;
+  background-color: transparent;
+  border-top: none;
+  padding-top: 0px;
+}
+
+#footer-social{
+  height: 100px;
+  width: 324px;
+  float: right;
+}
+
+#footer-social ul{
+  list-style: none;
+}
+
+#footer-social li{
+  display: inline-block;
+  float: left;
+}
+
+#footer-social #plus{
+  background: transparent url('images/google.png') center no-repeat;
+}
+
+#footer-social #twitter{
+  background: transparent url('images/twitter.png') center no-repeat;
+}
+
+#footer-social #facebook{
+  background: transparent url('images/fb.png') center no-repeat;
+}
+
+#footer-social #feed{
+  background: transparent url('images/feed.png') center no-repeat;
+}
+
+#footer-social a{
+  display: block;
+  height: 40px;
+  width: 40px;
+  margin: 15px;
+}
+
+#footer-social span{
+  display: none;
+}
+
+#footer-copyright{
+  width: 100%;
+  background-color: #2B1100;
+  height: 30px;
+}
+
+#footer-copyright p{
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  line-height: 30px;
+}
+
+#footer-copyright a{
+  color: #ccc;
+}
+
+#footer-copyright a:hover{
+  color: #ccc;
+}
+
+#profile-footer{
+  display: block;
+}
+
+/***** Quick links *****/
+ 
+#admin-links {
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  z-index: 100;
+}
+ 
+.quick-admin-link {
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid #AAA;
+  background: #EDF8FA;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 10px 0px;
+  border-left: none;
+  border-radius: 0px 8px 8px 0px;
+  left: 0px;
+  text-decoration: none;
+  box-shadow: 0 6px 10px -4px #888;
+  -moz-box-shadow: 0 6px 10px -4px #888;
+  -webkit-box-shadow: 0 6px 10px -4px #888;
+}
+ 
+#theme-footer a.quick-admin-link {
+  color: #000;
+}
+ 
+#theme-footer a.quick-admin-link a:hover {
+  text-decoration: underline;
+}
+ 
+#profile-admin {
+  top: 10px;
+}
+ 
+#edit-blocks.quick-admin-link {
+  top: 40px;
+}

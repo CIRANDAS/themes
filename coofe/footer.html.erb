@@ -1,0 +1,61 @@
+<div id="footer-page">
+  <div id="footer-info">
+  </div>
+  <div id="footer-social">
+    <ul>
+      <li><a id="facebook" href="https://www.facebook.com/coofe.multipla"><span>Facebook</span></a></li>
+      <li><a id="plus" href="/<%= profile.identifier %>"><span>Google Plus</span></a></li>
+      <li><a id="twitter" href="/<%= profile.identifier %>"><span>Twitter</span></a></li>
+      <li><a id="feed" href="/<%= profile.identifier %>/feed"><span>Feed</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="footer-copyright">
+  <p>Esta rede social usa o <a href="http://noosfero.org/">Noosfero</a>, desenvolvido pela <a href="http://colivre.coop.br/">Colivre</a> e licenciado sob a <a href="http://www.gnu.org/licenses/agpl.html">GNU Affero General Public License</a> versão 3 ou qualquer versão posterior.</p>
+</div>
+
+
+<% if logged_in? && profile && profile.admins.include?(user) %>
+  <div id='admin-links'>
+    <a id="profile-admin" class="quick-admin-link" href="/myprofile/<%= profile.identifier %>">Painel de controle</a>
+    <a id="edit-blocks" class="quick-admin-link" href="/myprofile/<%= profile.identifier %>/profile_design">Editar blocos</a>
+  </div>
+<% end %>
+
+<div id='cirandas-footer'>
+  <%= theme_include('env_footer') %>
+</div>
+
+<script type="text/javascript">
+  jQuery(function($) {
+    $("#top-menu").prependTo("#wrap-1");
+    $("#profile-footer").prependTo("#footer-info");
+  });
+</script>
+
+<script type="text/javascript">
+  //Show header of page following url
+  jQuery(function($) {
+    if (window.location.pathname != "/<%= profile.identifier %>"){
+      var itemName = window.location.pathname.split("/");
+      $("#top-menu div").hide();
+      if ($("#"+itemName[itemName.length -1]+"-bar").length == 0){
+        $("#"+itemName[1]+"-bar").show();
+      }else{
+        $("#"+itemName[itemName.length -1]+"-bar").show();
+      }
+      $("#onde-comprar").insertAfter("#product-list");
+    }else{
+      $("#article p").prependTo("#a-coofe-bar a");
+    }
+  });
+</script>
+
+<script type="text/javascript">
+  jQuery(function($) {
+    $(".article-block").click(function() {
+      $("#"+this.id+" .short-post").slideToggle();
+    });
+  });
+</script>
+

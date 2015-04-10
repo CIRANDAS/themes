@@ -1,0 +1,458 @@
+@import url(/designs/themes/cirandas/style.css);
+@import url(stylesheets/style.css);
+
+/***** General *****/
+
+body {
+  background: #FFF;
+  font-family: 'Trebuchet MS';
+  padding-bottom: 0;
+}
+
+.select-article-type ul{
+  font-size: 12px;
+}
+
+.block a, a{
+  color: #2f6c13;
+}
+
+h1, h2, h3, #content .block #display-product-name h2{
+  font-family: 'Trebuchet MS';
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+#wrap-1{
+  background: #FFF;
+  box-shadow: none;
+  -ms-box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  width:100%;
+  margin-top: 40px;
+}
+
+#wrap-2{
+  width: 1024px;
+  margin: auto;
+  border: none;
+}
+
+/***** Navigation top bar *****/
+
+/* Top menu */
+
+#top-menu {
+  z-index: 10;
+  width: auto;
+  height: 35px;
+  background-color: #2f6c13;
+  border-bottom: #abc837 solid 3px;
+  margin: 0;
+}
+
+#top-menu ul {
+  width: 1024px;
+  list-style: none;
+  margin: auto;
+}
+
+#top-menu li {
+  width: auto;
+  display: inline-block;
+  float: left;
+  border-left: #fff solid 1px;
+  margin-top: 8px;
+  padding: 0 30px 0 30px;
+}
+
+#top-menu #who{
+  border: none;
+  margin-left: 200px;
+}
+
+#top-menu li a {
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  text-transform: none;
+  line-height: normal;
+  height: auto;
+  text-shadow: 1.5px 1.5px 0.05em black;
+  font-size: 16px;
+}
+
+#top-menu li a:hover {
+  color: #abc837;
+}
+
+#top-menu a.link-this-page{
+  color: #abc837;
+}
+
+#top-search input{
+  border-radius: 5px;
+}
+
+#cirandas-top-bar #navigation {
+  font-family: Liberation Sans, Arial, sans-serif;
+}
+
+/***** Site Title *****/
+
+#site-title{
+  display: block;
+  background:none;
+  width: 240px;
+  height: 135px;
+  margin-top: -92px;
+  margin-left: -20px;
+}
+
+#site-title a{
+  background:  url('images/logo-adocci.png') top left no-repeat;
+  width: 240px;
+  height: 135px;
+  margin-top: -25px;
+}
+
+/*** Content ***/
+
+#content{
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.product-categories-block{
+  display: none;
+}
+
+#content .products-block .block-title,
+#content .box-2 h3.block-title {
+  color: #fff;
+  font-family: 'Trebuchet MS';
+  background-color: #96432b;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 100;
+}
+
+#content h1{
+  text-transform: uppercase;
+  color: #000;
+}
+
+#content h1.page-title {
+  display: none;
+}
+
+#content .main-block h1, #not-found h1, #access-denied h1, #content .no-boxes h1{
+  font-family: 'Trebuchet MS';
+  font-size: 28px;
+  color: #000;
+  border: none;
+}
+
+/**Product related session**/
+
+
+#content .products-block li{
+  background: url('images/bkg-products.png') top left no-repeat;
+  height: 190px;
+}
+
+.products-block ul{
+  width: 200px;
+}
+
+#content .products-block li a{
+  background-position: 18px 3px;
+  background-size: 170px 120px;
+  padding: 85px 0px 0px 25px;
+  color: #96432b;
+  text-decoration: underline;
+  font-size: 14px;
+  height: 100px;
+  line-height: 100px;
+}
+
+#product-list{
+  width: 100%;
+}
+
+
+#product-list li.product{
+  background: url('images/bkg-products.png')no-repeat;
+  background-position: 10px 27px;
+}
+
+#product-list .product-link{
+  font-weight: normal;
+  color: #96432b;
+  margin-top: -15px;
+  margin-left: 20px;
+}
+
+#product-list .product-link a{
+  color: #96432b;
+}
+
+#product-list .product-image-link{
+  border: none;
+  margin: auto;
+}
+
+#product-list .catalog-item-extras{
+  bottom: 20px;
+  right: 15px;
+}
+
+#product-list .product-big{
+  background-size: 160px 120px;
+}
+
+.l-sidebar-left-bar{
+  display: none;
+} 
+
+#content .link-list-block li a, .icon-order, #content input.button.with-text.icon-send{
+  font-size: 18px;
+  border: none;
+  border-radius: 0px;
+  height: 37px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+  line-height: 37px;
+  background: rgba(92,177,35,1);
+  background: -moz-linear-gradient(top, rgba(92,177,35,1) 0%, rgba(80,156,30,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(92,177,35,1)), color-stop(100%, rgba(80,156,30,1)));
+  background: -webkit-linear-gradient(top, rgba(92,177,35,1) 0%, rgba(80,156,30,1) 100%);
+  background: -o-linear-gradient(top, rgba(92,177,35,1) 0%, rgba(80,156,30,1) 100%);
+  background: -ms-linear-gradient(top, rgba(92,177,35,1) 0%, rgba(80,156,30,1) 100%);
+  background: linear-gradient(to bottom, rgba(92,177,35,1) 0%, rgba(80,156,30,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5cb123', endColorstr='#509c1e', GradientType=0 );
+}
+#profile-footer{
+  display: block;
+}
+
+.action-profile_design-index #onde-comprar, .action-catalog-index #onde-comprar{
+ display:block;
+}
+
+#onde-comprar{
+ display: none;
+}
+
+#onde-comprar #order{
+  text-align: center;
+}
+
+#onde-comprar .icon-order{
+ color: #fff;
+ text-decoration: none;
+ padding: 10px;
+}
+
+.tooltip {
+  background-color: #d7eacd;
+  border-color: #8dcc46;
+}
+
+.required-field label.formlabel{
+  color: #000;
+  font-family: 'Trebuchet MS';
+  font-size: 13px;
+  font-weight: normal;
+}
+
+#content input.button.with-text.icon-send{
+  width: 100px;
+  line-height: 22px;
+  color: #FFF;
+}
+
+
+/***** Footer *****/
+
+/* Redefining cirandas-footer*/
+#cirandas-footer{
+  background: #eee;
+}
+
+#theme-footer #footer-content{
+  width: 1024px;
+  margin: auto;
+}
+
+/*Theme footer*/
+
+#theme-footer {
+  z-index: 10;
+  width: 100%;
+  height: auto;
+  background-color: #8dcc46;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  -ms-box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+#footer-page{
+  width: 1024px;
+  margin: auto;
+  height: 100px;
+}
+
+#footer-info{
+  width: 700px;
+  float: left;
+  height: 100px;
+}
+
+#footer-info ul{
+  list-style: none;
+  padding-left: 0px;
+}
+
+#footer-info li{
+  height: 25px;
+  line-height: 25px;
+}
+
+#footer-info #telefone{
+  background: transparent url('images/telefone.png') center left no-repeat;
+}
+
+#footer-info #endereco{
+  background: transparent url('images/endereco.png') center left no-repeat;
+}
+
+#footer-info #email{
+  background: transparent url('images/email.png') center left no-repeat;
+}
+
+#profile-footer{
+  color: #19330e;
+  font-family: 'Trebuchet MS';
+  font-size: 14px;
+  margin-left: 18px;
+  display: block;
+  background-color: transparent;
+  border-top: none;
+}
+
+#footer-social{
+  height: 100px;
+  width: 324px;
+  float: right;
+}
+
+#footer-social ul{
+  list-style: none;
+}
+
+#footer-social li{
+  display: inline-block;
+  float: left;
+}
+
+#footer-social #plus{
+  background: transparent url('images/google.png') center no-repeat;
+}
+
+#footer-social #twitter{
+  background: transparent url('images/twitter.png') center no-repeat;
+}
+
+#footer-social #facebook{
+  background: transparent url('images/facebook.png') center no-repeat;
+}
+
+#footer-social #feed{
+  background: transparent url('images/feed.png') center no-repeat;
+}
+
+#footer-social a{
+  display: block;
+  height: 40px;
+  width: 40px;
+  margin: 15px;
+}
+
+#footer-social span{
+  display: none;
+}
+
+#footer-copyright{
+  width: 100%;
+  background-color: #2f6c13;
+  height: 30px;
+}
+
+#footer-copyright p{
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  line-height: 30px;
+}
+
+#footer-copyright a{
+  color: #ccc;
+}
+
+/***** Box *****/
+
+.box-2{
+  margin-left: 0px;
+}
+
+
+/* Quick links */
+ 
+#admin-links {
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  z-index: 100;
+}
+ 
+.quick-admin-link {
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid #AAA;
+  background: #EDF8FA;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 10px 0px;
+  border-left: none;
+  border-radius: 0px 8px 8px 0px;
+  left: 0px;
+  text-decoration: none;
+  box-shadow: 0 6px 10px -4px #888;
+  -moz-box-shadow: 0 6px 10px -4px #888;
+  -webkit-box-shadow: 0 6px 10px -4px #888;
+}
+ 
+#theme-footer a.quick-admin-link {
+  color: #000;
+}
+ 
+#theme-footer a.quick-admin-link a:hover {
+  text-decoration: underline;
+}
+ 
+#profile-admin {
+  top: 10px;
+}
+ 
+#edit-blocks.quick-admin-link {
+  top: 40px;
+}
+

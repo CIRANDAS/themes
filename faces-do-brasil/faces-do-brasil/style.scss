@@ -1,0 +1,354 @@
+@import '../cirandas-responsive/style';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/* General */
+
+body{
+  background: #FFF;
+}
+
+body, h3.block-title, h1, h2{
+  font-family: 'Open Sans';
+}
+
+#wrap-1{
+  background: url('images/bg_reciclado_topo.jpg') repeat top left;
+}
+
+#wrap-2{
+  background: none;
+  border: none;
+}
+
+/* Header Content  */
+#header-content{
+  display: none;
+  width: 100%;
+  height: 130px;
+}
+
+#logo{
+  width: 25%;
+  height: 100%;
+  float: left;
+  a{
+    width: 155px;
+    background: url('images/LogoFaces155x85.png') no-repeat center center;
+    height: 130px;
+    margin: auto;
+    display: block;
+  }
+  span{
+    display: none;
+  }
+}
+
+#right-elements{
+  width: 75%;
+  float: left;
+  height: 100%;
+  ul{
+    list-style: none;
+    margin-top: 0px;
+  }
+  li{
+    margin: 15px 30px 0 0;
+    text-align: right;
+    color: #b5003c;
+    float: right;
+    width: 100%;
+  }
+}
+
+#top-search {
+  width: 290px;
+  float: right;
+  max-height: 60px;
+}
+
+#profile-header{
+  max-height: none;
+  max-width: 110%;
+  margin: auto -14px;
+  p{
+    margin: 0;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    border-top: 5px solid #b5003c;
+    border-bottom: 5px solid #b5003c;
+  }
+}
+
+#profile-title{
+  display: none;
+}
+
+/* Top Menu */
+
+#top-menu{
+  display: none;
+  width: 100%;
+  height: 27px;
+  z-index: 0;
+  margin-top: 30px;
+  ul{
+    list-style: none;
+  }
+  li{
+    float: left;
+    width: auto;
+    height: 40px;
+  }
+  a, a:visited{
+    background: #b5003c;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 100%;
+    padding: 5px 10px;
+    color: #FFF;
+    font-size: 16px;
+    text-decoration: none;
+    -webkit-box-shadow: -5px 0px 7px 00px #550000;
+    -moz-box-shadow: -5px 0px 7px 00px #550000;
+    box-shadow: -5px 0px 7px 00px #550000;
+  }
+  a:hover{
+    color: #FFF;
+    background: #7e002a;
+  }
+}
+
+#content h1.page-title{
+  display: none;
+}
+
+/* Boxes */
+
+#boxes{
+  padding-top: 15px;
+  -webkit-box-shadow:  0px -4px 5px rgba(85, 0, 0, 0.3);
+  -moz-box-shadow:  0px -4px 5px rgba(85, 0, 0, 0.3);
+  box-shadow: 0px -4px 5px rgba(85, 0, 0, 0.3);
+  z-index: 1;
+  position: relative;
+  background: url('images/bg_reciclado_topo.jpg') repeat top left;
+  padding-top: 40px;
+  margin: -15px -15px;
+}
+
+/* Box-2 */
+
+#content .box-container-2{ 
+  .block-outer{
+    background: #fff;
+    -webkit-box-shadow:  0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow:  0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+  }
+  h3.block-title{
+    background: #b5003c;
+    color: #fff;
+    font: 700 16px 'Open Sans';
+    text-transform: inherit;
+    padding: 10px 20px;
+    border: none;
+  }
+  .block{
+     padding: 0;
+     h2 {
+      font-family: 'Open Sans';
+      font-size: 14px;
+     }
+  }
+  p {
+    text-align: center;
+  }
+  img {
+    margin: auto;
+    max-width: 180px;
+    max-height: 180px;
+    padding: 10px;
+  }
+}
+
+.article-block .short-post {
+  padding: 0 10px;
+}
+
+/* Display Content */
+
+.display-content-block{
+  a.link-this-page, a, a:visited {
+    color: #000;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    text-decoration: none;
+    padding: 0 0 0 10px;
+  }
+  a:hover{
+    color: #b5003c;
+  }
+  ul{
+    list-style: square inside;
+    padding: 0 0 10px 10px;
+  }
+  li {
+    padding: 0px;
+  }
+}
+
+.box-container-2 .logged-user-info {
+  padding: 0px 0px 10px 10px;
+}
+
+/*** Link-list ***/
+
+#content .link-list-block{ 
+  padding: 0;
+  ul{
+    padding: 5px;
+  }
+  li{
+    padding: 0px 15px;
+    background: none;
+    a, a.link-this-page, a:visited, a:hover, a.link-this-page:hover{
+      background: #fff;
+      color: #000;
+      border: none;
+      box-shadow: none;
+    }
+    a.link-this-page{
+      color: #b5003c;
+    } 
+    a:hover{
+      color: #7e002a;
+    }
+  }
+}
+
+/** Box-1 **/
+
+.box-container-1 .block {
+  padding: 5px 15px;
+  background: #fff;
+  -webkit-box-shadow:  0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow:  0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
+}
+
+#content{ 
+  .main-block h1, #not-found h1, #access-denied h1{
+    color: #b5003c;
+  }
+  h1.title {
+    font-family: 'Open Sans';
+    font-size: 28px;
+  }
+  .vote-actions{
+    display: none;
+  }
+  #addThis{
+    display: none;
+  }
+}
+
+/* Blog */
+#content{ 
+  .box-container-1{
+    .blog-post{
+      padding-left: 4px; 
+      .title {
+        border: none;
+        background: #F7E5EB;
+        padding: 5px 20px;
+      }
+      a {
+        color: #000;
+      }
+      span.created-at, p {
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+/** Footer **/
+#profile-footer{
+  background: url('images/creditos.png') no-repeat right bottom;
+  color: #000;
+  border: none;
+  height: 50px;
+}
+
+#theme-footer {
+  border: none;
+  background: #fff;
+}
+
+#footer-info{
+  padding: 10px 0px;
+  border-top: 1px solid #000;
+}
+
+#footer-info p{
+  color: #000;
+  font-size: 12px;
+  text-align: center;
+}
+
+#footer-copyright p{
+  color: #b5003c;
+}
+
+#footer-copyright a{
+  color: #7e002a;
+}
+
+#footer-copyright {
+  margin-top: 20px;
+}
+
+/***** Quick links *****/
+ 
+#admin-links {
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  z-index: 100;
+}
+ 
+.quick-admin-link {
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid #AAA;
+  background: #EDF8FA;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 10px 0px;
+  border-left: none;
+  border-radius: 0px 8px 8px 0px;
+  left: 0px;
+  text-decoration: none;
+  box-shadow: 0 6px 10px -4px #888;
+  -moz-box-shadow: 0 6px 10px -4px #888;
+  -webkit-box-shadow: 0 6px 10px -4px #888;
+}
+ 
+#theme-footer a.quick-admin-link {
+  color: #000;
+}
+ 
+#theme-footer a.quick-admin-link a:hover {
+  text-decoration: underline;
+}
+ 
+#profile-admin {
+  top: 10px;
+}
+ 
+#edit-blocks.quick-admin-link {
+  top: 40px;
+}
