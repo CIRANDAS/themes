@@ -1,0 +1,94 @@
+@import'../../cirandas/stylesheets/cirandas';
+@import'../../cirandas/stylesheets/small';
+@import url(http://fonts.googleapis.com/css?family=Imprima:regular,bold&subset=Latin);
+
+body.template-leftbar .box-1 {
+  margin: 0 40px 0 284px;
+}
+
+body {
+  font-family: Imprima;
+}
+
+body p, ul, ol {
+	font-size:15px;
+}
+
+.no-boxes {
+	margin: 0 40px;
+}
+
+#content {
+	margin:0;
+	padding:0;
+}
+
+#content .block h2, #content .block-title {
+  color: #333333;
+  font-family: Imprima;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 6px 0 4px 4px;
+  background-color:transparent;
+}
+
+
+#content .link-list-block li a {
+  background-color: #10999C;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+#content .article-body p {
+	text-align:justify;
+}
+
+#wrap-2 {
+	padding: 0;
+}
+
+#content .title {
+  font-family: Imprima;
+  font-size: 30px;
+  text-align:left;
+  color: #10999C;
+}
+
+#content .main-block h1, #not-found h1, #access-denied h1 {
+  color: #10999C;
+}
+
+#content .blog-post .title a {
+  color: #10999C;
+  font-size: 26px;
+}
+
+#content h1.page-title {
+  background-color: #5A339E;
+  font-family: Imprima;
+  font-size: 50px;
+  height: 60px;
+  padding: 20px 0;
+  text-align:center;
+  top:0;
+  margin:34px 0 0 0;
+  border-bottom: 2px solid #417;
+}
+
+.box-2 {
+  margin-left: 30px;
+  width: 220px;
+}
+
+#boxes {
+	padding-top:15px;
+}
+
+#profile-footer {
+	border-top:1px solid #339;
+	background-color: #9A73DE;
+	margin:0;
+	float:left;
+	width:100%;
+	padding: 20px 0;
+}

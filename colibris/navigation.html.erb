@@ -1,0 +1,23 @@
+<div id='cirandas-navigation'>
+  <%= theme_include('env_navigation') %>
+</div>
+
+<div id="top-menu">
+  <% def item_top_menu(name, slug_name) %>
+  <% if profile.articles.find_by_slug slug_name %>
+    <%= link_to('<span>'+name+'</span>', '/'+profile.identifier+'/'+slug_name)%>
+  <% else %>
+    <%= link_to('<span>'+name+'</span>', myprofile_path( :controller=>:cms, :profile=>profile.identifier, :action=>:new, :type=>:TinyMceArticle, 'article[name]'=>name,'article[body]'=>"Insira um conteúdo e salve a página")) %>
+  <% end %>
+  <% end %>
+  <div id="link-list-menu">
+  <ul>
+    <li><%= link_to('<span>Quem somos</span>', '/'+profile.identifier) %></li>
+    <li><%= link_to('<span>Nossos Produtos</span>', '/catalog/'+profile.identifier) %></li>
+    <li><% item_top_menu('Nossa sede', 'nossa-sede') %></li>
+    <li><% item_top_menu('Colibris na mídia', 'colibris-na-midia') %></li>
+    <li><% item_top_menu('Fotos', 'galeria-de-imagens') %></li>
+    <li><%= link_to('<span>Fale Conosco</span>', '/contact/'+profile.identifier+'/new') %></li> 
+  </ul>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<div id="title-header">
+<div id="logo">
+<%=
+  link_to '<i></i><span><strong>Rango Vegan - Cooperativa Autogestionária</strong><br>'+
+          'Rua do Passo, 62 &mdash; Pelourinho</span>',
+          'http://rangovegan.com'
+%>
+</div>
+
+<div id="site-header">
+  <div class="tel">
+    <strong>(71) 3488 2756</strong>
+    8601 9673 | 9232 0848
+  </div>
+  <div class="email"><a href="mailto:rangovegan@gmail.com">rangovegan@gmail.com</a></div>
+  <div class="slogan">Alimentando a vida com Ética e Saúde</div>
+</div>
+</div>
+
+<div id="social-icons">
+  <a id="ico-flickr" href="http://www.flickr.com/photos/rangovegan">Flickr</a>
+  <a id="ico-twitter" href="http://twitter.com/#!/rango_vegan">Twitter</a>
+  <a id="ico-facebook" href="http://www.facebook.com/pages/Rango-Vegan/159695264059068">Facebook</a>
+</div>
+
+<ul id="top-menu">
+<% menu = profile.articles.find_by_slug 'menu' %>
+<%= if menu && menu.body
+  HTML::Document.new(menu.body).find(:tag=>'ul').children.map(&:to_s).join()
+else
+  content_tag('li', link_to('Home', profile.url)) +
+  content_tag('li', link_to('Editar Menu', myprofile_path(
+    :controller=>:cms, :profile=>profile.identifier,
+    :action=>:new, :type=>:TinyMceArticle, 'article[name]'=>'Menu',
+    'article[body]'=>"<ul><li>#{link_to 'Home', profile.url}</li></ul>"
+  )))
+end %>
+</ul>

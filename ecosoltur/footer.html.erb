@@ -1,0 +1,100 @@
+<div id="enterprise-footer">
+  <div id="footer-index">
+  </div>
+  <div id="footer-social">
+    <ul>
+      <li><a id="facebook" href="#"><span>Facebook</span></a></li>
+      <li><a id="plus" href="#"><span>Google Plus</span></a></li>
+      <li><a id="twitter" href="#"><span>Twitter</span></a></li>
+      <li><a id="feed" href="#"><span>Feed</span></a></li>
+    </ul>
+    <a id="footer-logo" href="/"><span>EcosolTur</span></a>
+  </div> 
+</div>
+<div id="footer-copyright">
+  <p>Esta rede social usa o <a href="http://noosfero.org/">Noosfero</a>, desenvolvido pela <a href="http://colivre.coop.br/">Colivre</a> e licenciado sob a <a href="http://www.gnu.org/licenses/agpl.html">GNU Affero General Public License</a> versão 3 ou qualquer versão posterior.</p>
+</div>
+
+<% if logged_in? && profile && profile.admins.include?(user) %>
+  <div id='admin-links'>
+    <a id="profile-admin" class="quick-admin-link" href="/myprofile/<%= profile.identifier %>">Painel de controle</a>
+    <a id="edit-blocks" class="quick-admin-link" href="/myprofile/<%= profile.identifier %>/profile_design">Editar blocos</a>
+  </div>
+<% end %>
+
+<% if @page %>
+  <% p = @page %>
+  <% if p && p.parent && p.parent.folder? %>
+    <% menu = p.parent.children.find_by_slug 'menu' %>
+    <% if menu && menu.body %>
+      <ul id="left-menu">
+      <% menu_list = HTML::Document.new(menu.body).find(:tag=>'ul')%>
+      <% if menu_list%>
+        <%= menu_list.children.map(&:to_s).join() %>
+      <% end %>
+      </ul>
+    <% end %>
+  <% end %>
+<% end %>
+
+<div id='cirandas-footer'>
+  <%= theme_include('env_footer') %>
+</div>
+
+<div id="facebook-footer"><iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FPortal.Vera.Cruz&amp;width=700&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:700px; height:258px;" allowTransparency="true"></iframe></div>
+
+<script type="text/javascript">
+  jQuery(function($) {
+    $(".highlights-block").prependTo("#wrap-1");
+    $("#top-menu").prependTo("#wrap-1");
+    if ($("#theme-footer").find("#left-menu").length == 0){
+      $("#content").toggleClass("not-context-content");
+    }else{
+      $("#left-menu").prependTo(".box-2 .blocks");
+    }
+    $("#profile-footer").prependTo("#footer-index");
+    $(".breadcrumbs-plugin_content-breadcrumbs-block").prependTo("#content-inner");
+  });
+</script>
+
+<script type="text/javascript">
+  jQuery(function($) {
+    $('.profile-homepage #article .article-body img').each(function() {
+      $("<span> - "+this.parentNode.title+" - </span>").insertAfter(this); 
+    })
+  });
+</script>
+
+<script type="text/javascript">
+  jQuery(function($) {
+    var itemName = window.location.pathname.split("/");
+    if(itemName[itemName.length -1] == "naplos"){
+      $(".article-body p").hide();
+      $("h4").each(function() {
+        $(this).prepend("<span class='up-arrow'>▶  </span><span class='down-arrow'>▼  </span>");
+        $(this).children(':last').hide();
+      });
+      $("h4").click(function() {
+        $(this).children(':first').toggle();
+        $(this).children(':last').toggle();
+        $(this).next('p').slideToggle();
+      });
+      $("#sign-in-naplos").insertAfter("#article .article-body");
+      $("#sign-up-naplos").insertAfter("#article .article-body");
+      $("#sign-in-naplos").show();
+      $("#sign-up-naplos").show();
+    } else{
+      if(itemName[itemName.length -1] == "economia-solidaria"){
+        $("#sign-up-naplos").insertAfter("#article .article-body");
+        $("#sign-up-naplos").show();
+      }
+      if(itemName[2] == "servicos"){
+        $("#facebook-footer").insertAfter("#comments_list");
+        $("#facebook-footer").show();
+      }
+      if(itemName[2] == "publicacoes"){ 
+        $("#article .article-body .folder-content").show();
+      }
+    }
+  });
+</script>

@@ -1,6 +1,5 @@
-name: "Faces do Brasil"
-layout: "cirandas-responsive" # don't change
-icon_theme: [awesome, pidgin]
-responsive: true
-owner_type: Profile
-owner_id: 102
+name: "faces-do-brasil"
+layout: "cirandas"
+icon_theme: [default, pidgin]
+owner_type: 'Profile'
+owner_id: 00000
