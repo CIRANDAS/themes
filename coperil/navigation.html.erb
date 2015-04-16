@@ -1,0 +1,48 @@
+<%= theme_include('env_navigation') %>
+
+<div id="top-header">
+  <div id="logo">
+  <%= link_to('<span>Coperil</span>', '/'+profile.identifier) %>
+  </div>
+  <div id="first-row" class="link-list-block">
+    <ul>
+      <li><%= link_to('<span>Home</span>', '/'+profile.identifier) %></li>
+      <li><%= link_to('<span>A Escola</span>', 'http://ola.coop.br/'+profile.identifier+'/a-escola') %></li>
+      <li><%= link_to('<span>Cursos</span>', 'http://ola.coop.br/'+profile.identifier+'/cursos') %></li>
+      <span class="hidden-xs">
+      <li><%= link_to('<span>Interatividade</span>', 'http://ola.coop.br/'+profile.identifier+'/interatividade') %></li>
+      </span>
+      <span class="hidden-sm hidden-xs">
+      <li><%= link_to('<span>Ex-alunos</span>', 'http://ola.coop.br/'+profile.identifier+'/ex-alunos') %></li>
+      <li><%= link_to('<span>Contato</span>', 'http://ola.coop.br/'+profile.identifier+'/contato') %></li>
+      </span>
+    </ul>
+
+  </div>
+  <div id="second-row" class="link-list-block">
+    <ul>
+      <span class="hidden-xs">
+      <li><a href="#"><span>UNO</span></a></li>
+      </span>
+      <li>
+        <ul id="social-net">
+        <li id="fb"> <%= link_to('<span>Facebook</span>', 'http://www.facebook.com/pages/Coperil/240732045954204') %>
+        </li>
+        <li id="tw"> <%= link_to('<span>Twitter</span>', 'http://twitter.com/Coperil') %>
+        </li>
+        <li id="yt"> <%= link_to('<span>Youtube</span>', 'http://www.youtube.com/user/secomcoperil') %>
+        </li>
+        </ul>
+      </li>
+      <span class="hidden-sm hidden-xs">
+      <li><%= render :partial => 'shared/profile_search_form' %><li>
+      </span>
+    </ul>
+  </div> 
+</div>
+
+<script type="text/javascript">
+  jQuery(document).ready(function(){
+    $("#top-header").appendTo("#profile-title");
+  });
+</script>
