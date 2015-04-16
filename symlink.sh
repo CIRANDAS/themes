@@ -3,8 +3,8 @@
 THEMES_DIR=`basename $PWD`
 LINK_DEST=`dirname $PWD`
 
-THEMES_SUBDIRS=`echo {colivre-themes/themes,}`
-IGNORE_SUBDIRS="\(colivre-themes\)"
+#THEMES_SUBDIRS=`echo {colivre-themes/themes,}`
+#IGNORE_SUBDIRS="\(colivre-themes\)"
 
 if [[ -n $IGNORE_SUBDIRS ]]; then
   THEMES=`ls -d */ | grep -v $IGNORE_SUBDIRS`
