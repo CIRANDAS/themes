@@ -1,5 +1,6 @@
 @import url(/assets/designs/themes/cirandas-responsive/bootstrap/all.css);
 @import url(/assets/designs/themes/base/style.css);
+
 /* use with @extend, CSS clear bugfix */
 .clean {
   clear: both; }
