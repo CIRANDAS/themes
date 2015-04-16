@@ -1,0 +1,5 @@
+name: "terra-mirim"
+layout: "cirandas"
+icon_theme: [default, pidgin]
+owner_type: 'Profile'
+owner_id: 44464
