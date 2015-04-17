@@ -1,5 +1,5 @@
 name: "faces-do-brasil"
-layout: "cirandas"
+layout: "cirandas-responsive"
 icon_theme: [default, pidgin]
 owner_type: 'Profile'
 owner_id: 00000
