@@ -17,8 +17,10 @@
 
 <script type="text/javascript">
   jQuery(function($) {
-    $("#header-content").prependTo("#wrap-1");
-    $("#top-menu").insertAfter("#profile-header");
+    $('#top-menu').appendTo('#profile-header');
+    $('#header-content').prependTo('#profile-header');
+    $('#profile-header #top-menu').show();
+    $('#profile-header #header-content').show();
     $("#profile-footer p").prependTo("#footer-info");
   });
 </script>
