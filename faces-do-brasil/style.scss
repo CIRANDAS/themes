@@ -64,6 +64,9 @@ body, h3.block-title, h1, h2{
   width: 290px;
   float: right;
   max-height: 60px;
+  .radio-inline {
+    display: none;
+  }
 }
 
 #profile-header{
