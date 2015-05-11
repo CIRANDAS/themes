@@ -5,5 +5,6 @@
   <li id="navigation-enterprises"><%= link_to content_tag('span', _('Enterprises')), {host: environment.default_hostname, action: :enterprises, controller: :search}, {class: 'icon-menu-enterprise', title: 'Empreendimentos'} %></li>
   <li id="navigation-communities"><%= search_communities_menu %></li>
   <li id="navigation-events"><%= link_to content_tag('span', _('Events')), {host: environment.default_hostname, action: :events, controller: :search}, {class: 'icon-event', title: 'Eventos'} %></li>
+
   <li id="navigation-help"><%= link_to content_tag('span', _('Help')), '//cirandas.net/ajuda', {class: 'icon-help', title: 'Ajuda'} %></li>
 <% end %>
