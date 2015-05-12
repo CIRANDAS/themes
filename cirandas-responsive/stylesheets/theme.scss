@@ -22,6 +22,29 @@ a {
   color: $link-color;
 }
 
+@media screen and (min-width: 768px) {
+  .block, .no-boxes {
+    border: none !important;
+  }
+
+  #wrap-1 {
+    background-color: white !important;
+    box-shadow: 0 0 10px black;
+    -ms-box-shadow: 0 0 10px black;
+    -moz-box-shadow: 0 0 10px black;
+    -webkit-box-shadow: 0 0 10px black;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .block, .no-boxes {
+    box-shadow: 0 0 10px black;
+    -ms-box-shadow: 0 0 10px black;
+    -moz-box-shadow: 0 0 10px black;
+    -webkit-box-shadow: 0 0 10px black;
+  }
+}
+
 body p {
 /*  text-align: left; */
   line-height: 1.5em;
@@ -1562,6 +1585,9 @@ div#addThis {
 
 .navbar-static-bottom {
   margin-bottom: 0px !important;
+}
+.navbar {
+  margin-bottom: 0px;
 }
 
 .explanation {
