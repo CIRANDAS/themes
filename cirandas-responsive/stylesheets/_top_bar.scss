@@ -27,9 +27,12 @@
   vertical-align: top;
 }
 @media screen and (min-width:1200px) {
+  /*
+  Provisory: why did we reduce the font-size of the top-bar in the big width screen? I removed this...
   #top-bar .navbar-nav > li > a {
     font-size: 13px;
   }
+  */
   #top-bar .navbar-brand, #top-bar .container .navbar-brand,
   #top-bar > .container-fluid .navbar-brand {
     font-size: 18px;
