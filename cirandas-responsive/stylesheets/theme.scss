@@ -25,6 +25,10 @@ a {
 @media screen and (min-width: 768px) {
   .block, .no-boxes {
     border: none !important;
+    margin-bottom: 0;
+  }
+  .no-boxes {
+    margin-bottom: 20px;
   }
 
   #wrap-1 {
