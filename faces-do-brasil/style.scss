@@ -61,7 +61,7 @@ body, h3.block-title, h1, h2{
 }
 
 #top-search {
-  width: 290px;
+  width: 300px;
   float: right;
   max-height: 60px;
   .radio-inline {
@@ -88,14 +88,51 @@ body, h3.block-title, h1, h2{
   display: none;
 }
 
+/* Top Menu */
+
+.box-container-3{
+  width: 100%;
+  z-index: 0;
+  margin-top: 20px;
+  .navbar-toggle{
+    margin-top: -20px;
+    background-color: #b5003c;
+    &:hover{
+      background-color:  #7e002a;
+    }
+  }
+  .navbar-inverse{
+    background: none;
+    border: none;
+    .navbar-nav{
+      a, a:visited{
+        background: #b5003c;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        height: 100%;
+        padding: 5px 10px;
+        color: #FFF;
+        font-size: 16px;
+        text-decoration: none;
+        -webkit-box-shadow: -5px 0px 7px 00px #550000;
+        -moz-box-shadow: -5px 0px 7px 00px #550000;
+        box-shadow: -5px 0px 7px 00px #550000;
+      }
+      a:hover {
+        color: #FFF;
+        background: #7e002a;
+      }
+    }
+  }
+}
+
 #content h1.page-title{
   display: none;
 }
 
 /* Boxes */
 
-#boxes{
-  padding-top: 15px;
+.boxes{
   -webkit-box-shadow:  0px -4px 5px rgba(85, 0, 0, 0.3);
   -moz-box-shadow:  0px -4px 5px rgba(85, 0, 0, 0.3);
   box-shadow: 0px -4px 5px rgba(85, 0, 0, 0.3);
@@ -103,7 +140,7 @@ body, h3.block-title, h1, h2{
   position: relative;
   background: url('images/bg_reciclado_topo.jpg') repeat top left;
   padding-top: 40px;
-  margin: -15px -15px;
+  margin: -22px -15px;
 }
 
 /* Box-2 */
@@ -124,11 +161,11 @@ body, h3.block-title, h1, h2{
     border: none;
   }
   .block{
-     padding: 0;
-     h2 {
+    padding: 0; 
+    h2 {
       font-family: 'Open Sans';
       font-size: 14px;
-     }
+    }
   }
   p {
     text-align: center;
@@ -226,11 +263,12 @@ body, h3.block-title, h1, h2{
 #content{ 
   .box-container-1{
     .blog-post{
-      padding-left: 4px; 
+      padding: 5px 30px;
       .title {
         border: none;
         background: #F7E5EB;
         padding: 5px 20px;
+        margin-left: -25px;
       }
       a {
         color: #000;
