@@ -1826,7 +1826,7 @@ body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbo
 #content .block h2, #content .block-title, #content .block-title, #content .main-block h1, #not-found h1, #access-denied h1 {
   color: #333;
   margin: 0px;
-  line-height: 1.5em;
+  line-height: 1em;
   font-weight: bold;
   clear: both;
   font-size: 18px;
