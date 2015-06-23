@@ -54,3 +54,8 @@ $block-title: $content-title;
 // Ação!
 @import '../../ees/stylesheets/ees';
 
+select#order_payment_data_method {
+  option[value=boleto] {
+    display: none;
+  }
+}
