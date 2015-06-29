@@ -31,3 +31,9 @@ body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbo
        background-position: 40px center;
   }
 }
+
+select#order_payment_data_method {
+  option[value=boleto] {
+    display: none;
+  }
+}
