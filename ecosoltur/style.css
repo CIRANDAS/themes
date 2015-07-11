@@ -1,7 +1,7 @@
 @import url(/designs/themes/cirandas/style.css);
 @import url(stylesheets/style.css);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Fjord+One);
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+@import url(//fonts.googleapis.com/css?family=Fjord+One);
 
 /***** General *****/
 
@@ -45,7 +45,7 @@ body {
 }
 
 #top-menu li{
-  float: left;  
+  float: left;
   border-left: 1px solid #FFF;
   margin-top: 10px;
 }
@@ -82,7 +82,7 @@ body {
 #wrap-1 .highlights-container{
   max-width: 960px !important;
   height: 388px !important;
-  margin: auto; 
+  margin: auto;
   border-color: transparent;
 }
 
@@ -134,7 +134,7 @@ p.highlights-block-footer{
   margin: auto;
 }
 
-.profile-homepage #content .box-2, 
+.profile-homepage #content .box-2,
 #content.not-context-content .box-2{
   display: none;
 }
@@ -143,7 +143,7 @@ p.highlights-block-footer{
   margin-left: 0px;
 }
 
-.profile-homepage #content .box-1, 
+.profile-homepage #content .box-1,
 #content.not-context-content .box-1{
   margin: 0 40px 0 0px;
 }
@@ -155,7 +155,7 @@ body.template-leftbar .box-1{
 .box-1 .blocks{
   padding: 20px;
   background-color: #FFF;
-  min-height: 400px;  
+  min-height: 400px;
 }
 
 #content-inner{
@@ -282,7 +282,7 @@ body.template-leftbar .box-1{
   width: 70px !important;
   margin: -25px 5px 0 0px !important;
   height: 70px !important;
-  float: left; 
+  float: left;
 }
 
 /**** Bread Crumbs ***/
@@ -294,7 +294,7 @@ body.template-leftbar .box-1{
 
 #content .breadcrumbs-plugin_content-breadcrumbs-block a{
   color: #000;
-} 
+}
 #content .breadcrumbs-plugin_content-breadcrumbs-block a:visited{
   color: #333;
 }
@@ -351,7 +351,7 @@ body.template-leftbar .box-1{
   font-family: 'Fjord One';
   text-shadow: 1px 1px 3px #000;
   width: 190px;
-  text-align: center; 
+  text-align: center;
 }
 
 .profile-homepage #article img{
@@ -371,7 +371,7 @@ body.template-leftbar .box-1{
 }
 
 #article-toolbar .vote-actions, #article #addThis {
-  display: none; 
+  display: none;
 }
 
 #article h4{
@@ -590,7 +590,7 @@ height: 30px;
   font-family: 'Fjord One';
   font-size: 24px;
   font-weight: bolder;
-  margin-left: 50px; 
+  margin-left: 50px;
   color: #FFF;
   width: 150px;
   text-transform: uppercase;
@@ -622,14 +622,14 @@ height: 30px;
 }
 
 /***** Quick links *****/
- 
+
 #admin-links {
   position: fixed;
   top: 50px;
   left: 0px;
   z-index: 100;
 }
- 
+
 .quick-admin-link {
   display: block;
   font-weight: bold;
@@ -647,19 +647,19 @@ height: 30px;
   -moz-box-shadow: 0 6px 10px -4px #888;
   -webkit-box-shadow: 0 6px 10px -4px #888;
 }
- 
+
 #theme-footer a.quick-admin-link {
   color: #000;
 }
- 
+
 #theme-footer a.quick-admin-link a:hover {
   text-decoration: underline;
 }
- 
+
 #profile-admin {
   top: 10px;
 }
- 
+
 #edit-blocks.quick-admin-link {
   top: 40px;
 }

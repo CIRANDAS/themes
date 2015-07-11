@@ -1,6 +1,6 @@
 @import url(/designs/themes/cirandas/style.css);
 @import url(stylesheets/style.css);
-@import url(http://fonts.googleapis.com/css?family=Fauna+One);
+@import url(//fonts.googleapis.com/css?family=Fauna+One);
 
 /**** General ***************************************************************/
 
@@ -42,7 +42,7 @@ h1,
   width: 100%;
   height: 123px;
   background: url(images/logo.png) no-repeat;
-  margin-top: 10px;  
+  margin-top: 10px;
 }
 
 #site-title span {
@@ -123,7 +123,7 @@ h1,
 }
 
 #profile-header {
-  max-height: 300px; 
+  max-height: 300px;
   margin: 20px auto;
 }
 
@@ -202,7 +202,7 @@ input.button {
   top: 97px;
   right: 66px;
   position: absolute;
-  z-index: 10;  
+  z-index: 10;
 }
 
 #social-networks ul{
@@ -528,14 +528,14 @@ body.template-rightbar .box-1 {
 }
 
 /* Quick links */
- 
+
 #admin-links {
   position: fixed;
   top: 50px;
   left: 0px;
   z-index: 100;
 }
- 
+
 .quick-admin-link {
   display: block;
   font-weight: bold;
@@ -553,19 +553,19 @@ body.template-rightbar .box-1 {
   -moz-box-shadow: 0 6px 10px -4px #888;
   -webkit-box-shadow: 0 6px 10px -4px #888;
 }
- 
+
 #theme-footer a.quick-admin-link {
   color: #000;
 }
- 
+
 #theme-footer a.quick-admin-link a:hover {
   text-decoration: underline;
 }
- 
+
 #profile-admin {
   top: 10px;
 }
- 
+
 #edit-blocks.quick-admin-link {
   top: 40px;
 }
