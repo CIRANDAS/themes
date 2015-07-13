@@ -1,6 +1,6 @@
 @import url(/designs/themes/cirandas/style.css);
 @import url(stylesheets/style.css);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
 
 /***** General *****/
 
@@ -172,7 +172,7 @@ margin: 0;
 
 #content .link-list-block{
   background:  url('images/bg-link-list.png') top left no-repeat;
-  height: 270px; 
+  height: 270px;
 }
 
 #content .link-list-block ul{
@@ -296,7 +296,7 @@ margin: 0;
   padding-top: 15px;
   font-size: 12px;
   overflow: hidden;
-  text-overflow: ellipsis;  
+  text-overflow: ellipsis;
 }
 
 #product-list li.product .expand-box .content div:nth-of-type(2n){
@@ -335,7 +335,7 @@ margin: 0;
 }
 
 #content #product-list .ui-button-text, #content #cart-add-item .ui-button-text{
-  padding-top: 5px; 
+  padding-top: 5px;
 }
 
 #product-list .ui-button{
@@ -387,7 +387,7 @@ margin: 0;
   background: #AA0044;
   width: 100px;
   color: #FFF;
-  
+
 }
 
 /***** Footer *****/
@@ -495,14 +495,14 @@ margin: 0;
 }
 
 /***** Quick links *****/
- 
+
 #admin-links {
   position: fixed;
   top: 50px;
   left: 0px;
   z-index: 100;
 }
- 
+
 .quick-admin-link {
   display: block;
   font-weight: bold;
@@ -520,19 +520,19 @@ margin: 0;
   -moz-box-shadow: 0 6px 10px -4px #888;
   -webkit-box-shadow: 0 6px 10px -4px #888;
 }
- 
+
 #theme-footer a.quick-admin-link {
   color: #000;
 }
- 
+
 #theme-footer a.quick-admin-link a:hover {
   text-decoration: underline;
 }
- 
+
 #profile-admin {
   top: 10px;
 }
- 
+
 #edit-blocks.quick-admin-link {
   top: 40px;
 }

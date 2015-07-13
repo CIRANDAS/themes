@@ -1,0 +1,10 @@
+---
+jquery_theme: smoothness
+icon_theme:
+- awesome
+- pidgin
+layout: cirandas-responsive
+owner_type: Enterprise
+owner_id: 45397
+name: Recantico
+responsive: true

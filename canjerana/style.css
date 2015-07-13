@@ -1,6 +1,6 @@
 @import url(/designs/themes/cirandas/style.css);
 @import url(stylesheets/style.css);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
 
 @font-face {
     font-family: 'Industria';
@@ -10,7 +10,7 @@
          url('fonts/industria-solid.ttf') format('truetype'),
          url('fonts/industria-solid.svg#Industria') format('svg');
     font-weight: normal;
-    font-style: normal; 
+    font-style: normal;
 }
 
 /***** General *****/
@@ -55,7 +55,7 @@ h1, h2, h3, #content .block #display-product-name h2{
   margin: 0;
 }
 
-#content .a-oficina, #content .nosso-trabalho, 
+#content .a-oficina, #content .nosso-trabalho,
 #content .materia-prima, .action-contact-new #content .main-block h1 {
   height: 180px;
   width: 696px;
@@ -529,14 +529,14 @@ body{
 }
 
 /***** Quick links *****/
- 
+
 #admin-links {
   position: fixed;
   top: 50px;
   left: 0px;
   z-index: 100;
 }
- 
+
 .quick-admin-link {
   display: block;
   font-weight: bold;
@@ -554,19 +554,19 @@ body{
   -moz-box-shadow: 0 6px 10px -4px #888;
   -webkit-box-shadow: 0 6px 10px -4px #888;
 }
- 
+
 #theme-footer a.quick-admin-link {
   color: #000;
 }
- 
+
 #theme-footer a.quick-admin-link a:hover {
   text-decoration: underline;
 }
- 
+
 #profile-admin {
   top: 10px;
 }
- 
+
 #edit-blocks.quick-admin-link {
   top: 40px;
 }
