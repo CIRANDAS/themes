@@ -1,5 +1,6 @@
 name: "ecosoltur"
-layout: "cirandas"
-icon_theme: [default, pidgin]
-owner_type: 'Profile'
+layout: "cirandas-responsive" # don't change
+icon_theme: [awesome, pidgin]
+responsive: true
+owner_type: Profile
 owner_id: 31953
