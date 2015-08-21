@@ -1,4 +1,5 @@
 <div id="enterprise-footer">
+  <a id="footer-logo" href="/<%= profile.identifier %>"><span>EcosolTur</span></a>
   <div id="footer-index">
   </div>
   <div id="footer-social">
@@ -8,8 +9,7 @@
       <li><a id="twitter" href="#"><span>Twitter</span></a></li>
       <li><a id="feed" href="#"><span>Feed</span></a></li>
     </ul>
-    <a id="footer-logo" href="/"><span>EcosolTur</span></a>
-  </div> 
+  </div>
 </div>
 <div id="footer-copyright">
   <p>Esta rede social usa o <a href="http://noosfero.org/">Noosfero</a>, desenvolvido pela <a href="http://colivre.coop.br/">Colivre</a> e licenciado sob a <a href="http://www.gnu.org/licenses/agpl.html">GNU Affero General Public License</a> versão 3 ou qualquer versão posterior.</p>
@@ -45,12 +45,13 @@
 
 <script type="text/javascript">
   jQuery(function($) {
+    $("#logo").prependTo("#wrap-1");
     $(".highlights-block").prependTo("#wrap-1");
     $("#top-menu").prependTo("#wrap-1");
     if ($("#theme-footer").find("#left-menu").length == 0){
       $("#content").toggleClass("not-context-content");
     }else{
-      $("#left-menu").prependTo(".box-2 .blocks");
+      $("#left-menu").prependTo(".box-container-2");
     }
     $("#profile-footer").prependTo("#footer-index");
     $(".breadcrumbs-plugin_content-breadcrumbs-block").prependTo("#content-inner");

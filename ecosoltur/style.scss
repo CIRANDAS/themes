@@ -1,24 +1,24 @@
-@import url(/designs/themes/cirandas/style.css);
-@import url(stylesheets/style.css);
+@import '../cirandas-responsive/style';
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Fjord+One);
+
+.profiler-results{
+  display: none;
+}
 
 /***** General *****/
 
 body {
   font-family: 'Open Sans';
-  background: #FFF url("images/bg.png") bottom left repeat-x;
+  background: #FFF url("images/bkg-eco.png") top left repeat;
   padding-bottom: 0px;
-  background-size: 40px 330px;
 }
 
 #wrap-1{
-  width: 100%;
-  box-shadow: none;
+  width: 980px;
 }
 
 #wrap-2{
-  width: 1024px;
   margin: auto;
   top: 40px;
   border: none;
@@ -29,87 +29,153 @@ body {
 /***** Top menu *****/
 
 #top-menu{
-  width: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  width: 950px;
+  background: #eb903c;
   height: 40px;
   line-height: 20px;
-  top: 40px;
   position: absolute;
   z-index: 7;
+  margin-top: 15px;
+  border-radius: 5px 5px 0px 0px;
 }
 
 #top-menu ul{
-  width: 840px;
+  width: 580px;
   list-style: none;
   margin: auto;
 }
 
 #top-menu li{
   float: left;  
-  border-left: 1px solid #FFF;
-  margin-top: 10px;
+  height: 40px;
 }
 
-#top-menu li:first-child{
+#top-menu li:first-child a{
   border-left: none;
 }
 
 #top-menu a{
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #FFF;
   padding: 0 20px;
   font-size: 14px;
+  border-left: 1px solid #FFF;
+  margin-top: 10px;
+  font-weight: 700px;
 }
 
 #top-menu a:hover{
-  color: #00FFFF;
+  color: #7a4100;
+  text-decoration: none;
 }
 
 #top-menu a.link-this-page{
-  color: #00FFFF;
+  color: #7a4100;
+  text-decoration: none;
+}
+
+#top-menu li .submenu{
+  display: none;
+  position: absolute;
+  background:  #ffbe71;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  margin-top: 10px;
+}
+
+#top-menu li:hover .submenu{
+  display: block;
+  width: 105px;
+  height: 95px;
+  border-bottom: 3px solid #eb903c;
+}
+
+#top-menu .submenu li{
+  border: none;  
+  width: 105px;
+  height: auto;
+  margin-top: 0;
+  padding: 8px;
+}
+
+#top-menu .submenu a{
+  padding: 0 10px;
+  margin-top: 0;
+  border: none;
+  color: #5b381c;
+}
+
+#top-menu .submenu li:hover{
+  background: #ffd6a6; 
+}
+
+#top-menu .submenu li:hover a{
+  color: #7a4100;
 }
 
 /***** Highlights Block *****/
 
 .highlights-block{
-  background: #000;
-  top: 40px;
+  background: #f8db94;
+  top: 55px;
   padding: 0px;
-  height: 390px;
+  height: 250px;
   z-index: 2;
+  border-radius: 0px 0px 5px 5px;
 }
 
 #wrap-1 .highlights-container{
   max-width: 960px !important;
-  height: 388px !important;
+  height: 250px !important;
   margin: auto; 
   border-color: transparent;
+  background: transparent;
+}
+
+.highlights-container::after{
+  content: "";
+  background: url("images/logo-flag.png");
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 
 a.highlights-image-link{
-  max-width: 960px !important;
-  height: 389px !important;
-  max-height: 389px !important;
   border: none;
+  height: 250px;
+  background-color: #f8db94 !important;
+}
+
+.highlights-container img {
+  max-height: 250px;
 }
 
 .highlights-label{
-  display: block;
-  background: transparent url('images/logo-vera-cruz.png') no-repeat;
-  background-position: 97% 0%;
-  height: 60px;
+  display: none;
 }
 
 .highlights-block-pager{
   float: none;
   position: relative;
-  top: -30px;
+  top: -40px;
   z-index: 1;
   font-size: 18px;
 }
 
+.highlights-block-pager a {
+  background: rgba(245,135,13,0.3);
+  padding: 5px;
+  border-radius: 10px;
+  max-height: 10px;
+  border: 0px;
+  font-size: 0px;
+}
+
 .highlights-block-pager a.activeSlide{
-  color: #AA0000;
+  background: rgba(245,135,13,1.0);
 }
 
 .highlights-block .button-bar{
@@ -123,6 +189,26 @@ p.highlights-block-footer{
   display: none;
 }
 
+/***** Logo *****/
+#logo{
+  float: right;
+  position: relative;
+  z-index: 10;
+  margin-top: -30px;
+}
+
+#logo a{
+  background: url("images/logo.png") top left no-repeat;
+  width: 175px;
+  height: 130px;
+  float: left;
+  background-size: contain;
+}
+
+#logo span{
+  display: none;
+}
+
 /***** Content *****/
 
 #content h1.page-title{
@@ -130,41 +216,40 @@ p.highlights-block-footer{
 }
 
 #content{
-  width: 1024px;
-  margin: auto;
+  padding-top: 20px;
 }
 
-.profile-homepage #content .box-2, 
-#content.not-context-content .box-2{
+#content .block{
+  margin: 0px 5px 20px 5px;
+}
+
+.profile-homepage .box-container-2, 
+#content.not-context-content .box-container-2{
   display: none;
 }
 
-#content .box-2{
+#content .box-container-2{
   margin-left: 0px;
 }
 
-.profile-homepage #content .box-1, 
-#content.not-context-content .box-1{
-  margin: 0 40px 0 0px;
+body.template-leftbar .box-container-1{
+  left: 25%;
 }
 
-body.template-leftbar .box-1{
-  margin: 0 40px 0 220px;
+.profile-homepage #content .box-container-1,
+#content.not-context-content .box-container-1{
+  left: 50%;
+  margin-left: -480px !important;
 }
 
-.box-1 .blocks{
+.box-container-1 .blocks{
   padding: 20px;
   background-color: #FFF;
   min-height: 400px;  
 }
 
-#content-inner{
-  background-color: #F9F9F9;
-  padding: 0;
-}
-
-.profile-homepage .box-1 .blocks,
-.not-context-content .box-1 .blocks{
+.profile-homepage .box-container-1,
+.not-context-content .box-container-1{
   background-color: transparent;
   padding: 0px;
   width: 960px;
@@ -225,7 +310,7 @@ body.template-leftbar .box-1{
 }
 /***** Context Content *****/
 
-.box-2 .contents{
+.box-container-2 .contents{
   margin-top: 30px;
 }
 
@@ -240,42 +325,43 @@ body.template-leftbar .box-1{
 #left-menu li{
   display: block;
   width: 100%;
-  height: 80px;
+  height: 60px;
   border: none;
   margin: 0;
   padding: 0;
+  border-radius: 5px;
+  background: #8FE8A9;
+  margin-bottom: 10px;
 }
 
 #left-menu li:hover{
   border: none;
-  background-color: transparent;
+  background-color: #39BE61;
+  border-radius: 5px;
 }
 
 #left-menu li a{
   text-align: left;
-  color: #4d4d4d;
-  text-transform: uppercase;
-  font-size: 14px;
-  border-bottom: 1px solid #e2e2e2;
-  padding: 25px 15px 0px 15px;
-  background-color: #f9f9f9;
+  color: #05702A;
+  font-size: 16px;
+  padding: 20px 15px 0px 15px;
   text-decoration: none;
   display: block;
-  height: 80px;
+  height: 60px;
   line-height: normal;
 }
 
 #left-menu li a.link-this-page{
-  color: #AA0000;
-  background-color: #FFF;
-}
-
-#left-menu li:first-child a.link-this-page{
-  border-top: 1px solid #e2e2e2;
+  color: #FFF;
+  background-color: #39BE61;
+  border-radius: 5px;
 }
 
 #left-menu li a:hover{
-  color: #AA0000;
+  color: #FFF;
+  background-color: #39BE61;
+  border-radius: 5px;
+ 
 }
 
 #left-menu img {
@@ -302,13 +388,13 @@ body.template-leftbar .box-1{
 /***** Article *****/
 
 #article {
-  padding: 0px 30px;
+  padding: 0px 0px;
   margin: auto;
 }
 
 .profile-homepage #article .article-body p {
-  width: 191px;
-  height: 191px;
+  width: 133px;
+  height: 133px;
   float: left;
   margin: 0px;
   padding: 0px;
@@ -345,24 +431,25 @@ body.template-leftbar .box-1{
   position: absolute;
   color: #FFF;
   font-weight: bolder;
-  margin-top: 150px;
+  margin-top: 100px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 14px;
   font-family: 'Fjord One';
   text-shadow: 1px 1px 3px #000;
-  width: 190px;
+  width: 130px;
   text-align: center; 
 }
 
 .profile-homepage #article img{
-  min-width: 190px;
-  min-height: 190px;
+  min-width: 130px;
+  min-height: 130px;
   position: absolute;
+  border-radius: 3px;
 }
 
 .profile-homepage #article .zoomable-image{
-  width: 190px !important;
-  height: 190px !important;
+  width: 130px !important;
+  height: 130px !important;
   position: absolute;
 }
 
@@ -410,6 +497,10 @@ body.template-leftbar .box-1{
 
 .logged-in #article .article-body .folder-content tr {
 height: 30px;
+}
+
+.profile-homepage .breadcrumbs-plugin_content-breadcrumbs-block{
+  display: none;
 }
 
 /***** Comments *****/
@@ -478,11 +569,25 @@ height: 30px;
   border: none;
   border-radius: 0px;
   box-shadow: none;
-  margin: 80px 0 0;
+  margin: 0;
+  background: #277868;
 }
 
 #theme-footer a{
   text-decoration: none;
+}
+
+#theme-footer #footer-logo{
+  background: url("images/logo.png") no-repeat top left;
+  height: 115px;
+  width: 150px;
+  float: left;
+  display: block;
+  background-size: contain;
+}
+
+#theme-footer #footer-logo span{
+  display: none;
 }
 
 #facebook-footer{
@@ -491,19 +596,19 @@ height: 30px;
 
 #enterprise-footer{
   height: 160px;
-  background: transparent url('images/logo-big.png') no-repeat top left;
-  width: 1200px;
+  width: 960px;
   margin: auto;
+  padding-top: 20px;
 }
 
 #footer-index{
   padding-top: 20px;
+  float: left;
 }
 
 #profile-footer{
   background: transparent;
   width: 550px;
-  margin-left: 150px;
   border: none;
   float: left;
   padding: 0px;
@@ -512,13 +617,13 @@ height: 30px;
 #profile-footer ul{
   list-style: none;
   float: left;
-  color: #9cbcce;
+  color: #FFF;
   padding-left: 60px;
 }
 
 #profile-footer ul li:first-child{
   text-transform: uppercase;
-  color: #FFF;
+  color: #FFD6A6;
   font-weight: bolder;
 }
 
@@ -527,13 +632,14 @@ height: 30px;
 }
 
 #profile-footer ul li a, #profile-footer ul li a:hover{
-  color: #9cbcce;
+  color: #FFD6A6;
 }
 
 #footer-social{
   width: 250px;
   float:right;
   padding-left: 30px;
+  padding-top: 15px;
 }
 
 #footer-social ul{
@@ -579,6 +685,7 @@ height: 30px;
   background: transparent url('images/logo-text.png') no-repeat;
   width: 200px;
   text-decoration: none;
+  display: none;
 }
 
 #footer-logo:hover{
