@@ -1,4 +1,7 @@
-@import url(../base-responsive/style.css);
+// say to base-responsive that we already took care of boostrap
+$bootstrap-loaded: true;
+@import '../base-responsive/style';
+
 @import 'top_bar';
 @import 'base';
 @import 'colors';

@@ -1,6 +1,5 @@
 @import '../cirandas-responsive/style';
-@import url(http://fonts.googleapis.com/css?family=Fenix);
-
+@import url(//fonts.googleapis.com/css?family=Fenix);
 
 body{
   background: #DCDCDC;
@@ -11,7 +10,7 @@ body{
   margin: 20px auto;
 }
 
-#content{ 
+#content{
   #profile-title{
     display: none;
   }
@@ -20,7 +19,7 @@ body{
       background: none;
       border: none;
       li{
-        margin: 0 20px; 
+        margin: 0 20px;
         a{
           color: #8B0000;
           font-size: 24px;
@@ -35,7 +34,7 @@ body{
       }
     }
   }
-  .box-container-2{ 
+  .box-container-2{
     .link-list-block{
       li{
         background: none;
@@ -63,7 +62,7 @@ body{
   .block h2, .block-title{
     color:  #8B0000;
     border-bottom: 2px solid  #8B0000;
-    font-family: 'Fenix'; 
+    font-family: 'Fenix';
   }
   .products-block li a:hover{
      color:  #FF6666;
@@ -118,7 +117,7 @@ body{
   width: 100%;
   float: left;
   p{
-    text-align: center; 
+    text-align: center;
   }
 }
 
@@ -135,7 +134,7 @@ body{
   border-radius: 0px 8px 8px 0px;
   left: 0px;
   text-decoration: none;
-}  
+}
 #theme-footer a.quick-admin-link {
   color: #87CEEB;
   a:hover {

@@ -1,5 +1,5 @@
 @import url(../base/style.css);
-@import url(http://fonts.googleapis.com/css?family=Varela);
+@import url(//fonts.googleapis.com/css?family=Varela);
 
 body {
   background: #CCE0F0 fixed; /* Old browsers */
