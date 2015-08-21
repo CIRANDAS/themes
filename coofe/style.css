@@ -1,6 +1,6 @@
 @import url(/designs/themes/cirandas/style.css);
 @import url(stylesheets/style.css);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
 
 /***** General *****/
 
@@ -157,7 +157,7 @@ h1, h2, h3, #content .block #display-product-name h2{
   margin-top: 0px;
 }
 
-#catalog-bar span, #onde-estamos-bar span, 
+#catalog-bar span, #onde-estamos-bar span,
 #contact-bar span, #eventos-bar span,  #galeria-bar span {
   margin-left: 40px;
   font-weight: bold;
@@ -169,7 +169,7 @@ h1, h2, h3, #content .block #display-product-name h2{
   display: none;
 }
 
-#onde-estamos-bar p, #eventos-bar p, 
+#onde-estamos-bar p, #eventos-bar p,
 #contact-bar p, #catalog-bar p, #galeria-bar p{
   margin: auto;
   height: 45px;
@@ -206,11 +206,11 @@ h1, h2, h3, #content .block #display-product-name h2{
 
 #galeria-bar {
   background-color: #666666;
-} 
+}
 
 #galeria-bar p{
   background: #666666 url('images/gallery-header.png') no-repeat;
-} 
+}
 
 #contact-bar {
   background-color: #006c92;
@@ -442,7 +442,7 @@ h1{
   margin-top: 10px;
   position:relative;
   width: 140px;
-  margin-left: -5px; 
+  margin-left: -5px;
 }
 
 #product-list .cart-add-item .ui-icon-cart{
@@ -688,14 +688,14 @@ h1{
 }
 
 /* Quick links */
- 
+
 #admin-links {
   position: fixed;
   top: 50px;
   left: 0px;
   z-index: 100;
 }
- 
+
 .quick-admin-link {
   display: block;
   font-weight: bold;
@@ -713,19 +713,19 @@ h1{
   -moz-box-shadow: 0 6px 10px -4px #888;
   -webkit-box-shadow: 0 6px 10px -4px #888;
 }
- 
+
 #theme-footer a.quick-admin-link {
   color: #000;
 }
- 
+
 #theme-footer a.quick-admin-link a:hover {
   text-decoration: underline;
 }
- 
+
 #profile-admin {
   top: 10px;
 }
- 
+
 #edit-blocks.quick-admin-link {
   top: 40px;
 }

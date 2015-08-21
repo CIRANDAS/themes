@@ -1,6 +1,6 @@
 @import '../cirandas-responsive/style';
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Fjord+One);
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+@import url(//fonts.googleapis.com/css?family=Fjord+One);
 
 .profiler-results{
   display: none;
@@ -46,8 +46,14 @@ body {
 }
 
 #top-menu li{
+<<<<<<< HEAD:ecosoltur/style.scss
   float: left;  
   height: 40px;
+=======
+  float: left;
+  border-left: 1px solid #FFF;
+  margin-top: 10px;
+>>>>>>> d9fc472df53a2eb2da74e0a3221434c4296e6283:ecosoltur/style.css
 }
 
 #top-menu li:first-child a{
@@ -125,8 +131,13 @@ body {
 
 #wrap-1 .highlights-container{
   max-width: 960px !important;
+<<<<<<< HEAD:ecosoltur/style.scss
   height: 250px !important;
   margin: auto; 
+=======
+  height: 388px !important;
+  margin: auto;
+>>>>>>> d9fc472df53a2eb2da74e0a3221434c4296e6283:ecosoltur/style.css
   border-color: transparent;
   background: transparent;
 }
@@ -223,8 +234,13 @@ p.highlights-block-footer{
   margin: 0px 5px 20px 5px;
 }
 
+<<<<<<< HEAD:ecosoltur/style.scss
 .profile-homepage .box-container-2, 
 #content.not-context-content .box-container-2{
+=======
+.profile-homepage #content .box-2,
+#content.not-context-content .box-2{
+>>>>>>> d9fc472df53a2eb2da74e0a3221434c4296e6283:ecosoltur/style.css
   display: none;
 }
 
@@ -232,8 +248,14 @@ p.highlights-block-footer{
   margin-left: 0px;
 }
 
+<<<<<<< HEAD:ecosoltur/style.scss
 body.template-leftbar .box-container-1{
   left: 25%;
+=======
+.profile-homepage #content .box-1,
+#content.not-context-content .box-1{
+  margin: 0 40px 0 0px;
+>>>>>>> d9fc472df53a2eb2da74e0a3221434c4296e6283:ecosoltur/style.css
 }
 
 .profile-homepage #content .box-container-1,
@@ -245,7 +267,7 @@ body.template-leftbar .box-container-1{
 .box-container-1 .blocks{
   padding: 20px;
   background-color: #FFF;
-  min-height: 400px;  
+  min-height: 400px;
 }
 
 .profile-homepage .box-container-1,
@@ -368,7 +390,7 @@ body.template-leftbar .box-container-1{
   width: 70px !important;
   margin: -25px 5px 0 0px !important;
   height: 70px !important;
-  float: left; 
+  float: left;
 }
 
 /**** Bread Crumbs ***/
@@ -380,7 +402,7 @@ body.template-leftbar .box-container-1{
 
 #content .breadcrumbs-plugin_content-breadcrumbs-block a{
   color: #000;
-} 
+}
 #content .breadcrumbs-plugin_content-breadcrumbs-block a:visited{
   color: #333;
 }
@@ -436,8 +458,13 @@ body.template-leftbar .box-container-1{
   font-size: 14px;
   font-family: 'Fjord One';
   text-shadow: 1px 1px 3px #000;
+<<<<<<< HEAD:ecosoltur/style.scss
   width: 130px;
   text-align: center; 
+=======
+  width: 190px;
+  text-align: center;
+>>>>>>> d9fc472df53a2eb2da74e0a3221434c4296e6283:ecosoltur/style.css
 }
 
 .profile-homepage #article img{
@@ -458,7 +485,7 @@ body.template-leftbar .box-container-1{
 }
 
 #article-toolbar .vote-actions, #article #addThis {
-  display: none; 
+  display: none;
 }
 
 #article h4{
@@ -697,7 +724,7 @@ height: 30px;
   font-family: 'Fjord One';
   font-size: 24px;
   font-weight: bolder;
-  margin-left: 50px; 
+  margin-left: 50px;
   color: #FFF;
   width: 150px;
   text-transform: uppercase;
@@ -729,14 +756,14 @@ height: 30px;
 }
 
 /***** Quick links *****/
- 
+
 #admin-links {
   position: fixed;
   top: 50px;
   left: 0px;
   z-index: 100;
 }
- 
+
 .quick-admin-link {
   display: block;
   font-weight: bold;
@@ -754,19 +781,19 @@ height: 30px;
   -moz-box-shadow: 0 6px 10px -4px #888;
   -webkit-box-shadow: 0 6px 10px -4px #888;
 }
- 
+
 #theme-footer a.quick-admin-link {
   color: #000;
 }
- 
+
 #theme-footer a.quick-admin-link a:hover {
   text-decoration: underline;
 }
- 
+
 #profile-admin {
   top: 10px;
 }
- 
+
 #edit-blocks.quick-admin-link {
   top: 40px;
 }

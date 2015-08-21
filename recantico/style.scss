@@ -1,0 +1,39 @@
+@import 'stylesheets/style';
+
+/* Customizações do Recantico: */
+.profile-name, #enterprise-contact-button { display:none; }
+#boxes { border-top: 2px solid #085E9B;
+margin-top: 20px; border: none; }
+body.template-leftbar #boxes, body.template-default #boxes, body.template-leftbottom #boxes { background: none }
+#page-logo { box-shadow: none }
+#profile-theme-header { background-color: #fff }
+@media (max-width: 359px) {
+  #profile-theme-header {
+       background-size: 0;
+  }
+  .profile-name, #enterprise-contact-button { display:inline; }
+}
+@media (max-width: 767px) and (min-width: 360px) {
+  #profile-theme-header {
+       background-position: 35px center;
+       background-size: auto 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #profile-theme-header {
+       background-position: 35px bottom;
+       background-size: auto 180px;
+  }
+}
+@media (min-width: 992px) {
+  #profile-theme-header {
+       background-size: auto;
+       background-position: 40px center;
+  }
+}
+
+select#order_payment_data_method {
+  option[value=boleto] {
+    display: none;
+  }
+}

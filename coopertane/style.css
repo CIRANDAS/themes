@@ -1,6 +1,6 @@
 @import url(/designs/themes/cirandas/style.css);
 @import url(stylesheets/style.css);
-@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(//fonts.googleapis.com/css?family=Pacifico);
 
 /**** General ***************************************************************/
 body{
@@ -41,8 +41,8 @@ h1, h2,
   height: 800px;
 }
 
-#content h3{	
-  font-weight: bold;	
+#content h3{
+  font-weight: bold;
 }
 
 #content-inner{
@@ -132,15 +132,15 @@ body.template-default .box-1{
 #content ::-webkit-scrollbar {
     width: 10px;
 }
- 
+
 #content ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     border-radius: 10px;
 }
- 
+
 #content ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
 }
 
 #content .block-title,
@@ -161,7 +161,7 @@ body.template-default .box-1{
 }
 
 .design-menu.button-bar{
-  margin-left: 350px; 
+  margin-left: 350px;
 }
 
 /**** Enterprise Logo ******************************************************/
@@ -240,27 +240,27 @@ body.template-default .box-1{
 /*** Bottom menu ***/
 
 #content .box-1 .link-list-block{
-  background: transparent url("images/barra-post-it-vermelho.png") no-repeat;		
-  height:170px;	
-  list-style: none;		
-  margin: auto;	
+  background: transparent url("images/barra-post-it-vermelho.png") no-repeat;
+  height:170px;
+  list-style: none;
+  margin: auto;
   background-size: 500px 165px;
 }
 
 #content .box-1 .link-list-block li{
-  display: inline;		
-  text-decoration:none;				
-  text-align: center;		
-  float:left;		
+  display: inline;
+  text-decoration:none;
+  text-align: center;
+  float:left;
   margin-top: 60px;
   background: none;
 }
 
 #content .box-1 .link-list-block li a {
-  text-decoration: none;			
-  cursor: hand;		
-  width: 120px;				
-  font-family: 'Pacifico';		
+  text-decoration: none;
+  cursor: hand;
+  width: 120px;
+  font-family: 'Pacifico';
   font-size: 18px;
   background: none;
   margin: auto;
@@ -271,33 +271,33 @@ body.template-default .box-1{
   color: #a02c2c;
 }
 
-#content .box-1 .link-list-block ul li:nth-child(2) a{		
- -webkit-transform: rotate(10deg);		
-  -moz-transform: rotate(10deg);		
-  -ms-transform: rotate(10deg);	
-  -o-transform: rotate(10deg);	
-}	
-
-#content .box-1 .link-list-block ul li:nth-child(3) a{	
-  -webkit-transform: rotate(-15deg);		
-  -moz-transform: rotate(-15deg);		
-  -ms-transform: rotate(-15deg);	
-  -o-transform: rotate(-15deg);	
+#content .box-1 .link-list-block ul li:nth-child(2) a{
+ -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
 }
 
-#content .box-1 .link-list-block ul li:nth-child(4) a{		
-  -webkit-transform: rotate(-5deg);		
-  -moz-transform: rotate(-5deg);		
-  -ms-transform: rotate(-5deg);		
-  -o-transform: rotate(-5deg);	
-}	
+#content .box-1 .link-list-block ul li:nth-child(3) a{
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+}
+
+#content .box-1 .link-list-block ul li:nth-child(4) a{
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+}
 
 /*** Catalog ***/
 
-#product-list li.product .expand-box.open .content {	
-  position: absolute;	
-  left: 290px;	
-  top: -20px;	
+#product-list li.product .expand-box.open .content {
+  position: absolute;
+  left: 290px;
+  top: -20px;
   z-index: 0;
 }
 
@@ -428,14 +428,14 @@ body.template-default .box-1{
 }
 
 /* Quick links */
- 
+
 #admin-links {
   position: fixed;
   top: 50px;
   left: 0px;
   z-index: 100;
 }
- 
+
 .quick-admin-link {
   display: block;
   font-weight: bold;
@@ -453,19 +453,19 @@ body.template-default .box-1{
   -moz-box-shadow: 0 6px 10px -4px #888;
   -webkit-box-shadow: 0 6px 10px -4px #888;
 }
- 
+
 #theme-footer a.quick-admin-link {
   color: #000;
 }
- 
+
 #theme-footer a.quick-admin-link a:hover {
   text-decoration: underline;
 }
- 
+
 #profile-admin {
   top: 10px;
 }
- 
+
 #edit-blocks.quick-admin-link {
   top: 40px;
 }

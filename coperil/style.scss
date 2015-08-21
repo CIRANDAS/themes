@@ -1,5 +1,5 @@
 @import '../cirandas-responsive/style';
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
 
 @mixin shadow($top, $left, $blur, $inset, $color){
   -webkit-box-shadow: $top $left $blur $inset $color;
@@ -30,7 +30,7 @@ body {
       height: 40px;
       width: 100%;
       border-bottom: 5px solid #5698c8;
-    } 
+    }
     li {
       float: left;
       background: none;
@@ -142,7 +142,7 @@ body {
 }
 
 
-#content{ 
+#content{
   .blog-post {
     p, th, td, tr, table {
       font-size: 16px;
@@ -187,7 +187,7 @@ body {
   border-radius: 0px 8px 8px 0px;
   left: 0px;
   text-decoration: none;
-}  
+}
 
 #theme-footer a.quick-admin-link {
   color: #87CEEB;
@@ -204,7 +204,7 @@ body {
   top: 100px;
 }
 
-#content-inner{ 
+#content-inner{
   .box-container-1{
     left: 0
   }
