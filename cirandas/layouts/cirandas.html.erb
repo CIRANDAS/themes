@@ -6,13 +6,13 @@
     <!--<meta http-equiv="refresh" content="1"/>-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-    <%= render :file => "#{Rails.root}/public#{theme_path}/head.html.erb" rescue nil %>
+    <%= render file: "#{Rails.root}/public#{theme_path}/head.html.erb" rescue nil %>
 
     <link rel="shortcut icon" href="<%= image_path(theme_favicon) %>" type="image/x-icon" />
 
     <!-- externals come first for parallelism -->
-    <%# render :file => "#{Rails.root}/public/designs/themes/cirandas/layouts/_owa.html.erb" if Rails.env.production? %>
-    <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/layouts/_purechat.html.erb" if Rails.env.production? %>
+    <%# render file: "#{Rails.root}/public/designs/themes/cirandas/layouts/_owa.html.erb" if Rails.env.production? %>
+    <%= render file: "#{Rails.root}/public/designs/themes/cirandas/layouts/_purechat.html.erb" if Rails.env.production? and not @disable_purechat %>
 
     <%= noosfero_javascript %>
     <%= noosfero_stylesheets %>
@@ -32,7 +32,7 @@
 
   </head>
 
-  <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/load.erb" %>
+  <%= render file: "#{Rails.root}/public/designs/themes/cirandas/load.erb" %>
 
   <body class="<%= body_classes + @body_extra_classes %>">
     <a href="#content" id="link-go-content"><span><%= _("Go to the content") %></span></a>
@@ -48,7 +48,7 @@
         <%= theme_header %>
       </div>
       <div id="wrap-2">
-        <%= render :partial => 'layouts/user' %>
+        <%= render partial: 'layouts/user' %>
 
         <h1 id="site-title">
           <%= theme_site_title %>
@@ -60,7 +60,7 @@
           <div id="navigation-end"></div>
         </div><!-- end id="navigation" -->
         <div id="content">
-          <%= render :file => "#{Rails.root}/public/designs/themes/cirandas/layouts/_content.html.erb" %>
+          <%= render file: "#{Rails.root}/public/designs/themes/cirandas/layouts/_content.html.erb" %>
         </div><!-- end id="content" -->
       </div><!-- end id="wrap-2" -->
     </div><!-- end id="wrap-1" -->
@@ -76,7 +76,7 @@
       end.join("\n")
     %>
 
-    <%= render :file => "#{Rails.root}/public/designs/themes/cirandas-responsive/layouts/_modal.html.erb" %>
+    <%= render file: "#{Rails.root}/public/designs/themes/cirandas-responsive/layouts/_modal.html.erb" %>
 
   </body>
 </html>
