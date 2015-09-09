@@ -24,12 +24,6 @@
         if content.respond_to?(:call) then instance_exec(&content).to_s.html_safe else content.to_s.html_safe end
       end.join("\n")
     %>
-
-    <script type='text/javascript'>
-      DEFAULT_LOADING_MESSAGE = <%="'#{ _('loading...') }'" %>;
-      noosfero.profile = <%= (@profile.identifier if @profile).to_json %>
-    </script>
-
   </head>
 
   <%= render file: "#{Rails.root}/public/designs/themes/cirandas-responsive/load.erb" %>
