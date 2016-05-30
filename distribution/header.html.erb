@@ -1,1 +1,9 @@
-../cirandas/small_header.html.erb
+  <%= javascript_include_tag '/assets/plugins/orders/javascripts/jquery.stickyPanel.js' %>
+  <%= javascript_tag do %>
+    jQuery(document).ready(function() {
+      jQuery('.box-container-2').stickyPanel({
+        topPadding: 0
+      })
+    });
+  <% end %>
+
