@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="<%= html_language %>">
   <head>
-    <title><%= h page_title %></title>
+    <title><%= h page_title.html_safe %></title>
     <%= yield(:feeds) %>
     <!--<meta http-equiv="refresh" content="1"/>-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -22,7 +22,7 @@
     <%=
       @plugins.dispatch(:head_ending).map do |content|
         if content.respond_to?(:call) then instance_exec(&content).to_s.html_safe else content.to_s.html_safe end
-      end.join("\n")
+      end.safe_join
     %>
   </head>
 
@@ -34,7 +34,7 @@
     <%=
       @plugins.dispatch(:body_beginning).map do |content|
         if content.respond_to?(:call) then instance_exec(&content).to_s.html_safe else content.to_s.html_safe end
-      end.join("\n")
+      end.safe_join
     %>
 
     <%= render partial: 'layouts/menu_responsive' %>
@@ -58,7 +58,7 @@
     <%=
       @plugins.dispatch(:body_ending).map do |content|
         if content.respond_to?(:call) then instance_exec(&content).to_s.html_safe else content.to_s.html_safe end
-      end.join("\n")
+      end.safe_join
     %>
 
     <%= render file: "#{Rails.root}/public/designs/themes/#{current_theme}/layouts/_modal.html.erb" %>
