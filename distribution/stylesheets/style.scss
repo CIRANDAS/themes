@@ -1,7 +1,5 @@
 @import 'variables';
 @import 'mixins';
-@import url(https://fonts.googleapis.com/css?family=Imprima:regular,bold&subset=Latin);
-/*@import 'stylesheets/coral';*/
 @import '../../cirandas-responsive/style';
 
 body {
@@ -25,6 +23,7 @@ body {
   overflow-y: auto;
   z-index: 2000;
   bottom: 0;
+  border-right: 1px solid #CACACA;
 }
 
 .consumers-coop-plugin_consumers-coop-menu-block {
@@ -78,10 +77,9 @@ body {
       &.settings { background-image: url(/plugins/consumers_coop/images/configuracao.png); }
     }
     hr {
-      width: 100%;
+      width: auto;
       border-bottom: 1px solid #CACACA;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin: 10px -23px;
     }
   }
 }
