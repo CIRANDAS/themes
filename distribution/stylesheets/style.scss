@@ -21,7 +21,7 @@ body {
 
   background-color: $bg;
   overflow-y: auto;
-  z-index: 2000;
+  z-index: 1030;
   bottom: 0;
   border-right: 1px solid #CACACA;
 }
@@ -75,6 +75,19 @@ body {
       &.suppliers { background-image: url(/plugins/consumers_coop/images/fornecedores.png); }
       &.consumers { background-image: url(/plugins/consumers_coop/images/consumidores.png); }
       &.settings { background-image: url(/plugins/consumers_coop/images/configuracao.png); }
+
+      &.selected {
+        color: $grey-selected; 
+        font-weight: bold;
+
+        &.orders { background-image: url(/plugins/consumers_coop/images/pedidos_.png); }
+        &.orders_cycles { background-image: url(/plugins/consumers_coop/images/feiras_virtuais_.png); }
+        &.volunteering { background-image: url(/plugins/consumers_coop/images/voluntariado_.png); }
+        &.products { background-image: url(/plugins/consumers_coop/images/produtos_.png); }
+        &.suppliers { background-image: url(/plugins/consumers_coop/images/fornecedores_.png); }
+        &.consumers { background-image: url(/plugins/consumers_coop/images/consumidores_.png); }
+        &.settings { background-image: url(/plugins/consumers_coop/images/configuracao_.png); }
+      }
     }
     hr {
       width: auto;
