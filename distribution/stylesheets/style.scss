@@ -48,6 +48,9 @@ body {
     .name {
       display: table-cell;
       vertical-align: middle;
+      color: black;
+      font-size: 14px;
+      font-weight: bold;
 
     }
 
@@ -102,7 +105,7 @@ body {
  * --------------------------------------------------
  */
 
-.controller-consumers_coop_plugin_product, .action-consumers_coop_plugin_order-edit {
+.action-consumers_coop_plugin_order-edit {
 
   #wrap-1 {
     width: 1090px;
