@@ -10,6 +10,13 @@ body {
   background-color: $bg;
 }
 
+.consumers-coop, .controller-consumers_coop_plugin_supplier, .orders_cycle {
+  #content .block h2 {
+    margin-left: -8px;
+    padding-left: 8px;
+  }
+}
+
 #content-inner {
   min-height: 100vh;
   padding-top: 0;
@@ -24,6 +31,7 @@ body {
   z-index: 1030;
   bottom: 0;
   border-right: 1px solid #CACACA;
+  height: 100vh;
 }
 
 .consumers-coop-plugin_consumers-coop-menu-block {
