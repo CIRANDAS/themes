@@ -1,0 +1,39 @@
+@mixin offcanvas {
+	.box-container-2 {
+		position: fixed;
+  	top: 0;
+  	right: 100%;
+
+  	-webkit-transition: all 0.25s ease-out;
+  	-moz-transition: all 0.25s ease-out;
+  	transition: all 0.25s ease-out;
+
+  	&.active {
+    	right: 0%;
+  	}
+
+  	.consumers-coop-plugin_consumers-coop-menu-block {
+    	box-shadow: none;
+    	border: 1px solid $bg;
+  	}
+  }
+  .sidebar-toggle {
+    position: fixed;
+    top: 55px;
+    right: 0;
+    z-index: 3000;
+    background-color: $bg;
+    .icon-bar { background-color: $grey; }
+
+    &:hover {
+      background-color: $grey;
+      .icon-bar {
+        background-color: $bg;
+      }
+    }
+  }
+
+	#theme-footer {
+    margin-left: 0;
+	}
+}

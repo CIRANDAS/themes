@@ -1,3 +1,150 @@
-@import '../../cirandas/stylesheets/cirandas';
-@import '../../cirandas/stylesheets/small';
+@import 'variables';
+@import 'mixins';
+@import '../../cirandas-responsive/style';
 
+body {
+  background: white;
+}
+#wrap-1 {
+  width: 100%;
+  background-color: $bg;
+}
+
+.consumers-coop, .controller-consumers_coop_plugin_supplier, .orders_cycle {
+  #content .block h2 {
+    margin-left: -8px;
+    padding-left: 8px;
+  }
+}
+
+#content-inner {
+  min-height: 100vh;
+  padding-top: 0;
+}
+.box-container-2 {
+  .consumers-coop-plugin_consumers-coop-menu-block, .block {
+    background-color: $bg;
+  }
+
+  background-color: $bg;
+  overflow-y: auto;
+  z-index: 1030;
+  bottom: 0;
+  border-right: 1px solid #CACACA;
+  height: 100vh;
+}
+
+.consumers-coop-plugin_consumers-coop-menu-block {
+  .profile-picture {
+    height: 70px;
+    display: table;
+    margin-bottom: 20px;
+
+    .picture {
+      margin-right: 10px;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border: 2px solid $bg;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: auto 100%;
+      display: inline-block;
+    }
+    .name {
+      display: table-cell;
+      vertical-align: middle;
+      color: black;
+      font-size: 14px;
+      font-weight: bold;
+
+    }
+
+    &:after {
+      display: table;
+      content: " ";
+      clear: both;
+    }
+  }
+  .menu-buttons-container {
+    .menu-button {
+      display: block;
+      text-transform: uppercase;
+      color: $grey;
+      font-size: 16px;
+      background-repeat: no-repeat;
+      background-size: auto 90%;
+      padding-left: 30px;
+      margin-bottom: 10px;
+
+      &.orders { background-image: url(/plugins/consumers_coop/images/pedidos.png); }
+      &.orders_cycles { background-image: url(/plugins/consumers_coop/images/feiras_virtuais.png); }
+      &.volunteering { background-image: url(/plugins/consumers_coop/images/voluntariado.png); }
+      &.products { background-image: url(/plugins/consumers_coop/images/produtos.png); }
+      &.suppliers { background-image: url(/plugins/consumers_coop/images/fornecedores.png); }
+      &.consumers { background-image: url(/plugins/consumers_coop/images/consumidores.png); }
+      &.settings { background-image: url(/plugins/consumers_coop/images/configuracao.png); }
+
+      &.selected {
+        color: $grey-selected; 
+        font-weight: bold;
+
+        &.orders { background-image: url(/plugins/consumers_coop/images/pedidos_.png); }
+        &.orders_cycles { background-image: url(/plugins/consumers_coop/images/feiras_virtuais_.png); }
+        &.volunteering { background-image: url(/plugins/consumers_coop/images/voluntariado_.png); }
+        &.products { background-image: url(/plugins/consumers_coop/images/produtos_.png); }
+        &.suppliers { background-image: url(/plugins/consumers_coop/images/fornecedores_.png); }
+        &.consumers { background-image: url(/plugins/consumers_coop/images/consumidores_.png); }
+        &.settings { background-image: url(/plugins/consumers_coop/images/configuracao_.png); }
+      }
+    }
+    hr {
+      width: auto;
+      border-bottom: 1px solid #CACACA;
+      margin: 10px -23px;
+    }
+  }
+}
+
+/*
+ * off canvas sidebar
+ * --------------------------------------------------
+ */
+
+.action-consumers_coop_plugin_order-edit {
+
+  #wrap-1 {
+    width: 1090px;
+  }
+
+  @include offcanvas;
+
+  .navbar-toggle.sidebar-toggle {
+    display: block;
+    z-index: 3000;
+  }
+
+  .box-container-1 {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  @include offcanvas;
+}
+
+@media screen and (min-width: 768px) {
+  #theme-footer {
+    margin-left: 25%;
+
+    .container {
+      width: 100%;
+    }
+    .footer-fbes {
+      padding-left: 40px;
+    }
+  }
+}

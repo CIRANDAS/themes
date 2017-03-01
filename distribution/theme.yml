@@ -1,4 +1,5 @@
-name: "Tema para coletivos de consumo"
-layout: "cirandas" # don't change
+name: "Consumers Coop"
+layout: "cirandas-responsive"
+icon_theme: [awesome, pidgin]
 jquery_theme: "smoothness"
-icon_theme: [default, pidgin]
+responsive: true

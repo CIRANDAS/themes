@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="<%= html_language %>">
   <head>
-    <title><%= h page_title %></title>
+    <title><%= h page_title.html_safe %></title>
     <%= yield(:feeds) %>
     <!--<meta http-equiv="refresh" content="1"/>-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -22,19 +22,23 @@
     <%=
       @plugins.dispatch(:head_ending).map do |content|
         if content.respond_to?(:call) then instance_exec(&content).to_s.html_safe else content.to_s.html_safe end
-      end.join("\n")
+      end.safe_join
     %>
+    <% if current_editor_is?(Article::Editor::TINY_MCE) %>
+      <%= render :file => 'shared/tiny_mce' %>
+    <% end %>
+
   </head>
 
   <%= render file: "#{Rails.root}/public/designs/themes/cirandas-responsive/load.erb" %>
 
-  <body class="<%= h body_classes %>">
+  <body class="<%= h body_classes + @body_extra_classes %>">
     <a href="#content" id="link-go-content"><span><%= _("Go to the content") %></span></a>
 
     <%=
       @plugins.dispatch(:body_beginning).map do |content|
         if content.respond_to?(:call) then instance_exec(&content).to_s.html_safe else content.to_s.html_safe end
-      end.join("\n")
+      end.safe_join
     %>
 
     <%= render partial: 'layouts/menu_responsive' %>
@@ -53,12 +57,12 @@
     </div><!-- end id="theme-footer" -->
 
     <%= noosfero_layout_features %>
-    <%= theme_javascript_ng %>
+    <%# theme_javascript_ng %>
     <%= addthis_javascript %>
     <%=
       @plugins.dispatch(:body_ending).map do |content|
         if content.respond_to?(:call) then instance_exec(&content).to_s.html_safe else content.to_s.html_safe end
-      end.join("\n")
+      end.safe_join
     %>
 
     <%= render file: "#{Rails.root}/public/designs/themes/#{current_theme}/layouts/_modal.html.erb" %>
