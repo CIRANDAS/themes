@@ -27,12 +27,14 @@
   <% if p && p.parent && p.parent.folder? %>
     <% menu = p.parent.children.find_by_slug 'menu' %>
     <% if menu && menu.body %>
-      <ul id="left-menu">
-      <% menu_list = HTML::Document.new(menu.body).find(:tag=>'ul')%>
-      <% if menu_list%>
-        <%= menu_list.children.map(&:to_s).join() %>
+      <% if defined? HTML::Document #this isn't working on rails 4 %>
+        <ul id="left-menu">
+          <% menu_list = HTML::Document.new(menu.body).find(:tag=>'ul')%>
+          <% if menu_list%>
+            <%= menu_list.children.map(&:to_s).join() %>
+          <% end %>
+        </ul>
       <% end %>
-      </ul>
     <% end %>
   <% end %>
 <% end %>
@@ -61,7 +63,7 @@
 <script type="text/javascript">
   jQuery(function($) {
     $('.profile-homepage #article .article-body img').each(function() {
-      $("<span> - "+this.parentNode.title+" - </span>").insertAfter(this); 
+      $("<span> - "+this.parentNode.title+" - </span>").insertAfter(this);
     })
   });
 </script>
@@ -93,7 +95,7 @@
         $("#facebook-footer").insertAfter("#comments_list");
         $("#facebook-footer").show();
       }
-      if(itemName[2] == "publicacoes"){ 
+      if(itemName[2] == "publicacoes"){
         $("#article .article-body .folder-content").show();
       }
     }
