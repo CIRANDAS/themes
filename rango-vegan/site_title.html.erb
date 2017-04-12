@@ -25,8 +25,10 @@
 
 <ul id="top-menu">
 <% menu = profile.articles.find_by_slug 'menu' %>
-<%= if menu && menu.body
-  HTML::Document.new(menu.body).find(:tag=>'ul').children.map(&:to_s).join()
+<%=
+  if menu && menu.body && defined?(HTML::Document) #this isn't working on rails 4
+    HTML::Document.new(menu.body).find(:tag=>'ul').children.map(&:to_s).join()
+  end %>
 else
   content_tag('li', link_to('Home', profile.url)) +
   content_tag('li', link_to('Editar Menu', myprofile_path(
