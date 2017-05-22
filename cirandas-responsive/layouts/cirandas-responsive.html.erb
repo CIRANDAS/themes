@@ -10,7 +10,7 @@
 
     <!-- externals come first for parallelism -->
     <%# render file: "#{Rails.root}/public/designs/themes/cirandas/layouts/_owa.html.erb" if Rails.env.production? %>
-    <%= render file: "#{Rails.root}/public/designs/themes/cirandas/layouts/_purechat.html.erb" if Rails.env.production? and not @disable_purechat %>
+    <%# render file: "#{Rails.root}/public/designs/themes/cirandas/layouts/_purechat.html.erb" if Rails.env.production? and not @disable_purechat %>
 
     <%= noosfero_javascript %>
     <%= noosfero_stylesheets %>
